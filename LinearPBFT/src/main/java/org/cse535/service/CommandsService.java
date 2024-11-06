@@ -10,6 +10,8 @@ import org.cse535.proto.CommandOutput;
 import org.cse535.proto.CommandsGrpc;
 import org.cse535.proto.Transaction;
 
+import java.util.concurrent.ConcurrentHashMap;
+
 public class CommandsService extends CommandsGrpc.CommandsImplBase {
 
 
@@ -66,6 +68,8 @@ public class CommandsService extends CommandsGrpc.CommandsImplBase {
 
         responseObserver.onNext(CommandOutput.newBuilder().setOutput("Database Flushed").build());
         responseObserver.onCompleted();
+
+        Main.node.newViewRequests.clear();
 
         System.out.println("Server is now Flushed");
 

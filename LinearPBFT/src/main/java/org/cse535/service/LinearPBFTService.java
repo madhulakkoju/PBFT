@@ -185,10 +185,7 @@ public class LinearPBFTService extends LinearPBFTGrpc.LinearPBFTImplBase {
         Main.node.logger.log("View Change response sent for " + resp.getView() + " : " + resp.getSuccess());
 
         try {
-            Thread.sleep(100);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+            Thread.sleep(50);
 
         if(  Main.node.database.currentViewNum.get() < request.getView() &&
                 ! Main.node.database.viewTriggers.contains(request.getView()) ){
@@ -197,6 +194,17 @@ public class LinearPBFTService extends LinearPBFTGrpc.LinearPBFTImplBase {
             Main.node.database.viewTriggers.add(request.getView());
             Main.node.startNewViewTriggers( request.getView() );
         }
+        Thread.sleep(200);
+
+        if( !Main.node.database.isLeader.get() &&  !Main.node.checkNewViewEncountered( request.getView() )){
+            // Backup did not receive new view request from new leader -> initiate view change
+            Main.node.initiateViewChange();
+        }
+
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
     @Override
@@ -226,8 +234,6 @@ public class LinearPBFTService extends LinearPBFTGrpc.LinearPBFTImplBase {
             return;
         }
 
-
-
         Main.node.logger.log("New View request received: " + request.getView());
 
         if(!Main.node.isServerActive()){
@@ -237,6 +243,9 @@ public class LinearPBFTService extends LinearPBFTGrpc.LinearPBFTImplBase {
             responseObserver.onCompleted();
             return;
         }
+
+        Main.node.newViewRequests.putIfAbsent(request.getView(), new HashSet<>());
+        Main.node.newViewRequests.get(request.getView()).add(request);
 
         Main.node.logger.log("New View request received: " + request.getView());
 

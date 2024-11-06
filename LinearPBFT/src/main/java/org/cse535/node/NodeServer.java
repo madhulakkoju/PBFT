@@ -23,6 +23,7 @@ import org.cse535.service.CommandsService;
 import org.cse535.service.LinearPBFTService;
 
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import static org.cse535.configs.GlobalConfigs.serversToPortMap;
@@ -133,7 +134,7 @@ public class NodeServer {
 
 
 
-    public HashMap<Integer, HashSet<NewViewRequest>> newViewRequests = new HashMap<>();
+    public ConcurrentHashMap<Integer, HashSet<NewViewRequest>> newViewRequests = new ConcurrentHashMap<>();
 
     public AtomicInteger maxViewNum = new AtomicInteger(0);
 

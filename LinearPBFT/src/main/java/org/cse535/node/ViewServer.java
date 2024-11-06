@@ -433,6 +433,10 @@ public class ViewServer extends NodeServer{
         this.primaryServerName = GlobalConfigs.initLeader;
         this.tnxCount = 1;
 
+        this.newViewRequests = new ConcurrentHashMap<>();
+        this.maxViewNum.set(0);
+
+
         this.commandLogger.log("===============================================================================================================================\n");
         this.commandLogger.log("                     Test Set Number :  " + (TestSetNumber-1) + "     \n");
         this.commandLogger.log("===============================================================================================================================\n");
@@ -462,7 +466,7 @@ public class ViewServer extends NodeServer{
             activeServersStatusMap.put(server, true);
         }
 
-        String path = "src/main/resources/test(Lab2 - PBFT).csv";
+        String path = "src/main/resources/test(Lab2 - PBFT) - Copy.csv";
 
         //File file = new File("C:\\Users\\mlakkoju\\apaxos-madhulakkoju\\apaxos\\src\\main\\resources\\input_file.csv");
         File file = new File(path);

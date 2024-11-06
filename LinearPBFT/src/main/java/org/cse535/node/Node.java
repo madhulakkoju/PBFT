@@ -11,6 +11,7 @@ import org.cse535.threadimpls.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.PriorityBlockingQueue;
 import java.util.concurrent.atomic.AtomicBoolean;
 
@@ -508,6 +509,19 @@ public class Node extends NodeServer{
         return this.database.viewChangeMessageMap.get(viewNumber).size() >= GlobalConfigs.viewChangeQuoromSize;
     }
 
+    public boolean checkNewViewEncountered(int view){
+        if(this.newViewRequests.containsKey(view)){
+            return true;
+        }
+
+        for (int v : this.newViewRequests.keySet()) {
+            if(v >= view){
+                return true;
+            }
+        }
+        return false;
+
+    }
 
 
     public void startNewViewTriggers(int nextView) {
