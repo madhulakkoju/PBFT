@@ -123,9 +123,10 @@ public class Node extends NodeServer{
 
             //Byzantine Feature -> does not prepare at all
 
-//            if(this.isServerByzantine()){
-//                return true;
-//            }
+            if(this.isServerByzantine()){
+                this.logger.log("Byzantine Server -> Not moving forward with Prepare Request");
+                return true;
+            }
 
             PrepareRequest prepareRequest = PrepareRequest.newBuilder()
                     .setSequenceNumber(currentSeqNum)

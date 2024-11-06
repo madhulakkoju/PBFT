@@ -7,6 +7,7 @@ import org.cse535.configs.Utils;
 import org.cse535.proto.*;
 import org.cse535.threadimpls.ClientRequestThread;
 import org.cse535.threadimpls.SendTnxWorkerThread;
+import org.sqlite.util.StringUtils;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -73,7 +74,9 @@ public class ViewServer extends NodeServer{
 
     public static TnxLine parseTnxConfig(String line, int tnxCount) {
 
-
+        if( line.trim().length() == 0){
+            return null;
+        }
 
 
 //        String[] parts = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
@@ -330,7 +333,7 @@ public class ViewServer extends NodeServer{
         sb.append("Server :  S1 - S2 - S3 - S4 - S5 - S6 - S7\n");
         for(int i = minSequenceNumber.get(); i <= maxSequenceNumber.get(); i++) {
 
-            sb.append(" seq ").append(i).append(" : ");
+            sb.append(" seq ").append( String.format("%2s",i) ).append(" : ");
             for( String server : allServers) {
 
                 this.logger.log("Server: " + server + " SeqNum: " + i + " Status: " + statusesAcrossServers.get(server).get(i));
@@ -483,15 +486,20 @@ public class ViewServer extends NodeServer{
 
                 TnxLine tnxLine = parseTnxConfig(line, viewServerInstance.tnxCount++);
 
-                if (tnxLine == null) {
-                    //System.out.println("Invalid transaction");
-                    viewServerInstance.tnxCount -- ;
+                if(tnxLine == null) {
 
-                    if(commandsSet.contains(line)) {
-                        viewServer.sendCommandToServers(Command.valueOf(line), activeServersStatusMap);
-                    }
                     continue;
                 }
+
+//                if (tnxLine == null) {
+//                    //System.out.println("Invalid transaction");
+//                    viewServerInstance.tnxCount -- ;
+//
+//                    if(commandsSet.contains(line)) {
+//                        viewServer.sendCommandToServers(Command.valueOf(line), activeServersStatusMap);
+//                    }
+//                    continue;
+//                }
 
                 TransactionInputConfig transactionInputConfig = tnxLine.transactionInputConfig;
 
@@ -631,8 +639,13 @@ public class ViewServer extends NodeServer{
         System.out.println("Running All Commands on all servers");
         Thread.sleep(1000);
 
-        viewServer.sendCommandToServers(Command.valueOf("PrintStatus"), activeServersStatusMap);
+        viewServerInstance.commandLogger.log("===============================================================================================================================\n");
+        viewServerInstance.commandLogger.log("                     Test Set Number :  " + (viewServerInstance.TestSetNumber) + "     \n");
+        viewServerInstance.commandLogger.log("===============================================================================================================================\n");
+
         viewServer.sendCommandToServers(Command.valueOf("PrintDB"), activeServersStatusMap);
+        viewServer.sendCommandToServers(Command.valueOf("PrintStatus"), activeServersStatusMap);
+
 
 
 
