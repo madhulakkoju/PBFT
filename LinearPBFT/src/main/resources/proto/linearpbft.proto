@@ -1,0 +1,193 @@
+syntax = "proto3";
+option  java_package = "org.cse535.proto";
+option java_multiple_files = true;
+
+import "google/protobuf/timestamp.proto";
+
+service LinearPBFT {
+  rpc Request(TransactionInputConfig) returns (TxnResponse) {}
+  rpc RelayRequest(TransactionInputConfig) returns (TxnRelayResponse) {}
+
+  rpc PrePrepare(PrePrepareRequest) returns (PrePrepareResponse) {}
+  rpc Prepare(PrepareRequest) returns (PrepareResponse) {}
+  rpc Commit(CommitRequest) returns (CommitResponse) {}
+  rpc ExecutionReply(ExecutionReplyRequest) returns (ExecutionReplyResponse) {}
+  rpc ViewChange(ViewChangeRequest) returns (ViewChangeResponse) {}
+  rpc NewView(NewViewRequest) returns (NewViewResponse) {}
+}
+
+
+message PrePrepareRequest {
+  int32 view = 1;
+  int32 sequenceNumber = 2;
+  Transaction transaction = 3;
+  string processId = 4;
+  google.protobuf.Timestamp timestamp = 5;
+  string digest = 6;
+}
+
+message PrePrepareResponse {
+  int32 view = 1;
+  int32 sequenceNumber = 2;
+  string processId = 3;
+  bool success = 4;
+}
+
+message PrepareRequest {
+  int32 view = 1;
+  int32 sequenceNumber = 2;
+  string processId = 3;
+  google.protobuf.Timestamp timestamp = 4;
+  string digest = 5;
+}
+
+message PrepareResponse {
+  int32 view = 1;
+  int32 sequenceNumber = 2;
+  string processId = 3;
+  bool success = 4;
+}
+
+message CommitRequest {
+  int32 view = 1;
+  int32 sequenceNumber = 2;
+  string processId = 3;
+  google.protobuf.Timestamp timestamp = 4;
+  string digest = 5;
+}
+
+message CommitResponse {
+  int32 view = 1;
+  int32 sequenceNumber = 2;
+  string processId = 3;
+  bool success = 4;
+}
+
+message ExecutionReplyRequest {
+  int32 view = 1;
+  int32 sequenceNumber = 2;
+  string processId = 3;
+  int32 transactionId = 5;
+  google.protobuf.Timestamp timestamp = 4;
+  bool success = 6;
+}
+
+message ExecutionReplyResponse {
+  int32 view = 1;
+  int32 sequenceNumber = 2;
+  string processId = 3;
+  bool success = 4;
+}
+
+message ViewChangeRequest {
+  int32 view = 1;
+  string processId = 2;
+  google.protobuf.Timestamp timestamp = 3;
+}
+
+message ViewChangeResponse {
+  int32 view = 1;
+  string processId = 2;
+  bool success = 3;
+}
+
+message NewViewRequest {
+  int32 view = 1;
+  string processId = 2;
+  google.protobuf.Timestamp timestamp = 3;
+
+  repeated ViewChangeRequest viewChangeMessages = 4;
+  repeated PrepareRequest prepareMessages = 5;
+}
+
+message NewViewResponse {
+  int32 view = 1;
+  string processId = 2;
+  bool success = 3;
+}
+
+message TransactionInputConfig{
+  int32 setNumber = 1;
+  Transaction transaction = 2;
+  int32 view = 3;
+  repeated string serverNames = 5;
+}
+
+message Transaction {
+  string sender = 1;
+  string receiver = 2;
+  int32 amount = 3;
+  google.protobuf.Timestamp timestamp = 4;
+
+  string transactionHash = 5;
+  int32 transactionNum = 6;
+}
+
+message TxnResponse{
+  bool success = 1;
+  string serverName = 2;
+}
+
+message TxnRelayResponse{
+  bool success = 1;
+  string serverName = 2;
+  int32 option = 3;
+
+  // 0 wait for sometime.. allow for view change and resend after sometime
+  // 1 already executed.. use reply here
+
+  ExecutionReplyRequest executionReply = 4;
+
+}
+
+
+
+service ActivateServers{
+  rpc activateServer(ActivateServerRequest) returns (ActivateServerResponse) {}
+  rpc deactivateServer(DeactivateServerRequest) returns (DeactivateServerResponse) {}
+
+
+}
+
+message ActivateServerRequest{
+  string serverName = 1;
+}
+
+message ActivateServerResponse{
+  bool success = 1;
+  string serverName = 2;
+}
+
+message DeactivateServerRequest{
+  string serverName = 1;
+}
+
+message DeactivateServerResponse{
+  bool success = 1;
+  string serverName = 2;
+}
+
+
+
+
+
+
+
+service Commands{
+
+  rpc printLog(CommandInput) returns (CommandOutput) {}
+  rpc printDB(CommandInput) returns (CommandOutput) {}
+  rpc printStatus(CommandInput) returns (CommandOutput) {}
+  rpc FlushDB(CommandInput) returns (CommandOutput) {}
+  rpc makeByzantine(CommandInput) returns (CommandOutput) {}
+
+}
+
+message CommandInput{
+  string input = 1;
+}
+
+message CommandOutput{
+  string output = 1;
+}
+

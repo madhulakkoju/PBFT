@@ -1,0 +1,769 @@
+ 
+Transaction Worker Thread Started
+===============================================================================================================================
+
+===============================================================================================================================
+
+Server activated
+Request received: 1
+Server is leader -> processing request -- added to queue
+Processing Transaction: 1
+Initiating Pre Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+PrePrepare accepted for Seq num : 1 Accepts: 7
+Pre Prepare Success
+Initiating Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+Prepare Success
+Initiating Commit for SeqNum: 1 View: 0 Transaction ID: 1
+Transaction Processed: 1
+Initiating executions : 0 : 1
+Initiating execution for seqNum: 1
+Status : COMMITTED
+Executing transaction: 1
+Transaction executed: 1
+Sending Reply to Client executed: 1 Transaction: 1
+sender: "A"
+receiver: "I"
+amount: 2
+timestamp {
+}
+transactionNum: 1
+
+Sent Reply to Client executed: 1
+Initiating execution for seqNum: 2
+Status : Not Found
+Request received: 2
+Server is leader -> processing request -- added to queue
+Processing Transaction: 2
+Initiating Pre Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+PrePrepare accepted for Seq num : 2 Accepts: 7
+Pre Prepare Success
+Initiating Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+Prepare Success
+Initiating Commit for SeqNum: 2 View: 0 Transaction ID: 2
+Transaction Processed: 2
+Initiating executions : 1 : 2
+Initiating execution for seqNum: 2
+Status : COMMITTED
+Executing transaction: 2
+Transaction executed: 2
+Sending Reply to Client executed: 2 Transaction: 2
+sender: "B"
+receiver: "E"
+amount: 6
+transactionNum: 2
+
+Sent Reply to Client executed: 2
+Initiating execution for seqNum: 3
+Status : Not Found
+Request received: 3
+Server is leader -> processing request -- added to queue
+Processing Transaction: 3
+Initiating Pre Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+PrePrepare accepted for Seq num : 3 Accepts: 7
+Pre Prepare Success
+Initiating Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+Prepare Success
+Initiating Commit for SeqNum: 3 View: 0 Transaction ID: 3
+Transaction Processed: 3
+Initiating executions : 2 : 3
+Initiating execution for seqNum: 3
+Status : COMMITTED
+Executing transaction: 3
+Transaction executed: 3
+Sending Reply to Client executed: 3 Transaction: 3
+sender: "H"
+receiver: "D"
+amount: 3
+transactionNum: 3
+
+Sent Reply to Client executed: 3
+Initiating execution for seqNum: 4
+Status : Not Found
+Request received: 4
+Server is leader -> processing request -- added to queue
+Processing Transaction: 4
+Initiating Pre Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+PrePrepare accepted for Seq num : 4 Accepts: 7
+Pre Prepare Success
+Initiating Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+Prepare Success
+Initiating Commit for SeqNum: 4 View: 0 Transaction ID: 4
+Transaction Processed: 4
+Initiating executions : 3 : 4
+Initiating execution for seqNum: 4
+Status : COMMITTED
+Executing transaction: 4
+Transaction executed: 4
+Sending Reply to Client executed: 4 Transaction: 4
+sender: "I"
+receiver: "G"
+amount: 2
+transactionNum: 4
+
+Sent Reply to Client executed: 4
+Initiating execution for seqNum: 5
+Status : Not Found
+===============================================================================================================================
+
+===============================================================================================================================
+
+Server activated
+Request received: 1
+Server is leader -> processing request -- added to queue
+Processing Transaction: 1
+Initiating Pre Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+PrePrepare accepted for Seq num : 1 Accepts: 7
+Pre Prepare Success
+Initiating Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+Prepare Success
+Initiating Commit for SeqNum: 1 View: 0 Transaction ID: 1
+Transaction Processed: 1
+Initiating executions : 0 : 1
+Initiating execution for seqNum: 1
+Status : COMMITTED
+Executing transaction: 1
+Transaction executed: 1
+Sending Reply to Client executed: 1 Transaction: 1
+sender: "F"
+receiver: "B"
+amount: 3
+timestamp {
+}
+transactionNum: 1
+
+Sent Reply to Client executed: 1
+Initiating execution for seqNum: 2
+Status : Not Found
+Request received: 2
+Server is leader -> processing request -- added to queue
+Processing Transaction: 2
+Initiating Pre Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+PrePrepare accepted for Seq num : 2 Accepts: 7
+Pre Prepare Success
+Initiating Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+Prepare Success
+Initiating Commit for SeqNum: 2 View: 0 Transaction ID: 2
+Transaction Processed: 2
+Initiating executions : 1 : 2
+Initiating execution for seqNum: 2
+Status : COMMITTED
+Executing transaction: 2
+Transaction executed: 2
+Sending Reply to Client executed: 2 Transaction: 2
+sender: "I"
+receiver: "J"
+amount: 1
+transactionNum: 2
+
+Sent Reply to Client executed: 2
+Initiating execution for seqNum: 3
+Status : Not Found
+Request received: 3
+Server is leader -> processing request -- added to queue
+Processing Transaction: 3
+Initiating Pre Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+PrePrepare accepted for Seq num : 3 Accepts: 7
+Pre Prepare Success
+Initiating Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+Prepare Success
+Initiating Commit for SeqNum: 3 View: 0 Transaction ID: 3
+Transaction Processed: 3
+Initiating executions : 2 : 3
+Initiating execution for seqNum: 3
+Status : COMMITTED
+Executing transaction: 3
+Transaction executed: 3
+Sending Reply to Client executed: 3 Transaction: 3
+sender: "F"
+receiver: "I"
+amount: 7
+transactionNum: 3
+
+Sent Reply to Client executed: 3
+Initiating execution for seqNum: 4
+Status : Not Found
+Request received: 4
+Server is leader -> processing request -- added to queue
+Processing Transaction: 4
+Initiating Pre Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+PrePrepare accepted for Seq num : 4 Accepts: 6
+Pre Prepare Success
+Initiating Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+Prepare Success
+Initiating Commit for SeqNum: 4 View: 0 Transaction ID: 4
+Transaction Processed: 4
+Initiating executions : 3 : 4
+Initiating execution for seqNum: 4
+Status : COMMITTED
+Executing transaction: 4
+Transaction executed: 4
+Sending Reply to Client executed: 4 Transaction: 4
+sender: "C"
+receiver: "D"
+amount: 6
+transactionNum: 4
+
+Sent Reply to Client executed: 4
+Initiating execution for seqNum: 5
+Status : Not Found
+Request received: 5
+Server is leader -> processing request -- added to queue
+Processing Transaction: 5
+Initiating Pre Prepare for SeqNum: 5 View: 0 Transaction ID: 5
+PrePrepare accepted for Seq num : 5 Accepts: 7
+Pre Prepare Success
+Initiating Prepare for SeqNum: 5 View: 0 Transaction ID: 5
+Prepare Success
+Initiating Commit for SeqNum: 5 View: 0 Transaction ID: 5
+Transaction Processed: 5
+Initiating executions : 4 : 5
+Initiating execution for seqNum: 5
+Status : COMMITTED
+Executing transaction: 5
+Transaction Execution failed: 5
+Sent Reply to Client executed: 5
+Initiating execution for seqNum: 6
+Status : Not Found
+===============================================================================================================================
+
+Server activated
+===============================================================================================================================
+
+Request received: 1
+Server is leader -> processing request -- added to queue
+Processing Transaction: 1
+Initiating Pre Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+PrePrepare accepted for Seq num : 1 Accepts: 5
+Pre Prepare Success
+Initiating Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+Prepare Success
+Initiating Commit for SeqNum: 1 View: 0 Transaction ID: 1
+Transaction Processed: 1
+Initiating executions : 0 : 1
+Initiating execution for seqNum: 1
+Status : COMMITTED
+Executing transaction: 1
+Transaction executed: 1
+Sending Reply to Client executed: 1 Transaction: 1
+sender: "G"
+receiver: "A"
+amount: 3
+timestamp {
+}
+transactionNum: 1
+
+Sent Reply to Client executed: 1
+Initiating execution for seqNum: 2
+Status : Not Found
+Request received: 2
+Server is leader -> processing request -- added to queue
+Processing Transaction: 2
+Initiating Pre Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+PrePrepare accepted for Seq num : 2 Accepts: 5
+Pre Prepare Success
+Initiating Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+Prepare Success
+Initiating Commit for SeqNum: 2 View: 0 Transaction ID: 2
+Transaction Processed: 2
+Initiating executions : 1 : 2
+Initiating execution for seqNum: 2
+Status : COMMITTED
+Executing transaction: 2
+Transaction executed: 2
+Sending Reply to Client executed: 2 Transaction: 2
+sender: "B"
+receiver: "J"
+amount: 8
+transactionNum: 2
+
+Sent Reply to Client executed: 2
+Initiating execution for seqNum: 3
+Status : Not Found
+Request received: 3
+Server is leader -> processing request -- added to queue
+Processing Transaction: 3
+Initiating Pre Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+PrePrepare accepted for Seq num : 3 Accepts: 5
+Pre Prepare Success
+Initiating Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+Prepare Success
+Initiating Commit for SeqNum: 3 View: 0 Transaction ID: 3
+Transaction Processed: 3
+Initiating executions : 2 : 3
+Initiating execution for seqNum: 3
+Status : COMMITTED
+Executing transaction: 3
+Transaction Execution failed: 3
+Sent Reply to Client executed: 3
+Initiating execution for seqNum: 4
+Status : Not Found
+Request received: 4
+Server is leader -> processing request -- added to queue
+Processing Transaction: 4
+Initiating Pre Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+PrePrepare accepted for Seq num : 4 Accepts: 5
+Pre Prepare Success
+Initiating Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+Prepare Success
+Initiating Commit for SeqNum: 4 View: 0 Transaction ID: 4
+Transaction Processed: 4
+Initiating executions : 3 : 4
+Initiating execution for seqNum: 4
+Status : COMMITTED
+Executing transaction: 4
+Transaction executed: 4
+Sending Reply to Client executed: 4 Transaction: 4
+sender: "A"
+receiver: "E"
+amount: 6
+transactionNum: 4
+
+Sent Reply to Client executed: 4
+Initiating execution for seqNum: 5
+Status : Not Found
+Request received: 5
+Server is leader -> processing request -- added to queue
+Processing Transaction: 5
+Initiating Pre Prepare for SeqNum: 5 View: 0 Transaction ID: 5
+PrePrepare accepted for Seq num : 5 Accepts: 5
+Pre Prepare Success
+Initiating Prepare for SeqNum: 5 View: 0 Transaction ID: 5
+Prepare Success
+Initiating Commit for SeqNum: 5 View: 0 Transaction ID: 5
+Transaction Processed: 5
+Initiating executions : 4 : 5
+Initiating execution for seqNum: 5
+Status : COMMITTED
+Executing transaction: 5
+Transaction executed: 5
+Sending Reply to Client executed: 5 Transaction: 5
+sender: "I"
+receiver: "C"
+amount: 1
+transactionNum: 5
+
+Sent Reply to Client executed: 5
+Initiating execution for seqNum: 6
+Status : Not Found
+===============================================================================================================================
+
+Server activated
+===============================================================================================================================
+
+Request received: 1
+Server is leader -> processing request -- added to queue
+Processing Transaction: 1
+Initiating Pre Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+PrePrepare accepted for Seq num : 1 Accepts: 6
+Pre Prepare Success
+Initiating Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+Prepare Success
+Initiating Commit for SeqNum: 1 View: 0 Transaction ID: 1
+Transaction Processed: 1
+Initiating executions : 0 : 1
+Initiating execution for seqNum: 1
+Status : COMMITTED
+Executing transaction: 1
+Transaction executed: 1
+Sending Reply to Client executed: 1 Transaction: 1
+sender: "A"
+receiver: "C"
+amount: 2
+timestamp {
+}
+transactionNum: 1
+
+Sent Reply to Client executed: 1
+Initiating execution for seqNum: 2
+Status : Not Found
+Request received: 2
+Server is leader -> processing request -- added to queue
+Processing Transaction: 2
+Initiating Pre Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+PrePrepare accepted for Seq num : 2 Accepts: 5
+Pre Prepare Success
+Initiating Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+Prepare Success
+Initiating Commit for SeqNum: 2 View: 0 Transaction ID: 2
+Transaction Processed: 2
+Initiating executions : 1 : 2
+Initiating execution for seqNum: 2
+Status : COMMITTED
+Executing transaction: 2
+Transaction executed: 2
+Sending Reply to Client executed: 2 Transaction: 2
+sender: "A"
+receiver: "J"
+amount: 5
+transactionNum: 2
+
+Sent Reply to Client executed: 2
+Initiating execution for seqNum: 3
+Status : Not Found
+Request received: 3
+Server is leader -> processing request -- added to queue
+Processing Transaction: 3
+Initiating Pre Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+PrePrepare accepted for Seq num : 3 Accepts: 6
+Pre Prepare Success
+Initiating Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+Prepare Success
+Initiating Commit for SeqNum: 3 View: 0 Transaction ID: 3
+Transaction Processed: 3
+Initiating executions : 2 : 3
+Initiating execution for seqNum: 3
+Status : COMMITTED
+Executing transaction: 3
+Transaction executed: 3
+Sending Reply to Client executed: 3 Transaction: 3
+sender: "B"
+receiver: "H"
+amount: 2
+transactionNum: 3
+
+Sent Reply to Client executed: 3
+Initiating execution for seqNum: 4
+Status : Not Found
+Request received: 4
+Server is leader -> processing request -- added to queue
+Processing Transaction: 4
+Initiating Pre Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+PrePrepare accepted for Seq num : 4 Accepts: 5
+Pre Prepare Success
+Initiating Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+Prepare Success
+Initiating Commit for SeqNum: 4 View: 0 Transaction ID: 4
+Transaction Processed: 4
+Initiating executions : 3 : 4
+Initiating execution for seqNum: 4
+Status : COMMITTED
+Executing transaction: 4
+Transaction executed: 4
+Sending Reply to Client executed: 4 Transaction: 4
+sender: "J"
+receiver: "F"
+amount: 4
+transactionNum: 4
+
+Sent Reply to Client executed: 4
+Initiating execution for seqNum: 5
+Status : Not Found
+Request received: 5
+Server is leader -> processing request -- added to queue
+Processing Transaction: 5
+Initiating Pre Prepare for SeqNum: 5 View: 0 Transaction ID: 5
+PrePrepare accepted for Seq num : 5 Accepts: 6
+Pre Prepare Success
+Initiating Prepare for SeqNum: 5 View: 0 Transaction ID: 5
+Prepare Success
+Initiating Commit for SeqNum: 5 View: 0 Transaction ID: 5
+Transaction Processed: 5
+Initiating executions : 4 : 5
+Initiating execution for seqNum: 5
+Status : COMMITTED
+Executing transaction: 5
+Transaction executed: 5
+Sending Reply to Client executed: 5 Transaction: 5
+sender: "D"
+receiver: "C"
+amount: 1
+transactionNum: 5
+
+Sent Reply to Client executed: 5
+Initiating execution for seqNum: 6
+Status : Not Found
+Request received: 6
+Server is leader -> processing request -- added to queue
+Processing Transaction: 6
+Initiating Pre Prepare for SeqNum: 6 View: 0 Transaction ID: 6
+PrePrepare accepted for Seq num : 6 Accepts: 6
+Pre Prepare Success
+Initiating Prepare for SeqNum: 6 View: 0 Transaction ID: 6
+Prepare Success
+Initiating Commit for SeqNum: 6 View: 0 Transaction ID: 6
+Transaction Processed: 6
+Initiating executions : 5 : 6
+Initiating execution for seqNum: 6
+Status : COMMITTED
+Executing transaction: 6
+Transaction executed: 6
+Sending Reply to Client executed: 6 Transaction: 6
+sender: "B"
+receiver: "A"
+amount: 5
+transactionNum: 6
+
+Sent Reply to Client executed: 6
+Initiating execution for seqNum: 7
+Status : Not Found
+Request received: 7
+Server is leader -> processing request -- added to queue
+Processing Transaction: 7
+Initiating Pre Prepare for SeqNum: 7 View: 0 Transaction ID: 7
+PrePrepare accepted for Seq num : 7 Accepts: 6
+Pre Prepare Success
+Initiating Prepare for SeqNum: 7 View: 0 Transaction ID: 7
+Prepare Success
+Initiating Commit for SeqNum: 7 View: 0 Transaction ID: 7
+Transaction Processed: 7
+Initiating executions : 6 : 7
+Initiating execution for seqNum: 7
+Status : COMMITTED
+Executing transaction: 7
+Transaction executed: 7
+Sending Reply to Client executed: 7 Transaction: 7
+sender: "A"
+receiver: "E"
+amount: 4
+transactionNum: 7
+
+Sent Reply to Client executed: 7
+Initiating execution for seqNum: 8
+Status : Not Found
+===============================================================================================================================
+
+Server activated
+===============================================================================================================================
+
+Request received: 1
+Server is leader -> processing request -- added to queue
+Processing Transaction: 1
+Initiating Pre Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+PrePrepare accepted for Seq num : 1 Accepts: 7
+Pre Prepare Success
+Initiating Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+Prepare Success
+Initiating Commit for SeqNum: 1 View: 0 Transaction ID: 1
+Transaction Processed: 1
+Initiating executions : 0 : 1
+Initiating execution for seqNum: 1
+Status : COMMITTED
+Executing transaction: 1
+Transaction executed: 1
+Sending Reply to Client executed: 1 Transaction: 1
+sender: "A"
+receiver: "B"
+amount: 1
+timestamp {
+}
+transactionNum: 1
+
+Sent Reply to Client executed: 1
+Initiating execution for seqNum: 2
+Status : Not Found
+Request received: 2
+Server is leader -> processing request -- added to queue
+Processing Transaction: 2
+Initiating Pre Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+PrePrepare accepted for Seq num : 2 Accepts: 6
+Pre Prepare Success
+Initiating Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+Prepare Success
+Initiating Commit for SeqNum: 2 View: 0 Transaction ID: 2
+Transaction Processed: 2
+Initiating executions : 1 : 2
+Initiating execution for seqNum: 2
+Status : COMMITTED
+Executing transaction: 2
+Transaction executed: 2
+Sending Reply to Client executed: 2 Transaction: 2
+sender: "D"
+receiver: "E"
+amount: 1
+transactionNum: 2
+
+Sent Reply to Client executed: 2
+Initiating execution for seqNum: 3
+Status : Not Found
+Request received: 3
+Server is leader -> processing request -- added to queue
+Processing Transaction: 3
+Initiating Pre Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+PrePrepare accepted for Seq num : 3 Accepts: 7
+Pre Prepare Success
+Initiating Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+Prepare Success
+Initiating Commit for SeqNum: 3 View: 0 Transaction ID: 3
+Transaction Processed: 3
+Initiating executions : 2 : 3
+Initiating execution for seqNum: 3
+Status : COMMITTED
+Executing transaction: 3
+Transaction executed: 3
+Sending Reply to Client executed: 3 Transaction: 3
+sender: "I"
+receiver: "J"
+amount: 1
+transactionNum: 3
+
+Sent Reply to Client executed: 3
+Initiating execution for seqNum: 4
+Status : Not Found
+Request received: 4
+Server is leader -> processing request -- added to queue
+Processing Transaction: 4
+Initiating Pre Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+PrePrepare accepted for Seq num : 4 Accepts: 7
+Pre Prepare Success
+Initiating Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+Prepare Success
+Initiating Commit for SeqNum: 4 View: 0 Transaction ID: 4
+Transaction Processed: 4
+Initiating executions : 3 : 4
+Initiating execution for seqNum: 4
+Status : COMMITTED
+Executing transaction: 4
+Transaction executed: 4
+Sending Reply to Client executed: 4 Transaction: 4
+sender: "J"
+receiver: "A"
+amount: 1
+transactionNum: 4
+
+Sent Reply to Client executed: 4
+Initiating execution for seqNum: 5
+Status : Not Found
+Request received: 5
+Server is leader -> processing request -- added to queue
+Processing Transaction: 5
+Initiating Pre Prepare for SeqNum: 5 View: 0 Transaction ID: 5
+PrePrepare accepted for Seq num : 5 Accepts: 7
+Pre Prepare Success
+Initiating Prepare for SeqNum: 5 View: 0 Transaction ID: 5
+Prepare Success
+Initiating Commit for SeqNum: 5 View: 0 Transaction ID: 5
+Transaction Processed: 5
+Initiating executions : 4 : 5
+Initiating execution for seqNum: 5
+Status : COMMITTED
+Executing transaction: 5
+Transaction executed: 5
+Sending Reply to Client executed: 5 Transaction: 5
+sender: "B"
+receiver: "C"
+amount: 1
+transactionNum: 5
+
+Sent Reply to Client executed: 5
+Initiating execution for seqNum: 6
+Status : Not Found
+Request received: 6
+Server is leader -> processing request -- added to queue
+Processing Transaction: 6
+Initiating Pre Prepare for SeqNum: 6 View: 0 Transaction ID: 6
+PrePrepare accepted for Seq num : 6 Accepts: 7
+Pre Prepare Success
+Initiating Prepare for SeqNum: 6 View: 0 Transaction ID: 6
+Prepare Success
+Initiating Commit for SeqNum: 6 View: 0 Transaction ID: 6
+Transaction Processed: 6
+Initiating executions : 5 : 6
+Initiating execution for seqNum: 6
+Status : COMMITTED
+Executing transaction: 6
+Transaction executed: 6
+Sending Reply to Client executed: 6 Transaction: 6
+sender: "F"
+receiver: "G"
+amount: 1
+transactionNum: 6
+
+Sent Reply to Client executed: 6
+Initiating execution for seqNum: 7
+Status : Not Found
+Request received: 7
+Server is leader -> processing request -- added to queue
+Processing Transaction: 7
+Initiating Pre Prepare for SeqNum: 7 View: 0 Transaction ID: 7
+PrePrepare accepted for Seq num : 7 Accepts: 7
+Pre Prepare Success
+Initiating Prepare for SeqNum: 7 View: 0 Transaction ID: 7
+Prepare Success
+Initiating Commit for SeqNum: 7 View: 0 Transaction ID: 7
+Transaction Processed: 7
+Initiating executions : 6 : 7
+Initiating execution for seqNum: 7
+Status : COMMITTED
+Executing transaction: 7
+Transaction executed: 7
+Sending Reply to Client executed: 7 Transaction: 7
+sender: "H"
+receiver: "I"
+amount: 1
+transactionNum: 7
+
+Sent Reply to Client executed: 7
+Initiating execution for seqNum: 8
+Status : Not Found
+Request received: 8
+Server is leader -> processing request -- added to queue
+Processing Transaction: 8
+Initiating Pre Prepare for SeqNum: 8 View: 0 Transaction ID: 8
+PrePrepare accepted for Seq num : 8 Accepts: 7
+Pre Prepare Success
+Initiating Prepare for SeqNum: 8 View: 0 Transaction ID: 8
+Prepare Success
+Initiating Commit for SeqNum: 8 View: 0 Transaction ID: 8
+Transaction Processed: 8
+Initiating executions : 7 : 8
+Initiating execution for seqNum: 8
+Status : COMMITTED
+Executing transaction: 8
+Transaction executed: 8
+Sending Reply to Client executed: 8 Transaction: 8
+sender: "E"
+receiver: "F"
+amount: 1
+transactionNum: 8
+
+Sent Reply to Client executed: 8
+Initiating execution for seqNum: 9
+Status : Not Found
+Request received: 9
+Server is leader -> processing request -- added to queue
+Processing Transaction: 9
+Initiating Pre Prepare for SeqNum: 9 View: 0 Transaction ID: 9
+PrePrepare accepted for Seq num : 9 Accepts: 7
+Pre Prepare Success
+Initiating Prepare for SeqNum: 9 View: 0 Transaction ID: 9
+Prepare Success
+Initiating Commit for SeqNum: 9 View: 0 Transaction ID: 9
+Transaction Processed: 9
+Initiating executions : 8 : 9
+Initiating execution for seqNum: 9
+Status : COMMITTED
+Executing transaction: 9
+Transaction executed: 9
+Sending Reply to Client executed: 9 Transaction: 9
+sender: "G"
+receiver: "H"
+amount: 1
+transactionNum: 9
+
+Sent Reply to Client executed: 9
+Initiating execution for seqNum: 10
+Status : Not Found
+Request received: 10
+Server is leader -> processing request -- added to queue
+Processing Transaction: 10
+Initiating Pre Prepare for SeqNum: 10 View: 0 Transaction ID: 10
+PrePrepare accepted for Seq num : 10 Accepts: 7
+Pre Prepare Success
+Initiating Prepare for SeqNum: 10 View: 0 Transaction ID: 10
+Prepare Success
+Initiating Commit for SeqNum: 10 View: 0 Transaction ID: 10
+Transaction Processed: 10
+Initiating executions : 9 : 10
+Initiating execution for seqNum: 10
+Status : COMMITTED
+Executing transaction: 10
+Transaction executed: 10
+Sending Reply to Client executed: 10 Transaction: 10
+sender: "C"
+receiver: "D"
+amount: 1
+transactionNum: 10
+
+Sent Reply to Client executed: 10
+Initiating execution for seqNum: 11
+Status : Not Found

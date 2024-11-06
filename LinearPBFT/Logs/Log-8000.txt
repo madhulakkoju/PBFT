@@ -1,0 +1,516 @@
+ 
+-------------------------------------------------------------
+Line: 1 : 1,"(A, I, 2)","[S1, S2, S3, S4, S5, S6, S7]",[]
+Server: S1 Status: 
+Server: S2 Status: 
+Server: S3 Status: 
+Server: S4 Status: 
+Server: S5 Status: 
+Server: S6 Status: 
+Server: S7 Status: 
+Server: S1 SeqNum: 1 Status: null
+Server: S2 SeqNum: 1 Status: null
+Server: S3 SeqNum: 1 Status: null
+Server: S4 SeqNum: 1 Status: null
+Server: S5 SeqNum: 1 Status: null
+Server: S6 SeqNum: 1 Status: null
+Server: S7 SeqNum: 1 Status: null
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+-------------------------------------------------------------
+Line: 2 : 1,"(B, E, 6)","[S1, S2, S3, S4, S5, S6, S7]",[]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+-------------------------------------------------------------
+Line: 3 : 1,"(H, D, 3)","[S1, S2, S3, S4, S5, S6, S7]",[]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+-------------------------------------------------------------
+Line: 4 : 1,"(I, G, 2)","[S1, S2, S3, S4, S5, S6, S7]",[]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+-------------------------------------------------------------
+Line: 5 : 2,"(F, B, 3)","[S1, S2, S3, S4, S5, S6, S7]","[S4, S6]"
+Server: S1 Status: 1,E;2,E;3,E;4,E;
+Server: S2 Status: 1,E;2,E;3,E;4,E;
+Server: S3 Status: 1,E;2,E;3,E;4,E;
+Server: S4 Status: 1,E;2,E;3,E;4,E;
+Server: S5 Status: 1,E;2,E;3,E;4,E;
+Server: S6 Status: 1,E;2,E;3,E;4,E;
+Server: S7 Status: 1,E;2,E;3,E;4,E;
+Server: S1 SeqNum: 1 Status: E
+Server: S2 SeqNum: 1 Status: E
+Server: S3 SeqNum: 1 Status: E
+Server: S4 SeqNum: 1 Status: E
+Server: S5 SeqNum: 1 Status: E
+Server: S6 SeqNum: 1 Status: E
+Server: S7 SeqNum: 1 Status: E
+Server: S1 SeqNum: 2 Status: E
+Server: S2 SeqNum: 2 Status: E
+Server: S3 SeqNum: 2 Status: E
+Server: S4 SeqNum: 2 Status: E
+Server: S5 SeqNum: 2 Status: E
+Server: S6 SeqNum: 2 Status: E
+Server: S7 SeqNum: 2 Status: E
+Server: S1 SeqNum: 3 Status: E
+Server: S2 SeqNum: 3 Status: E
+Server: S3 SeqNum: 3 Status: E
+Server: S4 SeqNum: 3 Status: E
+Server: S5 SeqNum: 3 Status: E
+Server: S6 SeqNum: 3 Status: E
+Server: S7 SeqNum: 3 Status: E
+Server: S1 SeqNum: 4 Status: E
+Server: S2 SeqNum: 4 Status: E
+Server: S3 SeqNum: 4 Status: E
+Server: S4 SeqNum: 4 Status: E
+Server: S5 SeqNum: 4 Status: E
+Server: S6 SeqNum: 4 Status: E
+Server: S7 SeqNum: 4 Status: E
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+-------------------------------------------------------------
+Line: 6 : 2,"(I, J, 1)","[S1, S2, S3, S4, S5, S6, S7]","[S4, S6]"
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+-------------------------------------------------------------
+Line: 7 : 2,"(F, I, 7)","[S1, S2, S3, S4, S5, S6, S7]","[S4, S6]"
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+-------------------------------------------------------------
+Line: 8 : 2,"(C, D, 6)","[S1, S2, S3, S4, S5, S6, S7]","[S4, S6]"
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+-------------------------------------------------------------
+Line: 9 : 2,"(F, A, 2)","[S1, S2, S3, S4, S5, S6, S7]","[S4, S6]"
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 5
+Execution reply received: 5
+Execution reply received: 5
+Execution reply received: 5
+Execution reply received: 5
+Execution reply received: 5
+Execution reply received: 5
+-------------------------------------------------------------
+Line: 10 : 3,"(G, A, 3)","[S1, S3, S4, S5, S6]",[]
+Server: S1 Status: 1,E;2,E;3,E;4,E;5,F;
+Server: S2 Status: 1,E;2,E;3,E;4,E;5,F;
+Server: S3 Status: 1,E;2,E;3,E;4,E;5,F;
+Server: S4 Status: 1,E;2,E;3,E;4,E;5,F;
+Server: S5 Status: 1,E;2,E;3,E;4,E;5,F;
+Server: S6 Status: 1,E;2,E;3,E;4,E;5,F;
+Server: S7 Status: 1,E;2,E;3,E;4,E;5,F;
+Server: S1 SeqNum: 1 Status: E
+Server: S2 SeqNum: 1 Status: E
+Server: S3 SeqNum: 1 Status: E
+Server: S4 SeqNum: 1 Status: E
+Server: S5 SeqNum: 1 Status: E
+Server: S6 SeqNum: 1 Status: E
+Server: S7 SeqNum: 1 Status: E
+Server: S1 SeqNum: 2 Status: E
+Server: S2 SeqNum: 2 Status: E
+Server: S3 SeqNum: 2 Status: E
+Server: S4 SeqNum: 2 Status: E
+Server: S5 SeqNum: 2 Status: E
+Server: S6 SeqNum: 2 Status: E
+Server: S7 SeqNum: 2 Status: E
+Server: S1 SeqNum: 3 Status: E
+Server: S2 SeqNum: 3 Status: E
+Server: S3 SeqNum: 3 Status: E
+Server: S4 SeqNum: 3 Status: E
+Server: S5 SeqNum: 3 Status: E
+Server: S6 SeqNum: 3 Status: E
+Server: S7 SeqNum: 3 Status: E
+Server: S1 SeqNum: 4 Status: E
+Server: S2 SeqNum: 4 Status: E
+Server: S3 SeqNum: 4 Status: E
+Server: S4 SeqNum: 4 Status: E
+Server: S5 SeqNum: 4 Status: E
+Server: S6 SeqNum: 4 Status: E
+Server: S7 SeqNum: 4 Status: E
+Server: S1 SeqNum: 5 Status: F
+Server: S2 SeqNum: 5 Status: F
+Server: S3 SeqNum: 5 Status: F
+Server: S4 SeqNum: 5 Status: F
+Server: S5 SeqNum: 5 Status: F
+Server: S6 SeqNum: 5 Status: F
+Server: S7 SeqNum: 5 Status: F
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+-------------------------------------------------------------
+Line: 11 : 3,"(B, J, 8)","[S1, S3, S4, S5, S6]",[]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+-------------------------------------------------------------
+Line: 12 : 3,"(B, F, 3)","[S1, S3, S4, S5, S6]",[]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+-------------------------------------------------------------
+Line: 13 : 3,"(A, E, 6)","[S1, S3, S4, S5, S6]",[]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+-------------------------------------------------------------
+Line: 14 : 3,"(I, C, 1)","[S1, S3, S4, S5, S6]",[]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 5
+Execution reply received: 5
+Execution reply received: 5
+Execution reply received: 5
+Execution reply received: 5
+-------------------------------------------------------------
+Line: 15 : 4,"(A, C, 2)","[S1, S2, S3, S4, S6, S7]",[S3]
+Server: S1 Status: 1,E;2,E;3,F;4,E;5,E;
+Server: S2 Status: 
+Server: S3 Status: 1,E;2,E;3,F;4,E;5,E;
+Server: S4 Status: 1,E;2,E;3,F;4,E;5,E;
+Server: S5 Status: 1,E;2,E;3,F;4,E;5,E;
+Server: S6 Status: 1,E;2,E;3,F;4,E;5,E;
+Server: S7 Status: 
+Server: S1 SeqNum: 1 Status: E
+Server: S2 SeqNum: 1 Status: null
+Server: S3 SeqNum: 1 Status: E
+Server: S4 SeqNum: 1 Status: E
+Server: S5 SeqNum: 1 Status: E
+Server: S6 SeqNum: 1 Status: E
+Server: S7 SeqNum: 1 Status: null
+Server: S1 SeqNum: 2 Status: E
+Server: S2 SeqNum: 2 Status: null
+Server: S3 SeqNum: 2 Status: E
+Server: S4 SeqNum: 2 Status: E
+Server: S5 SeqNum: 2 Status: E
+Server: S6 SeqNum: 2 Status: E
+Server: S7 SeqNum: 2 Status: null
+Server: S1 SeqNum: 3 Status: F
+Server: S2 SeqNum: 3 Status: null
+Server: S3 SeqNum: 3 Status: F
+Server: S4 SeqNum: 3 Status: F
+Server: S5 SeqNum: 3 Status: F
+Server: S6 SeqNum: 3 Status: F
+Server: S7 SeqNum: 3 Status: null
+Server: S1 SeqNum: 4 Status: E
+Server: S2 SeqNum: 4 Status: null
+Server: S3 SeqNum: 4 Status: E
+Server: S4 SeqNum: 4 Status: E
+Server: S5 SeqNum: 4 Status: E
+Server: S6 SeqNum: 4 Status: E
+Server: S7 SeqNum: 4 Status: null
+Server: S1 SeqNum: 5 Status: E
+Server: S2 SeqNum: 5 Status: null
+Server: S3 SeqNum: 5 Status: E
+Server: S4 SeqNum: 5 Status: E
+Server: S5 SeqNum: 5 Status: E
+Server: S6 SeqNum: 5 Status: E
+Server: S7 SeqNum: 5 Status: null
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+-------------------------------------------------------------
+Line: 16 : 4,"(A, J, 5)","[S1, S2, S3, S4, S6, S7]",[S3]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+-------------------------------------------------------------
+Line: 17 : 4,"(B, H, 2)","[S1, S2, S3, S4, S6, S7]",[S3]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+-------------------------------------------------------------
+Line: 18 : 4,"(J, F, 4)","[S1, S2, S3, S4, S6, S7]",[S3]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+-------------------------------------------------------------
+Line: 19 : 4,"(D, C, 1)","[S1, S2, S3, S4, S6, S7]",[S3]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 5
+Execution reply received: 5
+Execution reply received: 5
+Execution reply received: 5
+Execution reply received: 5
+Execution reply received: 5
+-------------------------------------------------------------
+Line: 20 : 4,"(B, A, 5)","[S1, S2, S3, S4, S6, S7]",[S3]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 6
+Execution reply received: 6
+Execution reply received: 6
+Execution reply received: 6
+Execution reply received: 6
+Execution reply received: 6
+-------------------------------------------------------------
+Line: 21 : 4,"(A, E, 4)","[S1, S2, S3, S4, S6, S7]",[S3]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 7
+Execution reply received: 7
+Execution reply received: 7
+Execution reply received: 7
+Execution reply received: 7
+Execution reply received: 7
+-------------------------------------------------------------
+Line: 22 : 5,"(A, B, 1)","[S1, S2, S3, S4, S5, S6, S7]",[S6]
+Server: S1 Status: 1,E;2,E;3,E;4,E;5,E;6,E;7,E;
+Server: S2 Status: 1,E;2,E;3,E;4,E;5,E;6,E;7,E;
+Server: S3 Status: 1,E;2,E;3,E;4,E;5,E;6,E;7,E;
+Server: S4 Status: 1,E;2,E;3,E;4,E;5,E;6,E;7,E;
+Server: S5 Status: 
+Server: S6 Status: 1,E;2,E;3,E;4,E;5,E;6,E;7,E;
+Server: S7 Status: 1,E;2,E;3,E;4,E;5,E;6,E;7,E;
+Server: S1 SeqNum: 1 Status: E
+Server: S2 SeqNum: 1 Status: E
+Server: S3 SeqNum: 1 Status: E
+Server: S4 SeqNum: 1 Status: E
+Server: S5 SeqNum: 1 Status: null
+Server: S6 SeqNum: 1 Status: E
+Server: S7 SeqNum: 1 Status: E
+Server: S1 SeqNum: 2 Status: E
+Server: S2 SeqNum: 2 Status: E
+Server: S3 SeqNum: 2 Status: E
+Server: S4 SeqNum: 2 Status: E
+Server: S5 SeqNum: 2 Status: null
+Server: S6 SeqNum: 2 Status: E
+Server: S7 SeqNum: 2 Status: E
+Server: S1 SeqNum: 3 Status: E
+Server: S2 SeqNum: 3 Status: E
+Server: S3 SeqNum: 3 Status: E
+Server: S4 SeqNum: 3 Status: E
+Server: S5 SeqNum: 3 Status: null
+Server: S6 SeqNum: 3 Status: E
+Server: S7 SeqNum: 3 Status: E
+Server: S1 SeqNum: 4 Status: E
+Server: S2 SeqNum: 4 Status: E
+Server: S3 SeqNum: 4 Status: E
+Server: S4 SeqNum: 4 Status: E
+Server: S5 SeqNum: 4 Status: null
+Server: S6 SeqNum: 4 Status: E
+Server: S7 SeqNum: 4 Status: E
+Server: S1 SeqNum: 5 Status: E
+Server: S2 SeqNum: 5 Status: E
+Server: S3 SeqNum: 5 Status: E
+Server: S4 SeqNum: 5 Status: E
+Server: S5 SeqNum: 5 Status: null
+Server: S6 SeqNum: 5 Status: E
+Server: S7 SeqNum: 5 Status: E
+Server: S1 SeqNum: 6 Status: E
+Server: S2 SeqNum: 6 Status: E
+Server: S3 SeqNum: 6 Status: E
+Server: S4 SeqNum: 6 Status: E
+Server: S5 SeqNum: 6 Status: null
+Server: S6 SeqNum: 6 Status: E
+Server: S7 SeqNum: 6 Status: E
+Server: S1 SeqNum: 7 Status: E
+Server: S2 SeqNum: 7 Status: E
+Server: S3 SeqNum: 7 Status: E
+Server: S4 SeqNum: 7 Status: E
+Server: S5 SeqNum: 7 Status: null
+Server: S6 SeqNum: 7 Status: E
+Server: S7 SeqNum: 7 Status: E
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+Execution reply received: 1
+-------------------------------------------------------------
+Line: 23 : 5,"(D, E, 1)","[S1, S2, S3, S4, S5, S6, S7]",[S6]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+Execution reply received: 2
+-------------------------------------------------------------
+Line: 24 : 5,"(I, J, 1)","[S1, S2, S3, S4, S5, S6, S7]",[S6]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+Execution reply received: 3
+-------------------------------------------------------------
+Line: 25 : 5,"(J, A, 1)","[S1, S2, S3, S4, S5, S6, S7]",[S6]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+Execution reply received: 4
+-------------------------------------------------------------
+Line: 26 : 5,"(B, C, 1)","[S1, S2, S3, S4, S5, S6, S7]",[S6]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 5
+Execution reply received: 5
+Execution reply received: 5
+Execution reply received: 5
+Execution reply received: 5
+Execution reply received: 5
+Execution reply received: 5
+-------------------------------------------------------------
+Line: 27 : 5,"(F, G, 1)","[S1, S2, S3, S4, S5, S6, S7]",[S6]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 6
+Execution reply received: 6
+Execution reply received: 6
+Execution reply received: 6
+Execution reply received: 6
+Execution reply received: 6
+Execution reply received: 6
+-------------------------------------------------------------
+Line: 28 : 5,"(H, I, 1)","[S1, S2, S3, S4, S5, S6, S7]",[S6]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 7
+Execution reply received: 7
+Execution reply received: 7
+Execution reply received: 7
+Execution reply received: 7
+Execution reply received: 7
+Execution reply received: 7
+-------------------------------------------------------------
+Line: 29 : 5,"(E, F, 1)","[S1, S2, S3, S4, S5, S6, S7]",[S6]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 8
+Execution reply received: 8
+Execution reply received: 8
+Execution reply received: 8
+Execution reply received: 8
+Execution reply received: 8
+Execution reply received: 8
+-------------------------------------------------------------
+Line: 30 : 5,"(G, H, 1)","[S1, S2, S3, S4, S5, S6, S7]",[S6]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 9
+Execution reply received: 9
+Execution reply received: 9
+Execution reply received: 9
+Execution reply received: 9
+Execution reply received: 9
+Execution reply received: 9
+-------------------------------------------------------------
+Line: 31 : 5,"(C, D, 1)","[S1, S2, S3, S4, S5, S6, S7]",[S6]
+Sending to Leader: S1 View : 0
+Transaction sent  : true  to server : S1
+Execution reply received: 10
+Execution reply received: 10
+Execution reply received: 10
+Execution reply received: 10
+Execution reply received: 10
+Execution reply received: 10
+Execution reply received: 10
+-------------------------------------------------------------
+Line: 32 : 6,"(A, I, 8)","[S1, S2, S3, S4, S5, S6, S7]","[S3, S5, S7]"

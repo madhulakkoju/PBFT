@@ -1,0 +1,705 @@
+ 
+Transaction Worker Thread Started
+===============================================================================================================================
+
+===============================================================================================================================
+
+Server activated
+PrePrepare request received: 1
+PrePrepare request received: 1 Transaction ID: 1 Digest: 
+Accepted ---- PrePrepare request accepted: 1 Transaction ID: 1 Digest: 
+PrePrepare response sent: 1 Transaction ID: 1 : true
+Prepare request received: 1
+Received Prepare request :::: + 1 Digest: 
+Accepted ---- Prepare request accepted: 1 Digest: 
+Prepare response sent: 0
+Commit request received: 1
+Commit response sent: 0
+Executions initiated
+Initiating executions : 0 : 1
+Initiating execution for seqNum: 1
+Status : COMMITTED
+Executing transaction: 1
+Transaction executed: 1
+Sending Reply to Client executed: 1 Transaction: 1
+sender: "A"
+receiver: "I"
+amount: 2
+timestamp {
+}
+transactionNum: 1
+
+Sent Reply to Client executed: 1
+Initiating execution for seqNum: 2
+Status : Not Found
+Executions Complete
+PrePrepare request received: 2
+PrePrepare request received: 2 Transaction ID: 2 Digest: 
+Accepted ---- PrePrepare request accepted: 2 Transaction ID: 2 Digest: 
+PrePrepare response sent: 2 Transaction ID: 2 : true
+Prepare request received: 2
+Received Prepare request :::: + 2 Digest: 
+Accepted ---- Prepare request accepted: 2 Digest: 
+Prepare response sent: 0
+Commit request received: 2
+Commit response sent: 0
+Executions initiated
+Initiating executions : 1 : 2
+Initiating execution for seqNum: 2
+Status : COMMITTED
+Executing transaction: 2
+Transaction executed: 2
+Sending Reply to Client executed: 2 Transaction: 2
+sender: "B"
+receiver: "E"
+amount: 6
+transactionNum: 2
+
+Sent Reply to Client executed: 2
+Initiating execution for seqNum: 3
+Status : Not Found
+Executions Complete
+PrePrepare request received: 3
+PrePrepare request received: 3 Transaction ID: 3 Digest: 
+Accepted ---- PrePrepare request accepted: 3 Transaction ID: 3 Digest: 
+PrePrepare response sent: 3 Transaction ID: 3 : true
+Prepare request received: 3
+Received Prepare request :::: + 3 Digest: 
+Accepted ---- Prepare request accepted: 3 Digest: 
+Prepare response sent: 0
+Commit request received: 3
+Commit response sent: 0
+Executions initiated
+Initiating executions : 2 : 3
+Initiating execution for seqNum: 3
+Status : COMMITTED
+Executing transaction: 3
+Transaction executed: 3
+Sending Reply to Client executed: 3 Transaction: 3
+sender: "H"
+receiver: "D"
+amount: 3
+transactionNum: 3
+
+Sent Reply to Client executed: 3
+Initiating execution for seqNum: 4
+Status : Not Found
+Executions Complete
+PrePrepare request received: 4
+PrePrepare request received: 4 Transaction ID: 4 Digest: 
+Accepted ---- PrePrepare request accepted: 4 Transaction ID: 4 Digest: 
+PrePrepare response sent: 4 Transaction ID: 4 : true
+Prepare request received: 4
+Received Prepare request :::: + 4 Digest: 
+Accepted ---- Prepare request accepted: 4 Digest: 
+Prepare response sent: 0
+Commit request received: 4
+Commit response sent: 0
+Executions initiated
+Initiating executions : 3 : 4
+Initiating execution for seqNum: 4
+Status : COMMITTED
+Executing transaction: 4
+Transaction executed: 4
+Sending Reply to Client executed: 4 Transaction: 4
+sender: "I"
+receiver: "G"
+amount: 2
+transactionNum: 4
+
+Sent Reply to Client executed: 4
+Initiating execution for seqNum: 5
+Status : Not Found
+Executions Complete
+===============================================================================================================================
+
+Server activated
+===============================================================================================================================
+
+PrePrepare request received: 1
+PrePrepare request received: 1 Transaction ID: 1 Digest: 
+Accepted ---- PrePrepare request accepted: 1 Transaction ID: 1 Digest: 
+PrePrepare response sent: 1 Transaction ID: 1 : true
+Prepare request received: 1
+Received Prepare request :::: + 1 Digest: 
+Accepted ---- Prepare request accepted: 1 Digest: 
+Prepare response sent: 0
+Commit request received: 1
+Commit response sent: 0
+Executions initiated
+Initiating executions : 0 : 1
+Initiating execution for seqNum: 1
+Status : COMMITTED
+Executing transaction: 1
+Transaction executed: 1
+Sending Reply to Client executed: 1 Transaction: 1
+sender: "F"
+receiver: "B"
+amount: 3
+timestamp {
+}
+transactionNum: 1
+
+Sent Reply to Client executed: 1
+Initiating execution for seqNum: 2
+Status : Not Found
+Executions Complete
+PrePrepare request received: 2
+PrePrepare request received: 2 Transaction ID: 2 Digest: 
+Accepted ---- PrePrepare request accepted: 2 Transaction ID: 2 Digest: 
+PrePrepare response sent: 2 Transaction ID: 2 : true
+Prepare request received: 2
+Received Prepare request :::: + 2 Digest: 
+Accepted ---- Prepare request accepted: 2 Digest: 
+Prepare response sent: 0
+Commit request received: 2
+Commit response sent: 0
+Executions initiated
+Initiating executions : 1 : 2
+Initiating execution for seqNum: 2
+Status : COMMITTED
+Executing transaction: 2
+Transaction executed: 2
+Sending Reply to Client executed: 2 Transaction: 2
+sender: "I"
+receiver: "J"
+amount: 1
+transactionNum: 2
+
+Sent Reply to Client executed: 2
+Initiating execution for seqNum: 3
+Status : Not Found
+Executions Complete
+PrePrepare request received: 3
+PrePrepare request received: 3 Transaction ID: 3 Digest: 
+Accepted ---- PrePrepare request accepted: 3 Transaction ID: 3 Digest: 
+PrePrepare response sent: 3 Transaction ID: 3 : true
+Prepare request received: 3
+Received Prepare request :::: + 3 Digest: 
+Accepted ---- Prepare request accepted: 3 Digest: 
+Prepare response sent: 0
+Commit request received: 3
+Commit response sent: 0
+Executions initiated
+Initiating executions : 2 : 3
+Initiating execution for seqNum: 3
+Status : COMMITTED
+Executing transaction: 3
+Transaction executed: 3
+Sending Reply to Client executed: 3 Transaction: 3
+sender: "F"
+receiver: "I"
+amount: 7
+transactionNum: 3
+
+Sent Reply to Client executed: 3
+Initiating execution for seqNum: 4
+Status : Not Found
+Executions Complete
+PrePrepare request received: 4
+PrePrepare request received: 4 Transaction ID: 4 Digest: 
+Accepted ---- PrePrepare request accepted: 4 Transaction ID: 4 Digest: 
+PrePrepare response sent: 4 Transaction ID: 4 : true
+Prepare request received: 4
+Received Prepare request :::: + 4 Digest: 
+Accepted ---- Prepare request accepted: 4 Digest: 
+Prepare response sent: 0
+Commit request received: 4
+Commit response sent: 0
+Executions initiated
+Initiating executions : 3 : 4
+Initiating execution for seqNum: 4
+Status : COMMITTED
+Executing transaction: 4
+Transaction executed: 4
+Sending Reply to Client executed: 4 Transaction: 4
+sender: "C"
+receiver: "D"
+amount: 6
+transactionNum: 4
+
+Sent Reply to Client executed: 4
+Initiating execution for seqNum: 5
+Status : Not Found
+Executions Complete
+PrePrepare request received: 5
+PrePrepare request received: 5 Transaction ID: 5 Digest: 
+Accepted ---- PrePrepare request accepted: 5 Transaction ID: 5 Digest: 
+PrePrepare response sent: 5 Transaction ID: 5 : true
+Prepare request received: 5
+Received Prepare request :::: + 5 Digest: 
+Accepted ---- Prepare request accepted: 5 Digest: 
+Prepare response sent: 0
+Commit request received: 5
+Commit response sent: 0
+Executions initiated
+Initiating executions : 4 : 5
+Initiating execution for seqNum: 5
+Status : COMMITTED
+Executing transaction: 5
+Transaction Execution failed: 5
+Sent Reply to Client executed: 5
+Initiating execution for seqNum: 6
+Status : Not Found
+Executions Complete
+Server deactivated
+===============================================================================================================================
+
+===============================================================================================================================
+
+===============================================================================================================================
+
+===============================================================================================================================
+
+Server activated
+PrePrepare request received: 1
+PrePrepare request received: 1 Transaction ID: 1 Digest: 
+Accepted ---- PrePrepare request accepted: 1 Transaction ID: 1 Digest: 
+PrePrepare response sent: 1 Transaction ID: 1 : true
+Prepare request received: 1
+Received Prepare request :::: + 1 Digest: 
+Accepted ---- Prepare request accepted: 1 Digest: 
+Prepare response sent: 0
+Commit request received: 1
+Commit response sent: 0
+Executions initiated
+Initiating executions : 0 : 1
+Initiating execution for seqNum: 1
+Status : COMMITTED
+Executing transaction: 1
+Transaction executed: 1
+Sending Reply to Client executed: 1 Transaction: 1
+sender: "A"
+receiver: "C"
+amount: 2
+timestamp {
+}
+transactionNum: 1
+
+Sent Reply to Client executed: 1
+Initiating execution for seqNum: 2
+Status : Not Found
+Executions Complete
+PrePrepare request received: 2
+PrePrepare request received: 2 Transaction ID: 2 Digest: 
+Accepted ---- PrePrepare request accepted: 2 Transaction ID: 2 Digest: 
+PrePrepare response sent: 2 Transaction ID: 2 : true
+Prepare request received: 2
+Received Prepare request :::: + 2 Digest: 
+Accepted ---- Prepare request accepted: 2 Digest: 
+Prepare response sent: 0
+Commit request received: 2
+Commit response sent: 0
+Executions initiated
+Initiating executions : 1 : 2
+Initiating execution for seqNum: 2
+Status : COMMITTED
+Executing transaction: 2
+Transaction executed: 2
+Sending Reply to Client executed: 2 Transaction: 2
+sender: "A"
+receiver: "J"
+amount: 5
+transactionNum: 2
+
+Sent Reply to Client executed: 2
+Initiating execution for seqNum: 3
+Status : Not Found
+Executions Complete
+PrePrepare request received: 3
+PrePrepare request received: 3 Transaction ID: 3 Digest: 
+Accepted ---- PrePrepare request accepted: 3 Transaction ID: 3 Digest: 
+PrePrepare response sent: 3 Transaction ID: 3 : true
+Prepare request received: 3
+Received Prepare request :::: + 3 Digest: 
+Accepted ---- Prepare request accepted: 3 Digest: 
+Prepare response sent: 0
+Commit request received: 3
+Commit response sent: 0
+Executions initiated
+Initiating executions : 2 : 3
+Initiating execution for seqNum: 3
+Status : COMMITTED
+Executing transaction: 3
+Transaction executed: 3
+Sending Reply to Client executed: 3 Transaction: 3
+sender: "B"
+receiver: "H"
+amount: 2
+transactionNum: 3
+
+Sent Reply to Client executed: 3
+Initiating execution for seqNum: 4
+Status : Not Found
+Executions Complete
+PrePrepare request received: 4
+PrePrepare request received: 4 Transaction ID: 4 Digest: 
+Accepted ---- PrePrepare request accepted: 4 Transaction ID: 4 Digest: 
+PrePrepare response sent: 4 Transaction ID: 4 : true
+Prepare request received: 4
+Received Prepare request :::: + 4 Digest: 
+Accepted ---- Prepare request accepted: 4 Digest: 
+Prepare response sent: 0
+Commit request received: 4
+Commit response sent: 0
+Executions initiated
+Initiating executions : 3 : 4
+Initiating execution for seqNum: 4
+Status : COMMITTED
+Executing transaction: 4
+Transaction executed: 4
+Sending Reply to Client executed: 4 Transaction: 4
+sender: "J"
+receiver: "F"
+amount: 4
+transactionNum: 4
+
+Sent Reply to Client executed: 4
+Initiating execution for seqNum: 5
+Status : Not Found
+Executions Complete
+PrePrepare request received: 5
+PrePrepare request received: 5 Transaction ID: 5 Digest: 
+Accepted ---- PrePrepare request accepted: 5 Transaction ID: 5 Digest: 
+PrePrepare response sent: 5 Transaction ID: 5 : true
+Prepare request received: 5
+Received Prepare request :::: + 5 Digest: 
+Accepted ---- Prepare request accepted: 5 Digest: 
+Prepare response sent: 0
+Commit request received: 5
+Commit response sent: 0
+Executions initiated
+Initiating executions : 4 : 5
+Initiating execution for seqNum: 5
+Status : COMMITTED
+Executing transaction: 5
+Transaction executed: 5
+Sending Reply to Client executed: 5 Transaction: 5
+sender: "D"
+receiver: "C"
+amount: 1
+transactionNum: 5
+
+Sent Reply to Client executed: 5
+Initiating execution for seqNum: 6
+Status : Not Found
+Executions Complete
+PrePrepare request received: 6
+PrePrepare request received: 6 Transaction ID: 6 Digest: 
+Accepted ---- PrePrepare request accepted: 6 Transaction ID: 6 Digest: 
+PrePrepare response sent: 6 Transaction ID: 6 : true
+Prepare request received: 6
+Received Prepare request :::: + 6 Digest: 
+Accepted ---- Prepare request accepted: 6 Digest: 
+Prepare response sent: 0
+Commit request received: 6
+Commit response sent: 0
+Executions initiated
+Initiating executions : 5 : 6
+Initiating execution for seqNum: 6
+Status : COMMITTED
+Executing transaction: 6
+Transaction executed: 6
+Sending Reply to Client executed: 6 Transaction: 6
+sender: "B"
+receiver: "A"
+amount: 5
+transactionNum: 6
+
+Sent Reply to Client executed: 6
+Initiating execution for seqNum: 7
+Status : Not Found
+Executions Complete
+PrePrepare request received: 7
+PrePrepare request received: 7 Transaction ID: 7 Digest: 
+Accepted ---- PrePrepare request accepted: 7 Transaction ID: 7 Digest: 
+PrePrepare response sent: 7 Transaction ID: 7 : true
+Prepare request received: 7
+Received Prepare request :::: + 7 Digest: 
+Accepted ---- Prepare request accepted: 7 Digest: 
+Prepare response sent: 0
+Commit request received: 7
+Commit response sent: 0
+Executions initiated
+Initiating executions : 6 : 7
+Initiating execution for seqNum: 7
+Status : COMMITTED
+Executing transaction: 7
+Transaction executed: 7
+Sending Reply to Client executed: 7 Transaction: 7
+sender: "A"
+receiver: "E"
+amount: 4
+transactionNum: 7
+
+Sent Reply to Client executed: 7
+Initiating execution for seqNum: 8
+Status : Not Found
+Executions Complete
+===============================================================================================================================
+
+Server activated
+===============================================================================================================================
+
+PrePrepare request received: 1
+PrePrepare request received: 1 Transaction ID: 1 Digest: 
+Accepted ---- PrePrepare request accepted: 1 Transaction ID: 1 Digest: 
+PrePrepare response sent: 1 Transaction ID: 1 : true
+Prepare request received: 1
+Received Prepare request :::: + 1 Digest: 
+Accepted ---- Prepare request accepted: 1 Digest: 
+Prepare response sent: 0
+Commit request received: 1
+Commit response sent: 0
+Executions initiated
+Initiating executions : 0 : 1
+Initiating execution for seqNum: 1
+Status : COMMITTED
+Executing transaction: 1
+Transaction executed: 1
+Sending Reply to Client executed: 1 Transaction: 1
+sender: "A"
+receiver: "B"
+amount: 1
+timestamp {
+}
+transactionNum: 1
+
+Sent Reply to Client executed: 1
+Initiating execution for seqNum: 2
+Status : Not Found
+Executions Complete
+PrePrepare request received: 2
+PrePrepare request received: 2 Transaction ID: 2 Digest: 
+Accepted ---- PrePrepare request accepted: 2 Transaction ID: 2 Digest: 
+PrePrepare response sent: 2 Transaction ID: 2 : true
+Prepare request received: 2
+Received Prepare request :::: + 2 Digest: 
+Accepted ---- Prepare request accepted: 2 Digest: 
+Prepare response sent: 0
+Commit request received: 2
+Commit response sent: 0
+Executions initiated
+Initiating executions : 1 : 2
+Initiating execution for seqNum: 2
+Status : COMMITTED
+Executing transaction: 2
+Transaction executed: 2
+Sending Reply to Client executed: 2 Transaction: 2
+sender: "D"
+receiver: "E"
+amount: 1
+transactionNum: 2
+
+Sent Reply to Client executed: 2
+Initiating execution for seqNum: 3
+Status : Not Found
+Executions Complete
+PrePrepare request received: 3
+PrePrepare request received: 3 Transaction ID: 3 Digest: 
+Accepted ---- PrePrepare request accepted: 3 Transaction ID: 3 Digest: 
+PrePrepare response sent: 3 Transaction ID: 3 : true
+Prepare request received: 3
+Received Prepare request :::: + 3 Digest: 
+Accepted ---- Prepare request accepted: 3 Digest: 
+Prepare response sent: 0
+Commit request received: 3
+Commit response sent: 0
+Executions initiated
+Initiating executions : 2 : 3
+Initiating execution for seqNum: 3
+Status : COMMITTED
+Executing transaction: 3
+Transaction executed: 3
+Sending Reply to Client executed: 3 Transaction: 3
+sender: "I"
+receiver: "J"
+amount: 1
+transactionNum: 3
+
+Sent Reply to Client executed: 3
+Initiating execution for seqNum: 4
+Status : Not Found
+Executions Complete
+PrePrepare request received: 4
+PrePrepare request received: 4 Transaction ID: 4 Digest: 
+Accepted ---- PrePrepare request accepted: 4 Transaction ID: 4 Digest: 
+PrePrepare response sent: 4 Transaction ID: 4 : true
+Prepare request received: 4
+Received Prepare request :::: + 4 Digest: 
+Accepted ---- Prepare request accepted: 4 Digest: 
+Prepare response sent: 0
+Commit request received: 4
+Commit response sent: 0
+Executions initiated
+Initiating executions : 3 : 4
+Initiating execution for seqNum: 4
+Status : COMMITTED
+Executing transaction: 4
+Transaction executed: 4
+Sending Reply to Client executed: 4 Transaction: 4
+sender: "J"
+receiver: "A"
+amount: 1
+transactionNum: 4
+
+Sent Reply to Client executed: 4
+Initiating execution for seqNum: 5
+Status : Not Found
+Executions Complete
+PrePrepare request received: 5
+PrePrepare request received: 5 Transaction ID: 5 Digest: 
+Accepted ---- PrePrepare request accepted: 5 Transaction ID: 5 Digest: 
+PrePrepare response sent: 5 Transaction ID: 5 : true
+Prepare request received: 5
+Received Prepare request :::: + 5 Digest: 
+Accepted ---- Prepare request accepted: 5 Digest: 
+Prepare response sent: 0
+Commit request received: 5
+Commit response sent: 0
+Executions initiated
+Initiating executions : 4 : 5
+Initiating execution for seqNum: 5
+Status : COMMITTED
+Executing transaction: 5
+Transaction executed: 5
+Sending Reply to Client executed: 5 Transaction: 5
+sender: "B"
+receiver: "C"
+amount: 1
+transactionNum: 5
+
+Sent Reply to Client executed: 5
+Initiating execution for seqNum: 6
+Status : Not Found
+Executions Complete
+PrePrepare request received: 6
+PrePrepare request received: 6 Transaction ID: 6 Digest: 
+Accepted ---- PrePrepare request accepted: 6 Transaction ID: 6 Digest: 
+PrePrepare response sent: 6 Transaction ID: 6 : true
+Prepare request received: 6
+Received Prepare request :::: + 6 Digest: 
+Accepted ---- Prepare request accepted: 6 Digest: 
+Prepare response sent: 0
+Commit request received: 6
+Commit response sent: 0
+Executions initiated
+Initiating executions : 5 : 6
+Initiating execution for seqNum: 6
+Status : COMMITTED
+Executing transaction: 6
+Transaction executed: 6
+Sending Reply to Client executed: 6 Transaction: 6
+sender: "F"
+receiver: "G"
+amount: 1
+transactionNum: 6
+
+Sent Reply to Client executed: 6
+Initiating execution for seqNum: 7
+Status : Not Found
+Executions Complete
+PrePrepare request received: 7
+PrePrepare request received: 7 Transaction ID: 7 Digest: 
+Accepted ---- PrePrepare request accepted: 7 Transaction ID: 7 Digest: 
+PrePrepare response sent: 7 Transaction ID: 7 : true
+Prepare request received: 7
+Received Prepare request :::: + 7 Digest: 
+Accepted ---- Prepare request accepted: 7 Digest: 
+Prepare response sent: 0
+Commit request received: 7
+Commit response sent: 0
+Executions initiated
+Initiating executions : 6 : 7
+Initiating execution for seqNum: 7
+Status : COMMITTED
+Executing transaction: 7
+Transaction executed: 7
+Sending Reply to Client executed: 7 Transaction: 7
+sender: "H"
+receiver: "I"
+amount: 1
+transactionNum: 7
+
+Sent Reply to Client executed: 7
+Initiating execution for seqNum: 8
+Status : Not Found
+Executions Complete
+PrePrepare request received: 8
+PrePrepare request received: 8 Transaction ID: 8 Digest: 
+Accepted ---- PrePrepare request accepted: 8 Transaction ID: 8 Digest: 
+PrePrepare response sent: 8 Transaction ID: 8 : true
+Prepare request received: 8
+Received Prepare request :::: + 8 Digest: 
+Accepted ---- Prepare request accepted: 8 Digest: 
+Prepare response sent: 0
+Commit request received: 8
+Commit response sent: 0
+Executions initiated
+Initiating executions : 7 : 8
+Initiating execution for seqNum: 8
+Status : COMMITTED
+Executing transaction: 8
+Transaction executed: 8
+Sending Reply to Client executed: 8 Transaction: 8
+sender: "E"
+receiver: "F"
+amount: 1
+transactionNum: 8
+
+Sent Reply to Client executed: 8
+Initiating execution for seqNum: 9
+Status : Not Found
+Executions Complete
+PrePrepare request received: 9
+PrePrepare request received: 9 Transaction ID: 9 Digest: 
+Accepted ---- PrePrepare request accepted: 9 Transaction ID: 9 Digest: 
+PrePrepare response sent: 9 Transaction ID: 9 : true
+Prepare request received: 9
+Received Prepare request :::: + 9 Digest: 
+Accepted ---- Prepare request accepted: 9 Digest: 
+Prepare response sent: 0
+Commit request received: 9
+Commit response sent: 0
+Executions initiated
+Initiating executions : 8 : 9
+Initiating execution for seqNum: 9
+Status : COMMITTED
+Executing transaction: 9
+Transaction executed: 9
+Sending Reply to Client executed: 9 Transaction: 9
+sender: "G"
+receiver: "H"
+amount: 1
+transactionNum: 9
+
+Sent Reply to Client executed: 9
+Initiating execution for seqNum: 10
+Status : Not Found
+Executions Complete
+PrePrepare request received: 10
+PrePrepare request received: 10 Transaction ID: 10 Digest: 
+Accepted ---- PrePrepare request accepted: 10 Transaction ID: 10 Digest: 
+PrePrepare response sent: 10 Transaction ID: 10 : true
+Prepare request received: 10
+Received Prepare request :::: + 10 Digest: 
+Accepted ---- Prepare request accepted: 10 Digest: 
+Prepare response sent: 0
+Commit request received: 10
+Commit response sent: 0
+Executions initiated
+Initiating executions : 9 : 10
+Initiating execution for seqNum: 10
+Status : COMMITTED
+Executing transaction: 10
+Transaction executed: 10
+Sending Reply to Client executed: 10 Transaction: 10
+sender: "C"
+receiver: "D"
+amount: 1
+transactionNum: 10
+
+Sent Reply to Client executed: 10
+Initiating execution for seqNum: 11
+Status : Not Found
+Executions Complete
