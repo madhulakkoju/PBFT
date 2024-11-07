@@ -38,19 +38,36 @@ public class DatabaseService {
     // SeqNum : ViewNum
     public HashMap<Integer, Integer> seqNumViewMap = new HashMap<>();
 
+    // SeqNum : PrePrepareRequest
+    public HashMap<Integer, PrePrepareRequest> prePrepareRequestMap = new HashMap<>();
     // SeqNum : PrePrepareResponse
     public HashMap<Integer, List<PrePrepareResponse>> prePrepareResponseMap = new HashMap<>();
 
+    // SeqNum : PrepareRequest
+    public HashMap<Integer, PrepareRequest> prepareRequestMap = new HashMap<>();
     // SeqNum : PrepareResponse
     public HashMap<Integer, List<PrepareResponse>> prepareResponseMap = new HashMap<>();
 
+    //SeqNum : CommitRequest
+    public HashMap<Integer, CommitRequest> commitRequestMap = new HashMap<>();
+    //SeqNum : CommitResponse
+    public HashMap<Integer, List<CommitResponse>> commitResponseMap = new HashMap<>();
+
+    // SeqNum : ExecutionReplyRequest
+    public HashMap<Integer, ExecutionReplyRequest> executionReplyMap = new HashMap<>();
+
+
+    // Client: Balance
     public ConcurrentHashMap<String, Integer> accountsMap = new ConcurrentHashMap<>();
 
     //View Number: View Change Messages
-
     public ConcurrentHashMap<Integer, HashSet<ViewChangeRequest>> viewChangeMessageMap = new ConcurrentHashMap<>();
 
+    //Already triggered Views - to restrict multiple triggers for same view
     public HashSet<Integer> viewTriggers = new HashSet<>();
+    public ConcurrentHashMap<Integer, Boolean> viewsTriggered = new ConcurrentHashMap<>();
+
+
 
 
     public AtomicInteger currentSeqNum = new AtomicInteger(0);

@@ -3,7 +3,7 @@ package org.cse535.configs;
 
 
 import org.cse535.database.DatabaseService;
-import org.cse535.proto.Transaction;
+import org.cse535.proto.*;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -12,75 +12,88 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class Utils {
 
-
     public static String toString(Transaction transaction) {
-        return "Transaction ( "+ transaction.getTransactionNum() + " : " + transaction.getSender() + " -> " + transaction.getReceiver() + " = " + transaction.getAmount() + " )";
+        if(transaction == null) return "";
+        return "Transaction ( " + transaction.getSender() + " -> " + transaction.getReceiver() + " = " + transaction.getAmount() + " ) ; ";
     }
+
+    public static String toString(NewViewRequest newViewRequest) {
+        if(newViewRequest == null) return "";
+        StringBuilder sb = new StringBuilder( "NewViewRequest ( New View: " + newViewRequest.getView() + " Sent by Leader: " + newViewRequest.getProcessId() + " ) ; \n"
+                + "Related View Change Requests: ");
+
+        newViewRequest.getViewChangeMessagesList().forEach( viewChangeRequest -> sb.append(toString(viewChangeRequest)).append("  "));
+                return sb.toString();
+    }
+
+    public static String toString(ViewChangeRequest viewChangeRequest) {
+        if(viewChangeRequest == null) return "";
+        return "ViewChangeRequest ( New View: " + viewChangeRequest.getView() + " & sent by: " + viewChangeRequest.getProcessId() + " ) ; ";
+
+    }
+
+    public static String toString(ExecutionReplyRequest reply){
+        if(reply == null) return "";
+        return "Execution Reply at Client ( SeqNum:" + reply.getSequenceNumber()+ " IsSuccess? : "+ reply.getSuccess() +
+                " Sent by : " + reply.getProcessId() + " in View "+ reply.getView() + " ) ; ";
+    }
+
+    public static String toString( CommitRequest commitRequest){
+        if(commitRequest == null) return "";
+        return "CommitRequest ( SeqNum: " + commitRequest.getSequenceNumber() + " Sent By: " + commitRequest.getProcessId() + " in View "+ commitRequest.getView() +" ) ; ";
+
+    }
+
+    public static String toString(PrepareRequest prepareRequest){
+        if(prepareRequest == null) return "";
+        return "PrepareRequest ( SeqNum: " + prepareRequest.getSequenceNumber() + " Sent by " +
+                prepareRequest.getProcessId()+ " in "+ prepareRequest.getView() + " ) ; ";
+
+    }
+
+    public static String toString(PrePrepareRequest prePrepareRequest){
+        if(prePrepareRequest == null) return "";
+        return "PrePrepareRequest ( SeqNum: " + prePrepareRequest.getSequenceNumber() + " : "+ toString(prePrepareRequest.getTransaction())+ " Sent By " + prePrepareRequest.getProcessId() + " ) ; ";
+
+    }
+
+    public static String toString(PrePrepareResponse prePrepareResponse){
+        if(prePrepareResponse == null) return "";
+        return "PrePrepareResponse ( SeqNum: " + prePrepareResponse.getSequenceNumber() + " Success? "+ prePrepareResponse.getSuccess() + " Sent by " + prePrepareResponse.getProcessId() + " ) ; ";
+
+    }
+
+    public static String toString(PrepareResponse prepareResponse){
+        if(prepareResponse == null) return "";
+        return "PrepareResponse ( SeqNum: " + prepareResponse.getSequenceNumber() + " Success? "+ prepareResponse.getSuccess() + " Sent by " + prepareResponse.getProcessId() + " ) ; ";
+
+    }
+
+    public static String toString(CommitResponse commitResponse){
+        if(commitResponse == null) return "";
+        return "CommitResponse ( SeqNum: " + commitResponse.getSequenceNumber() + " Success? "+ commitResponse.getSuccess() + " Sent by " + commitResponse.getProcessId() + " ) ; ";
+
+    }
+
+    public static String toString(ViewChangeResponse viewChangeResponse){
+        if(viewChangeResponse == null) return "";
+        return "ViewChangeResponse ( SeqNum: " + viewChangeResponse.getView() + " Success? "+ viewChangeResponse.getSuccess() + " Sent by " + viewChangeResponse.getProcessId() + " ) ; ";
+
+    }
+
+    public static String toString(NewViewResponse newViewResponse){
+        if(newViewResponse == null) return "";
+        return "NewViewResponse ( View: " + newViewResponse.getView() + " Success? "+ newViewResponse.getSuccess() + " Sent by " + newViewResponse.getProcessId() + " ) ; ";
+
+    }
+
+
+
 
     public static String Digest(Transaction transaction) {
-        return "Transaction ( "+ transaction.getTransactionNum() + " : " + transaction.getSender() + " -> " + transaction.getReceiver() + " = " + transaction.getAmount() + " )";
+        if(transaction == null) return "";
+        return "Transaction ( "+transaction.getSender() + " -> " + transaction.getReceiver() + " = " + transaction.getAmount() + " ) ; ";
     }
-
-//
-//    public static HashMap<Integer, TimeTakenToExecute> toTimeTakenMap(Map<Integer, TimeTakenMask> timeTakenToExecuteMapMap) {
-//        HashMap<Integer, TimeTakenToExecute> timeTakenToExecuteMap = new HashMap<>();
-//        timeTakenToExecuteMapMap.forEach( (term, time) -> {
-//            TimeTakenToExecute timeTakenToExecute = new TimeTakenToExecute();
-//            timeTakenToExecute.startTime = time.getStartTime();
-//            timeTakenToExecute.endTime = time.getEndTime();
-//            timeTakenToExecuteMap.put(term, timeTakenToExecute);
-//        });
-//        return timeTakenToExecuteMap;
-//    }
-//
-//    public String toString(Transaction[] transactions) {
-//        StringBuilder sb = new StringBuilder();
-//        for (Transaction transaction : transactions) {
-//            sb.append(toString(transaction)).append("\n");
-//        }
-//        return sb.toString();
-//    }
-//
-//    public static String toString(BlockOfTransactions block){
-//        StringBuilder sb = new StringBuilder();
-//        sb.append("Block: " + block.getBlockNum() + " Term:" + block.getTermNumber()
-//                + " Tnx count: "+ block.getTransactionsCount()+ " Leader: " + block.getLeader()+
-//                " Block Commit Time: " + block.getBlockCommitTime() + "\n");
-//        for (Transaction transaction : block.getTransactionsList()) {
-//            sb.append(toString(transaction)).append("\n");
-//        }
-//        return sb.toString();
-//    }
-//
-//
-//
-//
-//
-//
-//
-//
-//    public static String toString(BlockOfTransactions[] blocks){
-//        StringBuilder sb = new StringBuilder();
-//        for (BlockOfTransactions block : blocks) {
-//            sb.append(toString(block)).append("\n");
-//        }
-//        return sb.toString();
-//    }
-//
-//    public static String toString(HashMap<Integer, BlockOfTransactions> blocks){
-//        StringBuilder sb = new StringBuilder();
-//        blocks.forEach( (term,block) -> sb.append("Term : ").append(term).append("\n").append(toString(block)) );
-//        return sb.toString();
-//    }
-//
-//    public static HashMap<Integer, TimeTakenMask> toTimeTakenMask(HashMap<Integer, TimeTakenToExecute> timeTaken){
-//        HashMap<Integer, TimeTakenMask> timeTakenMask = new HashMap<>();
-//        timeTaken.forEach( (term, time) -> timeTakenMask.put( term,
-//                TimeTakenMask.newBuilder().setStartTime(time.startTime).setEndTime(time.endTime).build()));
-//        return timeTakenMask;
-//    }
-//
-//
 
     public static String toString(HashMap<Integer, HashSet<String>> map){
         StringBuilder sb = new StringBuilder();

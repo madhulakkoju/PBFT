@@ -6,7 +6,10 @@ import org.cse535.node.ViewServer;
 import org.cse535.proto.*;
 
 import javax.swing.text.View;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 
 public class LinearPBFTService extends LinearPBFTGrpc.LinearPBFTImplBase {
 
@@ -91,6 +94,8 @@ public class LinearPBFTService extends LinearPBFTGrpc.LinearPBFTImplBase {
         responseObserver.onNext(resp);
         responseObserver.onCompleted();
         Main.node.logger.log("PrePrepare response sent: " + resp.getSequenceNumber() + " Transaction ID: "+ request.getTransaction().getTransactionNum() + " : " + resp.getSuccess() );
+        Main.node.database.prePrepareRequestMap.put(request.getSequenceNumber(), request);
+        Main.node.database.prePrepareResponseMap.put(request.getSequenceNumber(), new ArrayList<>(Collections.singleton(resp)) );
     }
 
 
@@ -120,6 +125,8 @@ public class LinearPBFTService extends LinearPBFTGrpc.LinearPBFTImplBase {
         responseObserver.onCompleted();
 
         Main.node.logger.log("Prepare response sent: " + resp.getSequenceNumber());
+        Main.node.database.prepareRequestMap.put(request.getSequenceNumber(), request);
+        Main.node.database.prepareResponseMap.put(request.getSequenceNumber(), new ArrayList<>(Collections.singleton(resp)));
     }
 
 
@@ -143,6 +150,9 @@ public class LinearPBFTService extends LinearPBFTGrpc.LinearPBFTImplBase {
         Main.node.logger.log("Executions initiated");
         Main.node.database.initiateExecutions();
         Main.node.logger.log("Executions Complete");
+
+        Main.node.database.commitRequestMap.put(request.getSequenceNumber(), request);
+        Main.node.database.commitResponseMap.put(request.getSequenceNumber(), new ArrayList<>(Collections.singleton(resp)));
     }
 
     @Override
@@ -185,7 +195,8 @@ public class LinearPBFTService extends LinearPBFTGrpc.LinearPBFTImplBase {
         Main.node.logger.log("View Change response sent for " + resp.getView() + " : " + resp.getSuccess());
 
         try {
-            Thread.sleep(50);
+
+            Thread.sleep(100);
 
         if(  Main.node.database.currentViewNum.get() < request.getView() &&
                 ! Main.node.database.viewTriggers.contains(request.getView()) ){

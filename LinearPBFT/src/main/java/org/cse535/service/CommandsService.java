@@ -31,12 +31,12 @@ public class CommandsService extends CommandsGrpc.CommandsImplBase {
     @Override
     public void printLog(CommandInput request, StreamObserver<CommandOutput> responseObserver) {
 
-        String op = " Log \n"; //Main.node.printLog();
+        String op = " Log printed\n"; //Main.node.printLog();
 
         responseObserver.onNext(CommandOutput.newBuilder().setOutput(op).build());
         responseObserver.onCompleted();
 
-        Main.node.commandLogger.log(op);
+        Main.node.printLogOfRequests();
 
     }
 
@@ -78,8 +78,12 @@ public class CommandsService extends CommandsGrpc.CommandsImplBase {
         Main.node.commandLogger.log("===============================================================================================================================\n");
 
         Main.node.logger.log("===============================================================================================================================\n");
-        Main.node.commandLogger.log("                       " +  request.getInput() + "     \n");
+        Main.node.logger.log("                       " +  request.getInput() + "     \n");
         Main.node.logger.log("===============================================================================================================================\n");
+
+        Main.node.allLogsLogger.log("===============================================================================================================================\n");
+        Main.node.allLogsLogger.log("                       " +  request.getInput() + "     \n");
+        Main.node.allLogsLogger.log("===============================================================================================================================\n");
 
 
     }

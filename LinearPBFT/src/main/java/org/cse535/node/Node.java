@@ -213,6 +213,8 @@ public class Node extends NodeServer{
                 return true;
             }
 
+            this.database.prePrepareRequestMap.put(preprepareRequest.getSequenceNumber(), preprepareRequest);
+
         } catch (InterruptedException e) {
             e.printStackTrace();
             return false;
@@ -312,6 +314,8 @@ public class Node extends NodeServer{
                 return true;
             }
 
+            this.database.prepareRequestMap.put(prepareRequest.getSequenceNumber(), prepareRequest);
+
         } catch (InterruptedException e) {
             e.printStackTrace();
             return false;
@@ -366,6 +370,8 @@ public class Node extends NodeServer{
                 commitWorkerThreads[i].join();
             }
 
+            this.database.commitRequestMap.put(commitRequest.getSequenceNumber(), commitRequest);
+
             return true;
 
         } catch (InterruptedException e) {
@@ -383,11 +389,11 @@ public class Node extends NodeServer{
                 this.database.transactionStatusMap.get(request.getSequenceNumber()) == DatabaseService.TransactionStatus.PREPARED){
 
             this.database.transactionStatusMap.put(request.getSequenceNumber(), DatabaseService.TransactionStatus.COMMITTED);
-            return CommitResponse.newBuilder().setSuccess(true).build();
+            return CommitResponse.newBuilder().setProcessId(this.serverName).setSequenceNumber(request.getSequenceNumber()).setSuccess(true).build();
 
         }
 
-        return CommitResponse.newBuilder().setSuccess(false).build();
+        return CommitResponse.newBuilder().setProcessId(this.serverName).setSequenceNumber(request.getSequenceNumber()).setSuccess(false).build();
     }
 
 
@@ -506,7 +512,9 @@ public class Node extends NodeServer{
 
        // this.logger.log( " View Number:  "+ viewNumber + " View Change Messages: " + this.database.viewChangeMessageMap.get(viewNumber).size());
 
-        return this.database.viewChangeMessageMap.get(viewNumber).size() >= GlobalConfigs.viewChangeQuoromSize;
+        return (this.database.viewChangeMessageMap.get(viewNumber).size() >= GlobalConfigs.viewChangeQuoromSize &&
+        !this.database.viewsTriggered.containsKey(viewNumber)
+        );
     }
 
     public boolean checkNewViewEncountered(int view){
@@ -528,6 +536,11 @@ public class Node extends NodeServer{
         this.logger.log("Starting New View Triggers for view: " + nextView + " Checking condition reached: " + checkNewViewConditionReached(nextView));
         if(checkNewViewConditionReached(nextView)){
 
+            if(this.database.viewsTriggered.containsKey(nextView)){
+                this.logger.log("New View Triggered: " + nextView + " already triggered");
+                return;
+            }
+
             this.logger.log("New View Triggered: " + nextView);
 
             this.database.currentViewNum.set(nextView);
@@ -539,6 +552,8 @@ public class Node extends NodeServer{
                 initiateNextView(nextView);
             }
             this.pauseTransactionsUntilViewChange.set(false);
+
+            this.database.viewsTriggered.put(nextView, true);
         }
 
     }

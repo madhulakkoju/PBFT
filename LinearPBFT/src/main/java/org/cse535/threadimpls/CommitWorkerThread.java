@@ -30,8 +30,10 @@ public class CommitWorkerThread extends Thread {
                 this.node.serversToChannel.get(this.targetServerName)
         );
 
-        blockingStub.commit(this.commitRequest);
+        CommitResponse resp = blockingStub.commit(this.commitRequest);
 
+        this.node.database.commitResponseMap.putIfAbsent(this.commitRequest.getSequenceNumber(), new java.util.ArrayList<>());
+        this.node.database.commitResponseMap.get(this.commitRequest.getSequenceNumber()).add(resp);
     }
 
 }

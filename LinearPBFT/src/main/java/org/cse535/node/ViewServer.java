@@ -297,18 +297,10 @@ public class ViewServer extends NodeServer{
 
     public void triggerPrintLog(){
 
-        StringBuilder sb = new StringBuilder();
-        sb.append("\n\nCommand: PrintDB \n");
-
-        sb.append(this.datastoreHeader()).append("\n");
         for( String server : allServers) {
             CommandInput commandInput = CommandInput.newBuilder().build();
-            CommandOutput op = this.serversToCommandsStub.get(server).printDB(commandInput);
-            sb.append(op.getOutput()).append("\n");
+            CommandOutput op = this.serversToCommandsStub.get(server).printLog(commandInput);
         }
-        sb.append("\n\n");
-
-        this.commandLogger.log(sb.toString());
 
     }
 
@@ -559,10 +551,11 @@ public class ViewServer extends NodeServer{
                     viewServer.sendCommandToServers(Command.valueOf("PrintDB"), activeServersStatusMap);
                     viewServer.sendCommandToServers(Command.valueOf("PrintStatus"), activeServersStatusMap);
                     viewServer.sendCommandToServers(Command.valueOf("PrintView"), activeServersStatusMap);
+                    viewServer.sendCommandToServers(Command.valueOf("PrintLog"), activeServersStatusMap);
 
 
 
-                    Thread.sleep(100);
+                    Thread.sleep(200);
 
                     for( String server : allServers) {
                         viewServerInstance.serversToCommandsStub.get(server).flushDB(CommandInput.newBuilder().setInput("Test Set : "+ viewServerInstance.TestSetNumber ).build());

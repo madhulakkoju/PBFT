@@ -1,0 +1,634 @@
+ 
+
+---------------------------- Log of All Requests: -----------------------------
+
+---------------------------- End of Log of All Requests -----------------------------
+
+===============================================================================================================================
+
+                       Test Set : 1     
+
+===============================================================================================================================
+
+
+---------------------------- Log of All Requests: -----------------------------
+
+---------------------------- End of Log of All Requests -----------------------------
+
+===============================================================================================================================
+
+                       Test Set : 2     
+
+===============================================================================================================================
+
+
+---------------------------- Log of All Requests: -----------------------------
+========>>> Seq Num: 1 : Transaction ( F -> B = 3 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 1 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S5 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 1 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 1 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S3 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 1 Success? false Sent by S4 ) ; Execution Reply: 
+========>>> Seq Num: 2 : Transaction ( I -> J = 1 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 2 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S2 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 2 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 2 Success? false Sent by S6 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S3 ) ; CommitResponse ( SeqNum: 2 Success? false Sent by S4 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S5 ) ; Execution Reply: 
+========>>> Seq Num: 3 : Transaction ( F -> I = 7 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 3 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S6 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 3 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 3 Success? false Sent by S4 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 3 Success? false Sent by S6 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S3 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S2 ) ; Execution Reply: 
+========>>> Seq Num: 4 : Transaction ( C -> D = 6 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 4 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S5 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 4 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 4 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 4 Success? true Sent by S3 ) ; CommitResponse ( SeqNum: 4 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 4 Success? false Sent by S6 ) ; CommitResponse ( SeqNum: 4 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 4 Success? false Sent by S4 ) ; Execution Reply: 
+========>>> Seq Num: 5 : Transaction ( F -> A = 2 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 5 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S4 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 5 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 5 Success? true Sent by S3 ) ; CommitResponse ( SeqNum: 5 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 5 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 5 Success? false Sent by S6 ) ; CommitResponse ( SeqNum: 5 Success? false Sent by S4 ) ; CommitResponse ( SeqNum: 5 Success? true Sent by S7 ) ; Execution Reply: 
+
+---------------------------- End of Log of All Requests -----------------------------
+
+===============================================================================================================================
+
+                       Test Set : 3     
+
+===============================================================================================================================
+
+
+---------------------------- Log of All Requests: -----------------------------
+========>>> Seq Num: 1 : Transaction ( G -> A = 3 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 1 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S5 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S6 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 1 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 1 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S3 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S4 ) ; Execution Reply: 
+========>>> Seq Num: 2 : Transaction ( B -> J = 8 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 2 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S4 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? true Sent by S6 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 2 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 2 Success? true Sent by S3 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S4 ) ; Execution Reply: 
+========>>> Seq Num: 3 : Transaction ( B -> F = 3 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 3 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S6 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S6 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 3 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 3 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S3 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S5 ) ; Execution Reply: 
+========>>> Seq Num: 4 : Transaction ( A -> E = 6 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 4 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S4 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S6 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 4 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 4 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 4 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 4 Success? true Sent by S3 ) ; CommitResponse ( SeqNum: 4 Success? true Sent by S5 ) ; Execution Reply: 
+========>>> Seq Num: 5 : Transaction ( I -> C = 1 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 5 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S6 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S6 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 5 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 5 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 5 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 5 Success? true Sent by S3 ) ; CommitResponse ( SeqNum: 5 Success? true Sent by S4 ) ; Execution Reply: 
+
+---------------------------- End of Log of All Requests -----------------------------
+
+===============================================================================================================================
+
+                       Test Set : 4     
+
+===============================================================================================================================
+
+
+---------------------------- Log of All Requests: -----------------------------
+========>>> Seq Num: 1 : Transaction ( A -> C = 2 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 1 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S2 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S6 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 1 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 1 Success? false Sent by S3 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S7 ) ; Execution Reply: 
+========>>> Seq Num: 2 : Transaction ( A -> J = 5 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 2 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S4 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S6 ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 2 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 2 Success? false Sent by S3 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S2 ) ; Execution Reply: 
+========>>> Seq Num: 3 : Transaction ( B -> H = 2 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 3 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S7 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S6 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 3 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 3 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 3 Success? false Sent by S3 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S2 ) ; Execution Reply: 
+========>>> Seq Num: 4 : Transaction ( J -> F = 4 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 4 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S2 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S6 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 4 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 4 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 4 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 4 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 4 Success? true Sent by S6 ) ; Execution Reply: 
+========>>> Seq Num: 5 : Transaction ( D -> C = 1 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 5 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S2 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S6 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 5 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 5 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 5 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 5 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 5 Success? false Sent by S3 ) ; Execution Reply: 
+========>>> Seq Num: 6 : Transaction ( B -> A = 5 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 6 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 6 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 6 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 6 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 6 Success? true Sent by S4 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S6 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 6 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 6 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 6 Success? false Sent by S3 ) ; CommitResponse ( SeqNum: 6 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 6 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 6 Success? true Sent by S7 ) ; Execution Reply: 
+========>>> Seq Num: 7 : Transaction ( A -> E = 4 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 7 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 7 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 7 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 7 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 7 Success? true Sent by S4 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S6 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 7 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 7 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 7 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 7 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 7 Success? false Sent by S3 ) ; CommitResponse ( SeqNum: 7 Success? true Sent by S4 ) ; Execution Reply: 
+
+---------------------------- End of Log of All Requests -----------------------------
+
+===============================================================================================================================
+
+                       Test Set : 5     
+
+===============================================================================================================================
+
+
+---------------------------- Log of All Requests: -----------------------------
+========>>> Seq Num: 1 : Transaction ( A -> B = 1 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 1 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S5 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 1 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 1 Success? true Sent by S3 ) ; CommitResponse ( SeqNum: 1 Success? false Sent by S6 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S4 ) ; Execution Reply: 
+========>>> Seq Num: 2 : Transaction ( D -> E = 1 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 2 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S3 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 2 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 2 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S3 ) ; CommitResponse ( SeqNum: 2 Success? false Sent by S6 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S4 ) ; Execution Reply: 
+========>>> Seq Num: 3 : Transaction ( I -> J = 1 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 3 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S3 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 3 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 3 Success? true Sent by S3 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 3 Success? false Sent by S6 ) ; Execution Reply: 
+========>>> Seq Num: 4 : Transaction ( J -> A = 1 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 4 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S2 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 4 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 4 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 4 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 4 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 4 Success? false Sent by S6 ) ; CommitResponse ( SeqNum: 4 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 4 Success? true Sent by S3 ) ; Execution Reply: 
+========>>> Seq Num: 5 : Transaction ( B -> C = 1 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 5 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S3 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 5 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 5 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 5 Success? true Sent by S3 ) ; CommitResponse ( SeqNum: 5 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 5 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 5 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 5 Success? false Sent by S6 ) ; Execution Reply: 
+========>>> Seq Num: 6 : Transaction ( F -> G = 1 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 6 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 6 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 6 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 6 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 6 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 6 Success? true Sent by S6 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 6 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 6 Success? true Sent by S3 ) ; CommitResponse ( SeqNum: 6 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 6 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 6 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 6 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 6 Success? false Sent by S6 ) ; Execution Reply: 
+========>>> Seq Num: 7 : Transaction ( H -> I = 1 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 7 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 7 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 7 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 7 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 7 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 7 Success? true Sent by S2 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 7 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 7 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 7 Success? true Sent by S3 ) ; CommitResponse ( SeqNum: 7 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 7 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 7 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 7 Success? false Sent by S6 ) ; Execution Reply: 
+========>>> Seq Num: 8 : Transaction ( E -> F = 1 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 8 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 8 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 8 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 8 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 8 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 8 Success? true Sent by S4 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 8 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 8 Success? false Sent by S6 ) ; CommitResponse ( SeqNum: 8 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 8 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 8 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 8 Success? true Sent by S3 ) ; Execution Reply: 
+========>>> Seq Num: 9 : Transaction ( G -> H = 1 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 9 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 9 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 9 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 9 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 9 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 9 Success? true Sent by S2 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 9 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 9 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 9 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 9 Success? true Sent by S3 ) ; CommitResponse ( SeqNum: 9 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 9 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 9 Success? false Sent by S6 ) ; Execution Reply: 
+========>>> Seq Num: 10 : Transaction ( C -> D = 1 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 10 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 10 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 10 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 10 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 10 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 10 Success? true Sent by S6 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 10 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 10 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 10 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 10 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 10 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 10 Success? false Sent by S6 ) ; Execution Reply: 
+
+---------------------------- End of Log of All Requests -----------------------------
+
+===============================================================================================================================
+
+                       Test Set : 6     
+
+===============================================================================================================================
+
+
+---------------------------- Log of All Requests: -----------------------------
+========>>> Seq Num: 1 : Transaction ( A -> I = 8 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 1 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S7 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S6 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 1 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 1 Success? false Sent by S5 ) ; CommitResponse ( SeqNum: 1 Success? false Sent by S3 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 1 Success? false Sent by S7 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S2 ) ; Execution Reply: 
+========>>> Seq Num: 2 : Transaction ( J -> D = 3 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 2 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S2 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S6 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 2 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 2 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 2 Success? false Sent by S7 ) ; CommitResponse ( SeqNum: 2 Success? false Sent by S3 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 2 Success? false Sent by S5 ) ; Execution Reply: 
+========>>> Seq Num: 3 : Transaction ( F -> G = 4 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 3 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S3 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S6 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 3 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 3 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 3 Success? false Sent by S3 ) ; CommitResponse ( SeqNum: 3 Success? false Sent by S7 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 3 Success? false Sent by S5 ) ; Execution Reply: 
+========>>> Seq Num: 4 : Transaction ( E -> B = 5 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 4 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S2 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S6 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 4 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 4 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 4 Success? false Sent by S7 ) ; CommitResponse ( SeqNum: 4 Success? false Sent by S3 ) ; CommitResponse ( SeqNum: 4 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 4 Success? true Sent by S2 ) ; Execution Reply: 
+========>>> Seq Num: 5 : Transaction ( C -> H = 7 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 5 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S4 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S6 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 5 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 5 Success? false Sent by S5 ) ; CommitResponse ( SeqNum: 5 Success? false Sent by S7 ) ; CommitResponse ( SeqNum: 5 Success? false Sent by S3 ) ; CommitResponse ( SeqNum: 5 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 5 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 5 Success? true Sent by S2 ) ; Execution Reply: 
+========>>> Seq Num: 6 : Transaction ( G -> J = 1 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 6 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 6 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 6 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 6 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 6 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 6 Success? true Sent by S5 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S6 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 6 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 6 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 6 Success? false Sent by S3 ) ; CommitResponse ( SeqNum: 6 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 6 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 6 Success? false Sent by S5 ) ; CommitResponse ( SeqNum: 6 Success? false Sent by S7 ) ; Execution Reply: 
+
+---------------------------- End of Log of All Requests -----------------------------
+
+===============================================================================================================================
+
+                       Test Set : 7     
+
+===============================================================================================================================
+
+
+---------------------------- Log of All Requests: -----------------------------
+========>>> Seq Num: 1 : Transaction ( G -> J = 8 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 1 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 1 Success? true Sent by S5 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 1 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 1 Success? true Sent by S3 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 1 Success? false Sent by S5 ) ; Execution Reply: 
+========>>> Seq Num: 2 : Transaction ( C -> H = 3 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 2 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S5 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 2 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 2 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 2 Success? false Sent by S5 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S3 ) ; Execution Reply: 
+========>>> Seq Num: 3 : Transaction ( E -> B = 4 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 3 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S2 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 3 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 3 Success? false Sent by S5 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S3 ) ; Execution Reply: 
+========>>> Seq Num: 4 : Transaction ( F -> G = 5 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 4 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S5 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 4 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 4 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 4 Success? false Sent by S5 ) ; CommitResponse ( SeqNum: 4 Success? true Sent by S4 ) ; Execution Reply: 
+========>>> Seq Num: 5 : Transaction ( J -> D = 7 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 5 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 5 Success? true Sent by S5 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 5 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 5 Success? true Sent by S2 ) ; CommitResponse ( SeqNum: 5 Success? false Sent by S5 ) ; CommitResponse ( SeqNum: 5 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 5 Success? true Sent by S3 ) ; Execution Reply: 
+========>>> Seq Num: 6 : Transaction ( A -> J = 1 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 6 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 6 Success? true Sent by S3 ) ; PrePrepareResponse ( SeqNum: 6 Success? true Sent by S2 ) ; PrePrepareResponse ( SeqNum: 6 Success? true Sent by S4 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 0 Success? false Sent by  ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S2 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 6 Sent By: S1 in View 0 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 6 Success? true Sent by S3 ) ; CommitResponse ( SeqNum: 6 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 6 Success? false Sent by S5 ) ; Execution Reply: 
+
+---------------------------- End of Log of All Requests -----------------------------
+
+===============================================================================================================================
+
+                       Test Set : 8     
+
+===============================================================================================================================

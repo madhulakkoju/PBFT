@@ -33,6 +33,7 @@ public class NodeServer {
     public int port;
     public LogUtils logger;
     public LogUtils commandLogger;
+    public LogUtils allLogsLogger;
 
     public String serverName;
     public Server server;
@@ -57,6 +58,7 @@ public class NodeServer {
 
         this.logger = new LogUtils(port);
         this.commandLogger = new LogUtils("Commands", port);
+        this.allLogsLogger = new LogUtils("PrintLogs", port);
 
         this.currentActiveServers = new ArrayList<>( GlobalConfigs.allServers);
 
@@ -222,6 +224,47 @@ public class NodeServer {
 
 
     }
+
+
+    public void printLogOfRequests(){
+
+        StringBuilder sb = new StringBuilder("\n---------------------------- Log of All Requests: -----------------------------\n");
+
+        for(Map.Entry<Integer, Transaction> entry: this.database.transactionMap.entrySet()){
+            sb.append("========>>> Seq Num: ").append(entry.getKey()).append(" : ").append( Utils.toString(entry.getValue()) ).append("\n");
+
+            sb.append("\nPrePrepare Request: \n");
+            sb.append( Utils.toString( this.database.prePrepareRequestMap.get(entry.getKey()) ));
+
+            sb.append("\nPrePrepare Responses: \n");
+            if(this.database.prePrepareResponseMap.get(entry.getKey())!=null)
+                this.database.prePrepareResponseMap.get(entry.getKey()).forEach( prePrepareResponse -> sb.append( Utils.toString(prePrepareResponse) ));
+
+            sb.append("\nPrepare Request: \n");
+            sb.append( Utils.toString( this.database.prepareRequestMap.get(entry.getKey()) ));
+
+            sb.append("\nPrepare Responses: \n");
+            if (this.database.prepareResponseMap.get(entry.getKey()) != null)
+                this.database.prepareResponseMap.get(entry.getKey()).forEach( prepareResponse -> sb.append( Utils.toString(prepareResponse) ));
+
+            sb.append("\nCommit Request: \n");
+            sb.append( Utils.toString( this.database.commitRequestMap.get(entry.getKey()) ));
+
+            sb.append("\nCommit Responses: \n");
+            if( this.database.commitResponseMap.get(entry.getKey()) != null)
+                this.database.commitResponseMap.get(entry.getKey()).forEach( commitResponse -> sb.append( Utils.toString(commitResponse) ));
+
+            sb.append("Execution Reply: \n");
+            sb.append( Utils.toString( this.database.executionReplyMap.get(entry.getKey()) ));
+
+        }
+
+        sb.append("\n---------------------------- End of Log of All Requests -----------------------------\n");
+
+        this.allLogsLogger.log(sb.toString());
+
+    }
+
 
 
 
