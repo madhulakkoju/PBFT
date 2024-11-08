@@ -10,13 +10,13 @@ Server: S6
 
 ===============================================================================================================================
 
-Server: S6 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
+Server: S6 : 10 -  4 - 10 - 13 - 16 - 10 - 12 -  7 -  8 - 10 - 
 Statuses:
 Statuses : 
 Server: S6
-1 = PrePREPARED
-2 = COMMITTED
-3 = COMMITTED
+1 = EXECUTED
+2 = EXECUTED
+3 = EXECUTED
 
 ===============================================================================================================================
 
@@ -40,15 +40,15 @@ Server: S6
 
 ===============================================================================================================================
 
-Server: S6 :  7 -  2 - 11 - 10 - 16 - 10 -  7 - 10 -  9 - 18 - 
+Server: S6 : 13 - 10 - 10 - 10 - 10 - 10 -  7 - 10 - 10 - 10 - 
 Statuses:
 Statuses : 
 Server: S6
 1 = EXECUTED
-2 = EXECUTED
-3 = ABORTED
-4 = EXECUTED
-5 = EXECUTED
+2 = PrePREPARED
+3 = COMMITTED
+4 = COMMITTED
+5 = COMMITTED
 
 ===============================================================================================================================
 
@@ -122,3 +122,86 @@ Server: S6
                        Test Set : 8     
 
 ===============================================================================================================================
+
+Server: S6 :  7 - 13 - 18 - 20 -  2 - 10 - 10 - 10 - 10 -  0 - 
+Statuses:
+Statuses : 
+Server: S6
+1 = EXECUTED
+2 = EXECUTED
+3 = EXECUTED
+
+===============================================================================================================================
+
+                       Test Set : 9     
+
+===============================================================================================================================
+
+Server: S6 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
+Statuses:
+Statuses : 
+Server: S6
+1 = PrePREPARED
+2 = PrePREPARED
+3 = PrePREPARED
+
+===============================================================================================================================
+
+                       Test Set : 10     
+
+===============================================================================================================================
+
+Server: S6 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
+Statuses:
+Statuses : 
+Server: S6
+1 = PrePREPARED
+2 = PrePREPARED
+3 = PrePREPARED
+4 = PrePREPARED
+5 = PrePREPARED
+6 = PrePREPARED
+7 = PrePREPARED
+8 = PrePREPARED
+9 = PrePREPARED
+10 = PrePREPARED
+11 = PrePREPARED
+12 = PrePREPARED
+13 = PrePREPARED
+14 = PrePREPARED
+15 = PrePREPARED
+16 = PrePREPARED
+17 = PrePREPARED
+18 = PrePREPARED
+19 = PrePREPARED
+20 = PrePREPARED
+21 = PrePREPARED
+22 = PrePREPARED
+23 = PrePREPARED
+24 = PrePREPARED
+25 = PrePREPARED
+26 = PrePREPARED
+27 = PrePREPARED
+28 = PrePREPARED
+29 = PrePREPARED
+30 = PrePREPARED
+31 = PrePREPARED
+32 = PrePREPARED
+33 = PrePREPARED
+34 = PrePREPARED
+35 = PrePREPARED
+36 = PrePREPARED
+37 = PrePREPARED
+38 = PrePREPARED
+39 = PrePREPARED
+40 = PrePREPARED
+41 = PrePREPARED
+42 = PrePREPARED
+43 = PrePREPARED
+44 = PrePREPARED
+45 = PrePREPARED
+46 = PrePREPARED
+47 = PrePREPARED
+48 = PrePREPARED
+49 = PrePREPARED
+50 = PrePREPARED

@@ -254,7 +254,7 @@ public class NodeServer {
             if( this.database.commitResponseMap.get(entry.getKey()) != null)
                 this.database.commitResponseMap.get(entry.getKey()).forEach( commitResponse -> sb.append( Utils.toString(commitResponse) ));
 
-            sb.append("Execution Reply: \n");
+            sb.append("\nExecution Reply: \n");
             sb.append( Utils.toString( this.database.executionReplyMap.get(entry.getKey()) ));
 
         }
