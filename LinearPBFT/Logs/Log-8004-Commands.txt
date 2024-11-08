@@ -40,13 +40,13 @@ Server: S4
 
 ===============================================================================================================================
 
-Server: S4 : 13 - 10 - 10 - 10 - 10 - 10 -  7 - 10 - 10 - 10 - 
+Server: S4 : 13 -  2 - 10 - 10 - 10 - 10 -  7 - 10 - 10 - 18 - 
 Statuses:
 Statuses : 
 Server: S4
 1 = EXECUTED
-2 = PrePREPARED
-3 = COMMITTED
+2 = EXECUTED
+3 = PrePREPARED
 4 = COMMITTED
 5 = COMMITTED
 
@@ -112,16 +112,16 @@ Server: S4
 
 ===============================================================================================================================
 
-Server: S4 : 10 - 14 -  7 - 17 -  6 -  5 -  7 - 13 - 10 - 11 - 
+Server: S4 : 10 - 10 - 10 - 10 - 10 - 10 -  2 - 10 - 10 - 18 - 
 Statuses:
 Statuses : 
 Server: S4
 1 = EXECUTED
-2 = EXECUTED
-3 = EXECUTED
-4 = EXECUTED
-5 = EXECUTED
-6 = PrePREPARED
+2 = PrePREPARED
+3 = COMMITTED
+4 = COMMITTED
+5 = COMMITTED
+6 = COMMITTED
 
 ===============================================================================================================================
 
@@ -154,6 +154,67 @@ Server: S4
 ===============================================================================================================================
 
                        Test Set : 10     
+
+===============================================================================================================================
+
+Server: S4 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
+Statuses:
+Statuses : 
+Server: S4
+1 = EXECUTED
+2 = EXECUTED
+3 = EXECUTED
+4 = EXECUTED
+5 = EXECUTED
+6 = EXECUTED
+7 = EXECUTED
+8 = EXECUTED
+9 = EXECUTED
+10 = EXECUTED
+11 = EXECUTED
+12 = EXECUTED
+13 = EXECUTED
+14 = EXECUTED
+15 = EXECUTED
+16 = EXECUTED
+17 = EXECUTED
+18 = EXECUTED
+19 = EXECUTED
+20 = EXECUTED
+21 = EXECUTED
+22 = EXECUTED
+23 = EXECUTED
+24 = EXECUTED
+25 = EXECUTED
+26 = EXECUTED
+27 = EXECUTED
+28 = EXECUTED
+29 = EXECUTED
+30 = EXECUTED
+31 = EXECUTED
+32 = EXECUTED
+33 = EXECUTED
+34 = EXECUTED
+35 = EXECUTED
+36 = EXECUTED
+37 = EXECUTED
+38 = EXECUTED
+39 = EXECUTED
+40 = EXECUTED
+41 = EXECUTED
+42 = EXECUTED
+43 = EXECUTED
+44 = EXECUTED
+45 = EXECUTED
+46 = EXECUTED
+47 = EXECUTED
+48 = EXECUTED
+49 = EXECUTED
+50 = EXECUTED
+
+===============================================================================================================================
+
+                       Test Set : 11     
 
 ===============================================================================================================================
 

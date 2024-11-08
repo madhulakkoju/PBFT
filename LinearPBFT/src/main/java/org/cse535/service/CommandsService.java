@@ -85,6 +85,7 @@ public class CommandsService extends CommandsGrpc.CommandsImplBase {
         Main.node.allLogsLogger.log("                       " +  request.getInput() + "     \n");
         Main.node.allLogsLogger.log("===============================================================================================================================\n");
 
+        Main.node.garbageCollect();
 
     }
 

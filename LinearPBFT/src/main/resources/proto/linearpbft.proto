@@ -54,6 +54,7 @@ message CommitRequest {
   string processId = 3;
   google.protobuf.Timestamp timestamp = 4;
   string digest = 5;
+  bool isSBFT = 6;
 }
 
 message CommitResponse {

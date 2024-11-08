@@ -544,8 +544,8 @@ public class ViewServer extends NodeServer{
                     }
 
                    // Thread.sleep(100);
-                    System.out.println("Press Enter to continue to next Test set. This will activate the servers and publish transactions to servers."+transactionInputConfig.getSetNumber());
-                    String a  = System.console().readLine();
+                    System.out.print("Press Enter to run All Print Commands...");
+                    System.console().readLine();
 
 
                     viewServer.sendCommandToServers(Command.valueOf("PrintDB"), activeServersStatusMap);
@@ -553,9 +553,11 @@ public class ViewServer extends NodeServer{
                     viewServer.sendCommandToServers(Command.valueOf("PrintView"), activeServersStatusMap);
                     viewServer.sendCommandToServers(Command.valueOf("PrintLog"), activeServersStatusMap);
 
+                    Thread.sleep(100);
 
+                    System.out.print("\nPress Enter to continue to next Test set. This will activate the servers and publish transactions to servers."+transactionInputConfig.getSetNumber());
+                    String a  = System.console().readLine();
 
-                    Thread.sleep(200);
 
                     for( String server : allServers) {
                         viewServerInstance.serversToCommandsStub.get(server).flushDB(CommandInput.newBuilder().setInput("Test Set : "+ viewServerInstance.TestSetNumber ).build());

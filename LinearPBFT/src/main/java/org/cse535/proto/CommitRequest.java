@@ -20,6 +20,7 @@ private static final long serialVersionUID = 0L;
     sequenceNumber_ = 0;
     processId_ = "";
     digest_ = "";
+    isSBFT_ = false;
   }
 
   @java.lang.Override
@@ -79,6 +80,11 @@ private static final long serialVersionUID = 0L;
             java.lang.String s = input.readStringRequireUtf8();
 
             digest_ = s;
+            break;
+          }
+          case 48: {
+
+            isSBFT_ = input.readBool();
             break;
           }
           default: {
@@ -220,6 +226,15 @@ private static final long serialVersionUID = 0L;
     }
   }
 
+  public static final int ISSBFT_FIELD_NUMBER = 6;
+  private boolean isSBFT_;
+  /**
+   * <code>bool isSBFT = 6;</code>
+   */
+  public boolean getIsSBFT() {
+    return isSBFT_;
+  }
+
   private byte memoizedIsInitialized = -1;
   @java.lang.Override
   public final boolean isInitialized() {
@@ -249,6 +264,9 @@ private static final long serialVersionUID = 0L;
     if (!getDigestBytes().isEmpty()) {
       com.google.protobuf.GeneratedMessageV3.writeString(output, 5, digest_);
     }
+    if (isSBFT_ != false) {
+      output.writeBool(6, isSBFT_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -275,6 +293,10 @@ private static final long serialVersionUID = 0L;
     }
     if (!getDigestBytes().isEmpty()) {
       size += com.google.protobuf.GeneratedMessageV3.computeStringSize(5, digest_);
+    }
+    if (isSBFT_ != false) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeBoolSize(6, isSBFT_);
     }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
@@ -305,6 +327,8 @@ private static final long serialVersionUID = 0L;
     }
     result = result && getDigest()
         .equals(other.getDigest());
+    result = result && (getIsSBFT()
+        == other.getIsSBFT());
     result = result && unknownFields.equals(other.unknownFields);
     return result;
   }
@@ -328,6 +352,9 @@ private static final long serialVersionUID = 0L;
     }
     hash = (37 * hash) + DIGEST_FIELD_NUMBER;
     hash = (53 * hash) + getDigest().hashCode();
+    hash = (37 * hash) + ISSBFT_FIELD_NUMBER;
+    hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+        getIsSBFT());
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
@@ -475,6 +502,8 @@ private static final long serialVersionUID = 0L;
       }
       digest_ = "";
 
+      isSBFT_ = false;
+
       return this;
     }
 
@@ -510,6 +539,7 @@ private static final long serialVersionUID = 0L;
         result.timestamp_ = timestampBuilder_.build();
       }
       result.digest_ = digest_;
+      result.isSBFT_ = isSBFT_;
       onBuilt();
       return result;
     }
@@ -574,6 +604,9 @@ private static final long serialVersionUID = 0L;
       if (!other.getDigest().isEmpty()) {
         digest_ = other.digest_;
         onChanged();
+      }
+      if (other.getIsSBFT() != false) {
+        setIsSBFT(other.getIsSBFT());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -907,6 +940,32 @@ private static final long serialVersionUID = 0L;
   checkByteStringIsUtf8(value);
       
       digest_ = value;
+      onChanged();
+      return this;
+    }
+
+    private boolean isSBFT_ ;
+    /**
+     * <code>bool isSBFT = 6;</code>
+     */
+    public boolean getIsSBFT() {
+      return isSBFT_;
+    }
+    /**
+     * <code>bool isSBFT = 6;</code>
+     */
+    public Builder setIsSBFT(boolean value) {
+      
+      isSBFT_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>bool isSBFT = 6;</code>
+     */
+    public Builder clearIsSBFT() {
+      
+      isSBFT_ = false;
       onChanged();
       return this;
     }

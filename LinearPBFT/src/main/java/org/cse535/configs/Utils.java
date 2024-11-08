@@ -40,7 +40,7 @@ public class Utils {
 
     public static String toString( CommitRequest commitRequest){
         if(commitRequest == null) return "";
-        return "CommitRequest ( SeqNum: " + commitRequest.getSequenceNumber() + " Sent By: " + commitRequest.getProcessId() + " in View "+ commitRequest.getView() +" ) ; ";
+        return "CommitRequest ( SeqNum: " + commitRequest.getSequenceNumber() + (commitRequest.getIsSBFT() ? " SBFT " : "") + " Sent By: " + commitRequest.getProcessId() + " in View "+ commitRequest.getView() +" ) ; ";
 
     }
 

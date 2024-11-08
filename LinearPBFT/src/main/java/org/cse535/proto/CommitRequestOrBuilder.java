@@ -49,4 +49,9 @@ public interface CommitRequestOrBuilder extends
    */
   com.google.protobuf.ByteString
       getDigestBytes();
+
+  /**
+   * <code>bool isSBFT = 6;</code>
+   */
+  boolean getIsSBFT();
 }

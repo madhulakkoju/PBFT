@@ -30,6 +30,8 @@ public class GlobalConfigs {
 
     public static int viewChangeQuoromSize = f + 1;
 
+    public static int sbftSuperQuoromSize = 3*f + 1;
+
     public static List<String> allServers = Arrays.asList("S1", "S2", "S3", "S4", "S5", "S6", "S7");
 
     public static List<String> clients = Arrays.asList("A", "B", "C", "D", "E", "F", "G", "H", "I", "J");

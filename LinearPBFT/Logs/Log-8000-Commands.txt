@@ -67,13 +67,13 @@ Print View:
 
 Command: PrintDB 
 Accounts  : A -  B -  C -  D -  E -  F -  G -  H -  I -  J - 
-Server: S1 : 10 - 13 -  4 - 16 - 10 -  0 - 10 - 10 - 16 - 11 - 
-Server: S2 : 10 - 13 -  4 - 16 - 10 -  0 - 10 - 10 - 16 - 11 - 
-Server: S3 : 10 - 13 -  4 - 16 - 10 -  0 - 10 - 10 - 16 - 11 - 
+Server: S1 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
+Server: S2 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
+Server: S3 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
 Server: S4 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
-Server: S5 : 10 - 13 -  4 - 16 - 10 -  0 - 10 - 10 - 16 - 11 - 
+Server: S5 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
 Server: S6 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
-Server: S7 : 10 - 13 -  4 - 16 - 10 -  0 - 10 - 10 - 16 - 11 - 
+Server: S7 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
 
 
 
@@ -81,11 +81,11 @@ Server: S7 : 10 - 13 -  4 - 16 - 10 -  0 - 10 - 10 - 16 - 11 -
 
 Command: Print Status - All 
 Server :  S1 - S2 - S3 - S4 - S5 - S6 - S7
- seq  1 :  E -  E -  E - PP -  E - PP -  E - 
- seq  2 :  E -  E -  E - PP -  E - PP -  E - 
- seq  3 :  E -  E -  E - PP -  E - PP -  E - 
- seq  4 :  E -  E -  E - PP -  E - PP -  E - 
- seq  5 :  F -  F -  F - PP -  F - PP -  F - 
+ seq  1 : PP - PP - PP - PP - PP - PP - PP - 
+ seq  2 :  C -  C -  C - PP -  C - PP -  C - 
+ seq  3 :  C -  C -  C - PP -  C - PP -  C - 
+ seq  4 :  C -  C -  C - PP -  C - PP -  C - 
+ seq  5 :  C -  C -  C - PP -  C - PP -  C - 
 
 Print View:
 
@@ -99,12 +99,12 @@ Print View:
 
 Command: PrintDB 
 Accounts  : A -  B -  C -  D -  E -  F -  G -  H -  I -  J - 
-Server: S1 : 13 - 10 - 10 - 10 - 10 - 10 -  7 - 10 - 10 - 10 - 
+Server: S1 : 13 -  2 - 10 - 10 - 10 - 10 -  7 - 10 - 10 - 18 - 
 Server: S2 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
-Server: S3 : 13 - 10 - 10 - 10 - 10 - 10 -  7 - 10 - 10 - 10 - 
-Server: S4 : 13 - 10 - 10 - 10 - 10 - 10 -  7 - 10 - 10 - 10 - 
-Server: S5 : 13 - 10 - 10 - 10 - 10 - 10 -  7 - 10 - 10 - 10 - 
-Server: S6 : 13 - 10 - 10 - 10 - 10 - 10 -  7 - 10 - 10 - 10 - 
+Server: S3 : 13 -  2 - 10 - 10 - 10 - 10 -  7 - 10 - 10 - 18 - 
+Server: S4 : 13 -  2 - 10 - 10 - 10 - 10 -  7 - 10 - 10 - 18 - 
+Server: S5 : 13 -  2 - 10 - 10 - 10 - 10 -  7 - 10 - 10 - 18 - 
+Server: S6 : 13 -  2 - 10 - 10 - 10 - 10 -  7 - 10 - 10 - 18 - 
 Server: S7 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
 
 
@@ -114,8 +114,8 @@ Server: S7 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 -
 Command: Print Status - All 
 Server :  S1 - S2 - S3 - S4 - S5 - S6 - S7
  seq  1 :  E -  X -  E -  E -  E -  E -  X - 
- seq  2 : PP -  X - PP - PP - PP - PP -  X - 
- seq  3 :  C -  X -  C -  C -  C -  C -  X - 
+ seq  2 :  E -  X -  E -  E -  E -  E -  X - 
+ seq  3 : PP -  X - PP - PP - PP - PP -  X - 
  seq  4 :  C -  X -  C -  C -  C -  C -  X - 
  seq  5 :  C -  X -  C -  C -  C -  C -  X - 
 
@@ -235,10 +235,10 @@ Print View:
 
 Command: PrintDB 
 Accounts  : A -  B -  C -  D -  E -  F -  G -  H -  I -  J - 
-Server: S1 : 10 - 14 -  7 - 17 -  6 -  5 -  7 - 13 - 10 - 11 - 
-Server: S2 : 10 - 14 -  7 - 17 -  6 -  5 -  7 - 13 - 10 - 11 - 
-Server: S3 : 10 - 14 -  7 - 17 -  6 -  5 -  7 - 13 - 10 - 11 - 
-Server: S4 : 10 - 14 -  7 - 17 -  6 -  5 -  7 - 13 - 10 - 11 - 
+Server: S1 : 10 - 10 - 10 - 10 - 10 - 10 -  2 - 10 - 10 - 18 - 
+Server: S2 : 10 - 10 - 10 - 10 - 10 - 10 -  2 - 10 - 10 - 18 - 
+Server: S3 : 10 - 10 - 10 - 10 - 10 - 10 -  2 - 10 - 10 - 18 - 
+Server: S4 : 10 - 10 - 10 - 10 - 10 - 10 -  2 - 10 - 10 - 18 - 
 Server: S5 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
 Server: S6 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
 Server: S7 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
@@ -250,11 +250,11 @@ Server: S7 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 -
 Command: Print Status - All 
 Server :  S1 - S2 - S3 - S4 - S5 - S6 - S7
  seq  1 :  E -  E -  E -  E - PP -  X -  X - 
- seq  2 :  E -  E -  E -  E - PP -  X -  X - 
- seq  3 :  E -  E -  E -  E - PP -  X -  X - 
- seq  4 :  E -  E -  E -  E - PP -  X -  X - 
- seq  5 :  E -  E -  E -  E - PP -  X -  X - 
- seq  6 : PP - PP - PP - PP - PP -  X -  X - 
+ seq  2 : PP - PP - PP - PP - PP -  X -  X - 
+ seq  3 :  C -  C -  C -  C - PP -  X -  X - 
+ seq  4 :  C -  C -  C -  C - PP -  X -  X - 
+ seq  5 :  C -  C -  C -  C - PP -  X -  X - 
+ seq  6 :  C -  C -  C -  C - PP -  X -  X - 
 
 Print View:
 
@@ -392,3 +392,80 @@ Server :  S1 - S2 - S3 - S4 - S5 - S6 - S7
  seq 48 :  E -  E -  E -  E -  E - PP -  E - 
  seq 49 :  E -  E -  E -  E -  E - PP -  E - 
  seq 50 :  E -  E -  E -  E -  E - PP -  E - 
+
+Print View:
+
+===============================================================================================================================
+
+                     Test Set Number :  11     
+
+===============================================================================================================================
+
+
+
+Command: PrintDB 
+Accounts  : A -  B -  C -  D -  E -  F -  G -  H -  I -  J - 
+Server: S1 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
+Server: S2 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
+Server: S3 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
+Server: S4 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
+Server: S5 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
+Server: S6 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
+Server: S7 : 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 10 - 
+
+
+
+
+
+Command: Print Status - All 
+Server :  S1 - S2 - S3 - S4 - S5 - S6 - S7
+ seq  1 :  E -  E -  E -  E -  E -  E -  E - 
+ seq  2 :  E -  E -  E -  E -  E -  E -  E - 
+ seq  3 :  E -  E -  E -  E -  E -  E -  E - 
+ seq  4 :  E -  E -  E -  E -  E -  E -  E - 
+ seq  5 :  E -  E -  E -  E -  E -  E -  E - 
+ seq  6 :  E -  E -  E -  E -  E -  E -  E - 
+ seq  7 :  E -  E -  E -  E -  E -  E -  E - 
+ seq  8 :  E -  E -  E -  E -  E -  E -  E - 
+ seq  9 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 10 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 11 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 12 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 13 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 14 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 15 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 16 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 17 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 18 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 19 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 20 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 21 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 22 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 23 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 24 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 25 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 26 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 27 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 28 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 29 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 30 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 31 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 32 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 33 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 34 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 35 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 36 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 37 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 38 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 39 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 40 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 41 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 42 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 43 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 44 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 45 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 46 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 47 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 48 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 49 :  E -  E -  E -  E -  E -  E -  E - 
+ seq 50 :  E -  E -  E -  E -  E -  E -  E - 

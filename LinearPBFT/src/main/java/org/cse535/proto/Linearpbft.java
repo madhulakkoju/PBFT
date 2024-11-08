@@ -146,71 +146,72 @@ public final class Linearpbft {
       "\022-\n\ttimestamp\030\004 \001(\0132\032.google.protobuf.Ti" +
       "mestamp\022\016\n\006digest\030\005 \001(\t\"[\n\017PrepareRespon" +
       "se\022\014\n\004view\030\001 \001(\005\022\026\n\016sequenceNumber\030\002 \001(\005" +
-      "\022\021\n\tprocessId\030\003 \001(\t\022\017\n\007success\030\004 \001(\010\"\207\001\n" +
+      "\022\021\n\tprocessId\030\003 \001(\t\022\017\n\007success\030\004 \001(\010\"\227\001\n" +
       "\rCommitRequest\022\014\n\004view\030\001 \001(\005\022\026\n\016sequence" +
       "Number\030\002 \001(\005\022\021\n\tprocessId\030\003 \001(\t\022-\n\ttimes" +
       "tamp\030\004 \001(\0132\032.google.protobuf.Timestamp\022\016" +
-      "\n\006digest\030\005 \001(\t\"Z\n\016CommitResponse\022\014\n\004view" +
-      "\030\001 \001(\005\022\026\n\016sequenceNumber\030\002 \001(\005\022\021\n\tproces" +
-      "sId\030\003 \001(\t\022\017\n\007success\030\004 \001(\010\"\247\001\n\025Execution" +
-      "ReplyRequest\022\014\n\004view\030\001 \001(\005\022\026\n\016sequenceNu" +
-      "mber\030\002 \001(\005\022\021\n\tprocessId\030\003 \001(\t\022\025\n\rtransac" +
-      "tionId\030\005 \001(\005\022-\n\ttimestamp\030\004 \001(\0132\032.google" +
-      ".protobuf.Timestamp\022\017\n\007success\030\006 \001(\010\"b\n\026" +
-      "ExecutionReplyResponse\022\014\n\004view\030\001 \001(\005\022\026\n\016" +
-      "sequenceNumber\030\002 \001(\005\022\021\n\tprocessId\030\003 \001(\t\022" +
-      "\017\n\007success\030\004 \001(\010\"c\n\021ViewChangeRequest\022\014\n" +
-      "\004view\030\001 \001(\005\022\021\n\tprocessId\030\002 \001(\t\022-\n\ttimest" +
-      "amp\030\003 \001(\0132\032.google.protobuf.Timestamp\"F\n" +
-      "\022ViewChangeResponse\022\014\n\004view\030\001 \001(\005\022\021\n\tpro" +
-      "cessId\030\002 \001(\t\022\017\n\007success\030\003 \001(\010\"\272\001\n\016NewVie" +
-      "wRequest\022\014\n\004view\030\001 \001(\005\022\021\n\tprocessId\030\002 \001(" +
-      "\t\022-\n\ttimestamp\030\003 \001(\0132\032.google.protobuf.T" +
-      "imestamp\022.\n\022viewChangeMessages\030\004 \003(\0132\022.V" +
-      "iewChangeRequest\022(\n\017prepareMessages\030\005 \003(" +
-      "\0132\017.PrepareRequest\"C\n\017NewViewResponse\022\014\n" +
-      "\004view\030\001 \001(\005\022\021\n\tprocessId\030\002 \001(\t\022\017\n\007succes" +
-      "s\030\003 \001(\010\"q\n\026TransactionInputConfig\022\021\n\tset" +
-      "Number\030\001 \001(\005\022!\n\013transaction\030\002 \001(\0132\014.Tran" +
-      "saction\022\014\n\004view\030\003 \001(\005\022\023\n\013serverNames\030\005 \003" +
-      "(\t\"\237\001\n\013Transaction\022\016\n\006sender\030\001 \001(\t\022\020\n\010re" +
-      "ceiver\030\002 \001(\t\022\016\n\006amount\030\003 \001(\005\022-\n\ttimestam" +
-      "p\030\004 \001(\0132\032.google.protobuf.Timestamp\022\027\n\017t" +
-      "ransactionHash\030\005 \001(\t\022\026\n\016transactionNum\030\006" +
-      " \001(\005\"2\n\013TxnResponse\022\017\n\007success\030\001 \001(\010\022\022\n\n" +
-      "serverName\030\002 \001(\t\"w\n\020TxnRelayResponse\022\017\n\007" +
-      "success\030\001 \001(\010\022\022\n\nserverName\030\002 \001(\t\022\016\n\006opt" +
-      "ion\030\003 \001(\005\022.\n\016executionReply\030\004 \001(\0132\026.Exec" +
-      "utionReplyRequest\"+\n\025ActivateServerReque" +
-      "st\022\022\n\nserverName\030\001 \001(\t\"=\n\026ActivateServer" +
-      "Response\022\017\n\007success\030\001 \001(\010\022\022\n\nserverName\030" +
-      "\002 \001(\t\"-\n\027DeactivateServerRequest\022\022\n\nserv" +
-      "erName\030\001 \001(\t\"?\n\030DeactivateServerResponse" +
-      "\022\017\n\007success\030\001 \001(\010\022\022\n\nserverName\030\002 \001(\t\"\035\n" +
-      "\014CommandInput\022\r\n\005input\030\001 \001(\t\"\037\n\rCommandO" +
-      "utput\022\016\n\006output\030\001 \001(\t2\302\003\n\nLinearPBFT\0222\n\007" +
-      "Request\022\027.TransactionInputConfig\032\014.TxnRe" +
-      "sponse\"\000\022<\n\014RelayRequest\022\027.TransactionIn" +
-      "putConfig\032\021.TxnRelayResponse\"\000\0227\n\nPrePre" +
-      "pare\022\022.PrePrepareRequest\032\023.PrePrepareRes" +
-      "ponse\"\000\022.\n\007Prepare\022\017.PrepareRequest\032\020.Pr" +
-      "epareResponse\"\000\022+\n\006Commit\022\016.CommitReques" +
-      "t\032\017.CommitResponse\"\000\022C\n\016ExecutionReply\022\026" +
-      ".ExecutionReplyRequest\032\027.ExecutionReplyR" +
-      "esponse\"\000\0227\n\nViewChange\022\022.ViewChangeRequ" +
-      "est\032\023.ViewChangeResponse\"\000\022.\n\007NewView\022\017." +
-      "NewViewRequest\032\020.NewViewResponse\"\0002\241\001\n\017A" +
-      "ctivateServers\022C\n\016activateServer\022\026.Activ" +
-      "ateServerRequest\032\027.ActivateServerRespons" +
-      "e\"\000\022I\n\020deactivateServer\022\030.DeactivateServ" +
-      "erRequest\032\031.DeactivateServerResponse\"\0002\361" +
-      "\001\n\010Commands\022+\n\010printLog\022\r.CommandInput\032\016" +
-      ".CommandOutput\"\000\022*\n\007printDB\022\r.CommandInp" +
-      "ut\032\016.CommandOutput\"\000\022.\n\013printStatus\022\r.Co" +
-      "mmandInput\032\016.CommandOutput\"\000\022*\n\007FlushDB\022" +
-      "\r.CommandInput\032\016.CommandOutput\"\000\0220\n\rmake" +
-      "Byzantine\022\r.CommandInput\032\016.CommandOutput" +
-      "\"\000B\024\n\020org.cse535.protoP\001b\006proto3"
+      "\n\006digest\030\005 \001(\t\022\016\n\006isSBFT\030\006 \001(\010\"Z\n\016Commit" +
+      "Response\022\014\n\004view\030\001 \001(\005\022\026\n\016sequenceNumber" +
+      "\030\002 \001(\005\022\021\n\tprocessId\030\003 \001(\t\022\017\n\007success\030\004 \001" +
+      "(\010\"\247\001\n\025ExecutionReplyRequest\022\014\n\004view\030\001 \001" +
+      "(\005\022\026\n\016sequenceNumber\030\002 \001(\005\022\021\n\tprocessId\030" +
+      "\003 \001(\t\022\025\n\rtransactionId\030\005 \001(\005\022-\n\ttimestam" +
+      "p\030\004 \001(\0132\032.google.protobuf.Timestamp\022\017\n\007s" +
+      "uccess\030\006 \001(\010\"b\n\026ExecutionReplyResponse\022\014" +
+      "\n\004view\030\001 \001(\005\022\026\n\016sequenceNumber\030\002 \001(\005\022\021\n\t" +
+      "processId\030\003 \001(\t\022\017\n\007success\030\004 \001(\010\"c\n\021View" +
+      "ChangeRequest\022\014\n\004view\030\001 \001(\005\022\021\n\tprocessId" +
+      "\030\002 \001(\t\022-\n\ttimestamp\030\003 \001(\0132\032.google.proto" +
+      "buf.Timestamp\"F\n\022ViewChangeResponse\022\014\n\004v" +
+      "iew\030\001 \001(\005\022\021\n\tprocessId\030\002 \001(\t\022\017\n\007success\030" +
+      "\003 \001(\010\"\272\001\n\016NewViewRequest\022\014\n\004view\030\001 \001(\005\022\021" +
+      "\n\tprocessId\030\002 \001(\t\022-\n\ttimestamp\030\003 \001(\0132\032.g" +
+      "oogle.protobuf.Timestamp\022.\n\022viewChangeMe" +
+      "ssages\030\004 \003(\0132\022.ViewChangeRequest\022(\n\017prep" +
+      "areMessages\030\005 \003(\0132\017.PrepareRequest\"C\n\017Ne" +
+      "wViewResponse\022\014\n\004view\030\001 \001(\005\022\021\n\tprocessId" +
+      "\030\002 \001(\t\022\017\n\007success\030\003 \001(\010\"q\n\026TransactionIn" +
+      "putConfig\022\021\n\tsetNumber\030\001 \001(\005\022!\n\013transact" +
+      "ion\030\002 \001(\0132\014.Transaction\022\014\n\004view\030\003 \001(\005\022\023\n" +
+      "\013serverNames\030\005 \003(\t\"\237\001\n\013Transaction\022\016\n\006se" +
+      "nder\030\001 \001(\t\022\020\n\010receiver\030\002 \001(\t\022\016\n\006amount\030\003" +
+      " \001(\005\022-\n\ttimestamp\030\004 \001(\0132\032.google.protobu" +
+      "f.Timestamp\022\027\n\017transactionHash\030\005 \001(\t\022\026\n\016" +
+      "transactionNum\030\006 \001(\005\"2\n\013TxnResponse\022\017\n\007s" +
+      "uccess\030\001 \001(\010\022\022\n\nserverName\030\002 \001(\t\"w\n\020TxnR" +
+      "elayResponse\022\017\n\007success\030\001 \001(\010\022\022\n\nserverN" +
+      "ame\030\002 \001(\t\022\016\n\006option\030\003 \001(\005\022.\n\016executionRe" +
+      "ply\030\004 \001(\0132\026.ExecutionReplyRequest\"+\n\025Act" +
+      "ivateServerRequest\022\022\n\nserverName\030\001 \001(\t\"=" +
+      "\n\026ActivateServerResponse\022\017\n\007success\030\001 \001(" +
+      "\010\022\022\n\nserverName\030\002 \001(\t\"-\n\027DeactivateServe" +
+      "rRequest\022\022\n\nserverName\030\001 \001(\t\"?\n\030Deactiva" +
+      "teServerResponse\022\017\n\007success\030\001 \001(\010\022\022\n\nser" +
+      "verName\030\002 \001(\t\"\035\n\014CommandInput\022\r\n\005input\030\001" +
+      " \001(\t\"\037\n\rCommandOutput\022\016\n\006output\030\001 \001(\t2\302\003" +
+      "\n\nLinearPBFT\0222\n\007Request\022\027.TransactionInp" +
+      "utConfig\032\014.TxnResponse\"\000\022<\n\014RelayRequest" +
+      "\022\027.TransactionInputConfig\032\021.TxnRelayResp" +
+      "onse\"\000\0227\n\nPrePrepare\022\022.PrePrepareRequest" +
+      "\032\023.PrePrepareResponse\"\000\022.\n\007Prepare\022\017.Pre" +
+      "pareRequest\032\020.PrepareResponse\"\000\022+\n\006Commi" +
+      "t\022\016.CommitRequest\032\017.CommitResponse\"\000\022C\n\016" +
+      "ExecutionReply\022\026.ExecutionReplyRequest\032\027" +
+      ".ExecutionReplyResponse\"\000\0227\n\nViewChange\022" +
+      "\022.ViewChangeRequest\032\023.ViewChangeResponse" +
+      "\"\000\022.\n\007NewView\022\017.NewViewRequest\032\020.NewView" +
+      "Response\"\0002\241\001\n\017ActivateServers\022C\n\016activa" +
+      "teServer\022\026.ActivateServerRequest\032\027.Activ" +
+      "ateServerResponse\"\000\022I\n\020deactivateServer\022" +
+      "\030.DeactivateServerRequest\032\031.DeactivateSe" +
+      "rverResponse\"\0002\361\001\n\010Commands\022+\n\010printLog\022" +
+      "\r.CommandInput\032\016.CommandOutput\"\000\022*\n\007prin" +
+      "tDB\022\r.CommandInput\032\016.CommandOutput\"\000\022.\n\013" +
+      "printStatus\022\r.CommandInput\032\016.CommandOutp" +
+      "ut\"\000\022*\n\007FlushDB\022\r.CommandInput\032\016.Command" +
+      "Output\"\000\0220\n\rmakeByzantine\022\r.CommandInput" +
+      "\032\016.CommandOutput\"\000B\024\n\020org.cse535.protoP\001" +
+      "b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -254,7 +255,7 @@ public final class Linearpbft {
     internal_static_CommitRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CommitRequest_descriptor,
-        new java.lang.String[] { "View", "SequenceNumber", "ProcessId", "Timestamp", "Digest", });
+        new java.lang.String[] { "View", "SequenceNumber", "ProcessId", "Timestamp", "Digest", "IsSBFT", });
     internal_static_CommitResponse_descriptor =
       getDescriptor().getMessageTypes().get(5);
     internal_static_CommitResponse_fieldAccessorTable = new

@@ -266,6 +266,10 @@ public class NodeServer {
     }
 
 
+    public void garbageCollect(){
+        System.gc();
+    }
+
 
 
 }
