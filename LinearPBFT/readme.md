@@ -17,6 +17,7 @@ The following servers have been considered:
 | S7                   | 8007        |
 | Client / View Server | 8000        |
 
+
 ## View Server
 This is actually not a View Server by definition. This is just a bridge between Input File and servers.
 
