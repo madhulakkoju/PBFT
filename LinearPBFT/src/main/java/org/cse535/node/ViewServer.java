@@ -51,6 +51,7 @@ public class ViewServer extends NodeServer{
     public HashMap<Integer, TransactionInputConfig> transactionInputConfigMap = new HashMap<>();
     public ConcurrentHashMap<Integer, HashSet<String>> transactionExecutionResponseMap = new ConcurrentHashMap<>();
 
+    public ConcurrentHashMap<Integer, HashSet<ExecutionReplyRequest>> transactionExecutionReplies = new ConcurrentHashMap<>();
 
 
     public static ViewServer viewServerInstance;
@@ -191,6 +192,80 @@ public class ViewServer extends NodeServer{
     }
 
 
+    public boolean relayRequestToServers(TransactionInputConfig transactionInputConfig){
+        try {
+
+
+        HashMap<String, TxnRelayResponse> responses = new HashMap<>();
+
+        ClientRequestThread[] threads = new ClientRequestThread[allServers.size()];
+
+        for (int i = 0; i < allServers.size(); i++) {
+
+            threads[i] = new ClientRequestThread(
+                    GlobalConfigs.serversToPortMap.get(allServers.get(i)),
+                    allServers.get(i),
+                    transactionInputConfig,
+                    this,
+                    responses
+            );
+
+        }
+
+        for (int i = 0; i < this.currentActiveServers.size(); i++) {
+            threads[i].start();
+        }
+
+        for (int i = 0; i < this.currentActiveServers.size(); i++) {
+            threads[i].join();
+        }
+
+        AtomicInteger sendAgain = new AtomicInteger();
+        AtomicInteger receivingReply = new AtomicInteger();
+
+        responses.forEach((server, txnResponse) -> {
+
+            if (txnResponse != null){
+                if(txnResponse.getOption() == 1){
+                    receivingReply.getAndIncrement();
+                    this.transactionExecutionResponseMap.get(transactionInputConfig.getTransaction().getTransactionNum()).add(server);
+                }
+                else{
+                    sendAgain.getAndIncrement();
+                }
+            }
+        });
+
+
+        Thread.sleep(100);
+
+        if(receivingReply.get() >= GlobalConfigs.f + 1){
+            this.logger.log("Transaction executed on f+1 servers");
+            return true;
+        }
+        else{
+            this.logger.log("Transaction not executed on f+1 servers");
+
+            Thread.sleep(1500);
+            // wait until view change and response
+
+            transactionExecutionResponseMap.put(transactionInputConfig.getTransaction().getTransactionNum(), new HashSet<>());
+
+            LinearPBFTGrpc.LinearPBFTBlockingStub stub = this.serversToStub.get(this.primaryServerName);
+
+            TxnResponse response = stub.request(transactionInputConfig);
+            this.logger.log("Transaction sent  : " + response.getSuccess() + "  to server : "+ response.getServerName());
+
+            return response.getSuccess();
+
+            //return false;
+        }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
 
     public boolean sendTransactionToServers(TransactionInputConfig transactionInputConfig, HashMap<String, Boolean> activeServersStatusMap) {
 
@@ -213,68 +288,36 @@ public class ViewServer extends NodeServer{
                 //System.out.println("Primary Node might be Inactive -> Response is null");
                 // Broadcast request to all servers
 
-                HashMap<String, TxnRelayResponse> responses = new HashMap<>();
+                relayRequestToServers(transactionInputConfig);
 
-                ClientRequestThread[] threads = new ClientRequestThread[allServers.size()];
-
-                for (int i = 0; i < allServers.size(); i++) {
-
-                    threads[i] = new ClientRequestThread(
-                            GlobalConfigs.serversToPortMap.get(allServers.get(i)),
-                            allServers.get(i),
-                            transactionInputConfig,
-                            this,
-                            responses
-                    );
-
-                }
-
-                for (int i = 0; i < this.currentActiveServers.size(); i++) {
-                    threads[i].start();
-                }
-
-                for (int i = 0; i < this.currentActiveServers.size(); i++) {
-                    threads[i].join();
-                }
-
-                AtomicInteger sendAgain = new AtomicInteger();
-                AtomicInteger receivingReply = new AtomicInteger();
-
-                responses.forEach((server, txnResponse) -> {
-
-                    if (txnResponse != null){
-                        if(txnResponse.getOption() == 1){
-                            receivingReply.getAndIncrement();
-                            this.transactionExecutionResponseMap.get(transactionInputConfig.getTransaction().getTransactionNum()).add(server);
-                        }
-                        else{
-                            sendAgain.getAndIncrement();
-                        }
-                    }
-                });
-
-
-                Thread.sleep(100);
-
-                if(receivingReply.get() >= GlobalConfigs.f + 1){
-                    this.logger.log("Transaction executed on f+1 servers");
-                    return true;
-                }
-                else{
-                    this.logger.log("Transaction not executed on f+1 servers");
-
-                    Thread.sleep(1500);
-                    // wait until view change
-
-                    return false;
-                }
             }
+
+
+            int i = 0;
+
+            while(i<50){
+                i++;
+                Thread.sleep(50);
+
+                if(this.transactionExecutionResponseMap.get(transactionInputConfig.getTransaction().getTransactionNum()) != null
+                        && this.transactionExecutionResponseMap.get(transactionInputConfig.getTransaction().getTransactionNum()).size() > GlobalConfigs.viewChangeQuoromSize){
+                    this.logger.log("execution complete on f+1 servers");
+
+                    System.out.println("Execution complete on f+1 servers.. moving to next..");
+
+                    return true;
+
+                }
+
+            }
+
+            return relayRequestToServers(transactionInputConfig);
 
 
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return false;
+        return true;
     }
 
 
@@ -347,6 +390,22 @@ public class ViewServer extends NodeServer{
     }
 
 
+    public void printExecutionReplies(){
+        StringBuilder sb = new StringBuilder("--------------- Print Execution Replies to Client: ----------------");
+int i = 1;
+        while(i<= tnxCount){
+
+            sb.append("\n Transaction: ").append(i).append("\n");
+            if( this.transactionExecutionReplies.get(i) != null ) {
+                for (ExecutionReplyRequest reply :  this.transactionExecutionReplies.get(i) ){
+                    sb.append( Utils.toString( reply ) );
+                }
+            }
+            i++;
+        }
+
+        this.commandLogger.log(sb.toString());
+    }
 
 
 
@@ -421,6 +480,7 @@ public class ViewServer extends NodeServer{
     public void flush() {
         this.transactionInputConfigMap = new HashMap<>();
         this.transactionExecutionResponseMap = new ConcurrentHashMap<>();
+        this.transactionExecutionReplies = new ConcurrentHashMap<>();
         this.viewNumber.set(0);
         this.primaryServerName = GlobalConfigs.initLeader;
         this.tnxCount = 1;
@@ -523,7 +583,7 @@ public class ViewServer extends NodeServer{
                                             .setSender(transactionInputConfig.getTransaction().getSender())
                                             .setReceiver(transactionInputConfig.getTransaction().getReceiver())
                                             .setAmount(transactionInputConfig.getTransaction().getAmount())
-                                            .setTransactionHash(transactionInputConfig.getTransaction().getTransactionHash())
+                                            .setTransactionHash( Utils.toString(transactionInputConfig.getTransaction()) )
                                             .setTimestamp(transactionInputConfig.getTransaction().getTimestamp())
                                             .build()
                             )
@@ -644,7 +704,9 @@ public class ViewServer extends NodeServer{
 
         viewServer.sendCommandToServers(Command.valueOf("PrintDB"), activeServersStatusMap);
         viewServer.sendCommandToServers(Command.valueOf("PrintStatus"), activeServersStatusMap);
-
+        viewServer.sendCommandToServers(Command.valueOf("PrintLog"), activeServersStatusMap);
+        viewServer.sendCommandToServers(Command.valueOf("PrintView"), activeServersStatusMap);
+        viewServer.printExecutionReplies();
 
 
 

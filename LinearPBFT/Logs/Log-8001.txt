@@ -14,58 +14,68 @@ Server is not active -> left request
 View Change request received: 1
 Server is not active -> left request
 View Change request received: 1
-Server is not active -> left request
 View Change request received: 1
 Server is not active -> left request
 View Change request received: 1
 Server is not active -> left request
-View Change request received: 2
 Server is not active -> left request
-View Change request received: 2
 View Change request received: 2
 Server is not active -> left request
 View Change request received: 2
 Server is not active -> left request
-Server is not active -> left request
-View Change request received: 2
-View Change request received: 2
-Server is not active -> left request
-Server is not active -> left request
-View Change request received: 2
 View Change request received: 2
 Server is not active -> left request
 View Change request received: 2
 Server is not active -> left request
 View Change request received: 2
 Server is not active -> left request
+View Change request received: 2
+Server is not active -> left request
+View Change request received: 2
 Server is not active -> left request
 View Change request received: 2
 View Change request received: 2
 Server is not active -> left request
 Server is not active -> left request
 View Change request received: 2
-View Change request received: 1
+View Change request received: 2
 View Change request received: 2
 Server is not active -> left request
 Server is not active -> left request
+Server is not active -> left request
 View Change request received: 2
 Server is not active -> left request
-Server is not active -> left request
-View Change request received: 1
-Server is not active -> left request
-View Change request received: 1
 View Change request received: 2
 Server is not active -> left request
+View Change request received: 2
 Server is not active -> left request
-View Change request received: 1
+View Change request received: 2
+Server is not active -> left request
+View Change request received: 2
+Server is not active -> left request
+View Change request received: 2
+Server is not active -> left request
+View Change request received: 2
+Server is not active -> left request
+View Change request received: 2
+Server is not active -> left request
+View Change request received: 3
+New View request received: 2
+Server is not active -> left request
+View Change request received: 3
+Server is not active -> left request
+Server is not active -> left request
+New View request received: 2
+Server is not active -> left request
+View Change request received: 3
+Server is not active -> left request
+View Change request received: 3
+New View request received: 2
+Server is not active -> left request
 Server is not active -> left request
 New View request received: 2
 New View request received: 2
 Server is not active -> left request
-Server is not active -> left request
-New View request received: 2
-Server is not active -> left request
-New View request received: 2
 Server is not active -> left request
 ===============================================================================================================================
 
@@ -78,78 +88,159 @@ Request received: 1
 Server is leader -> processing request -- added to queue
 Processing Transaction: 1
 Initiating Pre Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+PrePrepare lo unna Digest: nrZxrlOCLveaozWrC+Y2OoDVPCgFOO4ZbA69aNskow/cj9tKbRXRGgocD9ekeix48+m8zb7+/BQ/Z5c6Q1JWyZ+s6I3EuozpTnwtIILP/ujSvoTO+c5r+sQcfCSznbEYELjk/5yA+gAubwWiY6fpu/9amMA8fWRya9DF0Dgpz8y0EZ4sJCy5/S+1+KI2OYdJryo3iy4IMTGYquMGE4/+XspL7LhMUCqD1Sp5Hluu0hfxP/fY796I61tQ0MT9nuQi6oBp9noost9AWXAa26N5b/6a1rLs6Y+XsxiaZggYiS8qUvfjZWEJl7bxu5wqAokfZCsbjL0+bIIjrATssmi5nw==
+PrePrepare accepted for Seq num : 1 Accepts: 7
+Pre Prepare Success
+Initiating Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+Prepare lo unna Digest: CGXbZDTP1gmQ4JdoJE8yLMlc5nEzdp87lVbAh5aeZBDzoioHVjfkr4yUW+u8AlOqNVSItUdIwcsN9f510fs3HldfxortWi6/Q4iKiPEVHhf6hWmh9xHRBu/HdRPQAhTFr8xpFjWKAC74DM7rH4OIb7DTyayVhVRV/O2L0mrEIasxbkTMROtWtSW7JmhlQ7w94wd8pn3hdJ2fryPLntMUjV+8i6ltO71tMhIBAHQnMky8IcTWKKDPgrgAcOfZ5NKLzZn+xluM/yfosKlKE+it5WjJaDbbSROK3ngJzhnEVBtcYSO9TG5D6kqPowMickVPstHwd1tacOLzk922r7SrxA==
+Count of Success Prepares: 5
+Prepare Success
+Initiating Commit for SeqNum: 1 View: 0 Transaction ID: 1
+Commit lo unna Digest: CGXbZDTP1gmQ4JdoJE8yLMlc5nEzdp87lVbAh5aeZBDzoioHVjfkr4yUW+u8AlOqNVSItUdIwcsN9f510fs3HldfxortWi6/Q4iKiPEVHhf6hWmh9xHRBu/HdRPQAhTFr8xpFjWKAC74DM7rH4OIb7DTyayVhVRV/O2L0mrEIasxbkTMROtWtSW7JmhlQ7w94wd8pn3hdJ2fryPLntMUjV+8i6ltO71tMhIBAHQnMky8IcTWKKDPgrgAcOfZ5NKLzZn+xluM/yfosKlKE+it5WjJaDbbSROK3ngJzhnEVBtcYSO9TG5D6kqPowMickVPstHwd1tacOLzk922r7SrxA==
 Transaction Processed: 1
 Initiating executions : 0 : 1
 Initiating execution for seqNum: 1
-Status : PrePREPARED
+Status : COMMITTED
+Executing transaction: 1
+Transaction executed: 1
+Sending Reply to Client executed: 1 Transaction: 1
+sender: "F"
+receiver: "B"
+amount: 3
+timestamp {
+}
+transactionHash: "Transaction ( F -> B = 3 ) ; "
+transactionNum: 1
+
+Sent Reply to Client executed: 1
+Initiating execution for seqNum: 2
+Status : Not Found
 Request received: 2
 Server is leader -> processing request -- added to queue
 Processing Transaction: 2
 Initiating Pre Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 2 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+Prepare lo unna Digest: PlxGNUcsAJyIaKkatIKyxI3FC4ACrZBgCCiSOzgkgHl6Qg+VJWOM7oo1OBDY0laWczJ48gA7lHAHYSxTRYsEHBdwFPbpWIPHl+mu+2Kjahi0a3gpmgAt+D5sA5K9mrbzhCNIWDqN4KKnuEBlXMGpVuN+zUtQpqOlJVaBeFsWEkfu32gmaABpQdBFmyMhc+ZgLCukUhc+VgDBiT6z3BUFgj5uNNsBc6ZImgI0edRkhwgYI0PV7vZtmTsGKZnmBgJnWT/d52O8IjgNlflAJnUPNxZ7t4LfFMLALmRxt3GkQ/agfL6ShhUN0l2UeC3Ob+Z0IyZVle1K5u370K7UeR3Yxg==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 2 View: 0 Transaction ID: 2
+Commit lo unna Digest: PlxGNUcsAJyIaKkatIKyxI3FC4ACrZBgCCiSOzgkgHl6Qg+VJWOM7oo1OBDY0laWczJ48gA7lHAHYSxTRYsEHBdwFPbpWIPHl+mu+2Kjahi0a3gpmgAt+D5sA5K9mrbzhCNIWDqN4KKnuEBlXMGpVuN+zUtQpqOlJVaBeFsWEkfu32gmaABpQdBFmyMhc+ZgLCukUhc+VgDBiT6z3BUFgj5uNNsBc6ZImgI0edRkhwgYI0PV7vZtmTsGKZnmBgJnWT/d52O8IjgNlflAJnUPNxZ7t4LfFMLALmRxt3GkQ/agfL6ShhUN0l2UeC3Ob+Z0IyZVle1K5u370K7UeR3Yxg==
 Transaction Processed: 2
-Initiating executions : 0 : 2
-Initiating execution for seqNum: 1
-Status : PrePREPARED
+Initiating executions : 1 : 2
+Initiating execution for seqNum: 2
+Status : COMMITTED
+Executing transaction: 2
+Transaction executed: 2
+Sending Reply to Client executed: 2 Transaction: 2
+sender: "I"
+receiver: "J"
+amount: 1
+transactionNum: 2
+
+Sent Reply to Client executed: 2
+Initiating execution for seqNum: 3
+Status : Not Found
 Request received: 3
 Server is leader -> processing request -- added to queue
 Processing Transaction: 3
 Initiating Pre Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 3 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+Prepare lo unna Digest: FkOnZxlGk9xOjkNnz1VARqTg0KWSrYQAEZW/9KAwwuRw2b4E6271dbSAZ35i3Td1EdCGCLEVeT+gXyzqg8x53tJ553tiLg5RAx8A5fzCNTNZLgzn+vOKCvPEJfiJmm2mC55eZJWUFWHbMuKWCFhWZuslleYrhrOtSqJaGMyAr+4GoaSejx8fODn6TsatMiLPkD73U2E58quBX1jcKnDTLPnPozgQBtkSvfBWJhpWj0se4dWrHphBe1GtG+Fx4wzwDbnBuTV7aaW6UcO7Edld9407h1fUwyMaYk9M2I511kYmEH9WRzrsvo/g4AwaeXZXsXoPuqCnEou9weVZ0Cameg==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 3 View: 0 Transaction ID: 3
+Commit lo unna Digest: FkOnZxlGk9xOjkNnz1VARqTg0KWSrYQAEZW/9KAwwuRw2b4E6271dbSAZ35i3Td1EdCGCLEVeT+gXyzqg8x53tJ553tiLg5RAx8A5fzCNTNZLgzn+vOKCvPEJfiJmm2mC55eZJWUFWHbMuKWCFhWZuslleYrhrOtSqJaGMyAr+4GoaSejx8fODn6TsatMiLPkD73U2E58quBX1jcKnDTLPnPozgQBtkSvfBWJhpWj0se4dWrHphBe1GtG+Fx4wzwDbnBuTV7aaW6UcO7Edld9407h1fUwyMaYk9M2I511kYmEH9WRzrsvo/g4AwaeXZXsXoPuqCnEou9weVZ0Cameg==
 Transaction Processed: 3
-Initiating executions : 0 : 3
-Initiating execution for seqNum: 1
-Status : PrePREPARED
+Initiating executions : 2 : 3
+Initiating execution for seqNum: 3
+Status : COMMITTED
+Executing transaction: 3
+Transaction executed: 3
+Sending Reply to Client executed: 3 Transaction: 3
+sender: "F"
+receiver: "I"
+amount: 7
+transactionNum: 3
+
+Sent Reply to Client executed: 3
+Initiating execution for seqNum: 4
+Status : Not Found
 Request received: 4
 Server is leader -> processing request -- added to queue
 Processing Transaction: 4
 Initiating Pre Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 4 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+Prepare lo unna Digest: T+BCdiE65slG5OhiF8Dc1JVnC4fZ6xCW0PSG79j9ACwHt6ScVsfJ9V4DfkMevbO0C4RYT6hWDwNG8aqVw/q4LJ2+QWkEz6siRIRvrFn70yf0q74FPB3CPan1/C4qu1dxZ5vKO79pLSIgaXcXtXerszpiCY0xrY5mcf5irPBKwEKZonE7rtnp5evxDMxfL8jb1t4QFgwSQSKDz5PJK3oYihQDYT2+Qvq+1MHj/YY0DsjjGL113/JDL8a455NfjXIELM51qY4SNVkUPC4UyCg0G9GEGfF3Otg1mQd+Ca/xkvm667SSkxJuqvyDwQ7OZgO8HEq0IKqBA3RnwvG1w4NmGg==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 4 View: 0 Transaction ID: 4
+Commit lo unna Digest: T+BCdiE65slG5OhiF8Dc1JVnC4fZ6xCW0PSG79j9ACwHt6ScVsfJ9V4DfkMevbO0C4RYT6hWDwNG8aqVw/q4LJ2+QWkEz6siRIRvrFn70yf0q74FPB3CPan1/C4qu1dxZ5vKO79pLSIgaXcXtXerszpiCY0xrY5mcf5irPBKwEKZonE7rtnp5evxDMxfL8jb1t4QFgwSQSKDz5PJK3oYihQDYT2+Qvq+1MHj/YY0DsjjGL113/JDL8a455NfjXIELM51qY4SNVkUPC4UyCg0G9GEGfF3Otg1mQd+Ca/xkvm667SSkxJuqvyDwQ7OZgO8HEq0IKqBA3RnwvG1w4NmGg==
 Transaction Processed: 4
-Initiating executions : 0 : 4
-Initiating execution for seqNum: 1
-Status : PrePREPARED
+Initiating executions : 3 : 4
+Initiating execution for seqNum: 4
+Status : COMMITTED
+Executing transaction: 4
+Transaction executed: 4
+Sending Reply to Client executed: 4 Transaction: 4
+sender: "C"
+receiver: "D"
+amount: 6
+transactionNum: 4
+
+Sent Reply to Client executed: 4
+Initiating execution for seqNum: 5
+Status : Not Found
 Request received: 5
 Server is leader -> processing request -- added to queue
 Processing Transaction: 5
 Initiating Pre Prepare for SeqNum: 5 View: 0 Transaction ID: 5
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 5 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 5 View: 0 Transaction ID: 5
+Prepare lo unna Digest: RAuhv8JtO8psh63VshJMK/S8aDi3lBcMSFVyuMIpWh7VO3SpHQFDvGWVjaU9EFSvBVF2GCA9CMEDUPMnoO1sPzvo8qi2fUJK2I/5ddF+PDRltGMIL0Rop6LVrJ8Xm9/4ETF25K3FjQSjcb8vLTSmoledz14zKS38gzWFCxOhvc62mfS23vjMgQbphW1W864CsMVxBhOdaftNXMhFEakxL7oKKFE9ggKU12Oo5C6mCO5Sxi/1JMczzfabXFLQC54tRzGeUDoUs1wf/yJt+/7C0F45/xZwRocvSS+72jhsOHGl7hvWEyO9F35f7Arp+GHWChmEkYvSV//XZWenP4STew==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 5 View: 0 Transaction ID: 5
+Commit lo unna Digest: RAuhv8JtO8psh63VshJMK/S8aDi3lBcMSFVyuMIpWh7VO3SpHQFDvGWVjaU9EFSvBVF2GCA9CMEDUPMnoO1sPzvo8qi2fUJK2I/5ddF+PDRltGMIL0Rop6LVrJ8Xm9/4ETF25K3FjQSjcb8vLTSmoledz14zKS38gzWFCxOhvc62mfS23vjMgQbphW1W864CsMVxBhOdaftNXMhFEakxL7oKKFE9ggKU12Oo5C6mCO5Sxi/1JMczzfabXFLQC54tRzGeUDoUs1wf/yJt+/7C0F45/xZwRocvSS+72jhsOHGl7hvWEyO9F35f7Arp+GHWChmEkYvSV//XZWenP4STew==
 Transaction Processed: 5
-Initiating executions : 0 : 5
-Initiating execution for seqNum: 1
-Status : PrePREPARED
+Initiating executions : 4 : 5
+Initiating execution for seqNum: 5
+Status : COMMITTED
+Executing transaction: 5
+Transaction Execution failed: 5
+Sent Reply to Client executed: 5
+Initiating execution for seqNum: 6
+Status : Not Found
 ===============================================================================================================================
 
+Server activated
                        Test Set : 3     
 
 ===============================================================================================================================
 
-Server activated
 Request received: 1
 Server is leader -> processing request -- added to queue
 Processing Transaction: 1
 Initiating Pre Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+PrePrepare lo unna Digest: PWUi/qs7lwW0HdG/QB1HD5YtE/LXBzuts/x3oqhmurBrEpkLHU//xKv1Jyn1OvwtLc1ULYuCOn6hLzGyrNHN0hdH1P7z4IpsXbV9Rgenh9Z8XLlVtMi9tNtVEbeqdgr5sXsdjbC05FhDcpmSaYgjilwidH6NNWnv4uAaujwhwGivlNMK/uklsceqX0y+XqTpo0J6k+9u8SwOHka02Gw1w2kGTO5WQ76rv+N2ytKfG22Axyed7znlWHXdAyokh7p27iSfkcRPPiy6T+2/LvH14Y3OInmeWtk++fBuX+JuFTUxZm/RajvZzIXx9U8nG9hpKR08+8pzagw72/MhNZsMnA==
 PrePrepare accepted for Seq num : 1 Accepts: 5
 Pre Prepare Success
 Initiating Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+Prepare lo unna Digest: rcVz7nEt2i4zCXrorqWv24F2ZVCOXzSon888lpVO2hzuAuW0/B0VIvibO1FNSRs7CiHUxpMlOY5hhwPbYkdYk5bHPeTKzHqd+vo01TfsFxHrX8FD2yPQS1mfZ9ns+HhY+c8wPylSmYgOCybya1m2iwO3ERvBOBZjxjsFeyceaJKIyL9B8chkVZFt37GFI4mHmXO8Lr42/1AN+8s3P9ghc2XwwyymsP6LB4ATpQlhVrQum7lSwcXgkY9zrPbLWaJo/DBz4Bog5ogY//pUzHptuL25rd+vqO/LYLL2U1hTA72NMZ0fy8BKLVduCca1X7I88AnpPCrtKIu1Fa/LvwMGHA==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 1 View: 0 Transaction ID: 1
+Commit lo unna Digest: rcVz7nEt2i4zCXrorqWv24F2ZVCOXzSon888lpVO2hzuAuW0/B0VIvibO1FNSRs7CiHUxpMlOY5hhwPbYkdYk5bHPeTKzHqd+vo01TfsFxHrX8FD2yPQS1mfZ9ns+HhY+c8wPylSmYgOCybya1m2iwO3ERvBOBZjxjsFeyceaJKIyL9B8chkVZFt37GFI4mHmXO8Lr42/1AN+8s3P9ghc2XwwyymsP6LB4ATpQlhVrQum7lSwcXgkY9zrPbLWaJo/DBz4Bog5ogY//pUzHptuL25rd+vqO/LYLL2U1hTA72NMZ0fy8BKLVduCca1X7I88AnpPCrtKIu1Fa/LvwMGHA==
 Transaction Processed: 1
 Initiating executions : 0 : 1
 Initiating execution for seqNum: 1
@@ -162,6 +253,7 @@ receiver: "A"
 amount: 3
 timestamp {
 }
+transactionHash: "Transaction ( G -> A = 3 ) ; "
 transactionNum: 1
 
 Sent Reply to Client executed: 1
@@ -171,11 +263,15 @@ Request received: 2
 Server is leader -> processing request -- added to queue
 Processing Transaction: 2
 Initiating Pre Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 2 Accepts: 5
 Pre Prepare Success
 Initiating Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+Prepare lo unna Digest: Z6gaOhwyrP4J2Xs36fy377s+spXkq59UL0FdTsBBGn8TA2Gwruqm7VJNGj71iSGsH4EbZHVCKky90bZL/wQH/1ST7NBFZTu9FjkmVsUYADwn/9aRbvVQBwUg7e18FtVhQZsHqXU63/Cv5CWijr/AQCJIFksALdgaLj3lp+9Bqg0wGw3TrrafP3cI0cwnnZOyV8+OTjHLc8/Wmf7nkCUX6Rqj0HqlLXDGRxSPzWz6Zx1JeThiy0eik+CnmoMu6yUeMbqxUPigHnXug19LGkzQ87g4WgmGDkJoF+3Px91Rsh3m+ZLu0uzT+sCyZwjVDEFYI/7r60iL9APqU3zkWkxITQ==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 2 View: 0 Transaction ID: 2
+Commit lo unna Digest: Z6gaOhwyrP4J2Xs36fy377s+spXkq59UL0FdTsBBGn8TA2Gwruqm7VJNGj71iSGsH4EbZHVCKky90bZL/wQH/1ST7NBFZTu9FjkmVsUYADwn/9aRbvVQBwUg7e18FtVhQZsHqXU63/Cv5CWijr/AQCJIFksALdgaLj3lp+9Bqg0wGw3TrrafP3cI0cwnnZOyV8+OTjHLc8/Wmf7nkCUX6Rqj0HqlLXDGRxSPzWz6Zx1JeThiy0eik+CnmoMu6yUeMbqxUPigHnXug19LGkzQ87g4WgmGDkJoF+3Px91Rsh3m+ZLu0uzT+sCyZwjVDEFYI/7r60iL9APqU3zkWkxITQ==
 Transaction Processed: 2
 Initiating executions : 1 : 2
 Initiating execution for seqNum: 2
@@ -195,52 +291,100 @@ Request received: 3
 Server is leader -> processing request -- added to queue
 Processing Transaction: 3
 Initiating Pre Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
+PrePrepare accepted for Seq num : 3 Accepts: 5
+Pre Prepare Success
+Initiating Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+Prepare lo unna Digest: WL7iRfaHNb2EA5p4LlkQwkdSODM8X21Bkt5164N+ysLqf6+Swcu9ZhldZXdjVzobRWsuQdboADpmk2tHqPVJBporai89r1YZz/Xj6trkbC7qAUTSU8pFEbILUTMSoB9xOcUqmnm33CLFpbEHU2Srj0PHX/BV2xtNcZ8sjxV5yqarRRt3B/NxzsaozC+DCHSbPBVUg+tS8f1+LIUlX+tGrHb/dts6XTd8WpqxUFFeJM1euT6FozM0/WCgA+Ff4D6iAdHvV5xO+0NXXz8b69z6Pw4+7406P5xR9SFWffcdb/yNB1+kS/mpjzvDVSUf9j+fRjZZ6tnB0OXE1l3mnN/u4g==
+Count of Success Prepares: 5
+Prepare Success
+Initiating Commit for SeqNum: 3 View: 0 Transaction ID: 3
+Commit lo unna Digest: WL7iRfaHNb2EA5p4LlkQwkdSODM8X21Bkt5164N+ysLqf6+Swcu9ZhldZXdjVzobRWsuQdboADpmk2tHqPVJBporai89r1YZz/Xj6trkbC7qAUTSU8pFEbILUTMSoB9xOcUqmnm33CLFpbEHU2Srj0PHX/BV2xtNcZ8sjxV5yqarRRt3B/NxzsaozC+DCHSbPBVUg+tS8f1+LIUlX+tGrHb/dts6XTd8WpqxUFFeJM1euT6FozM0/WCgA+Ff4D6iAdHvV5xO+0NXXz8b69z6Pw4+7406P5xR9SFWffcdb/yNB1+kS/mpjzvDVSUf9j+fRjZZ6tnB0OXE1l3mnN/u4g==
 Transaction Processed: 3
 Initiating executions : 2 : 3
 Initiating execution for seqNum: 3
-Status : PrePREPARED
+Status : COMMITTED
+Executing transaction: 3
+Transaction Execution failed: 3
+Sent Reply to Client executed: 3
+Initiating execution for seqNum: 4
+Status : Not Found
 Request received: 4
 Server is leader -> processing request -- added to queue
 Processing Transaction: 4
 Initiating Pre Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 4 Accepts: 5
 Pre Prepare Success
 Initiating Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+Prepare lo unna Digest: XzDPY1frdPvM4YMs6j/Lc/MbMn4/3yOkBZT7nki8LelY3fXViiHYsvrlaTETRWVdnUBXlFFYsgFgNIHSpSme6Cw5fg4stQzHANQmqXLkCupjVCEVZmZcn26lX9iFQi6i0KrwNbPt4F0lfo363GYy2efFnJH/T1WeAv/HJNp2EhE3GDUw6KyJbnRIgYxdiLQ1lGsCOJ56pvhyt5gz6udn+BRQ+lALGMIUNg3u1fDWjsFEVrtaZ9VkLTdTSrD26JNlNuel/axKAFHyZ/IFDXEldKseqFxAlfrQxZFgcONVf+qZ9rVt8ZoyNauXHBCMDq6tnk4trRaIjLcpQqdctBqpzA==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 4 View: 0 Transaction ID: 4
+Commit lo unna Digest: XzDPY1frdPvM4YMs6j/Lc/MbMn4/3yOkBZT7nki8LelY3fXViiHYsvrlaTETRWVdnUBXlFFYsgFgNIHSpSme6Cw5fg4stQzHANQmqXLkCupjVCEVZmZcn26lX9iFQi6i0KrwNbPt4F0lfo363GYy2efFnJH/T1WeAv/HJNp2EhE3GDUw6KyJbnRIgYxdiLQ1lGsCOJ56pvhyt5gz6udn+BRQ+lALGMIUNg3u1fDWjsFEVrtaZ9VkLTdTSrD26JNlNuel/axKAFHyZ/IFDXEldKseqFxAlfrQxZFgcONVf+qZ9rVt8ZoyNauXHBCMDq6tnk4trRaIjLcpQqdctBqpzA==
 Transaction Processed: 4
-Initiating executions : 2 : 4
-Initiating execution for seqNum: 3
-Status : PrePREPARED
+Initiating executions : 3 : 4
+Initiating execution for seqNum: 4
+Status : COMMITTED
+Executing transaction: 4
+Transaction executed: 4
+Sending Reply to Client executed: 4 Transaction: 4
+sender: "A"
+receiver: "E"
+amount: 6
+transactionNum: 4
+
+Sent Reply to Client executed: 4
+Initiating execution for seqNum: 5
+Status : Not Found
 Request received: 5
 Server is leader -> processing request -- added to queue
 Processing Transaction: 5
 Initiating Pre Prepare for SeqNum: 5 View: 0 Transaction ID: 5
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 5 Accepts: 5
 Pre Prepare Success
 Initiating Prepare for SeqNum: 5 View: 0 Transaction ID: 5
+Prepare lo unna Digest: jhJQ+HsobJ2sp5Bzj4zq8RszJcQPzeuMszwoZwfMRL4KjeLOuofMvG4vgXi5jpsXExRX49QO8Y07hJNxT9O9EiVTdGdURAvXHGedrXgAfdAQFXhGt2Id5UiE/T94LxWXbo6YYR1fhJ0iwaq7a+Kwoi4/f/IuAoNZFXyoWSZkbax1rw4ilJfTpX5HTlDJNdV5Tz08Eod02fltCCQWCRJ7QgAs7BaRBw4Qhxi71S5x2TkREQplQsUJbZ6RUqc4xY/i6QMCfPXw+K2Ufp3ICSEuWBRd9AV/wJK331kyrzldvNoSLaxZlPwqBp7VAL1OELGWx0XiUrIG85WUZBGKJRSE7Q==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 5 View: 0 Transaction ID: 5
+Commit lo unna Digest: jhJQ+HsobJ2sp5Bzj4zq8RszJcQPzeuMszwoZwfMRL4KjeLOuofMvG4vgXi5jpsXExRX49QO8Y07hJNxT9O9EiVTdGdURAvXHGedrXgAfdAQFXhGt2Id5UiE/T94LxWXbo6YYR1fhJ0iwaq7a+Kwoi4/f/IuAoNZFXyoWSZkbax1rw4ilJfTpX5HTlDJNdV5Tz08Eod02fltCCQWCRJ7QgAs7BaRBw4Qhxi71S5x2TkREQplQsUJbZ6RUqc4xY/i6QMCfPXw+K2Ufp3ICSEuWBRd9AV/wJK331kyrzldvNoSLaxZlPwqBp7VAL1OELGWx0XiUrIG85WUZBGKJRSE7Q==
 Transaction Processed: 5
-Initiating executions : 2 : 5
-Initiating execution for seqNum: 3
-Status : PrePREPARED
+Initiating executions : 4 : 5
+Initiating execution for seqNum: 5
+Status : COMMITTED
+Executing transaction: 5
+Transaction executed: 5
+Sending Reply to Client executed: 5 Transaction: 5
+sender: "I"
+receiver: "C"
+amount: 1
+transactionNum: 5
+
+Sent Reply to Client executed: 5
+Initiating execution for seqNum: 6
+Status : Not Found
 ===============================================================================================================================
 
+Server activated
                        Test Set : 4     
 
-Server activated
 ===============================================================================================================================
 
 Request received: 1
 Server is leader -> processing request -- added to queue
 Processing Transaction: 1
 Initiating Pre Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+PrePrepare lo unna Digest: gqNVPvvnmDaB18Hritx5k44LuSedsh+nKUPYlrYHXRXqQKRZFdwY+kA89rBte05ejPw7ZhGUGNCk60Azn8LeLoPTFQEXiPzhFBSlMFaj2Yixv3JfLPMyyQScuw/TICvW3gTMdxlXGKE841Dflzsxm4/HFYGPjhRnf/eznfno/KiSxD0b8lRL3Ql8wiRSSuHZiTWi93FMEDofCXHOaTqbOE8V5q2hUB8PJZhzUX/f4Nh4i2BvhA7chWCAzyAKIB1a7WwXy6tEsNM+o1WyVkxIqWEN86yNs8t87xPwNcvhACtI5I7zlRkscilrWZ/qiFp/+SzVinWx0g9ILRQ7jUpY0w==
 PrePrepare accepted for Seq num : 1 Accepts: 6
 Pre Prepare Success
 Initiating Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+Prepare lo unna Digest: eyrlDFej5eIEQ307HzGpVDKtqQQoKFFNdCsvpAdk4roVj5GqjT5TQ3PGN9eNmpPaLcoGsWGCQ49upak0Q4DW+r0xndTjfC9dAZ5J0GWxec4HZNU7U9zED8+pCmkagiBYYk4JW1y82XgalVkPlZNbuf3l1Aw/5jkmcljbO7r2SfiFHjgXrziNxDgCYPYyiuTVgT0EkaTTqnV5kvy2jeAohLsHCBl8VLLN02v8QMF24o/b4FqJPrOcjx/CEQ2hTHCo02bRbKh/EW3lNwihqafU0n6p5SHltDLXwV7g/cBR6kl7X+XCYvQJ0mFKsbFrhcb48ArysGzbZDsMCQItAk6DLw==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 1 View: 0 Transaction ID: 1
+Commit lo unna Digest: eyrlDFej5eIEQ307HzGpVDKtqQQoKFFNdCsvpAdk4roVj5GqjT5TQ3PGN9eNmpPaLcoGsWGCQ49upak0Q4DW+r0xndTjfC9dAZ5J0GWxec4HZNU7U9zED8+pCmkagiBYYk4JW1y82XgalVkPlZNbuf3l1Aw/5jkmcljbO7r2SfiFHjgXrziNxDgCYPYyiuTVgT0EkaTTqnV5kvy2jeAohLsHCBl8VLLN02v8QMF24o/b4FqJPrOcjx/CEQ2hTHCo02bRbKh/EW3lNwihqafU0n6p5SHltDLXwV7g/cBR6kl7X+XCYvQJ0mFKsbFrhcb48ArysGzbZDsMCQItAk6DLw==
 Transaction Processed: 1
 Initiating executions : 0 : 1
 Initiating execution for seqNum: 1
@@ -253,6 +397,7 @@ receiver: "C"
 amount: 2
 timestamp {
 }
+transactionHash: "Transaction ( A -> C = 2 ) ; "
 transactionNum: 1
 
 Sent Reply to Client executed: 1
@@ -262,11 +407,15 @@ Request received: 2
 Server is leader -> processing request -- added to queue
 Processing Transaction: 2
 Initiating Pre Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 2 Accepts: 6
 Pre Prepare Success
 Initiating Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+Prepare lo unna Digest: XmiTK+XW56jtWmYkuMWo/lPaDszyeciUR5Pa+uvfCPVzAupNiIdmjX73tTAMW1FvTtjVnB1L5lSIJFI6NjHb9fSE+2MIYaiB1bagsFbIjdoA95zCO82tGSe7ghXucyL/gasxiIDlHKtrj2nB8fOsP2Pg7R5Az6ykSWP08iXosf932IkH235/49mW9Ob8uaXmzGLZgz5OucHVXX86Z6GVj2bc09INxs6jP/dzS0yv00ep1ypPsOJd/4Ocnq9L2etdIyYt0W1nEshB6Rp3Nge8E6+Ko1zaj6Pnr7RY1oVomXUIyXePOMftow13it2bHnVSla+voPPsAzf6Q4FW0uWBUg==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 2 View: 0 Transaction ID: 2
+Commit lo unna Digest: XmiTK+XW56jtWmYkuMWo/lPaDszyeciUR5Pa+uvfCPVzAupNiIdmjX73tTAMW1FvTtjVnB1L5lSIJFI6NjHb9fSE+2MIYaiB1bagsFbIjdoA95zCO82tGSe7ghXucyL/gasxiIDlHKtrj2nB8fOsP2Pg7R5Az6ykSWP08iXosf932IkH235/49mW9Ob8uaXmzGLZgz5OucHVXX86Z6GVj2bc09INxs6jP/dzS0yv00ep1ypPsOJd/4Ocnq9L2etdIyYt0W1nEshB6Rp3Nge8E6+Ko1zaj6Pnr7RY1oVomXUIyXePOMftow13it2bHnVSla+voPPsAzf6Q4FW0uWBUg==
 Transaction Processed: 2
 Initiating executions : 1 : 2
 Initiating execution for seqNum: 2
@@ -286,11 +435,15 @@ Request received: 3
 Server is leader -> processing request -- added to queue
 Processing Transaction: 3
 Initiating Pre Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 3 Accepts: 6
 Pre Prepare Success
 Initiating Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+Prepare lo unna Digest: K+XXN/IqTUE8OZ553+l0bqE1VovmYMc6uGpov6gOc1zhxC+GKnJovuioJ46/ppMaiqMuAil1Fp/sZEWPsSs3UQt2kDfOdb9w5uu1XYZZuNEGpVZ1COcbZeu9bkl5nMmGR9sKPEC50z+oiRVyfFqXEETwfezaK2QfZk/7kMfgacGG7k4phFFg/KrOdL6BE/zagO+AjVg3ppE/bfAvovDxJrdf+ppcUQ814RurnhekJ4aLEJX8EJmbsGYXwNGdrvm3fsAjl6D/2If64N0d01OmOErMGBb4jAu/KjqaMIdCNkR3ITI7zUB7+Xb+X7QzM4UGxb8firjEjevCRSoCoRxuiw==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 3 View: 0 Transaction ID: 3
+Commit lo unna Digest: K+XXN/IqTUE8OZ553+l0bqE1VovmYMc6uGpov6gOc1zhxC+GKnJovuioJ46/ppMaiqMuAil1Fp/sZEWPsSs3UQt2kDfOdb9w5uu1XYZZuNEGpVZ1COcbZeu9bkl5nMmGR9sKPEC50z+oiRVyfFqXEETwfezaK2QfZk/7kMfgacGG7k4phFFg/KrOdL6BE/zagO+AjVg3ppE/bfAvovDxJrdf+ppcUQ814RurnhekJ4aLEJX8EJmbsGYXwNGdrvm3fsAjl6D/2If64N0d01OmOErMGBb4jAu/KjqaMIdCNkR3ITI7zUB7+Xb+X7QzM4UGxb8firjEjevCRSoCoRxuiw==
 Transaction Processed: 3
 Initiating executions : 2 : 3
 Initiating execution for seqNum: 3
@@ -310,11 +463,15 @@ Request received: 4
 Server is leader -> processing request -- added to queue
 Processing Transaction: 4
 Initiating Pre Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 4 Accepts: 6
 Pre Prepare Success
 Initiating Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+Prepare lo unna Digest: rh5+zed5kftE4kAel/UjW4jhw1C6JK28bj60yZNwEzVwIR5mP/cYQGsHsoXUAYUxFWteSTMxm6vSh08IHptLWeQTZW6QMuN+JHT5MtyHKPwTBpxRPwNdZP1VTNX6IEV6tiwVy2Anao/8mAA7q/oBLeMQuMwQ8PsCjh/5SWFAQKSlZN2PYE09X5EqWNUfNsmqJ22ChlDJTphqVmYuTFACqHaSzmUNYFD+5IkcOED7eF59je6OA93tQwMSwNG1ziP8WN9rlwNEoZiOl4HI1XoqRDifdJVyV2/CwHeubSqMEhI+pgmF+QNB/v0vp3b8e04LlXAVwWN83645jNLVR9t/GQ==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 4 View: 0 Transaction ID: 4
+Commit lo unna Digest: rh5+zed5kftE4kAel/UjW4jhw1C6JK28bj60yZNwEzVwIR5mP/cYQGsHsoXUAYUxFWteSTMxm6vSh08IHptLWeQTZW6QMuN+JHT5MtyHKPwTBpxRPwNdZP1VTNX6IEV6tiwVy2Anao/8mAA7q/oBLeMQuMwQ8PsCjh/5SWFAQKSlZN2PYE09X5EqWNUfNsmqJ22ChlDJTphqVmYuTFACqHaSzmUNYFD+5IkcOED7eF59je6OA93tQwMSwNG1ziP8WN9rlwNEoZiOl4HI1XoqRDifdJVyV2/CwHeubSqMEhI+pgmF+QNB/v0vp3b8e04LlXAVwWN83645jNLVR9t/GQ==
 Transaction Processed: 4
 Initiating executions : 3 : 4
 Initiating execution for seqNum: 4
@@ -334,11 +491,15 @@ Request received: 5
 Server is leader -> processing request -- added to queue
 Processing Transaction: 5
 Initiating Pre Prepare for SeqNum: 5 View: 0 Transaction ID: 5
-PrePrepare accepted for Seq num : 5 Accepts: 5
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
+PrePrepare accepted for Seq num : 5 Accepts: 6
 Pre Prepare Success
 Initiating Prepare for SeqNum: 5 View: 0 Transaction ID: 5
+Prepare lo unna Digest: X1aLCYApK31Ya+ocQqFxuxlgQJbuAb4UEMZO916kz7kdURcPPop+bEB12B0S5NCjaIG2JmDQR0S5+pZlfrmJfCew9ZJNH7CGkF8Det7VdTuD69LHlDuwG8p8csk6K/KnOXB0QzsYiWHxVfaPvBoqAr6h/MqKhR1UYC6l5t2xIa8V0TXLU3ihQjqfjP55RXe1xpMdQjbMcCKN7OVAFOci+94mXT+W00ALqG6hv/03Zn6VpF/nSsXtXAtnke6Dcp9W1TcvnNg42WKx1qHEYe7a8PoRRsxGq8Z1U2//hhv5ZIL/Q9iqe/LYTTw7UVMm1h0tei4EhyyG1sqsb1ak8nGI+A==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 5 View: 0 Transaction ID: 5
+Commit lo unna Digest: X1aLCYApK31Ya+ocQqFxuxlgQJbuAb4UEMZO916kz7kdURcPPop+bEB12B0S5NCjaIG2JmDQR0S5+pZlfrmJfCew9ZJNH7CGkF8Det7VdTuD69LHlDuwG8p8csk6K/KnOXB0QzsYiWHxVfaPvBoqAr6h/MqKhR1UYC6l5t2xIa8V0TXLU3ihQjqfjP55RXe1xpMdQjbMcCKN7OVAFOci+94mXT+W00ALqG6hv/03Zn6VpF/nSsXtXAtnke6Dcp9W1TcvnNg42WKx1qHEYe7a8PoRRsxGq8Z1U2//hhv5ZIL/Q9iqe/LYTTw7UVMm1h0tei4EhyyG1sqsb1ak8nGI+A==
 Transaction Processed: 5
 Initiating executions : 4 : 5
 Initiating execution for seqNum: 5
@@ -358,11 +519,15 @@ Request received: 6
 Server is leader -> processing request -- added to queue
 Processing Transaction: 6
 Initiating Pre Prepare for SeqNum: 6 View: 0 Transaction ID: 6
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 6 Accepts: 6
 Pre Prepare Success
 Initiating Prepare for SeqNum: 6 View: 0 Transaction ID: 6
+Prepare lo unna Digest: d60ccM7iUDJX3pK6sKGYrX48frZc3wZWVzIqcT2lxYQeyGVyHpljajrw9ArsMaRozXWHJZhlxUOc4fClG+nG/9WngidgsM/codkGE+WCz2FUWBNfrxTWW6aOOsYvCtj16uRXcLZS4+3EKDxTXbEanuu06olRBdwxyUcoKlMbX0OhmhgP71UAkSZyQ5idTIuVH4xm/Z+zVVsFfXSHNhfCXmgJn1UKz3ZR95CEcqXE7DWWMXgJKo8P/NS/+CqWAghQAurY3qmN5VaST+KeB08XHMLMruJZ6BiRncIoY3yN4SHxda19YJbt7fmb5XytZfXoAuridDPWq6nE1Z+5ymv0gA==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 6 View: 0 Transaction ID: 6
+Commit lo unna Digest: d60ccM7iUDJX3pK6sKGYrX48frZc3wZWVzIqcT2lxYQeyGVyHpljajrw9ArsMaRozXWHJZhlxUOc4fClG+nG/9WngidgsM/codkGE+WCz2FUWBNfrxTWW6aOOsYvCtj16uRXcLZS4+3EKDxTXbEanuu06olRBdwxyUcoKlMbX0OhmhgP71UAkSZyQ5idTIuVH4xm/Z+zVVsFfXSHNhfCXmgJn1UKz3ZR95CEcqXE7DWWMXgJKo8P/NS/+CqWAghQAurY3qmN5VaST+KeB08XHMLMruJZ6BiRncIoY3yN4SHxda19YJbt7fmb5XytZfXoAuridDPWq6nE1Z+5ymv0gA==
 Transaction Processed: 6
 Initiating executions : 5 : 6
 Initiating execution for seqNum: 6
@@ -382,11 +547,15 @@ Request received: 7
 Server is leader -> processing request -- added to queue
 Processing Transaction: 7
 Initiating Pre Prepare for SeqNum: 7 View: 0 Transaction ID: 7
-PrePrepare accepted for Seq num : 7 Accepts: 6
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
+PrePrepare accepted for Seq num : 7 Accepts: 5
 Pre Prepare Success
 Initiating Prepare for SeqNum: 7 View: 0 Transaction ID: 7
+Prepare lo unna Digest: EFJMsUhTT4QfJcd+ZElkBsO2VS43r2L+cTSEsKiKeG72VAImcbYELH0TmpDdE0CA/38RdJZIMNxGnWAw0YnVRp53FyiE7CDT56xAixx/Ht56DaFru7GgZHETAcIRG5F1heEXB1RTA2EpaPUWJF9y5yUy1PZ8VzALdPQRTsH41FvxcIlFp0xzyIxcJh+YsMTiTbCoj25Ktn5mju4zHzqHmBHkyCw1Xn8FqRvqFp2E1j9ywc65050i/2g40e8YY80cFLTUsZZqwe0pk1AUV5xtBAJ5lGSBWqAfsRNaTOyivoVj8/jrxr/9Xwgwu6N7ZTrEPGHFodxSfuCwlDiUR3kstw==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 7 View: 0 Transaction ID: 7
+Commit lo unna Digest: EFJMsUhTT4QfJcd+ZElkBsO2VS43r2L+cTSEsKiKeG72VAImcbYELH0TmpDdE0CA/38RdJZIMNxGnWAw0YnVRp53FyiE7CDT56xAixx/Ht56DaFru7GgZHETAcIRG5F1heEXB1RTA2EpaPUWJF9y5yUy1PZ8VzALdPQRTsH41FvxcIlFp0xzyIxcJh+YsMTiTbCoj25Ktn5mju4zHzqHmBHkyCw1Xn8FqRvqFp2E1j9ywc65050i/2g40e8YY80cFLTUsZZqwe0pk1AUV5xtBAJ5lGSBWqAfsRNaTOyivoVj8/jrxr/9Xwgwu6N7ZTrEPGHFodxSfuCwlDiUR3kstw==
 Transaction Processed: 7
 Initiating executions : 6 : 7
 Initiating execution for seqNum: 7
@@ -402,9 +571,9 @@ transactionNum: 7
 Sent Reply to Client executed: 7
 Initiating execution for seqNum: 8
 Status : Not Found
+Server activated
 ===============================================================================================================================
 
-Server activated
                        Test Set : 5     
 
 ===============================================================================================================================
@@ -413,11 +582,15 @@ Request received: 1
 Server is leader -> processing request -- added to queue
 Processing Transaction: 1
 Initiating Pre Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+PrePrepare lo unna Digest: OoAnuAOAatlZMbXP9ySkGhDBS9FLp8AO2fDpNQCXmHiTLNFJujr8FQU4U4LgcRHQzIqFxq1WkQpQ/nhqTDS2ubj44qakgN0jh0Av4sHao65NJ72qwhsm6O85Q7P7wjpoBS9Dk9xPCS/CfZ1oSWZbXkhm+/JfJJD7h4aJvU3uLalydFjZtO/yonxpdfe1XI13aOs9wvvUBpvlpQKB5Yxd9wnfBypPLogo2yXWfovPvQMSisn5NQwlDHeCTRGa3cePtAxsdNrS5yvPjDReNtOBKVBH4DGtL4Mf3y2LB/xCrfJ0SiLuhqYPwpS2XsukVFpHmBCnnh7j1v8aPM2soBnWmQ==
 PrePrepare accepted for Seq num : 1 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+Prepare lo unna Digest: CHOkAAiKdaz5A8Jyxkxq/t9z1EqRWMu6+RVX8xYNBNpmJjd4KgHQ9XMhzQQQABz0dIIzdEy0BU+bnarCokKbiZrGvSPssFol98MEYUsj2fypE1mqgf7bTejma+8f93AosGbGtuz4NauL88AwejYF0NdF5lKoX42y6pMMqqzwlPGAvHrQgz/3O5qKHHfEz0jRFWWzJ2jNGuo/Xli/EMRwlqGkBMTJCO4fIe1V8qVwglDvY5/fnXaINC96L9bT4A/mFrWvT3HpvxzWjfPXyA+3uxioaigFAj6qXP3JKYtJVqkHtHf6W1FjtCC+aC+MTpXS4TS6DAfABuVZKJhTvLEjXw==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 1 View: 0 Transaction ID: 1
+Commit lo unna Digest: CHOkAAiKdaz5A8Jyxkxq/t9z1EqRWMu6+RVX8xYNBNpmJjd4KgHQ9XMhzQQQABz0dIIzdEy0BU+bnarCokKbiZrGvSPssFol98MEYUsj2fypE1mqgf7bTejma+8f93AosGbGtuz4NauL88AwejYF0NdF5lKoX42y6pMMqqzwlPGAvHrQgz/3O5qKHHfEz0jRFWWzJ2jNGuo/Xli/EMRwlqGkBMTJCO4fIe1V8qVwglDvY5/fnXaINC96L9bT4A/mFrWvT3HpvxzWjfPXyA+3uxioaigFAj6qXP3JKYtJVqkHtHf6W1FjtCC+aC+MTpXS4TS6DAfABuVZKJhTvLEjXw==
 Transaction Processed: 1
 Initiating executions : 0 : 1
 Initiating execution for seqNum: 1
@@ -430,6 +603,7 @@ receiver: "B"
 amount: 1
 timestamp {
 }
+transactionHash: "Transaction ( A -> B = 1 ) ; "
 transactionNum: 1
 
 Sent Reply to Client executed: 1
@@ -439,11 +613,15 @@ Request received: 2
 Server is leader -> processing request -- added to queue
 Processing Transaction: 2
 Initiating Pre Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 2 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+Prepare lo unna Digest: ji2a5RWQDUltRZcKvG2BQdLWufXK5wxEoLwhKXZec7tlAZmu3UEcNkWtid3VHbd3fUgmUaTJ7kBkYdDQeC0JJBxlyNKlcmomfJrMBwlthfVm+o/9EYN0HbzW2U1KHjVSDJldiDUl1PkVA3qhMewmm/TIHjgqDfqjbI4Y7VSNge4EVQRnGdYLIcKyMwc70rCnHZe0IVm2wIoLiKmlMgoeQPAk20Hqgh1U+IfiJhJt8H3lQSZN+Er0CrigpVg6kz5nPpTV3MXEh+ZbWg//mxrgNzLTUptJnDHkENWwYOW4PDrzoPU0e9Stihv4rlG/31dxPeI//X8GAQQeXPupUFUIoA==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 2 View: 0 Transaction ID: 2
+Commit lo unna Digest: ji2a5RWQDUltRZcKvG2BQdLWufXK5wxEoLwhKXZec7tlAZmu3UEcNkWtid3VHbd3fUgmUaTJ7kBkYdDQeC0JJBxlyNKlcmomfJrMBwlthfVm+o/9EYN0HbzW2U1KHjVSDJldiDUl1PkVA3qhMewmm/TIHjgqDfqjbI4Y7VSNge4EVQRnGdYLIcKyMwc70rCnHZe0IVm2wIoLiKmlMgoeQPAk20Hqgh1U+IfiJhJt8H3lQSZN+Er0CrigpVg6kz5nPpTV3MXEh+ZbWg//mxrgNzLTUptJnDHkENWwYOW4PDrzoPU0e9Stihv4rlG/31dxPeI//X8GAQQeXPupUFUIoA==
 Transaction Processed: 2
 Initiating executions : 1 : 2
 Initiating execution for seqNum: 2
@@ -463,11 +641,15 @@ Request received: 3
 Server is leader -> processing request -- added to queue
 Processing Transaction: 3
 Initiating Pre Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 3 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+Prepare lo unna Digest: K2SrCSfE2Scgx9ddCHDyXOD2HVXu9j/sGxPNLUURwDJ+xr9vZfpxd4VC8jlDjUvweLHkr53LefGn0IT7uhtlsjrf1627zuItUpTIRTOhRGbie5/932h5cl44DnDpgy9geqI4Y87g/zlSvZnqjmbFcL0mWOIEzoIP1WnAh5qQDd9xuMxtqmGgTOcEn0uVYKMSsglc6825+tSAAwsCkMsfH0lNc4Wpu2LhMOz6KfshRzmguUmWx6Lqp8xsQKCmBn39EqQsuHwftLbFzEzvrsIOG3exf/0Pxu5Cw91oJfwW6qJUAG9x023L9SQzL3ycmjlzUSVOHcsHfVbuAiYz26DXHg==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 3 View: 0 Transaction ID: 3
+Commit lo unna Digest: K2SrCSfE2Scgx9ddCHDyXOD2HVXu9j/sGxPNLUURwDJ+xr9vZfpxd4VC8jlDjUvweLHkr53LefGn0IT7uhtlsjrf1627zuItUpTIRTOhRGbie5/932h5cl44DnDpgy9geqI4Y87g/zlSvZnqjmbFcL0mWOIEzoIP1WnAh5qQDd9xuMxtqmGgTOcEn0uVYKMSsglc6825+tSAAwsCkMsfH0lNc4Wpu2LhMOz6KfshRzmguUmWx6Lqp8xsQKCmBn39EqQsuHwftLbFzEzvrsIOG3exf/0Pxu5Cw91oJfwW6qJUAG9x023L9SQzL3ycmjlzUSVOHcsHfVbuAiYz26DXHg==
 Transaction Processed: 3
 Initiating executions : 2 : 3
 Initiating execution for seqNum: 3
@@ -487,11 +669,15 @@ Request received: 4
 Server is leader -> processing request -- added to queue
 Processing Transaction: 4
 Initiating Pre Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 4 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+Prepare lo unna Digest: V1LQGevOt4chGQcuZL+PiIEYwxmfKph2UR1yg+iF/RbS/D1k9NT7AAQhE9XNLBBVuvZa1gCDI9rHJrJxbAYZo62X40ZJlwLY7O+re7ZWR5eOtguRBI3E/jfpt6Bs7w0lvRCgnyuLMnhfSgf3/tn+AG4gUR5XVL72lS7I8Wgp8wO1pNYmGxdMMZo1v8BbmSMJCliojCLLuFgrcUfQdjuwnUdU3n6tFgyJmDZukxk4EV+cWkzo7Obv9tdoKtMCE7oTkQMKeJM1F+Y07AJ39vk877mTzpDQQUI2T6eykc0UL3Spfj582P90TtZH2ZavpTRDxIH2iIXJFcmzI2ya0woj0w==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 4 View: 0 Transaction ID: 4
+Commit lo unna Digest: V1LQGevOt4chGQcuZL+PiIEYwxmfKph2UR1yg+iF/RbS/D1k9NT7AAQhE9XNLBBVuvZa1gCDI9rHJrJxbAYZo62X40ZJlwLY7O+re7ZWR5eOtguRBI3E/jfpt6Bs7w0lvRCgnyuLMnhfSgf3/tn+AG4gUR5XVL72lS7I8Wgp8wO1pNYmGxdMMZo1v8BbmSMJCliojCLLuFgrcUfQdjuwnUdU3n6tFgyJmDZukxk4EV+cWkzo7Obv9tdoKtMCE7oTkQMKeJM1F+Y07AJ39vk877mTzpDQQUI2T6eykc0UL3Spfj582P90TtZH2ZavpTRDxIH2iIXJFcmzI2ya0woj0w==
 Transaction Processed: 4
 Initiating executions : 3 : 4
 Initiating execution for seqNum: 4
@@ -511,11 +697,15 @@ Request received: 5
 Server is leader -> processing request -- added to queue
 Processing Transaction: 5
 Initiating Pre Prepare for SeqNum: 5 View: 0 Transaction ID: 5
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 5 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 5 View: 0 Transaction ID: 5
+Prepare lo unna Digest: hW4uBUqXIzmcKCrpoFPkpp0Zj25AVWcDJ1BfljfAj4nsOFP9BMnCjZqXOed19m3fO5QrQ+bkIBwgDdEH7ZnDdtIPpEaE833z4ePQP5vgVtH9qXNA4X8dLUyv3TMTH/xJOC5F/Y6F98VA0T5Yoya+K3CrWQF4aW5wqTBGnXkpnHQQfD7IV2vrcxA2mDjqngQaW/7kRLbWERh/a1ux+vCcdkWcuaj3wa42bMaMCIyEXXIkOdBWPvZncK7E8fWK4OUe2eFX+/8xm//MmeTTr8KgRntk0le+YawyRqgWs/rw5RBfXCAsYfmzEFuo0qp5+PKLsyyEIiHtCYJCwpAonxmp2Q==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 5 View: 0 Transaction ID: 5
+Commit lo unna Digest: hW4uBUqXIzmcKCrpoFPkpp0Zj25AVWcDJ1BfljfAj4nsOFP9BMnCjZqXOed19m3fO5QrQ+bkIBwgDdEH7ZnDdtIPpEaE833z4ePQP5vgVtH9qXNA4X8dLUyv3TMTH/xJOC5F/Y6F98VA0T5Yoya+K3CrWQF4aW5wqTBGnXkpnHQQfD7IV2vrcxA2mDjqngQaW/7kRLbWERh/a1ux+vCcdkWcuaj3wa42bMaMCIyEXXIkOdBWPvZncK7E8fWK4OUe2eFX+/8xm//MmeTTr8KgRntk0le+YawyRqgWs/rw5RBfXCAsYfmzEFuo0qp5+PKLsyyEIiHtCYJCwpAonxmp2Q==
 Transaction Processed: 5
 Initiating executions : 4 : 5
 Initiating execution for seqNum: 5
@@ -535,11 +725,15 @@ Request received: 6
 Server is leader -> processing request -- added to queue
 Processing Transaction: 6
 Initiating Pre Prepare for SeqNum: 6 View: 0 Transaction ID: 6
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 6 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 6 View: 0 Transaction ID: 6
+Prepare lo unna Digest: ILbU+GBGQJSLW2NRRzkKJnkKIA5JiXYvT52p4BrnS5Mcmd8DfY9w/y7F0g8CFESj7GhjziEV757rkaDi5zanMFmfSBweAnDLIHjiGk9pAk3gM/bEQXwVtQsftE+hmi8yg+PasN2rgSa9GsWU4HKhzIFHaYl2bwmUMxu3w081ICQG3Vp3zUkca0j+a95mPIf89K/Z5ot6o3Illrv2s7UWln8UmH0RoUrrkQn4SFMlktYHNab4MclO9MUtgNqh4Um1xuQYWvgjtDfjV1h9rwY+YHItFiLSZwLtQsNn3k+SOAimziuGt9SENOzLgM7Dc1b0RSI255UOso3P5smC2YnQdw==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 6 View: 0 Transaction ID: 6
+Commit lo unna Digest: ILbU+GBGQJSLW2NRRzkKJnkKIA5JiXYvT52p4BrnS5Mcmd8DfY9w/y7F0g8CFESj7GhjziEV757rkaDi5zanMFmfSBweAnDLIHjiGk9pAk3gM/bEQXwVtQsftE+hmi8yg+PasN2rgSa9GsWU4HKhzIFHaYl2bwmUMxu3w081ICQG3Vp3zUkca0j+a95mPIf89K/Z5ot6o3Illrv2s7UWln8UmH0RoUrrkQn4SFMlktYHNab4MclO9MUtgNqh4Um1xuQYWvgjtDfjV1h9rwY+YHItFiLSZwLtQsNn3k+SOAimziuGt9SENOzLgM7Dc1b0RSI255UOso3P5smC2YnQdw==
 Transaction Processed: 6
 Initiating executions : 5 : 6
 Initiating execution for seqNum: 6
@@ -559,11 +753,15 @@ Request received: 7
 Server is leader -> processing request -- added to queue
 Processing Transaction: 7
 Initiating Pre Prepare for SeqNum: 7 View: 0 Transaction ID: 7
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 7 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 7 View: 0 Transaction ID: 7
+Prepare lo unna Digest: qxRNakEMVWEYxMnbNVJo8j+U0nd+F+24muYWFEOhkQZQTKgd3T/VfmtKgZMwKRPUIPVdyMrTkA0Dtzv/PGnupAqAnzogeXM82abAZjZYmfNQfrb4zeN1GN/pdFgmYzaITWPUFSXSGGZSdYgXuN7E+He349tSKNaaIrm573PfrF+4+JuVARD1PuQ43sUmzOYflGMJ1bM9nXoTHghtHCPM0CY37D4MkunFlHaIWZuVDegW7iZlVYFFJouaBZ7cZQ5CorB9/yBn7unyEQ347j8TAA1LoWf4AhbwE8Xhgi+HPZ3y0dVwhZq4FRI+L7jiUy4n65eS9a2e3uafIBrPuCvyIA==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 7 View: 0 Transaction ID: 7
+Commit lo unna Digest: qxRNakEMVWEYxMnbNVJo8j+U0nd+F+24muYWFEOhkQZQTKgd3T/VfmtKgZMwKRPUIPVdyMrTkA0Dtzv/PGnupAqAnzogeXM82abAZjZYmfNQfrb4zeN1GN/pdFgmYzaITWPUFSXSGGZSdYgXuN7E+He349tSKNaaIrm573PfrF+4+JuVARD1PuQ43sUmzOYflGMJ1bM9nXoTHghtHCPM0CY37D4MkunFlHaIWZuVDegW7iZlVYFFJouaBZ7cZQ5CorB9/yBn7unyEQ347j8TAA1LoWf4AhbwE8Xhgi+HPZ3y0dVwhZq4FRI+L7jiUy4n65eS9a2e3uafIBrPuCvyIA==
 Transaction Processed: 7
 Initiating executions : 6 : 7
 Initiating execution for seqNum: 7
@@ -583,11 +781,15 @@ Request received: 8
 Server is leader -> processing request -- added to queue
 Processing Transaction: 8
 Initiating Pre Prepare for SeqNum: 8 View: 0 Transaction ID: 8
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 8 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 8 View: 0 Transaction ID: 8
+Prepare lo unna Digest: nCuI7R+efRxqZZEnKwZH9UpuU/GF5kcPKtHPHq6Ymt2CR4dmbW9Gcb9Wipyy7kwgthIfL7VSYH4XkyZlYSesv/KQYNhDAh2EyX9OKMtKwWrmYW/AWyoTAv5oVezxyrOvL9+fmjgGxJPXvww+iP4CmsMhVSFWZuwT+CTC1pB5KoTIEHaiEMp6q9Z5Cnh8PqEUPTqebzjEowzqbedCZnK3ycOh42HPTz8LRFLZSyfqMb/2CL9erp5IPuYR6OjK0sdkFtIpaoRKMPWz52NE0PCb3wthUL1YyB7HnHS4IsnF5KaD+bNb8wpzCoI4i5ltkpTFCCvo2CM/Sof5KR5sL2cUdw==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 8 View: 0 Transaction ID: 8
+Commit lo unna Digest: nCuI7R+efRxqZZEnKwZH9UpuU/GF5kcPKtHPHq6Ymt2CR4dmbW9Gcb9Wipyy7kwgthIfL7VSYH4XkyZlYSesv/KQYNhDAh2EyX9OKMtKwWrmYW/AWyoTAv5oVezxyrOvL9+fmjgGxJPXvww+iP4CmsMhVSFWZuwT+CTC1pB5KoTIEHaiEMp6q9Z5Cnh8PqEUPTqebzjEowzqbedCZnK3ycOh42HPTz8LRFLZSyfqMb/2CL9erp5IPuYR6OjK0sdkFtIpaoRKMPWz52NE0PCb3wthUL1YyB7HnHS4IsnF5KaD+bNb8wpzCoI4i5ltkpTFCCvo2CM/Sof5KR5sL2cUdw==
 Transaction Processed: 8
 Initiating executions : 7 : 8
 Initiating execution for seqNum: 8
@@ -607,11 +809,15 @@ Request received: 9
 Server is leader -> processing request -- added to queue
 Processing Transaction: 9
 Initiating Pre Prepare for SeqNum: 9 View: 0 Transaction ID: 9
-PrePrepare accepted for Seq num : 9 Accepts: 5
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
+PrePrepare accepted for Seq num : 9 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 9 View: 0 Transaction ID: 9
+Prepare lo unna Digest: YEAJYT/H4dVEuKjuEoE9oH5gFBfQQG4fM4m58sBmU7s2g3kY6J5fVEapkbpQYR9LVIoggZvbsEhCV5Q0D9D702RL6DHbX4ubLS/XJ1QY1/od3mkRW1mY00S7IgN1MnkMM/nEvigjl38Ihmhw+6ZiKXQAzx+Cr66Ra9FxFt7uUQbGcidhgqeKFLJHQrmhwvg+GZlnceM0H8VZYekrpimnoO3QNoAGBJURCBesJjTILwZwIR9gH4HAFvd9n6Obe8BZZooj8q3z+9Wjg1HS16EBMoc0mYKLEah5Y9r/Z0nZ1UiH1msEsypXPPN5kVxnar1q6n5cMptFOCF62Tj9YvHwfA==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 9 View: 0 Transaction ID: 9
+Commit lo unna Digest: YEAJYT/H4dVEuKjuEoE9oH5gFBfQQG4fM4m58sBmU7s2g3kY6J5fVEapkbpQYR9LVIoggZvbsEhCV5Q0D9D702RL6DHbX4ubLS/XJ1QY1/od3mkRW1mY00S7IgN1MnkMM/nEvigjl38Ihmhw+6ZiKXQAzx+Cr66Ra9FxFt7uUQbGcidhgqeKFLJHQrmhwvg+GZlnceM0H8VZYekrpimnoO3QNoAGBJURCBesJjTILwZwIR9gH4HAFvd9n6Obe8BZZooj8q3z+9Wjg1HS16EBMoc0mYKLEah5Y9r/Z0nZ1UiH1msEsypXPPN5kVxnar1q6n5cMptFOCF62Tj9YvHwfA==
 Transaction Processed: 9
 Initiating executions : 8 : 9
 Initiating execution for seqNum: 9
@@ -631,11 +837,15 @@ Request received: 10
 Server is leader -> processing request -- added to queue
 Processing Transaction: 10
 Initiating Pre Prepare for SeqNum: 10 View: 0 Transaction ID: 10
-PrePrepare accepted for Seq num : 10 Accepts: 6
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
+PrePrepare accepted for Seq num : 10 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 10 View: 0 Transaction ID: 10
+Prepare lo unna Digest: HsgHDbTPBo4GaI7VfXZVRoQAD+Qx6Mj7/l7GD7eG8PWK0iqqyvk9qkJq057SNqU1tpmDrOkCIB+j8TxS0M9aVJXpwgJ8Bhcc7g8iGAGJH/UiR/Ot2zicEFjRXDT/HLUpSLgZ1+tQfV4nkNMzPtbDFC7C/gVw67WUj5/zK3JZrAaGloSGAkhV7W2GvQa2Gf7QTALQ1yNIKs3+pDENfwFwycegP2DqL1VflbuOeschH5Zc6SoUdezedP0wwGn5lggaE/HTxOVjpngP623AuAf55Zb02La6n4pTBofGJe/FQx3wpG6XUGRWg8F1ANxdvb0/6ihrDTliV8h0jQbJ1ZHXog==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 10 View: 0 Transaction ID: 10
+Commit lo unna Digest: HsgHDbTPBo4GaI7VfXZVRoQAD+Qx6Mj7/l7GD7eG8PWK0iqqyvk9qkJq057SNqU1tpmDrOkCIB+j8TxS0M9aVJXpwgJ8Bhcc7g8iGAGJH/UiR/Ot2zicEFjRXDT/HLUpSLgZ1+tQfV4nkNMzPtbDFC7C/gVw67WUj5/zK3JZrAaGloSGAkhV7W2GvQa2Gf7QTALQ1yNIKs3+pDENfwFwycegP2DqL1VflbuOeschH5Zc6SoUdezedP0wwGn5lggaE/HTxOVjpngP623AuAf55Zb02La6n4pTBofGJe/FQx3wpG6XUGRWg8F1ANxdvb0/6ihrDTliV8h0jQbJ1ZHXog==
 Transaction Processed: 10
 Initiating executions : 9 : 10
 Initiating execution for seqNum: 10
@@ -651,268 +861,208 @@ transactionNum: 10
 Sent Reply to Client executed: 10
 Initiating execution for seqNum: 11
 Status : Not Found
+Server activated
 ===============================================================================================================================
 
                        Test Set : 6     
 
-Server activated
 ===============================================================================================================================
 
 Request received: 1
 Server is leader -> processing request -- added to queue
 Processing Transaction: 1
 Initiating Pre Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+PrePrepare lo unna Digest: NGpolNhA5BXy+f7WOTYwG9ByoHt2UjzN7lppTTwwgroK2Ybvlg+mLYDk1J7wEISceAMj5YZ5iT+AtKc15VLgJC9Bv/JRmoePH63XocYpWfWg+lhSndZsc3nJBHWIBPTnX9HntF7QTeO2/0+J/AGu6ERIOgdBmQg+4sHRTH72C8n4G1dIR4kHo4+ARwR/JhgsAkEYM0QY9c8MlHMu0ulaKgXYK1+ytgTp2D3/LwgmA97cB5txFzVW6WqbHnsbeAJfDlBpDsqp7hX5y5+mNP0FDHfE+wQcz/A8/ti18ewkcMPVz4K4reoRq1mJyXYembnVkMzmc75rOT3aZ9i4g6aLyA==
 PrePrepare accepted for Seq num : 1 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 1 View: 0 Transaction ID: 1
-Prepare Success
-Initiating Commit for SeqNum: 1 View: 0 Transaction ID: 1
+Prepare lo unna Digest: eQZQOjkjnCC7xAnuZ8XUNQgnEvwSEinmwmvSUjumsXHV10753cibQ7BFAvGcb24F4yS5aXGYwjiBy/dJFfcuCdM7JqHgDJL6rZHmmPrT6lTSC7l0wXELSavJqunZr3k0FyXsdBcUJOV09auIZdeaNY9i/ZyNBFOeYTvmxPG9tl6WIDPU1zljgjnRwF8aEMPlhjL/BBCdBz88HxFIKMCkrOJxviIWZAFe5nG5sntUnf2vsQ5DyibvvyeEp8/Y7/WZo5w+7BPUAHrSUSx/A5VJT3BDW6oNcbjFYnI+gN9GVfHAGnLHoeMD8D08gnCeZLdwVyHpuaE/rmV+TmPy4agXKw==
+Count of Success Prepares: 3
 Transaction Processed: 1
 Initiating executions : 0 : 1
 Initiating execution for seqNum: 1
-Status : COMMITTED
-Executing transaction: 1
-Transaction executed: 1
-Sending Reply to Client executed: 1 Transaction: 1
-sender: "A"
-receiver: "I"
-amount: 8
-timestamp {
-}
-transactionNum: 1
-
-Sent Reply to Client executed: 1
-Initiating execution for seqNum: 2
-Status : Not Found
+Status : PrePREPARED
 Request received: 2
 Server is leader -> processing request -- added to queue
 Processing Transaction: 2
 Initiating Pre Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 2 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 2 View: 0 Transaction ID: 2
-Prepare Success
-Initiating Commit for SeqNum: 2 View: 0 Transaction ID: 2
+Prepare lo unna Digest: c9V74ZunV120mQSiI0M68x2XjIWKT50XO4mmMedxTdVM88UYeh/PHBxyHsWZxJlnvAqExi8qAYEvUJuLanEbJHowP+z0wxGpheJjzgI2fspeutbWm5dBOzs/XoyVzTMj8OEPEIP63gtvqBqlHO1y2r4g0bWqulSRwmz2Bk/549iXd4RXQxTJLN0bAr3qtTZC9HRTigpwG4CGCgUvHNNoDZEqEOkq+WLX6v54ScsD5F/r3VleR3SVsm/jZjANDG8YE+kiAGA627BFFLyiyP36c2dsKkxFUGD721b5ZFsV5SBypi32Hwf3myMDFZyNbPxfGvar0Wtb/R8LFvb7kM2paw==
+Count of Success Prepares: 4
 Transaction Processed: 2
-Initiating executions : 1 : 2
-Initiating execution for seqNum: 2
-Status : COMMITTED
-Executing transaction: 2
-Transaction executed: 2
-Sending Reply to Client executed: 2 Transaction: 2
-sender: "J"
-receiver: "D"
-amount: 3
-transactionNum: 2
-
-Sent Reply to Client executed: 2
-Initiating execution for seqNum: 3
-Status : Not Found
+Initiating executions : 0 : 2
+Initiating execution for seqNum: 1
+Status : PrePREPARED
 Request received: 3
 Server is leader -> processing request -- added to queue
 Processing Transaction: 3
 Initiating Pre Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 3 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 3 View: 0 Transaction ID: 3
-Prepare Success
-Initiating Commit for SeqNum: 3 View: 0 Transaction ID: 3
+Prepare lo unna Digest: keBXrB0B/pRPtsCJoiA+INnEC8O3M9ljytmq9Yvj+Vc8HJCDeQz8tTb7MyEncGtwxxNCBoQpK4ADc6dNtzgcuVMgpsio3mLcch8B5ymcI8cWrlQWbeXO2fZvjQrkgdqr9pu16x/nj/jISbeSW5NWWqR4IIa9YV6MHx74/Z7Fm2SaQ+0A88L2eMrZlx+/vS1hArqfjSsPTr2mOwLU39er9/be0j93GR8oQaFcfGfDrcmn72ltJXzBqYaG4OLlqthKAcLWpOfccGa6nQ7lh0nfYZlL5Wb7NQkI/rMJiovMk8YL4ndejAC79AGoSVywrcCuyb+DBKxTZwqiTeGaow3avg==
+Count of Success Prepares: 4
 Transaction Processed: 3
-Initiating executions : 2 : 3
-Initiating execution for seqNum: 3
-Status : COMMITTED
-Executing transaction: 3
-Transaction executed: 3
-Sending Reply to Client executed: 3 Transaction: 3
-sender: "F"
-receiver: "G"
-amount: 4
-transactionNum: 3
-
-Sent Reply to Client executed: 3
-Initiating execution for seqNum: 4
-Status : Not Found
+Initiating executions : 0 : 3
+Initiating execution for seqNum: 1
+Status : PrePREPARED
 Request received: 4
 Server is leader -> processing request -- added to queue
 Processing Transaction: 4
 Initiating Pre Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 4 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 4 View: 0 Transaction ID: 4
-Prepare Success
-Initiating Commit for SeqNum: 4 View: 0 Transaction ID: 4
+Prepare lo unna Digest: cKfqXLa1mxyD5Bs/QR9CzVAGibBi/aDIrKBb4NnyN14B0EtaAjHy8bwG3XalNfk19CUWy+iQxEOVOkQULtb8hUYLFzdGYz0MqRUUB85HbCKvKxq0cneyV7T20l83VxkTV/kdHzXNjkpnabVJI6tesEErZO0+seWg9Jkhi44qfuSN8INmPdfpwCjGIM0+Gfj/PygATPgak8J8u11tSKrKEkmpsm0Pg0umvVGjHmE0MXRZTUQv76DvFMaps4m1k++VgePXLsfisJMR1SngzPFl7g+PkIAbC5KuA+f0vAnc3F2WZPziApasOBUQKMzL9d+/v/PS43+VCWvRv0iMifljxg==
+Count of Success Prepares: 4
 Transaction Processed: 4
-Initiating executions : 3 : 4
-Initiating execution for seqNum: 4
-Status : COMMITTED
-Executing transaction: 4
-Transaction executed: 4
-Sending Reply to Client executed: 4 Transaction: 4
-sender: "E"
-receiver: "B"
-amount: 5
-transactionNum: 4
-
-Sent Reply to Client executed: 4
-Initiating execution for seqNum: 5
-Status : Not Found
+Initiating executions : 0 : 4
+Initiating execution for seqNum: 1
+Status : PrePREPARED
 Request received: 5
 Server is leader -> processing request -- added to queue
 Processing Transaction: 5
 Initiating Pre Prepare for SeqNum: 5 View: 0 Transaction ID: 5
-PrePrepare accepted for Seq num : 5 Accepts: 7
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
+PrePrepare accepted for Seq num : 5 Accepts: 6
 Pre Prepare Success
 Initiating Prepare for SeqNum: 5 View: 0 Transaction ID: 5
-Prepare Success
-Initiating Commit for SeqNum: 5 View: 0 Transaction ID: 5
+Prepare lo unna Digest: jqxa+KJVtmKI/PBbMFHzRpwc1EhppMQmCSwYVcpeUI0PnKkaLaHbIj0xfauQ6zXWHgVhyH06H6hp/E4Sm/iOtt7dSaYfh/fsTgIyYZH/DsE4WWFREuqCBYcFk7fcu4FNzSWo2IawC+yUTa05NZ314yA6OiwM6Tnz4X8FNisHBMw75v5kasqKY1d5eIQDY0C65KyfCbWIWDrmhNi1UDJxqSydJaQQsxwnSIadjAqZI0ZrNd/yIt1VhFwT0FMFJwme3UL7k3xpC+73L0Lm7Hpj2S50cTAiIIb3MXcWN6KPh+sXPEBzyx7tl4hoDoZSsg+LBkpao79CDFTX9ywSqILEzA==
+Count of Success Prepares: 4
 Transaction Processed: 5
-Initiating executions : 4 : 5
-Initiating execution for seqNum: 5
-Status : COMMITTED
-Executing transaction: 5
-Transaction executed: 5
-Sending Reply to Client executed: 5 Transaction: 5
-sender: "C"
-receiver: "H"
-amount: 7
-transactionNum: 5
-
-Sent Reply to Client executed: 5
-Initiating execution for seqNum: 6
-Status : Not Found
+Initiating executions : 0 : 5
+Initiating execution for seqNum: 1
+Status : PrePREPARED
 Request received: 6
 Server is leader -> processing request -- added to queue
 Processing Transaction: 6
 Initiating Pre Prepare for SeqNum: 6 View: 0 Transaction ID: 6
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 6 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 6 View: 0 Transaction ID: 6
-Prepare Success
-Initiating Commit for SeqNum: 6 View: 0 Transaction ID: 6
+Prepare lo unna Digest: O3hXGUMJV8DZtKPZKmbfTVRcKPs3RGoaBa3M4vv4L2bH7HJC/mWKv9Dbef5ZgQyGoIh+Ftso4PNRdOa9peQpA+zOA4HCnbG4lo7lOICiUMdFa8u3Vo7phUBDR1cpdTIgPjj/Jvqgrg2ALg2+Sf08boBkmlXKDiDaIacAyhm+4Eqmsyx6lb0CNtWaPcojoOT9qaYYhxqB/uzNEihguk2FzcJi5SiKCE1+ZGtmconxWWqiDP+BJGOrAfAMOBZOtdwiAF5/81QgkitE5yikpAe4v5Q3OXRoglSGTL4t/2PjA1iZPt/OJ3IdXLEZTBFffMWQ4+0BggUy9YFe0DL0pOMaNA==
+Count of Success Prepares: 4
 Transaction Processed: 6
-Initiating executions : 5 : 6
-Initiating execution for seqNum: 6
-Status : COMMITTED
-Executing transaction: 6
-Transaction executed: 6
-Sending Reply to Client executed: 6 Transaction: 6
-sender: "G"
-receiver: "J"
-amount: 1
-transactionNum: 6
-
-Sent Reply to Client executed: 6
-Initiating execution for seqNum: 7
-Status : Not Found
+Initiating executions : 0 : 6
+Initiating execution for seqNum: 1
+Status : PrePREPARED
 ===============================================================================================================================
 
                        Test Set : 7     
 
+Server activated
 ===============================================================================================================================
 
-Server activated
 Request received: 1
 Server is leader -> processing request -- added to queue
 Processing Transaction: 1
 Initiating Pre Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+PrePrepare lo unna Digest: QQ3Rrprt/Qqolg7sfr33U4XB9W2yjz0YgSzmewU4Fac5MFD2QkQJgT3L55cPfcDSr4lp9Sfw/XoNhv+sqmnzp0z/dcd4q9/7wyWuIdSSocqiGTTuu7gKe3j99AxDTUw1Nba0DMJGSLHFJzXq13Y3d0fbQdwjOfgoNWm7TZfckIU6oLLwEHOYc0FWVXlglZesK6XFyAVjjB/auJI/gtrhjUPIXAV0y1aeOX1UxY0Helxhysy++AIb3lXJu4UwKb0ABtrqpmzciw3YMYmbKKOtqISaEYHhCm6cbMjMbre0LNOSV1O4ZZzhovpu3oGOozkwQ9S3RXZO5oluAPTXsiuANw==
 PrePrepare accepted for Seq num : 1 Accepts: 5
 Pre Prepare Success
 Initiating Prepare for SeqNum: 1 View: 0 Transaction ID: 1
-Prepare Success
-Initiating Commit for SeqNum: 1 View: 0 Transaction ID: 1
+Prepare lo unna Digest: PXuHAe3NgYRFQyxkPqN/y+22EK6QNm25xrIwKuBfCH/JFTVHY2kiiart40HwJryMszFL+jjjOc6bL2XiBGqQ7wjFZM9YPxhMtsI4mdeQ/gkH+hyB8Dq+aF/rtrm0Mcg4cFHehsmVWe/oRwG5GDVkLTnywEoDFLwtOwrnjbSb7fuDVGNQ4MbxaGMX/YCPd9eec0tSDISsl/l3KLqtRFZzTPweBNfJM7QWqMNk/5nGG9wTV1/4wFBSpEe4gCsID+BrhuFPDPrZK1JCkK5WH4e53aJ5mRza6cSVjRxMOUKQeZs90NYwGFyS0SP1wyAsnNxKzuWgAJccZufsz0qRQaVyaQ==
+Count of Success Prepares: 4
 Transaction Processed: 1
 Initiating executions : 0 : 1
 Initiating execution for seqNum: 1
-Status : COMMITTED
-Executing transaction: 1
-Transaction executed: 1
-Sending Reply to Client executed: 1 Transaction: 1
-sender: "G"
-receiver: "J"
-amount: 8
-timestamp {
-}
-transactionNum: 1
-
-Sent Reply to Client executed: 1
-Initiating execution for seqNum: 2
-Status : Not Found
+Status : PrePREPARED
 Request received: 2
 Server is leader -> processing request -- added to queue
 Processing Transaction: 2
 Initiating Pre Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
+PrePrepare accepted for Seq num : 2 Accepts: 5
+Pre Prepare Success
+Initiating Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+Prepare lo unna Digest: HpHwoUzx9jg44pKtHlgQQMbwN1nNWboSsBL9vXa4Z8DaitsckkWC5XtnfE5QB0B4ZV9j92Duz0i7BRJdj7l3a2ufXsFYVLUHB3MzxOe9nFTHzZ5ULbU5DbNQdX8wH7LvxdXM5Vrsg3SXjtPK7Z8Jvr4Ql+L9mGEkT6KBAaNk5nsGResoxdWQ+QMvRa5iA23AjieakN9JzpvajKSUX2sHW/9U/hsVnZLLAJ09gGalW+HLHarn5ZS6H/H6ySBNZTbGh34+MEoYbVV49JqC0LlVA6Csim6OuipwE8qIdjIimIqyM6/xnZ+4ghTVe25HyIXR/NcdALgrBMw7+K0yc6vTLg==
+Count of Success Prepares: 4
 Transaction Processed: 2
-Initiating executions : 1 : 2
-Initiating execution for seqNum: 2
+Initiating executions : 0 : 2
+Initiating execution for seqNum: 1
 Status : PrePREPARED
 Request received: 3
 Server is leader -> processing request -- added to queue
 Processing Transaction: 3
 Initiating Pre Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 3 Accepts: 5
 Pre Prepare Success
 Initiating Prepare for SeqNum: 3 View: 0 Transaction ID: 3
-Prepare Success
-Initiating Commit for SeqNum: 3 View: 0 Transaction ID: 3
+Prepare lo unna Digest: L78594poe3K/zz9VQ37htMlDl7Nj8nzWu+38rDR51lrRBOq/DQrYRCGgupxCxiO0RaZbwn4MPtzPrDXKfK2KhpOIZTgiQh8URJkyP2ieOv+w3iElJr9o4IjgGqPGZ+xiqwmXHxmSS2A5UFn79Hzf6y7CXwvVEohaEjkp4CBaXT992dwO04T/ncNi3GXjDG9KSqPe5uzfjev+rmCi+ewPEATEN22q5Z5KQ5mX0oKDtSS2GxUxGUyUJy0P9WmO/5bt7bOzLNlgRw+NJlwH0nY6oa04+Ab/EuTh4Ik2EAcyBj65h03z9omrNkC269iHHFtS7I9+2VzJBUNksjR0R5f3XA==
+Count of Success Prepares: 4
 Transaction Processed: 3
-Initiating executions : 1 : 3
-Initiating execution for seqNum: 2
+Initiating executions : 0 : 3
+Initiating execution for seqNum: 1
 Status : PrePREPARED
 Request received: 4
 Server is leader -> processing request -- added to queue
 Processing Transaction: 4
 Initiating Pre Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 4 Accepts: 5
 Pre Prepare Success
 Initiating Prepare for SeqNum: 4 View: 0 Transaction ID: 4
-Prepare Success
-Initiating Commit for SeqNum: 4 View: 0 Transaction ID: 4
+Prepare lo unna Digest: V3BgsAJOC+73qLApWN9BOZlvonmP8A9mypPtlbL6wW40nhHrQfiXzhUcuc8ka+jBWSVjnTMVnQQjxXraXJXRMU6W2mvDBNAcbT6gk4NCAFqsFssdmKhFWQtayqP12u2MumdWRs9itUnJy4YtTBYhsQd0Yz5v+LGu2wXjANQS3CSr/1z+Q/G4BMdy79jMvCk3vpnbmxtws9f5N1Y722IlE9rjDm7dL7AsdmVGKtcd2M9PHk+r6rAO1myzoSQzQhhhzaJZmle0d4R/xGUviI6Jb7JqipD3xI7w7Ph7XezM6SsT9U8W2eFV9bgXwGvRwKycptvfyPcDfMFIuiAOEtFHpw==
+Count of Success Prepares: 4
 Transaction Processed: 4
-Initiating executions : 1 : 4
-Initiating execution for seqNum: 2
+Initiating executions : 0 : 4
+Initiating execution for seqNum: 1
 Status : PrePREPARED
 Request received: 5
 Server is leader -> processing request -- added to queue
 Processing Transaction: 5
 Initiating Pre Prepare for SeqNum: 5 View: 0 Transaction ID: 5
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 5 Accepts: 5
 Pre Prepare Success
 Initiating Prepare for SeqNum: 5 View: 0 Transaction ID: 5
-Prepare Success
-Initiating Commit for SeqNum: 5 View: 0 Transaction ID: 5
+Prepare lo unna Digest: TVTvkQbnnZa4Nf5gynwJDN5TI9Tcmtxy68+W69RKGcVAP/dbOYICGfDUxQ8MrnU45dNz3fkORGzUkqXbtgLJflz3U3XTzc9w2kW1Hlr6pGkh2/afqSxnzKq5e8vytOohrVIsbSODZBr9yNCA1qke7mk0qTNwBGxvVUsJIrsoxBennrZait0g7C2lMlKk4+HgeUxFcsi4MpCqdcW6ZWOAoFTzsWuCoWM2dIe+sBiOZDCfHj7pe0grc6mDdbrrUEaqZl2HADuNrZ4jIrx7vnI+D5uhCSej+LRibowOXQkfnM0c5xWNN/Wy0Cu1Z4I+TtnWYL+DzR6xSuGL8kWrJlzaew==
+Count of Success Prepares: 4
 Transaction Processed: 5
-Initiating executions : 1 : 5
-Initiating execution for seqNum: 2
+Initiating executions : 0 : 5
+Initiating execution for seqNum: 1
 Status : PrePREPARED
 Request received: 6
 Server is leader -> processing request -- added to queue
 Processing Transaction: 6
 Initiating Pre Prepare for SeqNum: 6 View: 0 Transaction ID: 6
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 6 Accepts: 5
 Pre Prepare Success
 Initiating Prepare for SeqNum: 6 View: 0 Transaction ID: 6
-Prepare Success
-Initiating Commit for SeqNum: 6 View: 0 Transaction ID: 6
+Prepare lo unna Digest: V1LkMb+O895/BrsDPYRHDBabXsHcu+FvShIwXeqep99CNk4lED1F21QM5qGulsNknvLKmWKYnkImfpCbtUa7JHD2bff9+iFnFVEBqZlQLJ3BQ9rtUqfzeeZ2xhLXegQKF6AKnC2N3ckANvs4koZzZ4IxO9lwGwxVs2i3EAD+x8DE+wXjykGZLBz95sKJID+6xVZfI/fJ4abT9s2y87kXu9+qezuL66FLJ0MqrLBJXhnHDX/GZDdQHIZjnPEa3d0My1eXuMHIY5ftJA83NahnnsKdF1mHJkYaduodDPApMrzy2HKVs2aP1V/qUTVOmDx4JfTYd/OUxri5dxuTBU3PRA==
+Count of Success Prepares: 4
 Transaction Processed: 6
-Initiating executions : 1 : 6
-Initiating execution for seqNum: 2
+Initiating executions : 0 : 6
+Initiating execution for seqNum: 1
 Status : PrePREPARED
-Server activated
 ===============================================================================================================================
 
                        Test Set : 8     
 
+Server activated
 ===============================================================================================================================
 
 Request received: 1
 Server is leader -> processing request -- added to queue
 Processing Transaction: 1
 Initiating Pre Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+PrePrepare lo unna Digest: pzTkFjKMnNWZg2GzufUgxMOmN6Dtw9yO2/1i1XxHAcL16oW7XaE/teNTG2M1umyaEvKtvxiCMCBHiUa3/+YiJG6XzRmuqqn7YIcKUr5DcGbree2cw6vI5vDmLBpC5+ojUJMQEkMs+Lanq3i7kHWbeek+PzVYGImBoMtEvrMqfhJfTcQGBxO2cQCXmKE/qXraax6EFVv7+UOjc3dYzlbN48mfsmhj4uOFCGTSTxkEuUujLShv5x4KezvhV0KWYWzYG4hGjCbPq9eNcayDSGnYjQoTDCB9FwL8DKp24Dt0FNt6Rb2FXuROZiyQqcOCnmQ9MIJ4WxS8/unIH5S9Q2n4Mg==
 PrePrepare accepted for Seq num : 1 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+Prepare lo unna Digest: GiUHiBXCG/j4L/U65DtuyTHBIeCg7BPEbLs48ms58IFS3/euNJQUlDKXTYzGiZUd/G6d365T6PcNpJqa/XL/Lm2PBg0j8Ssn9r48s/7OKHZ77MJwK0/LDDwRBonH27Nl5CdPVQ0RXzKiZUkgL1zwsHGimUeIuJ0KQKkkTHkjUf2peoXvDpMC7zqpvRjAHTTDbJLtjj4vHB4jeaDBOcf8zDQEmzKcPck34OqG1obrm9x1qxhvKRSWN+IZs4dagLEp6uPGFFdkdbbXg+AdKMR+YQgvPHovvbzhYd/jCF7KcPNVk+fRbBqfjRyc2/FIkPoCIfVJ1YIWXDmOZ7aalTX0uQ==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 1 View: 0 Transaction ID: 1
+Commit lo unna Digest: GiUHiBXCG/j4L/U65DtuyTHBIeCg7BPEbLs48ms58IFS3/euNJQUlDKXTYzGiZUd/G6d365T6PcNpJqa/XL/Lm2PBg0j8Ssn9r48s/7OKHZ77MJwK0/LDDwRBonH27Nl5CdPVQ0RXzKiZUkgL1zwsHGimUeIuJ0KQKkkTHkjUf2peoXvDpMC7zqpvRjAHTTDbJLtjj4vHB4jeaDBOcf8zDQEmzKcPck34OqG1obrm9x1qxhvKRSWN+IZs4dagLEp6uPGFFdkdbbXg+AdKMR+YQgvPHovvbzhYd/jCF7KcPNVk+fRbBqfjRyc2/FIkPoCIfVJ1YIWXDmOZ7aalTX0uQ==
 Transaction Processed: 1
 Initiating executions : 0 : 1
 Initiating execution for seqNum: 1
@@ -925,6 +1075,7 @@ receiver: "B"
 amount: 3
 timestamp {
 }
+transactionHash: "Transaction ( A -> B = 3 ) ; "
 transactionNum: 1
 
 Sent Reply to Client executed: 1
@@ -934,11 +1085,15 @@ Request received: 2
 Server is leader -> processing request -- added to queue
 Processing Transaction: 2
 Initiating Pre Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 2 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+Prepare lo unna Digest: VgYA2IgJO2geTL/8j7AUztXwvfdOmKaAQuHC+wL/U064m9o9JOyYyRue9WH2PgDrGXTtOIBZWXrGYjtkr1tvD73QmW79/p3DrOS/u5dbLYkLADo6bS8A+3xZKH4mdoX1hEnLakhWOQq2vk6uOUaupaNnpophrBiQNAJr5AJqS7ruruQIEJMWe3H1VsKHRAyTiDY9oWpgOtkkkPAjGtU56Ixd1Kzisvvnbs0K6hgJTAffB2bzhPvnI6zQdkxMJsezEe4qL5xVCgTAFVBPg1ggqgH53yrz5IADyweUoovIyGAPoCaja8hFNYgGm1L6PYJwEFkt/2ySbnu8p1rBB3MLrA==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 2 View: 0 Transaction ID: 2
+Commit lo unna Digest: VgYA2IgJO2geTL/8j7AUztXwvfdOmKaAQuHC+wL/U064m9o9JOyYyRue9WH2PgDrGXTtOIBZWXrGYjtkr1tvD73QmW79/p3DrOS/u5dbLYkLADo6bS8A+3xZKH4mdoX1hEnLakhWOQq2vk6uOUaupaNnpophrBiQNAJr5AJqS7ruruQIEJMWe3H1VsKHRAyTiDY9oWpgOtkkkPAjGtU56Ixd1Kzisvvnbs0K6hgJTAffB2bzhPvnI6zQdkxMJsezEe4qL5xVCgTAFVBPg1ggqgH53yrz5IADyweUoovIyGAPoCaja8hFNYgGm1L6PYJwEFkt/2ySbnu8p1rBB3MLrA==
 Transaction Processed: 2
 Initiating executions : 1 : 2
 Initiating execution for seqNum: 2
@@ -958,11 +1113,15 @@ Request received: 3
 Server is leader -> processing request -- added to queue
 Processing Transaction: 3
 Initiating Pre Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 3 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+Prepare lo unna Digest: THDA2cZwGtqr9UOMzkw8NBzJJSwYZEsTPgmCTEibZqrQq7g0LRW/teuna3dah3brXAuvsANFFCnKYSb4jxow82yIip4N0M4Nfwq6z3sDi2adk0D/OJtoWarZ4nfTo2tcnZ5NPFnJPxeMgMSgD+Q/+QU4XQDwojRuD/LNzF9rVHxbfZEttUv2OEkHBq0lS3/lUfMtOYgLhEOt7g7IgAIFNnYuHdwV37upiq5bjJSPoib6GfG6dyw0au/iNf08u8qn/G6hK20iin+9PUSjhjAEQzMsXjJ3/YZdSNo+3yR9BB5/zCJ/lxL53nqS4twA28v8VYKh6shoP//enkhcrkPMuQ==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 3 View: 0 Transaction ID: 3
+Commit lo unna Digest: THDA2cZwGtqr9UOMzkw8NBzJJSwYZEsTPgmCTEibZqrQq7g0LRW/teuna3dah3brXAuvsANFFCnKYSb4jxow82yIip4N0M4Nfwq6z3sDi2adk0D/OJtoWarZ4nfTo2tcnZ5NPFnJPxeMgMSgD+Q/+QU4XQDwojRuD/LNzF9rVHxbfZEttUv2OEkHBq0lS3/lUfMtOYgLhEOt7g7IgAIFNnYuHdwV37upiq5bjJSPoib6GfG6dyw0au/iNf08u8qn/G6hK20iin+9PUSjhjAEQzMsXjJ3/YZdSNo+3yR9BB5/zCJ/lxL53nqS4twA28v8VYKh6shoP//enkhcrkPMuQ==
 Transaction Processed: 3
 Initiating executions : 2 : 3
 Initiating execution for seqNum: 3
@@ -978,9 +1137,9 @@ transactionNum: 3
 Sent Reply to Client executed: 3
 Initiating execution for seqNum: 4
 Status : Not Found
+Server activated
 ===============================================================================================================================
 
-Server activated
                        Test Set : 9     
 
 ===============================================================================================================================
@@ -989,6 +1148,7 @@ Request received: 1
 Server is leader -> processing request -- added to queue
 Processing Transaction: 1
 Initiating Pre Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+PrePrepare lo unna Digest: AlCumH8LnBjYTKnD0jjs/JwJ/Gog7057BmOhj2fPbmgGQUez5JUr3tRf1jj1q7/afiZqU/LTcucdNHvxX5/RosIF8r0nyW3yhIoO2zUAw/coj7Sh5c6e2Iz5QKQWFW742eq6zVNLFrT3hTahpVgOqFf55xsqX9uFJ2pUOBeubcVoVtFg7HJVMTJx+X1jKfa3/JEHGl+zhlbTZSX73zZh6dV7o1t5SOUAgTRJDxrml7ULG+apvNVf1KZTCpYpzAomoxTNc5mGA0mVdjTQH0GKsVYOyv7U7mqGGy6BF5+84BCgyGQkpSQhhuRz7I4v8muod3BVpYa84xhxWtMHC3TKsg==
 PrePrepare accepted for Seq num : 1 Accepts: 7
 Pre Prepare Success
 Byzantine Server -> Not moving forward with Prepare Request
@@ -1000,6 +1160,7 @@ Request received: 2
 Server is leader -> processing request -- added to queue
 Processing Transaction: 2
 Initiating Pre Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 2 Accepts: 7
 Pre Prepare Success
 Byzantine Server -> Not moving forward with Prepare Request
@@ -1011,6 +1172,7 @@ Request received: 3
 Server is leader -> processing request -- added to queue
 Processing Transaction: 3
 Initiating Pre Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 3 Accepts: 7
 Pre Prepare Success
 Byzantine Server -> Not moving forward with Prepare Request
@@ -1029,11 +1191,15 @@ Request received: 1
 Server is leader -> processing request -- added to queue
 Processing Transaction: 1
 Initiating Pre Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+PrePrepare lo unna Digest: OoAnuAOAatlZMbXP9ySkGhDBS9FLp8AO2fDpNQCXmHiTLNFJujr8FQU4U4LgcRHQzIqFxq1WkQpQ/nhqTDS2ubj44qakgN0jh0Av4sHao65NJ72qwhsm6O85Q7P7wjpoBS9Dk9xPCS/CfZ1oSWZbXkhm+/JfJJD7h4aJvU3uLalydFjZtO/yonxpdfe1XI13aOs9wvvUBpvlpQKB5Yxd9wnfBypPLogo2yXWfovPvQMSisn5NQwlDHeCTRGa3cePtAxsdNrS5yvPjDReNtOBKVBH4DGtL4Mf3y2LB/xCrfJ0SiLuhqYPwpS2XsukVFpHmBCnnh7j1v8aPM2soBnWmQ==
 PrePrepare accepted for Seq num : 1 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 1 View: 0 Transaction ID: 1
+Prepare lo unna Digest: CHOkAAiKdaz5A8Jyxkxq/t9z1EqRWMu6+RVX8xYNBNpmJjd4KgHQ9XMhzQQQABz0dIIzdEy0BU+bnarCokKbiZrGvSPssFol98MEYUsj2fypE1mqgf7bTejma+8f93AosGbGtuz4NauL88AwejYF0NdF5lKoX42y6pMMqqzwlPGAvHrQgz/3O5qKHHfEz0jRFWWzJ2jNGuo/Xli/EMRwlqGkBMTJCO4fIe1V8qVwglDvY5/fnXaINC96L9bT4A/mFrWvT3HpvxzWjfPXyA+3uxioaigFAj6qXP3JKYtJVqkHtHf6W1FjtCC+aC+MTpXS4TS6DAfABuVZKJhTvLEjXw==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 1 View: 0 Transaction ID: 1
+Commit lo unna Digest: CHOkAAiKdaz5A8Jyxkxq/t9z1EqRWMu6+RVX8xYNBNpmJjd4KgHQ9XMhzQQQABz0dIIzdEy0BU+bnarCokKbiZrGvSPssFol98MEYUsj2fypE1mqgf7bTejma+8f93AosGbGtuz4NauL88AwejYF0NdF5lKoX42y6pMMqqzwlPGAvHrQgz/3O5qKHHfEz0jRFWWzJ2jNGuo/Xli/EMRwlqGkBMTJCO4fIe1V8qVwglDvY5/fnXaINC96L9bT4A/mFrWvT3HpvxzWjfPXyA+3uxioaigFAj6qXP3JKYtJVqkHtHf6W1FjtCC+aC+MTpXS4TS6DAfABuVZKJhTvLEjXw==
 Transaction Processed: 1
 Initiating executions : 0 : 1
 Initiating execution for seqNum: 1
@@ -1046,6 +1212,7 @@ receiver: "B"
 amount: 1
 timestamp {
 }
+transactionHash: "Transaction ( A -> B = 1 ) ; "
 transactionNum: 1
 
 Sent Reply to Client executed: 1
@@ -1055,11 +1222,15 @@ Request received: 2
 Server is leader -> processing request -- added to queue
 Processing Transaction: 2
 Initiating Pre Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 2 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 2 View: 0 Transaction ID: 2
+Prepare lo unna Digest: ji2a5RWQDUltRZcKvG2BQdLWufXK5wxEoLwhKXZec7tlAZmu3UEcNkWtid3VHbd3fUgmUaTJ7kBkYdDQeC0JJBxlyNKlcmomfJrMBwlthfVm+o/9EYN0HbzW2U1KHjVSDJldiDUl1PkVA3qhMewmm/TIHjgqDfqjbI4Y7VSNge4EVQRnGdYLIcKyMwc70rCnHZe0IVm2wIoLiKmlMgoeQPAk20Hqgh1U+IfiJhJt8H3lQSZN+Er0CrigpVg6kz5nPpTV3MXEh+ZbWg//mxrgNzLTUptJnDHkENWwYOW4PDrzoPU0e9Stihv4rlG/31dxPeI//X8GAQQeXPupUFUIoA==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 2 View: 0 Transaction ID: 2
+Commit lo unna Digest: ji2a5RWQDUltRZcKvG2BQdLWufXK5wxEoLwhKXZec7tlAZmu3UEcNkWtid3VHbd3fUgmUaTJ7kBkYdDQeC0JJBxlyNKlcmomfJrMBwlthfVm+o/9EYN0HbzW2U1KHjVSDJldiDUl1PkVA3qhMewmm/TIHjgqDfqjbI4Y7VSNge4EVQRnGdYLIcKyMwc70rCnHZe0IVm2wIoLiKmlMgoeQPAk20Hqgh1U+IfiJhJt8H3lQSZN+Er0CrigpVg6kz5nPpTV3MXEh+ZbWg//mxrgNzLTUptJnDHkENWwYOW4PDrzoPU0e9Stihv4rlG/31dxPeI//X8GAQQeXPupUFUIoA==
 Transaction Processed: 2
 Initiating executions : 1 : 2
 Initiating execution for seqNum: 2
@@ -1079,11 +1250,15 @@ Request received: 3
 Server is leader -> processing request -- added to queue
 Processing Transaction: 3
 Initiating Pre Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 3 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 3 View: 0 Transaction ID: 3
+Prepare lo unna Digest: K2SrCSfE2Scgx9ddCHDyXOD2HVXu9j/sGxPNLUURwDJ+xr9vZfpxd4VC8jlDjUvweLHkr53LefGn0IT7uhtlsjrf1627zuItUpTIRTOhRGbie5/932h5cl44DnDpgy9geqI4Y87g/zlSvZnqjmbFcL0mWOIEzoIP1WnAh5qQDd9xuMxtqmGgTOcEn0uVYKMSsglc6825+tSAAwsCkMsfH0lNc4Wpu2LhMOz6KfshRzmguUmWx6Lqp8xsQKCmBn39EqQsuHwftLbFzEzvrsIOG3exf/0Pxu5Cw91oJfwW6qJUAG9x023L9SQzL3ycmjlzUSVOHcsHfVbuAiYz26DXHg==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 3 View: 0 Transaction ID: 3
+Commit lo unna Digest: K2SrCSfE2Scgx9ddCHDyXOD2HVXu9j/sGxPNLUURwDJ+xr9vZfpxd4VC8jlDjUvweLHkr53LefGn0IT7uhtlsjrf1627zuItUpTIRTOhRGbie5/932h5cl44DnDpgy9geqI4Y87g/zlSvZnqjmbFcL0mWOIEzoIP1WnAh5qQDd9xuMxtqmGgTOcEn0uVYKMSsglc6825+tSAAwsCkMsfH0lNc4Wpu2LhMOz6KfshRzmguUmWx6Lqp8xsQKCmBn39EqQsuHwftLbFzEzvrsIOG3exf/0Pxu5Cw91oJfwW6qJUAG9x023L9SQzL3ycmjlzUSVOHcsHfVbuAiYz26DXHg==
 Transaction Processed: 3
 Initiating executions : 2 : 3
 Initiating execution for seqNum: 3
@@ -1103,11 +1278,15 @@ Request received: 4
 Server is leader -> processing request -- added to queue
 Processing Transaction: 4
 Initiating Pre Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 4 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 4 View: 0 Transaction ID: 4
+Prepare lo unna Digest: V1LQGevOt4chGQcuZL+PiIEYwxmfKph2UR1yg+iF/RbS/D1k9NT7AAQhE9XNLBBVuvZa1gCDI9rHJrJxbAYZo62X40ZJlwLY7O+re7ZWR5eOtguRBI3E/jfpt6Bs7w0lvRCgnyuLMnhfSgf3/tn+AG4gUR5XVL72lS7I8Wgp8wO1pNYmGxdMMZo1v8BbmSMJCliojCLLuFgrcUfQdjuwnUdU3n6tFgyJmDZukxk4EV+cWkzo7Obv9tdoKtMCE7oTkQMKeJM1F+Y07AJ39vk877mTzpDQQUI2T6eykc0UL3Spfj582P90TtZH2ZavpTRDxIH2iIXJFcmzI2ya0woj0w==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 4 View: 0 Transaction ID: 4
+Commit lo unna Digest: V1LQGevOt4chGQcuZL+PiIEYwxmfKph2UR1yg+iF/RbS/D1k9NT7AAQhE9XNLBBVuvZa1gCDI9rHJrJxbAYZo62X40ZJlwLY7O+re7ZWR5eOtguRBI3E/jfpt6Bs7w0lvRCgnyuLMnhfSgf3/tn+AG4gUR5XVL72lS7I8Wgp8wO1pNYmGxdMMZo1v8BbmSMJCliojCLLuFgrcUfQdjuwnUdU3n6tFgyJmDZukxk4EV+cWkzo7Obv9tdoKtMCE7oTkQMKeJM1F+Y07AJ39vk877mTzpDQQUI2T6eykc0UL3Spfj582P90TtZH2ZavpTRDxIH2iIXJFcmzI2ya0woj0w==
 Transaction Processed: 4
 Initiating executions : 3 : 4
 Initiating execution for seqNum: 4
@@ -1127,11 +1306,15 @@ Request received: 5
 Server is leader -> processing request -- added to queue
 Processing Transaction: 5
 Initiating Pre Prepare for SeqNum: 5 View: 0 Transaction ID: 5
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 5 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 5 View: 0 Transaction ID: 5
+Prepare lo unna Digest: hW4uBUqXIzmcKCrpoFPkpp0Zj25AVWcDJ1BfljfAj4nsOFP9BMnCjZqXOed19m3fO5QrQ+bkIBwgDdEH7ZnDdtIPpEaE833z4ePQP5vgVtH9qXNA4X8dLUyv3TMTH/xJOC5F/Y6F98VA0T5Yoya+K3CrWQF4aW5wqTBGnXkpnHQQfD7IV2vrcxA2mDjqngQaW/7kRLbWERh/a1ux+vCcdkWcuaj3wa42bMaMCIyEXXIkOdBWPvZncK7E8fWK4OUe2eFX+/8xm//MmeTTr8KgRntk0le+YawyRqgWs/rw5RBfXCAsYfmzEFuo0qp5+PKLsyyEIiHtCYJCwpAonxmp2Q==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 5 View: 0 Transaction ID: 5
+Commit lo unna Digest: hW4uBUqXIzmcKCrpoFPkpp0Zj25AVWcDJ1BfljfAj4nsOFP9BMnCjZqXOed19m3fO5QrQ+bkIBwgDdEH7ZnDdtIPpEaE833z4ePQP5vgVtH9qXNA4X8dLUyv3TMTH/xJOC5F/Y6F98VA0T5Yoya+K3CrWQF4aW5wqTBGnXkpnHQQfD7IV2vrcxA2mDjqngQaW/7kRLbWERh/a1ux+vCcdkWcuaj3wa42bMaMCIyEXXIkOdBWPvZncK7E8fWK4OUe2eFX+/8xm//MmeTTr8KgRntk0le+YawyRqgWs/rw5RBfXCAsYfmzEFuo0qp5+PKLsyyEIiHtCYJCwpAonxmp2Q==
 Transaction Processed: 5
 Initiating executions : 4 : 5
 Initiating execution for seqNum: 5
@@ -1151,11 +1334,15 @@ Request received: 6
 Server is leader -> processing request -- added to queue
 Processing Transaction: 6
 Initiating Pre Prepare for SeqNum: 6 View: 0 Transaction ID: 6
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 6 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 6 View: 0 Transaction ID: 6
+Prepare lo unna Digest: ILbU+GBGQJSLW2NRRzkKJnkKIA5JiXYvT52p4BrnS5Mcmd8DfY9w/y7F0g8CFESj7GhjziEV757rkaDi5zanMFmfSBweAnDLIHjiGk9pAk3gM/bEQXwVtQsftE+hmi8yg+PasN2rgSa9GsWU4HKhzIFHaYl2bwmUMxu3w081ICQG3Vp3zUkca0j+a95mPIf89K/Z5ot6o3Illrv2s7UWln8UmH0RoUrrkQn4SFMlktYHNab4MclO9MUtgNqh4Um1xuQYWvgjtDfjV1h9rwY+YHItFiLSZwLtQsNn3k+SOAimziuGt9SENOzLgM7Dc1b0RSI255UOso3P5smC2YnQdw==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 6 View: 0 Transaction ID: 6
+Commit lo unna Digest: ILbU+GBGQJSLW2NRRzkKJnkKIA5JiXYvT52p4BrnS5Mcmd8DfY9w/y7F0g8CFESj7GhjziEV757rkaDi5zanMFmfSBweAnDLIHjiGk9pAk3gM/bEQXwVtQsftE+hmi8yg+PasN2rgSa9GsWU4HKhzIFHaYl2bwmUMxu3w081ICQG3Vp3zUkca0j+a95mPIf89K/Z5ot6o3Illrv2s7UWln8UmH0RoUrrkQn4SFMlktYHNab4MclO9MUtgNqh4Um1xuQYWvgjtDfjV1h9rwY+YHItFiLSZwLtQsNn3k+SOAimziuGt9SENOzLgM7Dc1b0RSI255UOso3P5smC2YnQdw==
 Transaction Processed: 6
 Initiating executions : 5 : 6
 Initiating execution for seqNum: 6
@@ -1175,11 +1362,15 @@ Request received: 7
 Server is leader -> processing request -- added to queue
 Processing Transaction: 7
 Initiating Pre Prepare for SeqNum: 7 View: 0 Transaction ID: 7
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 7 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 7 View: 0 Transaction ID: 7
+Prepare lo unna Digest: qxRNakEMVWEYxMnbNVJo8j+U0nd+F+24muYWFEOhkQZQTKgd3T/VfmtKgZMwKRPUIPVdyMrTkA0Dtzv/PGnupAqAnzogeXM82abAZjZYmfNQfrb4zeN1GN/pdFgmYzaITWPUFSXSGGZSdYgXuN7E+He349tSKNaaIrm573PfrF+4+JuVARD1PuQ43sUmzOYflGMJ1bM9nXoTHghtHCPM0CY37D4MkunFlHaIWZuVDegW7iZlVYFFJouaBZ7cZQ5CorB9/yBn7unyEQ347j8TAA1LoWf4AhbwE8Xhgi+HPZ3y0dVwhZq4FRI+L7jiUy4n65eS9a2e3uafIBrPuCvyIA==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 7 View: 0 Transaction ID: 7
+Commit lo unna Digest: qxRNakEMVWEYxMnbNVJo8j+U0nd+F+24muYWFEOhkQZQTKgd3T/VfmtKgZMwKRPUIPVdyMrTkA0Dtzv/PGnupAqAnzogeXM82abAZjZYmfNQfrb4zeN1GN/pdFgmYzaITWPUFSXSGGZSdYgXuN7E+He349tSKNaaIrm573PfrF+4+JuVARD1PuQ43sUmzOYflGMJ1bM9nXoTHghtHCPM0CY37D4MkunFlHaIWZuVDegW7iZlVYFFJouaBZ7cZQ5CorB9/yBn7unyEQ347j8TAA1LoWf4AhbwE8Xhgi+HPZ3y0dVwhZq4FRI+L7jiUy4n65eS9a2e3uafIBrPuCvyIA==
 Transaction Processed: 7
 Initiating executions : 6 : 7
 Initiating execution for seqNum: 7
@@ -1199,1220 +1390,15 @@ Request received: 8
 Server is leader -> processing request -- added to queue
 Processing Transaction: 8
 Initiating Pre Prepare for SeqNum: 8 View: 0 Transaction ID: 8
-PrePrepare accepted for Seq num : 8 Accepts: 6
-Pre Prepare Success
-Initiating Prepare for SeqNum: 8 View: 0 Transaction ID: 8
-Prepare Success
-Initiating Commit for SeqNum: 8 View: 0 Transaction ID: 8
-Transaction Processed: 8
-Initiating executions : 7 : 8
-Initiating execution for seqNum: 8
-Status : COMMITTED
-Executing transaction: 8
-Transaction executed: 8
-Sending Reply to Client executed: 8 Transaction: 8
-sender: "E"
-receiver: "F"
-amount: 1
-transactionNum: 8
-
-Sent Reply to Client executed: 8
-Initiating execution for seqNum: 9
-Status : Not Found
-Request received: 9
-Server is leader -> processing request -- added to queue
-Processing Transaction: 9
-Initiating Pre Prepare for SeqNum: 9 View: 0 Transaction ID: 9
-PrePrepare accepted for Seq num : 9 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 9 View: 0 Transaction ID: 9
-Prepare Success
-Initiating Commit for SeqNum: 9 View: 0 Transaction ID: 9
-Transaction Processed: 9
-Initiating executions : 8 : 9
-Initiating execution for seqNum: 9
-Status : COMMITTED
-Executing transaction: 9
-Transaction executed: 9
-Sending Reply to Client executed: 9 Transaction: 9
-sender: "G"
-receiver: "H"
-amount: 1
-transactionNum: 9
-
-Sent Reply to Client executed: 9
-Initiating execution for seqNum: 10
-Status : Not Found
-Request received: 10
-Server is leader -> processing request -- added to queue
-Processing Transaction: 10
-Initiating Pre Prepare for SeqNum: 10 View: 0 Transaction ID: 10
-PrePrepare accepted for Seq num : 10 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 10 View: 0 Transaction ID: 10
-Prepare Success
-Initiating Commit for SeqNum: 10 View: 0 Transaction ID: 10
-Transaction Processed: 10
-Initiating executions : 9 : 10
-Initiating execution for seqNum: 10
-Status : COMMITTED
-Executing transaction: 10
-Transaction executed: 10
-Sending Reply to Client executed: 10 Transaction: 10
-sender: "C"
-receiver: "D"
-amount: 1
-transactionNum: 10
-
-Sent Reply to Client executed: 10
-Initiating execution for seqNum: 11
-Status : Not Found
-Request received: 11
-Server is leader -> processing request -- added to queue
-Processing Transaction: 11
-Initiating Pre Prepare for SeqNum: 11 View: 0 Transaction ID: 11
-PrePrepare accepted for Seq num : 11 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 11 View: 0 Transaction ID: 11
-Prepare Success
-Initiating Commit for SeqNum: 11 View: 0 Transaction ID: 11
-Transaction Processed: 11
-Initiating executions : 10 : 11
-Initiating execution for seqNum: 11
-Status : COMMITTED
-Executing transaction: 11
-Transaction executed: 11
-Sending Reply to Client executed: 11 Transaction: 11
-sender: "A"
-receiver: "B"
-amount: 1
-transactionNum: 11
-
-Sent Reply to Client executed: 11
-Initiating execution for seqNum: 12
-Status : Not Found
-Request received: 12
-Server is leader -> processing request -- added to queue
-Processing Transaction: 12
-Initiating Pre Prepare for SeqNum: 12 View: 0 Transaction ID: 12
-PrePrepare accepted for Seq num : 12 Accepts: 6
-Pre Prepare Success
-Initiating Prepare for SeqNum: 12 View: 0 Transaction ID: 12
-Prepare Success
-Initiating Commit for SeqNum: 12 View: 0 Transaction ID: 12
-Transaction Processed: 12
-Initiating executions : 11 : 12
-Initiating execution for seqNum: 12
-Status : COMMITTED
-Executing transaction: 12
-Transaction executed: 12
-Sending Reply to Client executed: 12 Transaction: 12
-sender: "D"
-receiver: "E"
-amount: 1
-transactionNum: 12
-
-Sent Reply to Client executed: 12
-Initiating execution for seqNum: 13
-Status : Not Found
-Request received: 13
-Server is leader -> processing request -- added to queue
-Processing Transaction: 13
-Initiating Pre Prepare for SeqNum: 13 View: 0 Transaction ID: 13
-PrePrepare accepted for Seq num : 13 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 13 View: 0 Transaction ID: 13
-Prepare Success
-Initiating Commit for SeqNum: 13 View: 0 Transaction ID: 13
-Transaction Processed: 13
-Initiating executions : 12 : 13
-Initiating execution for seqNum: 13
-Status : COMMITTED
-Executing transaction: 13
-Transaction executed: 13
-Sending Reply to Client executed: 13 Transaction: 13
-sender: "I"
-receiver: "J"
-amount: 1
-transactionNum: 13
-
-Sent Reply to Client executed: 13
-Initiating execution for seqNum: 14
-Status : Not Found
-Request received: 14
-Server is leader -> processing request -- added to queue
-Processing Transaction: 14
-Initiating Pre Prepare for SeqNum: 14 View: 0 Transaction ID: 14
-PrePrepare accepted for Seq num : 14 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 14 View: 0 Transaction ID: 14
-Prepare Success
-Initiating Commit for SeqNum: 14 View: 0 Transaction ID: 14
-Transaction Processed: 14
-Initiating executions : 13 : 14
-Initiating execution for seqNum: 14
-Status : COMMITTED
-Executing transaction: 14
-Transaction executed: 14
-Sending Reply to Client executed: 14 Transaction: 14
-sender: "J"
-receiver: "A"
-amount: 1
-transactionNum: 14
-
-Sent Reply to Client executed: 14
-Initiating execution for seqNum: 15
-Status : Not Found
-Request received: 15
-Server is leader -> processing request -- added to queue
-Processing Transaction: 15
-Initiating Pre Prepare for SeqNum: 15 View: 0 Transaction ID: 15
-PrePrepare accepted for Seq num : 15 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 15 View: 0 Transaction ID: 15
-Prepare Success
-Initiating Commit for SeqNum: 15 View: 0 Transaction ID: 15
-Transaction Processed: 15
-Initiating executions : 14 : 15
-Initiating execution for seqNum: 15
-Status : COMMITTED
-Executing transaction: 15
-Transaction executed: 15
-Sending Reply to Client executed: 15 Transaction: 15
-sender: "B"
-receiver: "C"
-amount: 1
-transactionNum: 15
-
-Sent Reply to Client executed: 15
-Initiating execution for seqNum: 16
-Status : Not Found
-Request received: 16
-Server is leader -> processing request -- added to queue
-Processing Transaction: 16
-Initiating Pre Prepare for SeqNum: 16 View: 0 Transaction ID: 16
-PrePrepare accepted for Seq num : 16 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 16 View: 0 Transaction ID: 16
-Prepare Success
-Initiating Commit for SeqNum: 16 View: 0 Transaction ID: 16
-Transaction Processed: 16
-Initiating executions : 15 : 16
-Initiating execution for seqNum: 16
-Status : COMMITTED
-Executing transaction: 16
-Transaction executed: 16
-Sending Reply to Client executed: 16 Transaction: 16
-sender: "F"
-receiver: "G"
-amount: 1
-transactionNum: 16
-
-Sent Reply to Client executed: 16
-Initiating execution for seqNum: 17
-Status : Not Found
-Request received: 17
-Server is leader -> processing request -- added to queue
-Processing Transaction: 17
-Initiating Pre Prepare for SeqNum: 17 View: 0 Transaction ID: 17
-PrePrepare accepted for Seq num : 17 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 17 View: 0 Transaction ID: 17
-Prepare Success
-Initiating Commit for SeqNum: 17 View: 0 Transaction ID: 17
-Transaction Processed: 17
-Initiating executions : 16 : 17
-Initiating execution for seqNum: 17
-Status : COMMITTED
-Executing transaction: 17
-Transaction executed: 17
-Sending Reply to Client executed: 17 Transaction: 17
-sender: "H"
-receiver: "I"
-amount: 1
-transactionNum: 17
-
-Sent Reply to Client executed: 17
-Initiating execution for seqNum: 18
-Status : Not Found
-Request received: 18
-Server is leader -> processing request -- added to queue
-Processing Transaction: 18
-Initiating Pre Prepare for SeqNum: 18 View: 0 Transaction ID: 18
-PrePrepare accepted for Seq num : 18 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 18 View: 0 Transaction ID: 18
-Prepare Success
-Initiating Commit for SeqNum: 18 View: 0 Transaction ID: 18
-Transaction Processed: 18
-Initiating executions : 17 : 18
-Initiating execution for seqNum: 18
-Status : COMMITTED
-Executing transaction: 18
-Transaction executed: 18
-Sending Reply to Client executed: 18 Transaction: 18
-sender: "E"
-receiver: "F"
-amount: 1
-transactionNum: 18
-
-Sent Reply to Client executed: 18
-Initiating execution for seqNum: 19
-Status : Not Found
-Request received: 19
-Server is leader -> processing request -- added to queue
-Processing Transaction: 19
-Initiating Pre Prepare for SeqNum: 19 View: 0 Transaction ID: 19
-PrePrepare accepted for Seq num : 19 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 19 View: 0 Transaction ID: 19
-Prepare Success
-Initiating Commit for SeqNum: 19 View: 0 Transaction ID: 19
-Transaction Processed: 19
-Initiating executions : 18 : 19
-Initiating execution for seqNum: 19
-Status : COMMITTED
-Executing transaction: 19
-Transaction executed: 19
-Sending Reply to Client executed: 19 Transaction: 19
-sender: "G"
-receiver: "H"
-amount: 1
-transactionNum: 19
-
-Sent Reply to Client executed: 19
-Initiating execution for seqNum: 20
-Status : Not Found
-Request received: 20
-Server is leader -> processing request -- added to queue
-Processing Transaction: 20
-Initiating Pre Prepare for SeqNum: 20 View: 0 Transaction ID: 20
-PrePrepare accepted for Seq num : 20 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 20 View: 0 Transaction ID: 20
-Prepare Success
-Initiating Commit for SeqNum: 20 View: 0 Transaction ID: 20
-Transaction Processed: 20
-Initiating executions : 19 : 20
-Initiating execution for seqNum: 20
-Status : COMMITTED
-Executing transaction: 20
-Transaction executed: 20
-Sending Reply to Client executed: 20 Transaction: 20
-sender: "C"
-receiver: "D"
-amount: 1
-transactionNum: 20
-
-Sent Reply to Client executed: 20
-Initiating execution for seqNum: 21
-Status : Not Found
-Request received: 21
-Server is leader -> processing request -- added to queue
-Processing Transaction: 21
-Initiating Pre Prepare for SeqNum: 21 View: 0 Transaction ID: 21
-PrePrepare accepted for Seq num : 21 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 21 View: 0 Transaction ID: 21
-Prepare Success
-Initiating Commit for SeqNum: 21 View: 0 Transaction ID: 21
-Transaction Processed: 21
-Initiating executions : 20 : 21
-Initiating execution for seqNum: 21
-Status : COMMITTED
-Executing transaction: 21
-Transaction executed: 21
-Sending Reply to Client executed: 21 Transaction: 21
-sender: "A"
-receiver: "B"
-amount: 1
-transactionNum: 21
-
-Sent Reply to Client executed: 21
-Initiating execution for seqNum: 22
-Status : Not Found
-Request received: 22
-Server is leader -> processing request -- added to queue
-Processing Transaction: 22
-Initiating Pre Prepare for SeqNum: 22 View: 0 Transaction ID: 22
-PrePrepare accepted for Seq num : 22 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 22 View: 0 Transaction ID: 22
-Prepare Success
-Initiating Commit for SeqNum: 22 View: 0 Transaction ID: 22
-Transaction Processed: 22
-Initiating executions : 21 : 22
-Initiating execution for seqNum: 22
-Status : COMMITTED
-Executing transaction: 22
-Transaction executed: 22
-Sending Reply to Client executed: 22 Transaction: 22
-sender: "D"
-receiver: "E"
-amount: 1
-transactionNum: 22
-
-Sent Reply to Client executed: 22
-Initiating execution for seqNum: 23
-Status : Not Found
-Request received: 23
-Server is leader -> processing request -- added to queue
-Processing Transaction: 23
-Initiating Pre Prepare for SeqNum: 23 View: 0 Transaction ID: 23
-PrePrepare accepted for Seq num : 23 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 23 View: 0 Transaction ID: 23
-Prepare Success
-Initiating Commit for SeqNum: 23 View: 0 Transaction ID: 23
-Transaction Processed: 23
-Initiating executions : 22 : 23
-Initiating execution for seqNum: 23
-Status : COMMITTED
-Executing transaction: 23
-Transaction executed: 23
-Sending Reply to Client executed: 23 Transaction: 23
-sender: "I"
-receiver: "J"
-amount: 1
-transactionNum: 23
-
-Sent Reply to Client executed: 23
-Initiating execution for seqNum: 24
-Status : Not Found
-Request received: 24
-Server is leader -> processing request -- added to queue
-Processing Transaction: 24
-Initiating Pre Prepare for SeqNum: 24 View: 0 Transaction ID: 24
-PrePrepare accepted for Seq num : 24 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 24 View: 0 Transaction ID: 24
-Prepare Success
-Initiating Commit for SeqNum: 24 View: 0 Transaction ID: 24
-Transaction Processed: 24
-Initiating executions : 23 : 24
-Initiating execution for seqNum: 24
-Status : COMMITTED
-Executing transaction: 24
-Transaction executed: 24
-Sending Reply to Client executed: 24 Transaction: 24
-sender: "J"
-receiver: "A"
-amount: 1
-transactionNum: 24
-
-Sent Reply to Client executed: 24
-Initiating execution for seqNum: 25
-Status : Not Found
-Request received: 25
-Server is leader -> processing request -- added to queue
-Processing Transaction: 25
-Initiating Pre Prepare for SeqNum: 25 View: 0 Transaction ID: 25
-PrePrepare accepted for Seq num : 25 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 25 View: 0 Transaction ID: 25
-Prepare Success
-Initiating Commit for SeqNum: 25 View: 0 Transaction ID: 25
-Transaction Processed: 25
-Initiating executions : 24 : 25
-Initiating execution for seqNum: 25
-Status : COMMITTED
-Executing transaction: 25
-Transaction executed: 25
-Sending Reply to Client executed: 25 Transaction: 25
-sender: "B"
-receiver: "C"
-amount: 1
-transactionNum: 25
-
-Sent Reply to Client executed: 25
-Initiating execution for seqNum: 26
-Status : Not Found
-Request received: 26
-Server is leader -> processing request -- added to queue
-Processing Transaction: 26
-Initiating Pre Prepare for SeqNum: 26 View: 0 Transaction ID: 26
-PrePrepare accepted for Seq num : 26 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 26 View: 0 Transaction ID: 26
-Prepare Success
-Initiating Commit for SeqNum: 26 View: 0 Transaction ID: 26
-Transaction Processed: 26
-Initiating executions : 25 : 26
-Initiating execution for seqNum: 26
-Status : COMMITTED
-Executing transaction: 26
-Transaction executed: 26
-Sending Reply to Client executed: 26 Transaction: 26
-sender: "F"
-receiver: "G"
-amount: 1
-transactionNum: 26
-
-Sent Reply to Client executed: 26
-Initiating execution for seqNum: 27
-Status : Not Found
-Request received: 27
-Server is leader -> processing request -- added to queue
-Processing Transaction: 27
-Initiating Pre Prepare for SeqNum: 27 View: 0 Transaction ID: 27
-PrePrepare accepted for Seq num : 27 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 27 View: 0 Transaction ID: 27
-Prepare Success
-Initiating Commit for SeqNum: 27 View: 0 Transaction ID: 27
-Transaction Processed: 27
-Initiating executions : 26 : 27
-Initiating execution for seqNum: 27
-Status : COMMITTED
-Executing transaction: 27
-Transaction executed: 27
-Sending Reply to Client executed: 27 Transaction: 27
-sender: "H"
-receiver: "I"
-amount: 1
-transactionNum: 27
-
-Sent Reply to Client executed: 27
-Initiating execution for seqNum: 28
-Status : Not Found
-Request received: 28
-Server is leader -> processing request -- added to queue
-Processing Transaction: 28
-Initiating Pre Prepare for SeqNum: 28 View: 0 Transaction ID: 28
-PrePrepare accepted for Seq num : 28 Accepts: 6
-Pre Prepare Success
-Initiating Prepare for SeqNum: 28 View: 0 Transaction ID: 28
-Prepare Success
-Initiating Commit for SeqNum: 28 View: 0 Transaction ID: 28
-Transaction Processed: 28
-Initiating executions : 27 : 28
-Initiating execution for seqNum: 28
-Status : COMMITTED
-Executing transaction: 28
-Transaction executed: 28
-Sending Reply to Client executed: 28 Transaction: 28
-sender: "E"
-receiver: "F"
-amount: 1
-transactionNum: 28
-
-Sent Reply to Client executed: 28
-Initiating execution for seqNum: 29
-Status : Not Found
-Request received: 29
-Server is leader -> processing request -- added to queue
-Processing Transaction: 29
-Initiating Pre Prepare for SeqNum: 29 View: 0 Transaction ID: 29
-PrePrepare accepted for Seq num : 29 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 29 View: 0 Transaction ID: 29
-Prepare Success
-Initiating Commit for SeqNum: 29 View: 0 Transaction ID: 29
-Transaction Processed: 29
-Initiating executions : 28 : 29
-Initiating execution for seqNum: 29
-Status : COMMITTED
-Executing transaction: 29
-Transaction executed: 29
-Sending Reply to Client executed: 29 Transaction: 29
-sender: "G"
-receiver: "H"
-amount: 1
-transactionNum: 29
-
-Sent Reply to Client executed: 29
-Initiating execution for seqNum: 30
-Status : Not Found
-Request received: 30
-Server is leader -> processing request -- added to queue
-Processing Transaction: 30
-Initiating Pre Prepare for SeqNum: 30 View: 0 Transaction ID: 30
-PrePrepare accepted for Seq num : 30 Accepts: 6
-Pre Prepare Success
-Initiating Prepare for SeqNum: 30 View: 0 Transaction ID: 30
-Prepare Success
-Initiating Commit for SeqNum: 30 View: 0 Transaction ID: 30
-Transaction Processed: 30
-Initiating executions : 29 : 30
-Initiating execution for seqNum: 30
-Status : COMMITTED
-Executing transaction: 30
-Transaction executed: 30
-Sending Reply to Client executed: 30 Transaction: 30
-sender: "C"
-receiver: "D"
-amount: 1
-transactionNum: 30
-
-Sent Reply to Client executed: 30
-Initiating execution for seqNum: 31
-Status : Not Found
-Request received: 31
-Server is leader -> processing request -- added to queue
-Processing Transaction: 31
-Initiating Pre Prepare for SeqNum: 31 View: 0 Transaction ID: 31
-PrePrepare accepted for Seq num : 31 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 31 View: 0 Transaction ID: 31
-Prepare Success
-Initiating Commit for SeqNum: 31 View: 0 Transaction ID: 31
-Transaction Processed: 31
-Initiating executions : 30 : 31
-Initiating execution for seqNum: 31
-Status : COMMITTED
-Executing transaction: 31
-Transaction executed: 31
-Sending Reply to Client executed: 31 Transaction: 31
-sender: "A"
-receiver: "B"
-amount: 1
-transactionNum: 31
-
-Sent Reply to Client executed: 31
-Initiating execution for seqNum: 32
-Status : Not Found
-Request received: 32
-Server is leader -> processing request -- added to queue
-Processing Transaction: 32
-Initiating Pre Prepare for SeqNum: 32 View: 0 Transaction ID: 32
-PrePrepare accepted for Seq num : 32 Accepts: 6
-Pre Prepare Success
-Initiating Prepare for SeqNum: 32 View: 0 Transaction ID: 32
-Prepare Success
-Initiating Commit for SeqNum: 32 View: 0 Transaction ID: 32
-Transaction Processed: 32
-Initiating executions : 31 : 32
-Initiating execution for seqNum: 32
-Status : COMMITTED
-Executing transaction: 32
-Transaction executed: 32
-Sending Reply to Client executed: 32 Transaction: 32
-sender: "D"
-receiver: "E"
-amount: 1
-transactionNum: 32
-
-Sent Reply to Client executed: 32
-Initiating execution for seqNum: 33
-Status : Not Found
-Request received: 33
-Server is leader -> processing request -- added to queue
-Processing Transaction: 33
-Initiating Pre Prepare for SeqNum: 33 View: 0 Transaction ID: 33
-PrePrepare accepted for Seq num : 33 Accepts: 6
-Pre Prepare Success
-Initiating Prepare for SeqNum: 33 View: 0 Transaction ID: 33
-Prepare Success
-Initiating Commit for SeqNum: 33 View: 0 Transaction ID: 33
-Transaction Processed: 33
-Initiating executions : 32 : 33
-Initiating execution for seqNum: 33
-Status : COMMITTED
-Executing transaction: 33
-Transaction executed: 33
-Sending Reply to Client executed: 33 Transaction: 33
-sender: "I"
-receiver: "J"
-amount: 1
-transactionNum: 33
-
-Sent Reply to Client executed: 33
-Initiating execution for seqNum: 34
-Status : Not Found
-Request received: 34
-Server is leader -> processing request -- added to queue
-Processing Transaction: 34
-Initiating Pre Prepare for SeqNum: 34 View: 0 Transaction ID: 34
-PrePrepare accepted for Seq num : 34 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 34 View: 0 Transaction ID: 34
-Prepare Success
-Initiating Commit for SeqNum: 34 View: 0 Transaction ID: 34
-Transaction Processed: 34
-Initiating executions : 33 : 34
-Initiating execution for seqNum: 34
-Status : COMMITTED
-Executing transaction: 34
-Transaction executed: 34
-Sending Reply to Client executed: 34 Transaction: 34
-sender: "J"
-receiver: "A"
-amount: 1
-transactionNum: 34
-
-Sent Reply to Client executed: 34
-Initiating execution for seqNum: 35
-Status : Not Found
-Request received: 35
-Server is leader -> processing request -- added to queue
-Processing Transaction: 35
-Initiating Pre Prepare for SeqNum: 35 View: 0 Transaction ID: 35
-PrePrepare accepted for Seq num : 35 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 35 View: 0 Transaction ID: 35
-Prepare Success
-Initiating Commit for SeqNum: 35 View: 0 Transaction ID: 35
-Transaction Processed: 35
-Initiating executions : 34 : 35
-Initiating execution for seqNum: 35
-Status : COMMITTED
-Executing transaction: 35
-Transaction executed: 35
-Sending Reply to Client executed: 35 Transaction: 35
-sender: "B"
-receiver: "C"
-amount: 1
-transactionNum: 35
-
-Sent Reply to Client executed: 35
-Initiating execution for seqNum: 36
-Status : Not Found
-Request received: 36
-Server is leader -> processing request -- added to queue
-Processing Transaction: 36
-Initiating Pre Prepare for SeqNum: 36 View: 0 Transaction ID: 36
-PrePrepare accepted for Seq num : 36 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 36 View: 0 Transaction ID: 36
-Prepare Success
-Initiating Commit for SeqNum: 36 View: 0 Transaction ID: 36
-Transaction Processed: 36
-Initiating executions : 35 : 36
-Initiating execution for seqNum: 36
-Status : COMMITTED
-Executing transaction: 36
-Transaction executed: 36
-Sending Reply to Client executed: 36 Transaction: 36
-sender: "F"
-receiver: "G"
-amount: 1
-transactionNum: 36
-
-Sent Reply to Client executed: 36
-Initiating execution for seqNum: 37
-Status : Not Found
-Request received: 37
-Server is leader -> processing request -- added to queue
-Processing Transaction: 37
-Initiating Pre Prepare for SeqNum: 37 View: 0 Transaction ID: 37
-PrePrepare accepted for Seq num : 37 Accepts: 6
-Pre Prepare Success
-Initiating Prepare for SeqNum: 37 View: 0 Transaction ID: 37
-Prepare Success
-Initiating Commit for SeqNum: 37 View: 0 Transaction ID: 37
-Transaction Processed: 37
-Initiating executions : 36 : 37
-Initiating execution for seqNum: 37
-Status : COMMITTED
-Executing transaction: 37
-Transaction executed: 37
-Sending Reply to Client executed: 37 Transaction: 37
-sender: "H"
-receiver: "I"
-amount: 1
-transactionNum: 37
-
-Sent Reply to Client executed: 37
-Initiating execution for seqNum: 38
-Status : Not Found
-Request received: 38
-Server is leader -> processing request -- added to queue
-Processing Transaction: 38
-Initiating Pre Prepare for SeqNum: 38 View: 0 Transaction ID: 38
-PrePrepare accepted for Seq num : 38 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 38 View: 0 Transaction ID: 38
-Prepare Success
-Initiating Commit for SeqNum: 38 View: 0 Transaction ID: 38
-Transaction Processed: 38
-Initiating executions : 37 : 38
-Initiating execution for seqNum: 38
-Status : COMMITTED
-Executing transaction: 38
-Transaction executed: 38
-Sending Reply to Client executed: 38 Transaction: 38
-sender: "E"
-receiver: "F"
-amount: 1
-transactionNum: 38
-
-Sent Reply to Client executed: 38
-Initiating execution for seqNum: 39
-Status : Not Found
-Request received: 39
-Server is leader -> processing request -- added to queue
-Processing Transaction: 39
-Initiating Pre Prepare for SeqNum: 39 View: 0 Transaction ID: 39
-PrePrepare accepted for Seq num : 39 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 39 View: 0 Transaction ID: 39
-Prepare Success
-Initiating Commit for SeqNum: 39 View: 0 Transaction ID: 39
-Transaction Processed: 39
-Initiating executions : 38 : 39
-Initiating execution for seqNum: 39
-Status : COMMITTED
-Executing transaction: 39
-Transaction executed: 39
-Sending Reply to Client executed: 39 Transaction: 39
-sender: "G"
-receiver: "H"
-amount: 1
-transactionNum: 39
-
-Sent Reply to Client executed: 39
-Initiating execution for seqNum: 40
-Status : Not Found
-Request received: 40
-Server is leader -> processing request -- added to queue
-Processing Transaction: 40
-Initiating Pre Prepare for SeqNum: 40 View: 0 Transaction ID: 40
-PrePrepare accepted for Seq num : 40 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 40 View: 0 Transaction ID: 40
-Prepare Success
-Initiating Commit for SeqNum: 40 View: 0 Transaction ID: 40
-Transaction Processed: 40
-Initiating executions : 39 : 40
-Initiating execution for seqNum: 40
-Status : COMMITTED
-Executing transaction: 40
-Transaction executed: 40
-Sending Reply to Client executed: 40 Transaction: 40
-sender: "C"
-receiver: "D"
-amount: 1
-transactionNum: 40
-
-Sent Reply to Client executed: 40
-Initiating execution for seqNum: 41
-Status : Not Found
-Request received: 41
-Server is leader -> processing request -- added to queue
-Processing Transaction: 41
-Initiating Pre Prepare for SeqNum: 41 View: 0 Transaction ID: 41
-PrePrepare accepted for Seq num : 41 Accepts: 6
-Pre Prepare Success
-Initiating Prepare for SeqNum: 41 View: 0 Transaction ID: 41
-Prepare Success
-Initiating Commit for SeqNum: 41 View: 0 Transaction ID: 41
-Transaction Processed: 41
-Initiating executions : 40 : 41
-Initiating execution for seqNum: 41
-Status : COMMITTED
-Executing transaction: 41
-Transaction executed: 41
-Sending Reply to Client executed: 41 Transaction: 41
-sender: "A"
-receiver: "B"
-amount: 1
-transactionNum: 41
-
-Sent Reply to Client executed: 41
-Initiating execution for seqNum: 42
-Status : Not Found
-Request received: 42
-Server is leader -> processing request -- added to queue
-Processing Transaction: 42
-Initiating Pre Prepare for SeqNum: 42 View: 0 Transaction ID: 42
-PrePrepare accepted for Seq num : 42 Accepts: 6
-Pre Prepare Success
-Initiating Prepare for SeqNum: 42 View: 0 Transaction ID: 42
-Prepare Success
-Initiating Commit for SeqNum: 42 View: 0 Transaction ID: 42
-Transaction Processed: 42
-Initiating executions : 41 : 42
-Initiating execution for seqNum: 42
-Status : COMMITTED
-Executing transaction: 42
-Transaction executed: 42
-Sending Reply to Client executed: 42 Transaction: 42
-sender: "D"
-receiver: "E"
-amount: 1
-transactionNum: 42
-
-Sent Reply to Client executed: 42
-Initiating execution for seqNum: 43
-Status : Not Found
-Request received: 43
-Server is leader -> processing request -- added to queue
-Processing Transaction: 43
-Initiating Pre Prepare for SeqNum: 43 View: 0 Transaction ID: 43
-PrePrepare accepted for Seq num : 43 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 43 View: 0 Transaction ID: 43
-Prepare Success
-Initiating Commit for SeqNum: 43 View: 0 Transaction ID: 43
-Transaction Processed: 43
-Initiating executions : 42 : 43
-Initiating execution for seqNum: 43
-Status : COMMITTED
-Executing transaction: 43
-Transaction executed: 43
-Sending Reply to Client executed: 43 Transaction: 43
-sender: "I"
-receiver: "J"
-amount: 1
-transactionNum: 43
-
-Sent Reply to Client executed: 43
-Initiating execution for seqNum: 44
-Status : Not Found
-Request received: 44
-Server is leader -> processing request -- added to queue
-Processing Transaction: 44
-Initiating Pre Prepare for SeqNum: 44 View: 0 Transaction ID: 44
-PrePrepare accepted for Seq num : 44 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 44 View: 0 Transaction ID: 44
-Prepare Success
-Initiating Commit for SeqNum: 44 View: 0 Transaction ID: 44
-Transaction Processed: 44
-Initiating executions : 43 : 44
-Initiating execution for seqNum: 44
-Status : COMMITTED
-Executing transaction: 44
-Transaction executed: 44
-Sending Reply to Client executed: 44 Transaction: 44
-sender: "J"
-receiver: "A"
-amount: 1
-transactionNum: 44
-
-Sent Reply to Client executed: 44
-Initiating execution for seqNum: 45
-Status : Not Found
-Request received: 45
-Server is leader -> processing request -- added to queue
-Processing Transaction: 45
-Initiating Pre Prepare for SeqNum: 45 View: 0 Transaction ID: 45
-PrePrepare accepted for Seq num : 45 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 45 View: 0 Transaction ID: 45
-Prepare Success
-Initiating Commit for SeqNum: 45 View: 0 Transaction ID: 45
-Transaction Processed: 45
-Initiating executions : 44 : 45
-Initiating execution for seqNum: 45
-Status : COMMITTED
-Executing transaction: 45
-Transaction executed: 45
-Sending Reply to Client executed: 45 Transaction: 45
-sender: "B"
-receiver: "C"
-amount: 1
-transactionNum: 45
-
-Sent Reply to Client executed: 45
-Initiating execution for seqNum: 46
-Status : Not Found
-Request received: 46
-Server is leader -> processing request -- added to queue
-Processing Transaction: 46
-Initiating Pre Prepare for SeqNum: 46 View: 0 Transaction ID: 46
-PrePrepare accepted for Seq num : 46 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 46 View: 0 Transaction ID: 46
-Prepare Success
-Initiating Commit for SeqNum: 46 View: 0 Transaction ID: 46
-Transaction Processed: 46
-Initiating executions : 45 : 46
-Initiating execution for seqNum: 46
-Status : COMMITTED
-Executing transaction: 46
-Transaction executed: 46
-Sending Reply to Client executed: 46 Transaction: 46
-sender: "F"
-receiver: "G"
-amount: 1
-transactionNum: 46
-
-Sent Reply to Client executed: 46
-Initiating execution for seqNum: 47
-Status : Not Found
-Request received: 47
-Server is leader -> processing request -- added to queue
-Processing Transaction: 47
-Initiating Pre Prepare for SeqNum: 47 View: 0 Transaction ID: 47
-PrePrepare accepted for Seq num : 47 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 47 View: 0 Transaction ID: 47
-Prepare Success
-Initiating Commit for SeqNum: 47 View: 0 Transaction ID: 47
-Transaction Processed: 47
-Initiating executions : 46 : 47
-Initiating execution for seqNum: 47
-Status : COMMITTED
-Executing transaction: 47
-Transaction executed: 47
-Sending Reply to Client executed: 47 Transaction: 47
-sender: "H"
-receiver: "I"
-amount: 1
-transactionNum: 47
-
-Sent Reply to Client executed: 47
-Initiating execution for seqNum: 48
-Status : Not Found
-Request received: 48
-Server is leader -> processing request -- added to queue
-Processing Transaction: 48
-Initiating Pre Prepare for SeqNum: 48 View: 0 Transaction ID: 48
-PrePrepare accepted for Seq num : 48 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 48 View: 0 Transaction ID: 48
-Prepare Success
-Initiating Commit for SeqNum: 48 View: 0 Transaction ID: 48
-Transaction Processed: 48
-Initiating executions : 47 : 48
-Initiating execution for seqNum: 48
-Status : COMMITTED
-Executing transaction: 48
-Transaction executed: 48
-Sending Reply to Client executed: 48 Transaction: 48
-sender: "E"
-receiver: "F"
-amount: 1
-transactionNum: 48
-
-Sent Reply to Client executed: 48
-Initiating execution for seqNum: 49
-Status : Not Found
-Request received: 49
-Server is leader -> processing request -- added to queue
-Processing Transaction: 49
-Initiating Pre Prepare for SeqNum: 49 View: 0 Transaction ID: 49
-PrePrepare accepted for Seq num : 49 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 49 View: 0 Transaction ID: 49
-Prepare Success
-Initiating Commit for SeqNum: 49 View: 0 Transaction ID: 49
-Transaction Processed: 49
-Initiating executions : 48 : 49
-Initiating execution for seqNum: 49
-Status : COMMITTED
-Executing transaction: 49
-Transaction executed: 49
-Sending Reply to Client executed: 49 Transaction: 49
-sender: "G"
-receiver: "H"
-amount: 1
-transactionNum: 49
-
-Sent Reply to Client executed: 49
-Initiating execution for seqNum: 50
-Status : Not Found
-Request received: 50
-Server is leader -> processing request -- added to queue
-Processing Transaction: 50
-Initiating Pre Prepare for SeqNum: 50 View: 0 Transaction ID: 50
-PrePrepare accepted for Seq num : 50 Accepts: 6
-Pre Prepare Success
-Initiating Prepare for SeqNum: 50 View: 0 Transaction ID: 50
-Prepare Success
-Initiating Commit for SeqNum: 50 View: 0 Transaction ID: 50
-Transaction Processed: 50
-Initiating executions : 49 : 50
-Initiating execution for seqNum: 50
-Status : COMMITTED
-Executing transaction: 50
-Transaction executed: 50
-Sending Reply to Client executed: 50 Transaction: 50
-sender: "C"
-receiver: "D"
-amount: 1
-transactionNum: 50
-
-Sent Reply to Client executed: 50
-Initiating execution for seqNum: 51
-Status : Not Found
-Server activated
-===============================================================================================================================
-
-                       Test Set : 11     
-
-===============================================================================================================================
-
-Request received: 1
-Server is leader -> processing request -- added to queue
-Processing Transaction: 1
-Initiating Pre Prepare for SeqNum: 1 View: 0 Transaction ID: 1
-PrePrepare accepted for Seq num : 1 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 1 View: 0 Transaction ID: 1
-Prepare Success
-Initiating Commit for SeqNum: 1 View: 0 Transaction ID: 1
-Transaction Processed: 1
-Initiating executions : 0 : 1
-Initiating execution for seqNum: 1
-Status : COMMITTED
-Executing transaction: 1
-Transaction executed: 1
-Sending Reply to Client executed: 1 Transaction: 1
-sender: "A"
-receiver: "B"
-amount: 1
-timestamp {
-}
-transactionNum: 1
-
-Sent Reply to Client executed: 1
-Initiating execution for seqNum: 2
-Status : Not Found
-Request received: 2
-Server is leader -> processing request -- added to queue
-Processing Transaction: 2
-Initiating Pre Prepare for SeqNum: 2 View: 0 Transaction ID: 2
-PrePrepare accepted for Seq num : 2 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 2 View: 0 Transaction ID: 2
-Prepare Success
-Initiating Commit for SeqNum: 2 View: 0 Transaction ID: 2
-Transaction Processed: 2
-Initiating executions : 1 : 2
-Initiating execution for seqNum: 2
-Status : COMMITTED
-Executing transaction: 2
-Transaction executed: 2
-Sending Reply to Client executed: 2 Transaction: 2
-sender: "D"
-receiver: "E"
-amount: 1
-transactionNum: 2
-
-Sent Reply to Client executed: 2
-Initiating execution for seqNum: 3
-Status : Not Found
-Request received: 3
-Server is leader -> processing request -- added to queue
-Processing Transaction: 3
-Initiating Pre Prepare for SeqNum: 3 View: 0 Transaction ID: 3
-PrePrepare accepted for Seq num : 3 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 3 View: 0 Transaction ID: 3
-Prepare Success
-Initiating Commit for SeqNum: 3 View: 0 Transaction ID: 3
-Transaction Processed: 3
-Initiating executions : 2 : 3
-Initiating execution for seqNum: 3
-Status : COMMITTED
-Executing transaction: 3
-Transaction executed: 3
-Sending Reply to Client executed: 3 Transaction: 3
-sender: "I"
-receiver: "J"
-amount: 1
-transactionNum: 3
-
-Sent Reply to Client executed: 3
-Initiating execution for seqNum: 4
-Status : Not Found
-Request received: 4
-Server is leader -> processing request -- added to queue
-Processing Transaction: 4
-Initiating Pre Prepare for SeqNum: 4 View: 0 Transaction ID: 4
-PrePrepare accepted for Seq num : 4 Accepts: 6
-Pre Prepare Success
-Initiating Prepare for SeqNum: 4 View: 0 Transaction ID: 4
-Prepare Success
-Initiating Commit for SeqNum: 4 View: 0 Transaction ID: 4
-Transaction Processed: 4
-Initiating executions : 3 : 4
-Initiating execution for seqNum: 4
-Status : COMMITTED
-Executing transaction: 4
-Transaction executed: 4
-Sending Reply to Client executed: 4 Transaction: 4
-sender: "J"
-receiver: "A"
-amount: 1
-transactionNum: 4
-
-Sent Reply to Client executed: 4
-Initiating execution for seqNum: 5
-Status : Not Found
-Request received: 5
-Server is leader -> processing request -- added to queue
-Processing Transaction: 5
-Initiating Pre Prepare for SeqNum: 5 View: 0 Transaction ID: 5
-PrePrepare accepted for Seq num : 5 Accepts: 6
-Pre Prepare Success
-Initiating Prepare for SeqNum: 5 View: 0 Transaction ID: 5
-Prepare Success
-Initiating Commit for SeqNum: 5 View: 0 Transaction ID: 5
-Transaction Processed: 5
-Initiating executions : 4 : 5
-Initiating execution for seqNum: 5
-Status : COMMITTED
-Executing transaction: 5
-Transaction executed: 5
-Sending Reply to Client executed: 5 Transaction: 5
-sender: "B"
-receiver: "C"
-amount: 1
-transactionNum: 5
-
-Sent Reply to Client executed: 5
-Initiating execution for seqNum: 6
-Status : Not Found
-Request received: 6
-Server is leader -> processing request -- added to queue
-Processing Transaction: 6
-Initiating Pre Prepare for SeqNum: 6 View: 0 Transaction ID: 6
-PrePrepare accepted for Seq num : 6 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 6 View: 0 Transaction ID: 6
-Prepare Success
-Initiating Commit for SeqNum: 6 View: 0 Transaction ID: 6
-Transaction Processed: 6
-Initiating executions : 5 : 6
-Initiating execution for seqNum: 6
-Status : COMMITTED
-Executing transaction: 6
-Transaction executed: 6
-Sending Reply to Client executed: 6 Transaction: 6
-sender: "F"
-receiver: "G"
-amount: 1
-transactionNum: 6
-
-Sent Reply to Client executed: 6
-Initiating execution for seqNum: 7
-Status : Not Found
-Request received: 7
-Server is leader -> processing request -- added to queue
-Processing Transaction: 7
-Initiating Pre Prepare for SeqNum: 7 View: 0 Transaction ID: 7
-PrePrepare accepted for Seq num : 7 Accepts: 7
-Pre Prepare Success
-Initiating Prepare for SeqNum: 7 View: 0 Transaction ID: 7
-Prepare Success
-Initiating Commit for SeqNum: 7 View: 0 Transaction ID: 7
-Transaction Processed: 7
-Initiating executions : 6 : 7
-Initiating execution for seqNum: 7
-Status : COMMITTED
-Executing transaction: 7
-Transaction executed: 7
-Sending Reply to Client executed: 7 Transaction: 7
-sender: "H"
-receiver: "I"
-amount: 1
-transactionNum: 7
-
-Sent Reply to Client executed: 7
-Initiating execution for seqNum: 8
-Status : Not Found
-Request received: 8
-Server is leader -> processing request -- added to queue
-Processing Transaction: 8
-Initiating Pre Prepare for SeqNum: 8 View: 0 Transaction ID: 8
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 8 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 8 View: 0 Transaction ID: 8
+Prepare lo unna Digest: nCuI7R+efRxqZZEnKwZH9UpuU/GF5kcPKtHPHq6Ymt2CR4dmbW9Gcb9Wipyy7kwgthIfL7VSYH4XkyZlYSesv/KQYNhDAh2EyX9OKMtKwWrmYW/AWyoTAv5oVezxyrOvL9+fmjgGxJPXvww+iP4CmsMhVSFWZuwT+CTC1pB5KoTIEHaiEMp6q9Z5Cnh8PqEUPTqebzjEowzqbedCZnK3ycOh42HPTz8LRFLZSyfqMb/2CL9erp5IPuYR6OjK0sdkFtIpaoRKMPWz52NE0PCb3wthUL1YyB7HnHS4IsnF5KaD+bNb8wpzCoI4i5ltkpTFCCvo2CM/Sof5KR5sL2cUdw==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 8 View: 0 Transaction ID: 8
+Commit lo unna Digest: nCuI7R+efRxqZZEnKwZH9UpuU/GF5kcPKtHPHq6Ymt2CR4dmbW9Gcb9Wipyy7kwgthIfL7VSYH4XkyZlYSesv/KQYNhDAh2EyX9OKMtKwWrmYW/AWyoTAv5oVezxyrOvL9+fmjgGxJPXvww+iP4CmsMhVSFWZuwT+CTC1pB5KoTIEHaiEMp6q9Z5Cnh8PqEUPTqebzjEowzqbedCZnK3ycOh42HPTz8LRFLZSyfqMb/2CL9erp5IPuYR6OjK0sdkFtIpaoRKMPWz52NE0PCb3wthUL1YyB7HnHS4IsnF5KaD+bNb8wpzCoI4i5ltkpTFCCvo2CM/Sof5KR5sL2cUdw==
 Transaction Processed: 8
 Initiating executions : 7 : 8
 Initiating execution for seqNum: 8
@@ -2432,11 +1418,15 @@ Request received: 9
 Server is leader -> processing request -- added to queue
 Processing Transaction: 9
 Initiating Pre Prepare for SeqNum: 9 View: 0 Transaction ID: 9
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 9 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 9 View: 0 Transaction ID: 9
+Prepare lo unna Digest: YEAJYT/H4dVEuKjuEoE9oH5gFBfQQG4fM4m58sBmU7s2g3kY6J5fVEapkbpQYR9LVIoggZvbsEhCV5Q0D9D702RL6DHbX4ubLS/XJ1QY1/od3mkRW1mY00S7IgN1MnkMM/nEvigjl38Ihmhw+6ZiKXQAzx+Cr66Ra9FxFt7uUQbGcidhgqeKFLJHQrmhwvg+GZlnceM0H8VZYekrpimnoO3QNoAGBJURCBesJjTILwZwIR9gH4HAFvd9n6Obe8BZZooj8q3z+9Wjg1HS16EBMoc0mYKLEah5Y9r/Z0nZ1UiH1msEsypXPPN5kVxnar1q6n5cMptFOCF62Tj9YvHwfA==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 9 View: 0 Transaction ID: 9
+Commit lo unna Digest: YEAJYT/H4dVEuKjuEoE9oH5gFBfQQG4fM4m58sBmU7s2g3kY6J5fVEapkbpQYR9LVIoggZvbsEhCV5Q0D9D702RL6DHbX4ubLS/XJ1QY1/od3mkRW1mY00S7IgN1MnkMM/nEvigjl38Ihmhw+6ZiKXQAzx+Cr66Ra9FxFt7uUQbGcidhgqeKFLJHQrmhwvg+GZlnceM0H8VZYekrpimnoO3QNoAGBJURCBesJjTILwZwIR9gH4HAFvd9n6Obe8BZZooj8q3z+9Wjg1HS16EBMoc0mYKLEah5Y9r/Z0nZ1UiH1msEsypXPPN5kVxnar1q6n5cMptFOCF62Tj9YvHwfA==
 Transaction Processed: 9
 Initiating executions : 8 : 9
 Initiating execution for seqNum: 9
@@ -2456,11 +1446,15 @@ Request received: 10
 Server is leader -> processing request -- added to queue
 Processing Transaction: 10
 Initiating Pre Prepare for SeqNum: 10 View: 0 Transaction ID: 10
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 10 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 10 View: 0 Transaction ID: 10
+Prepare lo unna Digest: HsgHDbTPBo4GaI7VfXZVRoQAD+Qx6Mj7/l7GD7eG8PWK0iqqyvk9qkJq057SNqU1tpmDrOkCIB+j8TxS0M9aVJXpwgJ8Bhcc7g8iGAGJH/UiR/Ot2zicEFjRXDT/HLUpSLgZ1+tQfV4nkNMzPtbDFC7C/gVw67WUj5/zK3JZrAaGloSGAkhV7W2GvQa2Gf7QTALQ1yNIKs3+pDENfwFwycegP2DqL1VflbuOeschH5Zc6SoUdezedP0wwGn5lggaE/HTxOVjpngP623AuAf55Zb02La6n4pTBofGJe/FQx3wpG6XUGRWg8F1ANxdvb0/6ihrDTliV8h0jQbJ1ZHXog==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 10 View: 0 Transaction ID: 10
+Commit lo unna Digest: HsgHDbTPBo4GaI7VfXZVRoQAD+Qx6Mj7/l7GD7eG8PWK0iqqyvk9qkJq057SNqU1tpmDrOkCIB+j8TxS0M9aVJXpwgJ8Bhcc7g8iGAGJH/UiR/Ot2zicEFjRXDT/HLUpSLgZ1+tQfV4nkNMzPtbDFC7C/gVw67WUj5/zK3JZrAaGloSGAkhV7W2GvQa2Gf7QTALQ1yNIKs3+pDENfwFwycegP2DqL1VflbuOeschH5Zc6SoUdezedP0wwGn5lggaE/HTxOVjpngP623AuAf55Zb02La6n4pTBofGJe/FQx3wpG6XUGRWg8F1ANxdvb0/6ihrDTliV8h0jQbJ1ZHXog==
 Transaction Processed: 10
 Initiating executions : 9 : 10
 Initiating execution for seqNum: 10
@@ -2480,11 +1474,15 @@ Request received: 11
 Server is leader -> processing request -- added to queue
 Processing Transaction: 11
 Initiating Pre Prepare for SeqNum: 11 View: 0 Transaction ID: 11
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 11 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 11 View: 0 Transaction ID: 11
+Prepare lo unna Digest: qGlpklihSlz4P37tLYQWgW7N/JnvJyWwUH6nzAadbjVFXhJMv09XndCIaInigtqDOFV0xjlECHE9j35kMIk/zOt0XyeMq+GIJV3MY8xxXkLBh1/404acrQLBEA3Tf6MmiFbmxLaXFlYQ9iLmzcQb7PxXCnvsL+MmBcpfUC78ckxqahQ3ojiPfp+Q7IPNWIXs7cdms39WW3ASmiqIqvgFH2RFpO9r1As0/d0/jExE+BK6PWgyA5DTpuJrhWOLFmmDU1QUdRtMjbm9D4dn/dwDblwb+rclK395rWH3IGTWf7OKnwIDcPFVYq2l+kT0VczuITYc6X/8VPOvFUy0WENtYw==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 11 View: 0 Transaction ID: 11
+Commit lo unna Digest: qGlpklihSlz4P37tLYQWgW7N/JnvJyWwUH6nzAadbjVFXhJMv09XndCIaInigtqDOFV0xjlECHE9j35kMIk/zOt0XyeMq+GIJV3MY8xxXkLBh1/404acrQLBEA3Tf6MmiFbmxLaXFlYQ9iLmzcQb7PxXCnvsL+MmBcpfUC78ckxqahQ3ojiPfp+Q7IPNWIXs7cdms39WW3ASmiqIqvgFH2RFpO9r1As0/d0/jExE+BK6PWgyA5DTpuJrhWOLFmmDU1QUdRtMjbm9D4dn/dwDblwb+rclK395rWH3IGTWf7OKnwIDcPFVYq2l+kT0VczuITYc6X/8VPOvFUy0WENtYw==
 Transaction Processed: 11
 Initiating executions : 10 : 11
 Initiating execution for seqNum: 11
@@ -2504,11 +1502,15 @@ Request received: 12
 Server is leader -> processing request -- added to queue
 Processing Transaction: 12
 Initiating Pre Prepare for SeqNum: 12 View: 0 Transaction ID: 12
-PrePrepare accepted for Seq num : 12 Accepts: 6
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
+PrePrepare accepted for Seq num : 12 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 12 View: 0 Transaction ID: 12
+Prepare lo unna Digest: pPvW5g+d9MoiAP5q/BrRIgDo33Q7u/KuzliHyfT2P2M9uG6H7KIpYBNf9bUGTag6s/pfuYTvuWet05woLMozH34J6QxNcVg8Z20K4Y404RY/1YQX3Fn1svGkCgw5em76LTS8eR1kEkYDF20T+fP1cAd1ATrd5WOJUVO8VfNK1ezgNMRyiQ41j/v/CEQ1v++zMg3C8rLSL3rFlJEoh09UPxsOQvHgjR8Dyl0EF29ObGBVRftBj6BQrRvXIWrNb0RTxh5muwWGa/vD0b2JUVjEQ84ssUJwNnFrvTbzj6BeS8OTHKz78iDZ1b/+WTr8B0Ij3/xbWHWWY6Zju22t3fTXTQ==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 12 View: 0 Transaction ID: 12
+Commit lo unna Digest: pPvW5g+d9MoiAP5q/BrRIgDo33Q7u/KuzliHyfT2P2M9uG6H7KIpYBNf9bUGTag6s/pfuYTvuWet05woLMozH34J6QxNcVg8Z20K4Y404RY/1YQX3Fn1svGkCgw5em76LTS8eR1kEkYDF20T+fP1cAd1ATrd5WOJUVO8VfNK1ezgNMRyiQ41j/v/CEQ1v++zMg3C8rLSL3rFlJEoh09UPxsOQvHgjR8Dyl0EF29ObGBVRftBj6BQrRvXIWrNb0RTxh5muwWGa/vD0b2JUVjEQ84ssUJwNnFrvTbzj6BeS8OTHKz78iDZ1b/+WTr8B0Ij3/xbWHWWY6Zju22t3fTXTQ==
 Transaction Processed: 12
 Initiating executions : 11 : 12
 Initiating execution for seqNum: 12
@@ -2528,11 +1530,15 @@ Request received: 13
 Server is leader -> processing request -- added to queue
 Processing Transaction: 13
 Initiating Pre Prepare for SeqNum: 13 View: 0 Transaction ID: 13
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 13 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 13 View: 0 Transaction ID: 13
+Prepare lo unna Digest: CJFpS03VgitXVlTaOYN1Zwd0tqduUKIq8Ykvn5JrlmEscpXwh/tUEFrZZA8zd95iFJKM1Up9ILGcvd/Sp/eA/Om2C3mjctD2QjnKHRuUqfj69G/YiditswoDPbiVgPZgClLLDF98YsWX9wQf0m+1dGQdgF04Y2KY4V2OEBIqeiVso/kFqEy49OonOCnI292pW7+lONkeSFF8JfnI7UGQBsqP0ZFyTDICvJmNUpGKCGW1EGy4elO7X/BD1derTbRMEmsIRZu8ssWTrwgNkZvxNxn5CRDvKHtFl+JkB9G3cd1HX8VLsQtaEUuBH6GdcdCDXIJER51p7XJD2RusbQOAMg==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 13 View: 0 Transaction ID: 13
+Commit lo unna Digest: CJFpS03VgitXVlTaOYN1Zwd0tqduUKIq8Ykvn5JrlmEscpXwh/tUEFrZZA8zd95iFJKM1Up9ILGcvd/Sp/eA/Om2C3mjctD2QjnKHRuUqfj69G/YiditswoDPbiVgPZgClLLDF98YsWX9wQf0m+1dGQdgF04Y2KY4V2OEBIqeiVso/kFqEy49OonOCnI292pW7+lONkeSFF8JfnI7UGQBsqP0ZFyTDICvJmNUpGKCGW1EGy4elO7X/BD1derTbRMEmsIRZu8ssWTrwgNkZvxNxn5CRDvKHtFl+JkB9G3cd1HX8VLsQtaEUuBH6GdcdCDXIJER51p7XJD2RusbQOAMg==
 Transaction Processed: 13
 Initiating executions : 12 : 13
 Initiating execution for seqNum: 13
@@ -2552,11 +1558,15 @@ Request received: 14
 Server is leader -> processing request -- added to queue
 Processing Transaction: 14
 Initiating Pre Prepare for SeqNum: 14 View: 0 Transaction ID: 14
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 14 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 14 View: 0 Transaction ID: 14
+Prepare lo unna Digest: petNhwOR2d7wz528DiMtp+K0MvxxveeHROQvX/YKyqQ1xntMyUSGNP4h37EoTnaVAHvIq8Ocj4FvWt3BqnVkPsMyzx5lMGVDGbuKs7XKLbnv0xiy7VnDT6kULJ/muoay0LbruRETrPd3meg/MSe37fP/j2lHZTRgDH+5H6piuNVXgmvDBX9jEHzrou6cYc/VvBqFqasFpXeC4lWSNtp7/BKLdVxdrtYsHHz2IzWOSYqX0pp0dKMCHns33X6V0GCLKd8buzEBh/yB3+aZrlzXoSIIXKOADSHbHEv2GtYRiOIquVB668jO8dvCs+6yOAB+W8F5Xt5bjcilGLTBsKJq2A==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 14 View: 0 Transaction ID: 14
+Commit lo unna Digest: petNhwOR2d7wz528DiMtp+K0MvxxveeHROQvX/YKyqQ1xntMyUSGNP4h37EoTnaVAHvIq8Ocj4FvWt3BqnVkPsMyzx5lMGVDGbuKs7XKLbnv0xiy7VnDT6kULJ/muoay0LbruRETrPd3meg/MSe37fP/j2lHZTRgDH+5H6piuNVXgmvDBX9jEHzrou6cYc/VvBqFqasFpXeC4lWSNtp7/BKLdVxdrtYsHHz2IzWOSYqX0pp0dKMCHns33X6V0GCLKd8buzEBh/yB3+aZrlzXoSIIXKOADSHbHEv2GtYRiOIquVB668jO8dvCs+6yOAB+W8F5Xt5bjcilGLTBsKJq2A==
 Transaction Processed: 14
 Initiating executions : 13 : 14
 Initiating execution for seqNum: 14
@@ -2576,11 +1586,15 @@ Request received: 15
 Server is leader -> processing request -- added to queue
 Processing Transaction: 15
 Initiating Pre Prepare for SeqNum: 15 View: 0 Transaction ID: 15
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 15 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 15 View: 0 Transaction ID: 15
+Prepare lo unna Digest: aXuZuysRC6070h3Y9iyMm+Rzh9gdGr7CxatLxwwDdMFcaNQjJ686Q2HPQUcoPQJpTaDKkSco1GUHzzAsKgSfL6I1mUUJtrQ2wu/9rcS5pNEfVd+kOXu4A06DKfuCpMKoqnoRNsRSkJsIcSS3MbWEwAS7VhB8Yz4+Mdppf+SKgTXZ7mPX/Xupy2RRyFcMT/I91dNE0vWZeX9QUVRzZiibf0uR9kqwEuY0qikrJOlRqhNmte/buttV0P65cAz/fPxE8245EUlgRl5inCgIIIYQcoeezRw/oyPYmcIAFEKHVMW9hH842x7/ET72nTgP6nRuvJ1TphTDwwP/NCirXErLIw==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 15 View: 0 Transaction ID: 15
+Commit lo unna Digest: aXuZuysRC6070h3Y9iyMm+Rzh9gdGr7CxatLxwwDdMFcaNQjJ686Q2HPQUcoPQJpTaDKkSco1GUHzzAsKgSfL6I1mUUJtrQ2wu/9rcS5pNEfVd+kOXu4A06DKfuCpMKoqnoRNsRSkJsIcSS3MbWEwAS7VhB8Yz4+Mdppf+SKgTXZ7mPX/Xupy2RRyFcMT/I91dNE0vWZeX9QUVRzZiibf0uR9kqwEuY0qikrJOlRqhNmte/buttV0P65cAz/fPxE8245EUlgRl5inCgIIIYQcoeezRw/oyPYmcIAFEKHVMW9hH842x7/ET72nTgP6nRuvJ1TphTDwwP/NCirXErLIw==
 Transaction Processed: 15
 Initiating executions : 14 : 15
 Initiating execution for seqNum: 15
@@ -2600,11 +1614,15 @@ Request received: 16
 Server is leader -> processing request -- added to queue
 Processing Transaction: 16
 Initiating Pre Prepare for SeqNum: 16 View: 0 Transaction ID: 16
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 16 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 16 View: 0 Transaction ID: 16
+Prepare lo unna Digest: abmv2FWMIIdQF7XJ43zShgopI6fMKrsxtlLMTyuR6/lqaRCfxN3t7b87MFrOEsHQY0tUtIt/CiTBcJ/q/tfpruvh4IolYhVACcTamKYdE50psjCXawaMFJi53oU7sQV8cWcbnh8xF3OprM2JsNto7Ml6jKYu5xDeRirLNaL/zgIQ8TXGLLAyPRVuRJ8SMGg6zlczu240IvU+mT5DE+0HgsYNwzdlQXzknowzHnMaG9LgGz5KQsv5G9eLff+WyDiNwJ0wz9MMDY1QmqQHeDS/EoaqPSIvx78I9MksUgBkbh8PlNtZT97+UpSr14HFbl9QlCCDDdAKiSrwhZBNITsAmg==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 16 View: 0 Transaction ID: 16
+Commit lo unna Digest: abmv2FWMIIdQF7XJ43zShgopI6fMKrsxtlLMTyuR6/lqaRCfxN3t7b87MFrOEsHQY0tUtIt/CiTBcJ/q/tfpruvh4IolYhVACcTamKYdE50psjCXawaMFJi53oU7sQV8cWcbnh8xF3OprM2JsNto7Ml6jKYu5xDeRirLNaL/zgIQ8TXGLLAyPRVuRJ8SMGg6zlczu240IvU+mT5DE+0HgsYNwzdlQXzknowzHnMaG9LgGz5KQsv5G9eLff+WyDiNwJ0wz9MMDY1QmqQHeDS/EoaqPSIvx78I9MksUgBkbh8PlNtZT97+UpSr14HFbl9QlCCDDdAKiSrwhZBNITsAmg==
 Transaction Processed: 16
 Initiating executions : 15 : 16
 Initiating execution for seqNum: 16
@@ -2624,11 +1642,15 @@ Request received: 17
 Server is leader -> processing request -- added to queue
 Processing Transaction: 17
 Initiating Pre Prepare for SeqNum: 17 View: 0 Transaction ID: 17
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 17 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 17 View: 0 Transaction ID: 17
+Prepare lo unna Digest: Vl2HkAaXv6v1DlqMW4bWszTX5hwxtkfimEk+NWJVLfKdpwIPBPElv54MhdyQmNZibYLI05PQAJDD9bGiM3js63pg4UxomRdPKgV34SOOYU+lpgIF6RMBxRSBQAU8xgTJXHGlYV3L9GbH72TlNyV3rag2pmN73HSH3V/HaZininmdxhF4OoOf7Wx1bxvt4uOhLhFpHIN+oFQzDAoYuBPqgLN9MH21VpwcMG63yxj+1T25yHmYfqCt2rueNXcLVG3QJ+XbyWtvuA8WtPRzQ99GTDJRTAnN0MYzMJID3kXDx7TDM7lCBvguzwn1CMw0DCNbjF+ihZdCsGpjag9/0s4pyg==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 17 View: 0 Transaction ID: 17
+Commit lo unna Digest: Vl2HkAaXv6v1DlqMW4bWszTX5hwxtkfimEk+NWJVLfKdpwIPBPElv54MhdyQmNZibYLI05PQAJDD9bGiM3js63pg4UxomRdPKgV34SOOYU+lpgIF6RMBxRSBQAU8xgTJXHGlYV3L9GbH72TlNyV3rag2pmN73HSH3V/HaZininmdxhF4OoOf7Wx1bxvt4uOhLhFpHIN+oFQzDAoYuBPqgLN9MH21VpwcMG63yxj+1T25yHmYfqCt2rueNXcLVG3QJ+XbyWtvuA8WtPRzQ99GTDJRTAnN0MYzMJID3kXDx7TDM7lCBvguzwn1CMw0DCNbjF+ihZdCsGpjag9/0s4pyg==
 Transaction Processed: 17
 Initiating executions : 16 : 17
 Initiating execution for seqNum: 17
@@ -2648,11 +1670,15 @@ Request received: 18
 Server is leader -> processing request -- added to queue
 Processing Transaction: 18
 Initiating Pre Prepare for SeqNum: 18 View: 0 Transaction ID: 18
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 18 Accepts: 6
 Pre Prepare Success
 Initiating Prepare for SeqNum: 18 View: 0 Transaction ID: 18
+Prepare lo unna Digest: L+oMolmNsvPE6rwGVS3r282Gym9kJ/lJOat1o8xPYZHZhYtRxYtPEJwdHelGgiT4jTNIwp7N1xwk8vKgUBOUnu8+V19qnKRn2ZKlExUdqFr2MZok/2RvbTG78LrvND4B1iKJEdQ87U3iw3uZiQrQGJk98RJztR8RGnMB1BLnBbj7/z5MkeidPOPKHtgKdB9roq0ZmvBvZ9RzltSwiXQjvA6ezBumzIWbeNmpOYeBwkp8shVGN/GyQg4j6i5C0c5xa+O06S1ra7RpLcBpLnAQUNPA6XZrki3dTB84k+pmzkgQVnXp0V6yhhKeUVZc2Z8cW9hNQMTnBDlys8OXHuYTyw==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 18 View: 0 Transaction ID: 18
+Commit lo unna Digest: L+oMolmNsvPE6rwGVS3r282Gym9kJ/lJOat1o8xPYZHZhYtRxYtPEJwdHelGgiT4jTNIwp7N1xwk8vKgUBOUnu8+V19qnKRn2ZKlExUdqFr2MZok/2RvbTG78LrvND4B1iKJEdQ87U3iw3uZiQrQGJk98RJztR8RGnMB1BLnBbj7/z5MkeidPOPKHtgKdB9roq0ZmvBvZ9RzltSwiXQjvA6ezBumzIWbeNmpOYeBwkp8shVGN/GyQg4j6i5C0c5xa+O06S1ra7RpLcBpLnAQUNPA6XZrki3dTB84k+pmzkgQVnXp0V6yhhKeUVZc2Z8cW9hNQMTnBDlys8OXHuYTyw==
 Transaction Processed: 18
 Initiating executions : 17 : 18
 Initiating execution for seqNum: 18
@@ -2672,11 +1698,15 @@ Request received: 19
 Server is leader -> processing request -- added to queue
 Processing Transaction: 19
 Initiating Pre Prepare for SeqNum: 19 View: 0 Transaction ID: 19
-PrePrepare accepted for Seq num : 19 Accepts: 7
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
+PrePrepare accepted for Seq num : 19 Accepts: 6
 Pre Prepare Success
 Initiating Prepare for SeqNum: 19 View: 0 Transaction ID: 19
+Prepare lo unna Digest: RdsRyTLNjCvYeXuP7wejaqKW8Mdj+jlkqQHZc3wk0dqFDPOYpa0p/ww+9jnh1mE+RK2XyERPO6OL+ZfmCBqyjm+7FdKo1Hz2cYoUDnpgZQlIo+DwDf2kME8CyweAEdTLiUzY5qMNO8QM5oUgLqJK4sHTAZLVNTSj0Gz+Bf0OyM05pTPT4IATS72Rger95FoVcwmq02jrnXHQ4a/4ZVCRCXVxi0Jv1gLBWiF4XbqZNhybO33fa4Vxoc4HENdjiUxeVhf3jR2DbtNyTGeMLLwKbLM0E5g+0u6sMgLi768byAs4RpWRLFBwVT3XM0vDHcMeyqPH15Pfoj+qRcEQno5LIg==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 19 View: 0 Transaction ID: 19
+Commit lo unna Digest: RdsRyTLNjCvYeXuP7wejaqKW8Mdj+jlkqQHZc3wk0dqFDPOYpa0p/ww+9jnh1mE+RK2XyERPO6OL+ZfmCBqyjm+7FdKo1Hz2cYoUDnpgZQlIo+DwDf2kME8CyweAEdTLiUzY5qMNO8QM5oUgLqJK4sHTAZLVNTSj0Gz+Bf0OyM05pTPT4IATS72Rger95FoVcwmq02jrnXHQ4a/4ZVCRCXVxi0Jv1gLBWiF4XbqZNhybO33fa4Vxoc4HENdjiUxeVhf3jR2DbtNyTGeMLLwKbLM0E5g+0u6sMgLi768byAs4RpWRLFBwVT3XM0vDHcMeyqPH15Pfoj+qRcEQno5LIg==
 Transaction Processed: 19
 Initiating executions : 18 : 19
 Initiating execution for seqNum: 19
@@ -2696,11 +1726,15 @@ Request received: 20
 Server is leader -> processing request -- added to queue
 Processing Transaction: 20
 Initiating Pre Prepare for SeqNum: 20 View: 0 Transaction ID: 20
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 20 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 20 View: 0 Transaction ID: 20
+Prepare lo unna Digest: ZcmPIfccEeEUz1DnFgvvXIad05ZY3F7kq06e1TT+IqTKQlWeemUnO851fkW2Uw/OU5meQ9PMCmPt+lFy0RdNGDRkrVEoTycsSuJ+bYI2yUAe7pEr7h9PzbbORD72wd1nf9wZGZwYxYRBDLf2zYIRtKO549TpP+YZWFGzhecdeNelENvZOwgtjQqyEScw89TwRMoulBaJ4qQdoDuvBHRhFBuI/W9ibqX9yvJBrbP9uJNElRIhNuIkAgfn2HeQOv4XUpCuZSsWLJS9fB3qvFm2W5W6+YBf20T90sPPero0bb3mjhl14N8rquh4HUh+jo/Hbaz6lFuN73csWgYYx2KV3Q==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 20 View: 0 Transaction ID: 20
+Commit lo unna Digest: ZcmPIfccEeEUz1DnFgvvXIad05ZY3F7kq06e1TT+IqTKQlWeemUnO851fkW2Uw/OU5meQ9PMCmPt+lFy0RdNGDRkrVEoTycsSuJ+bYI2yUAe7pEr7h9PzbbORD72wd1nf9wZGZwYxYRBDLf2zYIRtKO549TpP+YZWFGzhecdeNelENvZOwgtjQqyEScw89TwRMoulBaJ4qQdoDuvBHRhFBuI/W9ibqX9yvJBrbP9uJNElRIhNuIkAgfn2HeQOv4XUpCuZSsWLJS9fB3qvFm2W5W6+YBf20T90sPPero0bb3mjhl14N8rquh4HUh+jo/Hbaz6lFuN73csWgYYx2KV3Q==
 Transaction Processed: 20
 Initiating executions : 19 : 20
 Initiating execution for seqNum: 20
@@ -2720,11 +1754,15 @@ Request received: 21
 Server is leader -> processing request -- added to queue
 Processing Transaction: 21
 Initiating Pre Prepare for SeqNum: 21 View: 0 Transaction ID: 21
-PrePrepare accepted for Seq num : 21 Accepts: 6
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
+PrePrepare accepted for Seq num : 21 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 21 View: 0 Transaction ID: 21
+Prepare lo unna Digest: i1S+0/WI3lCmaJWyxg98tL++FOliWMVSiFJnCdtVMBQZraUDb9EoZXjXryVGRjOm3fPRScmNY3N5EJ6uk0CMEQdqXvkUiqAXWtp5bI8HxtGxzDmxxWvy3J8J1FAuyvX1ewmWmZ2Q4/B1O9e8ZXkLxiOKosjItilNjQVmWHuz6tkPOnFUa2r6HVb0fePrSC8zsAVx/g2xgXSjNvYlcxvWWX+4jt1Q8Nq/tqggdn0cZr38DYnjg4Uh04ETLxaWnF7yQZSKKVgq4/pmikHd8XpHlS+1TKHcE+ntLqdaGG8hob81Hnqdk5nFnEhm2EaNoY7jkx0Lzzkm0QQsQC8bF3x/zQ==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 21 View: 0 Transaction ID: 21
+Commit lo unna Digest: i1S+0/WI3lCmaJWyxg98tL++FOliWMVSiFJnCdtVMBQZraUDb9EoZXjXryVGRjOm3fPRScmNY3N5EJ6uk0CMEQdqXvkUiqAXWtp5bI8HxtGxzDmxxWvy3J8J1FAuyvX1ewmWmZ2Q4/B1O9e8ZXkLxiOKosjItilNjQVmWHuz6tkPOnFUa2r6HVb0fePrSC8zsAVx/g2xgXSjNvYlcxvWWX+4jt1Q8Nq/tqggdn0cZr38DYnjg4Uh04ETLxaWnF7yQZSKKVgq4/pmikHd8XpHlS+1TKHcE+ntLqdaGG8hob81Hnqdk5nFnEhm2EaNoY7jkx0Lzzkm0QQsQC8bF3x/zQ==
 Transaction Processed: 21
 Initiating executions : 20 : 21
 Initiating execution for seqNum: 21
@@ -2744,11 +1782,15 @@ Request received: 22
 Server is leader -> processing request -- added to queue
 Processing Transaction: 22
 Initiating Pre Prepare for SeqNum: 22 View: 0 Transaction ID: 22
-PrePrepare accepted for Seq num : 22 Accepts: 5
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
+PrePrepare accepted for Seq num : 22 Accepts: 6
 Pre Prepare Success
 Initiating Prepare for SeqNum: 22 View: 0 Transaction ID: 22
+Prepare lo unna Digest: EYaP2SW37xwtC2GZ7Emk0YouyFc4hMihR4CRRK72e125UovQETmql8kbLEQheuZsED3Im2pMwAp8vj4bvfmWnn4F75UgxaRC2ANj+jVkZrMuWZtcxg8dOXtGp3V/VWHD+hq7gwW27vd4DPcq44u5IQhEF7yMO6KmsfzXFTS7KDHRU8E87NQDSXk+rQ+MbpTqzYskD7TqaiOP7pegNTfZl2slz7tdafX6ijR1d5oAcitfbVYECWhzHhDhizsDgSSG5xC5zR6fxk2bdLWV8lGHKMaFDiFEVRZdEXeAH3RtcJa/UiXwJ13JiZVdJln3gC76wTaUB7zyXGMQfrlmWYdTHw==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 22 View: 0 Transaction ID: 22
+Commit lo unna Digest: EYaP2SW37xwtC2GZ7Emk0YouyFc4hMihR4CRRK72e125UovQETmql8kbLEQheuZsED3Im2pMwAp8vj4bvfmWnn4F75UgxaRC2ANj+jVkZrMuWZtcxg8dOXtGp3V/VWHD+hq7gwW27vd4DPcq44u5IQhEF7yMO6KmsfzXFTS7KDHRU8E87NQDSXk+rQ+MbpTqzYskD7TqaiOP7pegNTfZl2slz7tdafX6ijR1d5oAcitfbVYECWhzHhDhizsDgSSG5xC5zR6fxk2bdLWV8lGHKMaFDiFEVRZdEXeAH3RtcJa/UiXwJ13JiZVdJln3gC76wTaUB7zyXGMQfrlmWYdTHw==
 Transaction Processed: 22
 Initiating executions : 21 : 22
 Initiating execution for seqNum: 22
@@ -2768,11 +1810,15 @@ Request received: 23
 Server is leader -> processing request -- added to queue
 Processing Transaction: 23
 Initiating Pre Prepare for SeqNum: 23 View: 0 Transaction ID: 23
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 23 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 23 View: 0 Transaction ID: 23
+Prepare lo unna Digest: txgvFxUMs1084MPwRqLy52EamkLdDNrGPYPcX17BZgJZJg6TvJmjyGIHdMJxgZYEXbhX3fD10/xk52xGDWpgLDceQ/SZ8A/Mq6bAm313JBMkG/yMyt1h9wDqRccWasSfADyDtsCswzAflq12YRnW4ocTPYG1/oDaS5q1Zy9IeAiuQtQkadcXvYROW0yMbUcM34zQvqk5TRvNbTgOftNKYGax4vR94pmdvWkTXOVkC2ohEtr+4cWwUjNK2JiR28u16pU/pMNGxgXhx0ZPClyRPsn9YybwiUi/dDPAtzNjbNOCenFXDpT+Hl0yR6vx3OEsu2JY8iuXckMMjBOqSlM13w==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 23 View: 0 Transaction ID: 23
+Commit lo unna Digest: txgvFxUMs1084MPwRqLy52EamkLdDNrGPYPcX17BZgJZJg6TvJmjyGIHdMJxgZYEXbhX3fD10/xk52xGDWpgLDceQ/SZ8A/Mq6bAm313JBMkG/yMyt1h9wDqRccWasSfADyDtsCswzAflq12YRnW4ocTPYG1/oDaS5q1Zy9IeAiuQtQkadcXvYROW0yMbUcM34zQvqk5TRvNbTgOftNKYGax4vR94pmdvWkTXOVkC2ohEtr+4cWwUjNK2JiR28u16pU/pMNGxgXhx0ZPClyRPsn9YybwiUi/dDPAtzNjbNOCenFXDpT+Hl0yR6vx3OEsu2JY8iuXckMMjBOqSlM13w==
 Transaction Processed: 23
 Initiating executions : 22 : 23
 Initiating execution for seqNum: 23
@@ -2792,11 +1838,15 @@ Request received: 24
 Server is leader -> processing request -- added to queue
 Processing Transaction: 24
 Initiating Pre Prepare for SeqNum: 24 View: 0 Transaction ID: 24
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 24 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 24 View: 0 Transaction ID: 24
+Prepare lo unna Digest: EhnQTugWVXm1vhTrN56RmKuYCc3vE2V7JdKx/05VSzIi1XrAi/CyUQ4cIwtc0qtiIwIA+A83xEUcRipekXxtVQTq2Z2huaEqR+gHaY3ePWHWwhyXjClF+bhBIm6NWaexxa5IrlAUixwTn+MhgLaK6UI//UacPtsR5Eg05AdOM6buRu5JwRiH6/6iLR35fwMaH9Crh74s6mOr0u5k8nGRYXxQlmz6ydw6oI04d/Yo3eihigWa9T34EMFyw28bE0j8hcDr3S/oGS9IxI+CX+97FIM1JCl46BGWm+iGxDSF/q4FVEo+4seDk9rXmNKnLlVtENJnR1afKJHUaTmwTlmOrg==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 24 View: 0 Transaction ID: 24
+Commit lo unna Digest: EhnQTugWVXm1vhTrN56RmKuYCc3vE2V7JdKx/05VSzIi1XrAi/CyUQ4cIwtc0qtiIwIA+A83xEUcRipekXxtVQTq2Z2huaEqR+gHaY3ePWHWwhyXjClF+bhBIm6NWaexxa5IrlAUixwTn+MhgLaK6UI//UacPtsR5Eg05AdOM6buRu5JwRiH6/6iLR35fwMaH9Crh74s6mOr0u5k8nGRYXxQlmz6ydw6oI04d/Yo3eihigWa9T34EMFyw28bE0j8hcDr3S/oGS9IxI+CX+97FIM1JCl46BGWm+iGxDSF/q4FVEo+4seDk9rXmNKnLlVtENJnR1afKJHUaTmwTlmOrg==
 Transaction Processed: 24
 Initiating executions : 23 : 24
 Initiating execution for seqNum: 24
@@ -2816,11 +1866,15 @@ Request received: 25
 Server is leader -> processing request -- added to queue
 Processing Transaction: 25
 Initiating Pre Prepare for SeqNum: 25 View: 0 Transaction ID: 25
-PrePrepare accepted for Seq num : 25 Accepts: 7
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
+PrePrepare accepted for Seq num : 25 Accepts: 6
 Pre Prepare Success
 Initiating Prepare for SeqNum: 25 View: 0 Transaction ID: 25
+Prepare lo unna Digest: VIppdcB9SfxkObDLvtiDslSSky9rXTk6wp/oAO88PAtRg8dZdF0WEYffucXfp888ID9jIRwmFi6DdRfNzrWMDnUmq+l/L3vOWGseYfUghD8hc0NjlL78RmNkJIaLPwEy8sDjXjVxMnxeX3nL4OeYNeEd72aKBTsR/Fe3OZsIkDAlFWVVuzjiaLcF+GpcvvK21qcpuSWlgwNekiDzEhXpbddAwxbvLlESNpvm0xBReENA2BZFGr4MNUh4NLmzFXFyX1uCAHsfcTogAMO4T0FE6b7mVDKCVDZBOPWwzLhk385MssEi/2VikRiqYOyY72hy+fZiyfjXBVL37ShgieFqLQ==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 25 View: 0 Transaction ID: 25
+Commit lo unna Digest: VIppdcB9SfxkObDLvtiDslSSky9rXTk6wp/oAO88PAtRg8dZdF0WEYffucXfp888ID9jIRwmFi6DdRfNzrWMDnUmq+l/L3vOWGseYfUghD8hc0NjlL78RmNkJIaLPwEy8sDjXjVxMnxeX3nL4OeYNeEd72aKBTsR/Fe3OZsIkDAlFWVVuzjiaLcF+GpcvvK21qcpuSWlgwNekiDzEhXpbddAwxbvLlESNpvm0xBReENA2BZFGr4MNUh4NLmzFXFyX1uCAHsfcTogAMO4T0FE6b7mVDKCVDZBOPWwzLhk385MssEi/2VikRiqYOyY72hy+fZiyfjXBVL37ShgieFqLQ==
 Transaction Processed: 25
 Initiating executions : 24 : 25
 Initiating execution for seqNum: 25
@@ -2840,11 +1894,15 @@ Request received: 26
 Server is leader -> processing request -- added to queue
 Processing Transaction: 26
 Initiating Pre Prepare for SeqNum: 26 View: 0 Transaction ID: 26
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 26 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 26 View: 0 Transaction ID: 26
+Prepare lo unna Digest: YDGSg9rhUPqjdbff67Z+TkzF1JkrsqDt1x9P2gte25bQa6ojC4gLazCWsIlKK1giXkCOt6zitwZCKFZKfSh3AFcokpMtceXBLJM0nwHL4ftjhiiZ1rQBlZ4qD0MmqM5uQhHnsUL4NY7+NX6RWlR3lZYJ5bqWzhs/oRHtDBATMjGlBzuf3nFLvwhaL0ADKxbtuapOL0xtX3Lo3qDc+kGVD+fzo+J76r9NZW2GOJeKBKyX9sLts2PZyKpIsuvsYZS1oQnsMX+pp9hXTVcxRkwaFbHyGKFfxX9HQv+CeWo9UHtYxq1vjQjpmxHgVkLHT//bLXqmH8fQIEtziIQ1TYtfog==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 26 View: 0 Transaction ID: 26
+Commit lo unna Digest: YDGSg9rhUPqjdbff67Z+TkzF1JkrsqDt1x9P2gte25bQa6ojC4gLazCWsIlKK1giXkCOt6zitwZCKFZKfSh3AFcokpMtceXBLJM0nwHL4ftjhiiZ1rQBlZ4qD0MmqM5uQhHnsUL4NY7+NX6RWlR3lZYJ5bqWzhs/oRHtDBATMjGlBzuf3nFLvwhaL0ADKxbtuapOL0xtX3Lo3qDc+kGVD+fzo+J76r9NZW2GOJeKBKyX9sLts2PZyKpIsuvsYZS1oQnsMX+pp9hXTVcxRkwaFbHyGKFfxX9HQv+CeWo9UHtYxq1vjQjpmxHgVkLHT//bLXqmH8fQIEtziIQ1TYtfog==
 Transaction Processed: 26
 Initiating executions : 25 : 26
 Initiating execution for seqNum: 26
@@ -2864,11 +1922,15 @@ Request received: 27
 Server is leader -> processing request -- added to queue
 Processing Transaction: 27
 Initiating Pre Prepare for SeqNum: 27 View: 0 Transaction ID: 27
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 27 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 27 View: 0 Transaction ID: 27
+Prepare lo unna Digest: YVDmftB8oP2HHwCx21sH5cJYcQD8lkCc2YZdlM248UaTqNG2Jdmnz2FFn20QNbj2GIk/5PyOnajmUJWlr0WqyjmHsexBeQ16UpcxxBOStp2i+hpAMcMB+sp1ZL4uGQVgl5s1HbLihCm/lPUYLuH99nKtU8IvbVeJB1PtSHqwhSRSP+bpUD0KdPyzxJeJY3gcXF72QQaRRPHJHdHXHiBaPr1KtSRBA8aRFU96+VR073vZuAdzFK37TvtK9kCXjR/sRDerQIvQ51k44dOkSjnn2ZDu/GNOJTjw0GSX5wyrKt1XV1Kcky4RyiDBjoaBNF2kN7AXoRTKJgac37kWVSb2Rg==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 27 View: 0 Transaction ID: 27
+Commit lo unna Digest: YVDmftB8oP2HHwCx21sH5cJYcQD8lkCc2YZdlM248UaTqNG2Jdmnz2FFn20QNbj2GIk/5PyOnajmUJWlr0WqyjmHsexBeQ16UpcxxBOStp2i+hpAMcMB+sp1ZL4uGQVgl5s1HbLihCm/lPUYLuH99nKtU8IvbVeJB1PtSHqwhSRSP+bpUD0KdPyzxJeJY3gcXF72QQaRRPHJHdHXHiBaPr1KtSRBA8aRFU96+VR073vZuAdzFK37TvtK9kCXjR/sRDerQIvQ51k44dOkSjnn2ZDu/GNOJTjw0GSX5wyrKt1XV1Kcky4RyiDBjoaBNF2kN7AXoRTKJgac37kWVSb2Rg==
 Transaction Processed: 27
 Initiating executions : 26 : 27
 Initiating execution for seqNum: 27
@@ -2888,11 +1950,15 @@ Request received: 28
 Server is leader -> processing request -- added to queue
 Processing Transaction: 28
 Initiating Pre Prepare for SeqNum: 28 View: 0 Transaction ID: 28
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 28 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 28 View: 0 Transaction ID: 28
+Prepare lo unna Digest: jFaVZ76BS7Zgu1AV2oOCFWj+bfje7frmuXmpoTQCcbnB4eYnbwx37M0/Cft11D0b+NlGCp+1RfaRm78iFIGNbAx0Ah2liaC1Npkn6ar3gJKdzYv5haFG/zrl7+25ndjePTtAZenp8U6u2TIx9Ch2gwI77mR+2NSwRoQX0UZGp6r8XlzgVGlxQgWv6E2NwoMy8E6zCXWhEoNzx++VA7yEcXaG+MFDQ7RpfiVMeeQl3hmizqc5XNDcpPyg9micmH02G1aLBsa/wjSu4jpWAeQ4knpCtEqN3ogfE2G5u1H4uAH4xDVtMtXECGO7bmNgECeSB9pqphXBqPTyMG+bXfKQ2g==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 28 View: 0 Transaction ID: 28
+Commit lo unna Digest: jFaVZ76BS7Zgu1AV2oOCFWj+bfje7frmuXmpoTQCcbnB4eYnbwx37M0/Cft11D0b+NlGCp+1RfaRm78iFIGNbAx0Ah2liaC1Npkn6ar3gJKdzYv5haFG/zrl7+25ndjePTtAZenp8U6u2TIx9Ch2gwI77mR+2NSwRoQX0UZGp6r8XlzgVGlxQgWv6E2NwoMy8E6zCXWhEoNzx++VA7yEcXaG+MFDQ7RpfiVMeeQl3hmizqc5XNDcpPyg9micmH02G1aLBsa/wjSu4jpWAeQ4knpCtEqN3ogfE2G5u1H4uAH4xDVtMtXECGO7bmNgECeSB9pqphXBqPTyMG+bXfKQ2g==
 Transaction Processed: 28
 Initiating executions : 27 : 28
 Initiating execution for seqNum: 28
@@ -2912,11 +1978,15 @@ Request received: 29
 Server is leader -> processing request -- added to queue
 Processing Transaction: 29
 Initiating Pre Prepare for SeqNum: 29 View: 0 Transaction ID: 29
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 29 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 29 View: 0 Transaction ID: 29
+Prepare lo unna Digest: FDu/ava24q1OT/iQkN1vV0lEwMSYsHiyX/bLzSIPvFZRjynXKeQdBSbbxulQJrWkvzl2CwIYiaObmcL/ElxQNEzMoPVo+YXCv0RIpwESMs44sYeZRDe1AGrbYjofq4k+wmCBZ/pNsFY6m4Yt4fzWg2MNPbqHF/8BJtmzzCHqkFXx0s+Qrh0ORvn0BPpJyhoTAy8wBEB5uQnmvtYpeicug/DFFBilpQhyUR3pV8CaPwQYE1TNpiHXbXC8mXIyzqeIP61c9Z8RBSotmaEEVs64bbFZzsS2/5QKc02UT3gLY4Xf4bGImkEdNCWItrgGh3/id2G4CRy+lmDmcVCKoZ5xhw==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 29 View: 0 Transaction ID: 29
+Commit lo unna Digest: FDu/ava24q1OT/iQkN1vV0lEwMSYsHiyX/bLzSIPvFZRjynXKeQdBSbbxulQJrWkvzl2CwIYiaObmcL/ElxQNEzMoPVo+YXCv0RIpwESMs44sYeZRDe1AGrbYjofq4k+wmCBZ/pNsFY6m4Yt4fzWg2MNPbqHF/8BJtmzzCHqkFXx0s+Qrh0ORvn0BPpJyhoTAy8wBEB5uQnmvtYpeicug/DFFBilpQhyUR3pV8CaPwQYE1TNpiHXbXC8mXIyzqeIP61c9Z8RBSotmaEEVs64bbFZzsS2/5QKc02UT3gLY4Xf4bGImkEdNCWItrgGh3/id2G4CRy+lmDmcVCKoZ5xhw==
 Transaction Processed: 29
 Initiating executions : 28 : 29
 Initiating execution for seqNum: 29
@@ -2936,11 +2006,15 @@ Request received: 30
 Server is leader -> processing request -- added to queue
 Processing Transaction: 30
 Initiating Pre Prepare for SeqNum: 30 View: 0 Transaction ID: 30
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 30 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 30 View: 0 Transaction ID: 30
+Prepare lo unna Digest: s3VzraeV4AKhhuLA3gNMaqCEh/UIkTuhoVtHX/RpFP4hjLhRS0f33kpptzSBvQ93hz/RLqLhYrPbhUffGs+Zb7eb/5hXrtmrTKVFG5NLrJT46NzabHwqieX+3KR3V/WmBbCM0w9ktu2sQ+nAAYeoz8Tn1UEw6PelIsrzlPc4UfoZfJ39BgBRDdNgGZE1Z3tpvvnsIHmrZexKUOa4Zjzoi3d7aN3mSBdmDy0ULa18W40EeXPOyrFpk0IeviVN4HMSQLjpV6mWuf9AQ463h9zvKWLiiOF3QImafdvpGK6/AtsaU7L5FjT2FX53bWP2UqEYy5ypnzAoB6dS0Nk4ohvTIQ==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 30 View: 0 Transaction ID: 30
+Commit lo unna Digest: s3VzraeV4AKhhuLA3gNMaqCEh/UIkTuhoVtHX/RpFP4hjLhRS0f33kpptzSBvQ93hz/RLqLhYrPbhUffGs+Zb7eb/5hXrtmrTKVFG5NLrJT46NzabHwqieX+3KR3V/WmBbCM0w9ktu2sQ+nAAYeoz8Tn1UEw6PelIsrzlPc4UfoZfJ39BgBRDdNgGZE1Z3tpvvnsIHmrZexKUOa4Zjzoi3d7aN3mSBdmDy0ULa18W40EeXPOyrFpk0IeviVN4HMSQLjpV6mWuf9AQ463h9zvKWLiiOF3QImafdvpGK6/AtsaU7L5FjT2FX53bWP2UqEYy5ypnzAoB6dS0Nk4ohvTIQ==
 Transaction Processed: 30
 Initiating executions : 29 : 30
 Initiating execution for seqNum: 30
@@ -2960,11 +2034,15 @@ Request received: 31
 Server is leader -> processing request -- added to queue
 Processing Transaction: 31
 Initiating Pre Prepare for SeqNum: 31 View: 0 Transaction ID: 31
-PrePrepare accepted for Seq num : 31 Accepts: 7
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
+PrePrepare accepted for Seq num : 31 Accepts: 6
 Pre Prepare Success
 Initiating Prepare for SeqNum: 31 View: 0 Transaction ID: 31
+Prepare lo unna Digest: mqER8Pb9B3oXnklPw+ostb/Wh/FV+rdneEvgf9KMvkYRWWh6+EQU/wruydGZFlVlZRExTOaygUFqZ7VnAppnIyiWawhOMITHgYr0TJbUvdFW+pjv5M0VJnc7dD+LPdos1jQUXC7HN1IHCkyoYNM1zJ99jxisXqUTvqUTuc9cKx/K9fYAfCu1k07GLG83/DLHWjRYLa200JQnpwqjPs3bHFJGlNG00M6s73s9r/3p3zoNYeBqXLosmHkuuro3ed08QHPN5GIogtfVdnIF1X/ntyyL5uDnK/EH1LNrW6chR+cCuOF0W0po/K0SzOpvIE1C0jMz41wMkOwrz/VJN8HQoQ==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 31 View: 0 Transaction ID: 31
+Commit lo unna Digest: mqER8Pb9B3oXnklPw+ostb/Wh/FV+rdneEvgf9KMvkYRWWh6+EQU/wruydGZFlVlZRExTOaygUFqZ7VnAppnIyiWawhOMITHgYr0TJbUvdFW+pjv5M0VJnc7dD+LPdos1jQUXC7HN1IHCkyoYNM1zJ99jxisXqUTvqUTuc9cKx/K9fYAfCu1k07GLG83/DLHWjRYLa200JQnpwqjPs3bHFJGlNG00M6s73s9r/3p3zoNYeBqXLosmHkuuro3ed08QHPN5GIogtfVdnIF1X/ntyyL5uDnK/EH1LNrW6chR+cCuOF0W0po/K0SzOpvIE1C0jMz41wMkOwrz/VJN8HQoQ==
 Transaction Processed: 31
 Initiating executions : 30 : 31
 Initiating execution for seqNum: 31
@@ -2984,11 +2062,15 @@ Request received: 32
 Server is leader -> processing request -- added to queue
 Processing Transaction: 32
 Initiating Pre Prepare for SeqNum: 32 View: 0 Transaction ID: 32
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 32 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 32 View: 0 Transaction ID: 32
+Prepare lo unna Digest: L2l712MoueqSaZgRXgcWW1jU0FnAEXhJXD3q41Sa4hc73RKAs9dN2HM24ucpxDAbOxaRHLdJWAcfBrXMou1248Li1Cy9R01nzp7Ij3+X7WClyP36iqRgD9qXgwPxj4L3BUvBBz8HB+lPhWzbDT5vy/zRgvnYkvA0HnVboR+y/MCCNkJRXOtncvMNumvinqDzIHy8cGdehOPSAoHSwLVv/mSYzMRaoMfcC4pQXqBCTtLui0v4eSRpm0xWjczDJuBxR/O3vJz4eUzFcBMmnUHkW9OXzZVUxevirRCUK0Wk7SZ0Uwx00fqQCGSjT2tKsxL2WUTTcYKv/Tt3qbn6nxdWiQ==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 32 View: 0 Transaction ID: 32
+Commit lo unna Digest: L2l712MoueqSaZgRXgcWW1jU0FnAEXhJXD3q41Sa4hc73RKAs9dN2HM24ucpxDAbOxaRHLdJWAcfBrXMou1248Li1Cy9R01nzp7Ij3+X7WClyP36iqRgD9qXgwPxj4L3BUvBBz8HB+lPhWzbDT5vy/zRgvnYkvA0HnVboR+y/MCCNkJRXOtncvMNumvinqDzIHy8cGdehOPSAoHSwLVv/mSYzMRaoMfcC4pQXqBCTtLui0v4eSRpm0xWjczDJuBxR/O3vJz4eUzFcBMmnUHkW9OXzZVUxevirRCUK0Wk7SZ0Uwx00fqQCGSjT2tKsxL2WUTTcYKv/Tt3qbn6nxdWiQ==
 Transaction Processed: 32
 Initiating executions : 31 : 32
 Initiating execution for seqNum: 32
@@ -3008,11 +2090,15 @@ Request received: 33
 Server is leader -> processing request -- added to queue
 Processing Transaction: 33
 Initiating Pre Prepare for SeqNum: 33 View: 0 Transaction ID: 33
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 33 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 33 View: 0 Transaction ID: 33
+Prepare lo unna Digest: SYai7cJhRA83zxqq2skb3J610Pu3kGMX+8bYLIK27mZIMCmJCd1jOrihRvvqqoIA7uWhc401o+fWA0S8yCAUBkTUle9aVGgo/Z+4WshoJogsKCsX6ns1uG72IJKHB95s2yigHIvuLiLhBPTgROkC5iGFdkP4ZNZFLGbiy2vWnaZ5thFpW3Q4ScLSkm4tBVdR3vwJ15MQ0H+tUbtdBNklUnoAcxYiQ/wBxkbTcD+1dQcG+ohGmA3XvjwToPmNpiENO6WYcjY2W2+5shM2h89UGcJRP5W6HGc0xlJhES9NxT3Id0eusVwD+ZVS1WiTvFca7Wlv2McahF4In/GuYq6+Kg==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 33 View: 0 Transaction ID: 33
+Commit lo unna Digest: SYai7cJhRA83zxqq2skb3J610Pu3kGMX+8bYLIK27mZIMCmJCd1jOrihRvvqqoIA7uWhc401o+fWA0S8yCAUBkTUle9aVGgo/Z+4WshoJogsKCsX6ns1uG72IJKHB95s2yigHIvuLiLhBPTgROkC5iGFdkP4ZNZFLGbiy2vWnaZ5thFpW3Q4ScLSkm4tBVdR3vwJ15MQ0H+tUbtdBNklUnoAcxYiQ/wBxkbTcD+1dQcG+ohGmA3XvjwToPmNpiENO6WYcjY2W2+5shM2h89UGcJRP5W6HGc0xlJhES9NxT3Id0eusVwD+ZVS1WiTvFca7Wlv2McahF4In/GuYq6+Kg==
 Transaction Processed: 33
 Initiating executions : 32 : 33
 Initiating execution for seqNum: 33
@@ -3032,11 +2118,15 @@ Request received: 34
 Server is leader -> processing request -- added to queue
 Processing Transaction: 34
 Initiating Pre Prepare for SeqNum: 34 View: 0 Transaction ID: 34
-PrePrepare accepted for Seq num : 34 Accepts: 7
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
+PrePrepare accepted for Seq num : 34 Accepts: 6
 Pre Prepare Success
 Initiating Prepare for SeqNum: 34 View: 0 Transaction ID: 34
+Prepare lo unna Digest: AWHo2McCGBXS4GqnXqa6tQRdhzipio7a2tdErQQoWAu+TlDlUr2u99Xuv2Ys2zXBrRHxDJdDiJeH+Pn32jPaKvYUY0vSgewEWxj1LnQuR7Um/5kzUHPwA8E69y2VC5DrHOuFWAz87pjTf2IBISK9bvDfTTd1hZQ8Zw8ZieJOdJtC0ih0hvhP2FHyWEN6JGjCWH+D8e5/bDsWCu+3gQE2T6qEPcEMNFyFlxvHZXNBJ7TyLe5TYACd8cwwu8N+VGXhrKeXOSHDHWNAcO0nH+hCh5lMtDvejqsM0MUFJDuhI1dDNGIxc/1ETmQXKPk6xoSN2UMX7yz98CRmHdvGRxW+qg==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 34 View: 0 Transaction ID: 34
+Commit lo unna Digest: AWHo2McCGBXS4GqnXqa6tQRdhzipio7a2tdErQQoWAu+TlDlUr2u99Xuv2Ys2zXBrRHxDJdDiJeH+Pn32jPaKvYUY0vSgewEWxj1LnQuR7Um/5kzUHPwA8E69y2VC5DrHOuFWAz87pjTf2IBISK9bvDfTTd1hZQ8Zw8ZieJOdJtC0ih0hvhP2FHyWEN6JGjCWH+D8e5/bDsWCu+3gQE2T6qEPcEMNFyFlxvHZXNBJ7TyLe5TYACd8cwwu8N+VGXhrKeXOSHDHWNAcO0nH+hCh5lMtDvejqsM0MUFJDuhI1dDNGIxc/1ETmQXKPk6xoSN2UMX7yz98CRmHdvGRxW+qg==
 Transaction Processed: 34
 Initiating executions : 33 : 34
 Initiating execution for seqNum: 34
@@ -3056,11 +2146,15 @@ Request received: 35
 Server is leader -> processing request -- added to queue
 Processing Transaction: 35
 Initiating Pre Prepare for SeqNum: 35 View: 0 Transaction ID: 35
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 35 Accepts: 6
 Pre Prepare Success
 Initiating Prepare for SeqNum: 35 View: 0 Transaction ID: 35
+Prepare lo unna Digest: ZYJndoOWbbyV4GQnwP88VQI42pv7jb33E6K5znRT9VcqgSSTitgteG2WBkNKHMVrqGI6dmx8cKMJDIRJP0Oat30GAxO9AnvOCFiTmDtkP2DcQYZyjj6cHJ3U8TDOH/W9Y2z2cZxQsIy5J2DRxXcvG1O8kspEvSeUaXUTi4zxwmX6jPdjYQ+RF0TCDquslNS897VNobNC7W+GDIayQB+yqQR+9nZ0gmrEZEzKJyDF1if89YVRuJNSoV3p+UKOtfrpBIa3sUt8HCe90cC/8kaiV1K/+aDiaqcbMGQ4SGR1oyw9XsF3OTFyykIxO19cq7pPQk3nqia4KHIxwFBl+0is9Q==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 35 View: 0 Transaction ID: 35
+Commit lo unna Digest: ZYJndoOWbbyV4GQnwP88VQI42pv7jb33E6K5znRT9VcqgSSTitgteG2WBkNKHMVrqGI6dmx8cKMJDIRJP0Oat30GAxO9AnvOCFiTmDtkP2DcQYZyjj6cHJ3U8TDOH/W9Y2z2cZxQsIy5J2DRxXcvG1O8kspEvSeUaXUTi4zxwmX6jPdjYQ+RF0TCDquslNS897VNobNC7W+GDIayQB+yqQR+9nZ0gmrEZEzKJyDF1if89YVRuJNSoV3p+UKOtfrpBIa3sUt8HCe90cC/8kaiV1K/+aDiaqcbMGQ4SGR1oyw9XsF3OTFyykIxO19cq7pPQk3nqia4KHIxwFBl+0is9Q==
 Transaction Processed: 35
 Initiating executions : 34 : 35
 Initiating execution for seqNum: 35
@@ -3080,11 +2174,15 @@ Request received: 36
 Server is leader -> processing request -- added to queue
 Processing Transaction: 36
 Initiating Pre Prepare for SeqNum: 36 View: 0 Transaction ID: 36
-PrePrepare accepted for Seq num : 36 Accepts: 6
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
+PrePrepare accepted for Seq num : 36 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 36 View: 0 Transaction ID: 36
+Prepare lo unna Digest: dBQ4pri6+mvzUfhLhpi48PBA+mu9gDi2jA8swCKXmAqnjEwmWY1OQd0564Hke/dOhTirc8iskzXr2UJLJV0+kjv5Ai2yls/xLpVgrAWqsfMkJRy98rp4V+bKFa8SqxhPhMqA4hz05zWhpyAz0yguv5N2oABgAYkT2J3nswWLwiGBnvBbh1v82zLniMTKJd8vxR90Un1v6ZIi0y3MHsiLA+ztWBt2i85uWlR8lNrcnZ/XNgFVmCdgKREoDfr/HpQbvYxCu9X+3K4KOs3Ft4ToHW4TpNgD+Tzhx5mBX7nGLtFyz5AJAyxOvh1ru7DdKUS9JI+IFOs5qASqjPv1+38jcw==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 36 View: 0 Transaction ID: 36
+Commit lo unna Digest: dBQ4pri6+mvzUfhLhpi48PBA+mu9gDi2jA8swCKXmAqnjEwmWY1OQd0564Hke/dOhTirc8iskzXr2UJLJV0+kjv5Ai2yls/xLpVgrAWqsfMkJRy98rp4V+bKFa8SqxhPhMqA4hz05zWhpyAz0yguv5N2oABgAYkT2J3nswWLwiGBnvBbh1v82zLniMTKJd8vxR90Un1v6ZIi0y3MHsiLA+ztWBt2i85uWlR8lNrcnZ/XNgFVmCdgKREoDfr/HpQbvYxCu9X+3K4KOs3Ft4ToHW4TpNgD+Tzhx5mBX7nGLtFyz5AJAyxOvh1ru7DdKUS9JI+IFOs5qASqjPv1+38jcw==
 Transaction Processed: 36
 Initiating executions : 35 : 36
 Initiating execution for seqNum: 36
@@ -3104,11 +2202,15 @@ Request received: 37
 Server is leader -> processing request -- added to queue
 Processing Transaction: 37
 Initiating Pre Prepare for SeqNum: 37 View: 0 Transaction ID: 37
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 37 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 37 View: 0 Transaction ID: 37
+Prepare lo unna Digest: sTEaeeFtFh+WIrsg+ObVwptc86TLfYHEYffuqPPxIYLp3xXaihu/0YK1iDUoMebw3RApRyBUBST3V6jRzz4QZHCDlFFRaKsC4v85wX9eU46BoxNuEBo3Qz8nkN/QbpshvlJ50yE4geHThG63zeksg7SUzln/MAWFHSOT7vaigMz/P1HwbHySvJDRNsQRXcbb1anEw3ApfzMxH+K9v6jZQU7IfBIy35QW6toQ+mGwit3A0a9fj5qq54sjv8jzadiVJE4ioD8fn10iwroUdvEOGZ1ZqFL1HmdZyAxJYyAjH3bBEaXcxPsXTLwOPVLBFpmKTqN4JOqgCCIcRlpHAoIIpQ==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 37 View: 0 Transaction ID: 37
+Commit lo unna Digest: sTEaeeFtFh+WIrsg+ObVwptc86TLfYHEYffuqPPxIYLp3xXaihu/0YK1iDUoMebw3RApRyBUBST3V6jRzz4QZHCDlFFRaKsC4v85wX9eU46BoxNuEBo3Qz8nkN/QbpshvlJ50yE4geHThG63zeksg7SUzln/MAWFHSOT7vaigMz/P1HwbHySvJDRNsQRXcbb1anEw3ApfzMxH+K9v6jZQU7IfBIy35QW6toQ+mGwit3A0a9fj5qq54sjv8jzadiVJE4ioD8fn10iwroUdvEOGZ1ZqFL1HmdZyAxJYyAjH3bBEaXcxPsXTLwOPVLBFpmKTqN4JOqgCCIcRlpHAoIIpQ==
 Transaction Processed: 37
 Initiating executions : 36 : 37
 Initiating execution for seqNum: 37
@@ -3128,11 +2230,15 @@ Request received: 38
 Server is leader -> processing request -- added to queue
 Processing Transaction: 38
 Initiating Pre Prepare for SeqNum: 38 View: 0 Transaction ID: 38
-PrePrepare accepted for Seq num : 38 Accepts: 7
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
+PrePrepare accepted for Seq num : 38 Accepts: 6
 Pre Prepare Success
 Initiating Prepare for SeqNum: 38 View: 0 Transaction ID: 38
+Prepare lo unna Digest: jTJzp4ZGp+WsNQdBm9lIy97Nwz2vHu66BQfrpo5EYrRXFXb6je/XRUF+8J75j3PLG5th3yYuGaPJ1hDmgXWtMyaLQTpvNfXih1S1P12lrE9lAbhnQqA8VdiVphb8x9nB5ezBdLFTPqQ5PL4hocIeBNEyef2LOnXqYiqYgmpmMDnWubxh5hwn8Um1fPkUNjv3rrXIiJNZazU/owjskUzhu8+t0xq/jM/YBatzlXqc8NqNMWtTM/QPAEG2AKYi6BifuwQVMWeMqOiFI8QtTzHINkHJ48EN+G/iPAIuWRIJHKK738R6toJ4+y1mnp/1qBzz6CDAABX7LHYab7h/+TvFiw==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 38 View: 0 Transaction ID: 38
+Commit lo unna Digest: jTJzp4ZGp+WsNQdBm9lIy97Nwz2vHu66BQfrpo5EYrRXFXb6je/XRUF+8J75j3PLG5th3yYuGaPJ1hDmgXWtMyaLQTpvNfXih1S1P12lrE9lAbhnQqA8VdiVphb8x9nB5ezBdLFTPqQ5PL4hocIeBNEyef2LOnXqYiqYgmpmMDnWubxh5hwn8Um1fPkUNjv3rrXIiJNZazU/owjskUzhu8+t0xq/jM/YBatzlXqc8NqNMWtTM/QPAEG2AKYi6BifuwQVMWeMqOiFI8QtTzHINkHJ48EN+G/iPAIuWRIJHKK738R6toJ4+y1mnp/1qBzz6CDAABX7LHYab7h/+TvFiw==
 Transaction Processed: 38
 Initiating executions : 37 : 38
 Initiating execution for seqNum: 38
@@ -3152,11 +2258,15 @@ Request received: 39
 Server is leader -> processing request -- added to queue
 Processing Transaction: 39
 Initiating Pre Prepare for SeqNum: 39 View: 0 Transaction ID: 39
-PrePrepare accepted for Seq num : 39 Accepts: 6
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
+PrePrepare accepted for Seq num : 39 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 39 View: 0 Transaction ID: 39
+Prepare lo unna Digest: Lqlu3xRyG7n0mkXdSZ758iJMggz9pTNr8AfWnDeQEyE+BRZp7AvvfTpyoYjRZcMUU8rynTiNHccxL2YqG7UYxw3zYzdi3//VqZJKFJoh0Gn7SGjYhA4NKcQvbovhwqT5giml2JmSIdDyGuztjbF/s4aGTfBUjSNyyoofWwJkyP/xIZQG5R6D5IdSFS8spRuC2VL8L8S89h1Ndbxd54gksV1rX5OmdyK/a/SaG9a/eJI/+f2AQ3eoMnvQxMgOPJEt3K+N75WS8xRl7+zXZvAbv+lklYfRjeLhwtUGRdN21n4G1FExFsUi7joCgNODISAYpJ0njlcVJCZR88Y4mjk2fg==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 39 View: 0 Transaction ID: 39
+Commit lo unna Digest: Lqlu3xRyG7n0mkXdSZ758iJMggz9pTNr8AfWnDeQEyE+BRZp7AvvfTpyoYjRZcMUU8rynTiNHccxL2YqG7UYxw3zYzdi3//VqZJKFJoh0Gn7SGjYhA4NKcQvbovhwqT5giml2JmSIdDyGuztjbF/s4aGTfBUjSNyyoofWwJkyP/xIZQG5R6D5IdSFS8spRuC2VL8L8S89h1Ndbxd54gksV1rX5OmdyK/a/SaG9a/eJI/+f2AQ3eoMnvQxMgOPJEt3K+N75WS8xRl7+zXZvAbv+lklYfRjeLhwtUGRdN21n4G1FExFsUi7joCgNODISAYpJ0njlcVJCZR88Y4mjk2fg==
 Transaction Processed: 39
 Initiating executions : 38 : 39
 Initiating execution for seqNum: 39
@@ -3176,11 +2286,15 @@ Request received: 40
 Server is leader -> processing request -- added to queue
 Processing Transaction: 40
 Initiating Pre Prepare for SeqNum: 40 View: 0 Transaction ID: 40
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 40 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 40 View: 0 Transaction ID: 40
+Prepare lo unna Digest: Y5wSwqunV4SpEd39tUCupG4jxxZq1bZCh90GbtEwFSfvkPA4ibC1O+KzMAt1deYn81cdqUFcdz5tH3Vla3h7uN1/yPK141mKuZaDqgbIIso+aPzreDgQP7lbrBjyehcEw9wszH+yWYhn2/QtQfeBdU0faC2Ob5xwNAK86tIsBx3EycesuFoiQlwsBu8/FQRvjAMhUOS7qAxfKIW97SwmV+YzD1tlXQ+tVdgt2zuEihe7k9ps2SWPktiRdrEUorG8jY/huIF9C3ikkWDF1ah1g9dqeuMJj5ViZKNtqlnJeJmb5H5TONBaNZ/rVD7DDfXQl25aIdzhSxqhptorNCs0Rg==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 40 View: 0 Transaction ID: 40
+Commit lo unna Digest: Y5wSwqunV4SpEd39tUCupG4jxxZq1bZCh90GbtEwFSfvkPA4ibC1O+KzMAt1deYn81cdqUFcdz5tH3Vla3h7uN1/yPK141mKuZaDqgbIIso+aPzreDgQP7lbrBjyehcEw9wszH+yWYhn2/QtQfeBdU0faC2Ob5xwNAK86tIsBx3EycesuFoiQlwsBu8/FQRvjAMhUOS7qAxfKIW97SwmV+YzD1tlXQ+tVdgt2zuEihe7k9ps2SWPktiRdrEUorG8jY/huIF9C3ikkWDF1ah1g9dqeuMJj5ViZKNtqlnJeJmb5H5TONBaNZ/rVD7DDfXQl25aIdzhSxqhptorNCs0Rg==
 Transaction Processed: 40
 Initiating executions : 39 : 40
 Initiating execution for seqNum: 40
@@ -3200,11 +2314,15 @@ Request received: 41
 Server is leader -> processing request -- added to queue
 Processing Transaction: 41
 Initiating Pre Prepare for SeqNum: 41 View: 0 Transaction ID: 41
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 41 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 41 View: 0 Transaction ID: 41
+Prepare lo unna Digest: GyGhfmIiWL8dkkEA6wbJWmGXfWV9pVTxHmmPNPteVQGQ7k1uuUMczIbAzDKE/QC9X8dsuRJVe1/F8zTg95FgU+IkxAPPcAAQxE9SqT+Vj1A1CyUAB+dmISs6w44JXKN/woFgbxdxFRF56OJojVFQ2Fz7KOa7DPyZmdRryJxuTK0BXdrizLT2cvvGWwLfPNQn8w+x/lEoXO306s1eAzVrg54wv3XzkAE24+0eSoI8FvP7ESEFV3CL67PaTpPT7TxMOegUBlW6IN3ICDfzyk56EKUGXO3u9TQ3hGSHbj6Ttpzn9nMAIxT2zViXO8GBOiwQP+lvQ+2AhMJsx5NZvQgV4g==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 41 View: 0 Transaction ID: 41
+Commit lo unna Digest: GyGhfmIiWL8dkkEA6wbJWmGXfWV9pVTxHmmPNPteVQGQ7k1uuUMczIbAzDKE/QC9X8dsuRJVe1/F8zTg95FgU+IkxAPPcAAQxE9SqT+Vj1A1CyUAB+dmISs6w44JXKN/woFgbxdxFRF56OJojVFQ2Fz7KOa7DPyZmdRryJxuTK0BXdrizLT2cvvGWwLfPNQn8w+x/lEoXO306s1eAzVrg54wv3XzkAE24+0eSoI8FvP7ESEFV3CL67PaTpPT7TxMOegUBlW6IN3ICDfzyk56EKUGXO3u9TQ3hGSHbj6Ttpzn9nMAIxT2zViXO8GBOiwQP+lvQ+2AhMJsx5NZvQgV4g==
 Transaction Processed: 41
 Initiating executions : 40 : 41
 Initiating execution for seqNum: 41
@@ -3224,11 +2342,15 @@ Request received: 42
 Server is leader -> processing request -- added to queue
 Processing Transaction: 42
 Initiating Pre Prepare for SeqNum: 42 View: 0 Transaction ID: 42
-PrePrepare accepted for Seq num : 42 Accepts: 6
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
+PrePrepare accepted for Seq num : 42 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 42 View: 0 Transaction ID: 42
+Prepare lo unna Digest: D7SXO22xXbmpR5p1wkmU60SdUU9ILpWk9ZsbmrihjHZBIjmzpoK70KVVmPcynmbt8Y03h0T74HuEySr03II1kT/rHXtrF65u3TQB5gbdS/2oDolJvR4rG4k2KJDZoqhJA1JraySjeslDeAuWBIQcnEYp2R0553vHBOnSpVg1lMJB1PomT2XoQv5fjC/7A1QNGRiaXk/xfZwcioY1XgUP7mrQ5f9sFMTG2lP5YAdLgSvP3Vuf/8A+FwBrR0Qhy/G+Jw/zHbVvJ6ZKgf2iioqTxxC0mjCaEzsU27tlBvWHd/ebcFx/Qi5atMb7sIqFEWKmAGDjrCWd3K1Tn4yPNPhfQg==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 42 View: 0 Transaction ID: 42
+Commit lo unna Digest: D7SXO22xXbmpR5p1wkmU60SdUU9ILpWk9ZsbmrihjHZBIjmzpoK70KVVmPcynmbt8Y03h0T74HuEySr03II1kT/rHXtrF65u3TQB5gbdS/2oDolJvR4rG4k2KJDZoqhJA1JraySjeslDeAuWBIQcnEYp2R0553vHBOnSpVg1lMJB1PomT2XoQv5fjC/7A1QNGRiaXk/xfZwcioY1XgUP7mrQ5f9sFMTG2lP5YAdLgSvP3Vuf/8A+FwBrR0Qhy/G+Jw/zHbVvJ6ZKgf2iioqTxxC0mjCaEzsU27tlBvWHd/ebcFx/Qi5atMb7sIqFEWKmAGDjrCWd3K1Tn4yPNPhfQg==
 Transaction Processed: 42
 Initiating executions : 41 : 42
 Initiating execution for seqNum: 42
@@ -3248,11 +2370,15 @@ Request received: 43
 Server is leader -> processing request -- added to queue
 Processing Transaction: 43
 Initiating Pre Prepare for SeqNum: 43 View: 0 Transaction ID: 43
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 43 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 43 View: 0 Transaction ID: 43
+Prepare lo unna Digest: L7T/QZ3ObpP8KmNmA29EpLKYXeYh8gwKgvLef98k+Yk/vp7EA0uufLz96HYazuwRgMjIHU6AOiW4pGjKagtezM+e3XXEhJNVW72kvbu+aKwpeJ3WEb1hGgke0F/m7jcVqCyMgZXGNhx+cTBonNWjCIf2T/Gm7h0ic8do8gTcQDfPBzo9cm/PYtGW66LeQ4hkaaB+ZeEFasncc9OrK12OlVOhjRQ8M5kYSFuTJTQI5ZuTBZKrQPlYDKaQOMp+RabQ6gE/MVL43lyTStxeRm7XWxVFKzMdu8Ny6/2EG2S41ur63SJLL53JaGljD75wNEEJGaFQHWC/i3wViGGwpc1FIg==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 43 View: 0 Transaction ID: 43
+Commit lo unna Digest: L7T/QZ3ObpP8KmNmA29EpLKYXeYh8gwKgvLef98k+Yk/vp7EA0uufLz96HYazuwRgMjIHU6AOiW4pGjKagtezM+e3XXEhJNVW72kvbu+aKwpeJ3WEb1hGgke0F/m7jcVqCyMgZXGNhx+cTBonNWjCIf2T/Gm7h0ic8do8gTcQDfPBzo9cm/PYtGW66LeQ4hkaaB+ZeEFasncc9OrK12OlVOhjRQ8M5kYSFuTJTQI5ZuTBZKrQPlYDKaQOMp+RabQ6gE/MVL43lyTStxeRm7XWxVFKzMdu8Ny6/2EG2S41ur63SJLL53JaGljD75wNEEJGaFQHWC/i3wViGGwpc1FIg==
 Transaction Processed: 43
 Initiating executions : 42 : 43
 Initiating execution for seqNum: 43
@@ -3272,11 +2398,15 @@ Request received: 44
 Server is leader -> processing request -- added to queue
 Processing Transaction: 44
 Initiating Pre Prepare for SeqNum: 44 View: 0 Transaction ID: 44
-PrePrepare accepted for Seq num : 44 Accepts: 7
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
+PrePrepare accepted for Seq num : 44 Accepts: 5
 Pre Prepare Success
 Initiating Prepare for SeqNum: 44 View: 0 Transaction ID: 44
+Prepare lo unna Digest: fNA9uIzZGEtbQDGH50djzl4T6YLIcJMskm0DU+Dx8wY4nDCR2b1w2nlG5MCa242GIO374ehEED5YInNL3C1pgSmzlEDdn6dcQ8oPN3Har+XekqO42xzlBP98hj8vf5tMhenXCRmbYatTrS1MQptrW6htwvoiOegCe02mWtrAKQ/IMRYEPHeWTyLOK005dyMJighFxZN75fQRDf2apMF+2sJ9JlrTb9JjtwkcJS+16Fmb62DEzhBs/AmwxJJxHVZ0amYamkC5NYRquAsjxxJvBRrwel2ftVYSy1TdwF7APCytGbDm+pyYqDZrPwTP2D6oFpNdVbQtwDmy/M+PNDWjcw==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 44 View: 0 Transaction ID: 44
+Commit lo unna Digest: fNA9uIzZGEtbQDGH50djzl4T6YLIcJMskm0DU+Dx8wY4nDCR2b1w2nlG5MCa242GIO374ehEED5YInNL3C1pgSmzlEDdn6dcQ8oPN3Har+XekqO42xzlBP98hj8vf5tMhenXCRmbYatTrS1MQptrW6htwvoiOegCe02mWtrAKQ/IMRYEPHeWTyLOK005dyMJighFxZN75fQRDf2apMF+2sJ9JlrTb9JjtwkcJS+16Fmb62DEzhBs/AmwxJJxHVZ0amYamkC5NYRquAsjxxJvBRrwel2ftVYSy1TdwF7APCytGbDm+pyYqDZrPwTP2D6oFpNdVbQtwDmy/M+PNDWjcw==
 Transaction Processed: 44
 Initiating executions : 43 : 44
 Initiating execution for seqNum: 44
@@ -3296,11 +2426,15 @@ Request received: 45
 Server is leader -> processing request -- added to queue
 Processing Transaction: 45
 Initiating Pre Prepare for SeqNum: 45 View: 0 Transaction ID: 45
-PrePrepare accepted for Seq num : 45 Accepts: 7
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
+PrePrepare accepted for Seq num : 45 Accepts: 6
 Pre Prepare Success
 Initiating Prepare for SeqNum: 45 View: 0 Transaction ID: 45
+Prepare lo unna Digest: scoZiPUATFjcpGyZfTgrV2kEhv8CvApnclVgdVznB4yjAbHtzw6CQ0LN9EJH/jlSpzzUWzHkrpxOtJwBq7of0fPkZYZVp21wlfKh59TdfJeLS3lAHAeNTBIUm55vsIjuBx90nYpPklrOo7qPIHAOQmCQNUFivFrxKTPAizV773/0uiEtYgtemJg2wxsWgHabYIshXb8Bbhvr15m0KthW3sxsOcN6O9cH4GWcF4nv3FCyQWDfQSLSgDPY9khW0VMeIu3vI8HHB4I9xbo/5oBtAlFAJyrCNqT32oMtE0oIL4gcYYwYVnxVqZwG2bXGLJa1mYfOAszyPNRLVXWuygjhDg==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 45 View: 0 Transaction ID: 45
+Commit lo unna Digest: scoZiPUATFjcpGyZfTgrV2kEhv8CvApnclVgdVznB4yjAbHtzw6CQ0LN9EJH/jlSpzzUWzHkrpxOtJwBq7of0fPkZYZVp21wlfKh59TdfJeLS3lAHAeNTBIUm55vsIjuBx90nYpPklrOo7qPIHAOQmCQNUFivFrxKTPAizV773/0uiEtYgtemJg2wxsWgHabYIshXb8Bbhvr15m0KthW3sxsOcN6O9cH4GWcF4nv3FCyQWDfQSLSgDPY9khW0VMeIu3vI8HHB4I9xbo/5oBtAlFAJyrCNqT32oMtE0oIL4gcYYwYVnxVqZwG2bXGLJa1mYfOAszyPNRLVXWuygjhDg==
 Transaction Processed: 45
 Initiating executions : 44 : 45
 Initiating execution for seqNum: 45
@@ -3320,11 +2454,15 @@ Request received: 46
 Server is leader -> processing request -- added to queue
 Processing Transaction: 46
 Initiating Pre Prepare for SeqNum: 46 View: 0 Transaction ID: 46
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 46 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 46 View: 0 Transaction ID: 46
+Prepare lo unna Digest: wezWVZv8jJ9OiySwM+XZpiEum2tu8zcfGWTz5AvBS4nNDpklvp/VeidbTaLOeqThlm7QPbY7z5Rr7j1nwa0TWZgL9vtNfTMcjl0fshRjyR7NSrSlLjx4S9AMtzNISAuYATP3GzBawy2CpNmagOP9JyHqEBjfHCGZqzHpHj//UvL9P8B6jtPrtiaXVRXlO8LpMV+ttiKxh/yYeAv29gJwX1NcZk/P2lrXFggnero3YbG2uqmUu4XKicgCNzJnuWduYG0jJ+RMLdy1SqxmEYL2V1pe49RJsfYWRrq4RsKIBiDlICmNf8ozeH5g0nv0zKthp44twkBV5+mJVl9nFG575g==
+Count of Success Prepares: 5
 Prepare Success
 Initiating Commit for SeqNum: 46 View: 0 Transaction ID: 46
+Commit lo unna Digest: wezWVZv8jJ9OiySwM+XZpiEum2tu8zcfGWTz5AvBS4nNDpklvp/VeidbTaLOeqThlm7QPbY7z5Rr7j1nwa0TWZgL9vtNfTMcjl0fshRjyR7NSrSlLjx4S9AMtzNISAuYATP3GzBawy2CpNmagOP9JyHqEBjfHCGZqzHpHj//UvL9P8B6jtPrtiaXVRXlO8LpMV+ttiKxh/yYeAv29gJwX1NcZk/P2lrXFggnero3YbG2uqmUu4XKicgCNzJnuWduYG0jJ+RMLdy1SqxmEYL2V1pe49RJsfYWRrq4RsKIBiDlICmNf8ozeH5g0nv0zKthp44twkBV5+mJVl9nFG575g==
 Transaction Processed: 46
 Initiating executions : 45 : 46
 Initiating execution for seqNum: 46
@@ -3344,11 +2482,15 @@ Request received: 47
 Server is leader -> processing request -- added to queue
 Processing Transaction: 47
 Initiating Pre Prepare for SeqNum: 47 View: 0 Transaction ID: 47
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 47 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 47 View: 0 Transaction ID: 47
+Prepare lo unna Digest: T+C7whL9P1JlTlyvFAlCKnRwK6omH4IKbxD1crbNdEa/QjTVrDgYZC+NhWJZqz9B9nIvslctju0yXrrYTFKSOl+3qo8DHG7IfOtLa0rx64itnTTvJqTiwqEcOz2kWiGM8zCZ4MF1w4FQhSvojx+5y98qjdnN5ky7VWPec0+dGokIkWfn4Uas9Sm0cED39DtWHrA1OyexP9wcyuFgP33Akxu5+4Mv6uduTZ/ArNc/wgyhoSqdSdgiYeR4ZxGoAnKuVyVrQpR68WYfXKIrSu+ghKhSUFepUnhPqe42lOL1foz8N72TovVG1DFxHFW+303+jXcSIRKq8TRU7M7fV891AA==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 47 View: 0 Transaction ID: 47
+Commit lo unna Digest: T+C7whL9P1JlTlyvFAlCKnRwK6omH4IKbxD1crbNdEa/QjTVrDgYZC+NhWJZqz9B9nIvslctju0yXrrYTFKSOl+3qo8DHG7IfOtLa0rx64itnTTvJqTiwqEcOz2kWiGM8zCZ4MF1w4FQhSvojx+5y98qjdnN5ky7VWPec0+dGokIkWfn4Uas9Sm0cED39DtWHrA1OyexP9wcyuFgP33Akxu5+4Mv6uduTZ/ArNc/wgyhoSqdSdgiYeR4ZxGoAnKuVyVrQpR68WYfXKIrSu+ghKhSUFepUnhPqe42lOL1foz8N72TovVG1DFxHFW+303+jXcSIRKq8TRU7M7fV891AA==
 Transaction Processed: 47
 Initiating executions : 46 : 47
 Initiating execution for seqNum: 47
@@ -3368,11 +2510,15 @@ Request received: 48
 Server is leader -> processing request -- added to queue
 Processing Transaction: 48
 Initiating Pre Prepare for SeqNum: 48 View: 0 Transaction ID: 48
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 48 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 48 View: 0 Transaction ID: 48
+Prepare lo unna Digest: emvK355qnPmPFIsq5yzQLO8okcBDVL2uB2ZKubYdJPcFx8Qe21vVGMUzrs+OlMqJkgUne88eevuyR+l4lMcXz7cXJc9FwLAlxxOsVWArzydD1MHgIbLIPgzFdbIdoixgqlN8RhDRa8UmZtEKTkMEqqLKd2jYnMj+vgtwPKbogqejUA1gh3V3o+O7vu6L6+FGZfv+i2e2qrfCPwEoLHaal/6DmAzJvUi7jmBkCWv56SONKNcOMvkbrMoHIVlAYnw66clWaP55YCdl4Ax+urz59lCUc+nAOhzQBnrkmnk2KJJF21Yu8cZg1tCcvKo2+tkiQojwFrt7VbYWlmKAGS06wg==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 48 View: 0 Transaction ID: 48
+Commit lo unna Digest: emvK355qnPmPFIsq5yzQLO8okcBDVL2uB2ZKubYdJPcFx8Qe21vVGMUzrs+OlMqJkgUne88eevuyR+l4lMcXz7cXJc9FwLAlxxOsVWArzydD1MHgIbLIPgzFdbIdoixgqlN8RhDRa8UmZtEKTkMEqqLKd2jYnMj+vgtwPKbogqejUA1gh3V3o+O7vu6L6+FGZfv+i2e2qrfCPwEoLHaal/6DmAzJvUi7jmBkCWv56SONKNcOMvkbrMoHIVlAYnw66clWaP55YCdl4Ax+urz59lCUc+nAOhzQBnrkmnk2KJJF21Yu8cZg1tCcvKo2+tkiQojwFrt7VbYWlmKAGS06wg==
 Transaction Processed: 48
 Initiating executions : 47 : 48
 Initiating execution for seqNum: 48
@@ -3392,11 +2538,15 @@ Request received: 49
 Server is leader -> processing request -- added to queue
 Processing Transaction: 49
 Initiating Pre Prepare for SeqNum: 49 View: 0 Transaction ID: 49
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 49 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 49 View: 0 Transaction ID: 49
+Prepare lo unna Digest: Pls12dFWUYFT3IvCF0VNb7SZc8atiuY1rUMLvg3ukOah/K742sb4giPuArVDrarpSlxJaqVlDvG//RiFSMacG+xJhBnjOzBFq9fZJfZaJvTmL2JtCbHGXik75TCo4Z6mRkD1mDKdkeTPJnLAGbuCfvWg/f3BQ8YbJ8gvhWPvWdVbzHqTj1/nxfudhq3xnljrpfqBsn94WA0SpVvjmXzWBLYPgprvmUJi89X/6TmXUuEgaJW9wEnfq5n11brfyOrzLfEnOyhC29ZXZ/uYgVtD6scIiMEQkyxQLX85m+RRUc/kMo71SjAofBMZfKAT/7nzkgRRpw0zuuKyjogHfuQjrQ==
+Count of Success Prepares: 6
 Prepare Success
 Initiating Commit for SeqNum: 49 View: 0 Transaction ID: 49
+Commit lo unna Digest: Pls12dFWUYFT3IvCF0VNb7SZc8atiuY1rUMLvg3ukOah/K742sb4giPuArVDrarpSlxJaqVlDvG//RiFSMacG+xJhBnjOzBFq9fZJfZaJvTmL2JtCbHGXik75TCo4Z6mRkD1mDKdkeTPJnLAGbuCfvWg/f3BQ8YbJ8gvhWPvWdVbzHqTj1/nxfudhq3xnljrpfqBsn94WA0SpVvjmXzWBLYPgprvmUJi89X/6TmXUuEgaJW9wEnfq5n11brfyOrzLfEnOyhC29ZXZ/uYgVtD6scIiMEQkyxQLX85m+RRUc/kMo71SjAofBMZfKAT/7nzkgRRpw0zuuKyjogHfuQjrQ==
 Transaction Processed: 49
 Initiating executions : 48 : 49
 Initiating execution for seqNum: 49
@@ -3416,23 +2566,13 @@ Request received: 50
 Server is leader -> processing request -- added to queue
 Processing Transaction: 50
 Initiating Pre Prepare for SeqNum: 50 View: 0 Transaction ID: 50
+PrePrepare lo unna Digest: DITfk5d0LW3dcbxPBZyqtJmCRVKbu7U4gidxoCvPJB2fTPvlH62NpXDVlnerXN/lIN64EHk9fPFnBEwRsEzPGWKN1ne6fs0UyCYuDeolgHMyZnzJshZ1Jrnbc2dZl7TgLOB+A5946cz42fjjj05WQWpY1XHduSuv55lGZ90pdNJtVrdSmYdwK8JG6JYmSi/p6oBaeoefpnjzEHtdTR2mOk1Cn2T+maKHbIHo4o3aFZOwpTTG7AVwcmvYuLLoQyGgRviADcDvS6HogFort2D84T2qTtGf2AoUlyMCKFw6Q+M9o6jK31W5dGIaIDt1DtoOm94+Ud+NZxae2AxKUGeL8Q==
 PrePrepare accepted for Seq num : 50 Accepts: 7
 Pre Prepare Success
 Initiating Prepare for SeqNum: 50 View: 0 Transaction ID: 50
-Prepare Success
-Initiating Commit for SeqNum: 50 View: 0 Transaction ID: 50
+Prepare lo unna Digest: SqYfH/lLBfkUmnrjBvxlFhflGRTPWTjH4jsXG5DIOddDOGmm3GR2fjiDkJjOI4o7YZzfZCPiCAzvXd4YTKjb9LKc3JVxy/mB/qh6DD2xBMKXjc1iapy0Awyw12x6+2uSa46gvg88qAAgo3KpT82sdAbXgst7kmzheQWvdW+uhRCZ4h2yfuiC0rGhC4B1qzNCg4k/spDNgaYjKBPjc7Wa4v7Wvo8y/gTqYWwVCu4YH++jrHIg8ryRISQxFKRsIiQ/nAQckRxRtIweCn+ZlSscNtteP2FhhAsXS/XAcU7ANwYnDecBGIzNZkIhOnfyHoXINTnOUkOqAPKA6nwccrDlww==
+Count of Success Prepares: 4
 Transaction Processed: 50
 Initiating executions : 49 : 50
 Initiating execution for seqNum: 50
-Status : COMMITTED
-Executing transaction: 50
-Transaction executed: 50
-Sending Reply to Client executed: 50 Transaction: 50
-sender: "C"
-receiver: "D"
-amount: 1
-transactionNum: 50
-
-Sent Reply to Client executed: 50
-Initiating execution for seqNum: 51
-Status : Not Found
+Status : PrePREPARED

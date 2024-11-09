@@ -12,7 +12,7 @@
 
 
 ---------------------------- Log of All Requests: -----------------------------
-========>>> Seq Num: 1 : Transaction ( B -> E = 6 ) ; 
+========>>> Seq Num: 1 : Transaction ( A -> I = 2 ) ; 
 
 PrePrepare Request: 
 
@@ -21,41 +21,56 @@ PrePrepareResponse ( SeqNum: 1 Success? true Sent by S4 ) ; PrePrepareResponse (
 Prepare Request: 
 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S6 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; 
+PrepareResponse ( SeqNum: 1 Success? true Sent by S6 ) ; PrepareResponse ( SeqNum: 1 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 1 Success? true Sent by S5 ) ; PrepareResponse ( SeqNum: 1 Success? true Sent by S7 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 1 Sent By: S3 in View 2 ) ; 
 Commit Responses: 
-CommitResponse ( SeqNum: 1 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S6 ) ; 
+CommitResponse ( SeqNum: 1 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 1 Success? true Sent by S7 ) ; 
 Execution Reply: 
-========>>> Seq Num: 2 : Transaction ( H -> D = 3 ) ; 
+========>>> Seq Num: 2 : Transaction ( B -> E = 6 ) ; 
 
 PrePrepare Request: 
 
 PrePrepare Responses: 
-PrePrepareResponse ( SeqNum: 2 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S6 ) ; 
+PrePrepareResponse ( SeqNum: 2 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 2 Success? true Sent by S4 ) ; 
 Prepare Request: 
 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; 
+PrepareResponse ( SeqNum: 2 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 2 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 2 Success? true Sent by S6 ) ; PrepareResponse ( SeqNum: 2 Success? true Sent by S5 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 2 Sent By: S3 in View 2 ) ; 
 Commit Responses: 
-CommitResponse ( SeqNum: 2 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S7 ) ; 
+CommitResponse ( SeqNum: 2 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 2 Success? true Sent by S6 ) ; 
 Execution Reply: 
-========>>> Seq Num: 3 : Transaction ( I -> G = 2 ) ; 
+========>>> Seq Num: 3 : Transaction ( H -> D = 3 ) ; 
 
 PrePrepare Request: 
 
 PrePrepare Responses: 
-PrePrepareResponse ( SeqNum: 3 Success? true Sent by S4 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S5 ) ; 
+PrePrepareResponse ( SeqNum: 3 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 3 Success? true Sent by S4 ) ; 
 Prepare Request: 
 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S5 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 0 Success? true Sent by S6 ) ; 
+PrepareResponse ( SeqNum: 3 Success? true Sent by S4 ) ; PrepareResponse ( SeqNum: 3 Success? true Sent by S6 ) ; PrepareResponse ( SeqNum: 3 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 3 Success? true Sent by S5 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 3 Sent By: S3 in View 2 ) ; 
 Commit Responses: 
-CommitResponse ( SeqNum: 3 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S5 ) ; 
+CommitResponse ( SeqNum: 3 Success? true Sent by S7 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S6 ) ; CommitResponse ( SeqNum: 3 Success? true Sent by S5 ) ; 
+Execution Reply: 
+========>>> Seq Num: 4 : Transaction ( I -> G = 2 ) ; 
+
+PrePrepare Request: 
+
+PrePrepare Responses: 
+PrePrepareResponse ( SeqNum: 4 Success? true Sent by S7 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S5 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S6 ) ; PrePrepareResponse ( SeqNum: 4 Success? true Sent by S4 ) ; 
+Prepare Request: 
+
+Prepare Responses: 
+PrepareResponse ( SeqNum: 4 Success? true Sent by S6 ) ; PrepareResponse ( SeqNum: 4 Success? true Sent by S5 ) ; PrepareResponse ( SeqNum: 4 Success? true Sent by S7 ) ; PrepareResponse ( SeqNum: 4 Success? true Sent by S4 ) ; 
+Commit Request: 
+CommitRequest ( SeqNum: 4 Sent By: S3 in View 2 ) ; 
+Commit Responses: 
+CommitResponse ( SeqNum: 4 Success? true Sent by S5 ) ; CommitResponse ( SeqNum: 4 Success? true Sent by S4 ) ; CommitResponse ( SeqNum: 4 Success? true Sent by S7 ) ; 
 Execution Reply: 
 
 ---------------------------- End of Log of All Requests -----------------------------
@@ -75,13 +90,13 @@ PrePrepareRequest ( SeqNum: 1 : Transaction ( F -> B = 3 ) ;  Sent By S1 ) ;
 PrePrepare Responses: 
 PrePrepareResponse ( SeqNum: 1 Success? true Sent by S3 ) ; 
 Prepare Request: 
-
+PrepareRequest ( SeqNum: 1 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-
+PrepareResponse ( SeqNum: 1 Success? true Sent by S3 ) ; 
 Commit Request: 
-
+CommitRequest ( SeqNum: 1 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
-
+CommitResponse ( SeqNum: 1 Success? true Sent by S3 ) ; 
 Execution Reply: 
 ========>>> Seq Num: 2 : Transaction ( I -> J = 1 ) ; 
 
@@ -92,7 +107,7 @@ PrePrepareResponse ( SeqNum: 2 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 2 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 2 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 2 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -107,7 +122,7 @@ PrePrepareResponse ( SeqNum: 3 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 3 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 3 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 3 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -122,7 +137,7 @@ PrePrepareResponse ( SeqNum: 4 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 4 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 4 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 4 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -137,7 +152,7 @@ PrePrepareResponse ( SeqNum: 5 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 5 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 5 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 5 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -163,7 +178,7 @@ PrePrepareResponse ( SeqNum: 1 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 1 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 1 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 1 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -178,7 +193,7 @@ PrePrepareResponse ( SeqNum: 2 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 2 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 2 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 2 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -191,13 +206,13 @@ PrePrepareRequest ( SeqNum: 3 : Transaction ( B -> F = 3 ) ;  Sent By S1 ) ;
 PrePrepare Responses: 
 PrePrepareResponse ( SeqNum: 3 Success? true Sent by S3 ) ; 
 Prepare Request: 
-
+PrepareRequest ( SeqNum: 3 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-
+PrepareResponse ( SeqNum: 3 Success? true Sent by S3 ) ; 
 Commit Request: 
-
+CommitRequest ( SeqNum: 3 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
-
+CommitResponse ( SeqNum: 3 Success? true Sent by S3 ) ; 
 Execution Reply: 
 ========>>> Seq Num: 4 : Transaction ( A -> E = 6 ) ; 
 
@@ -208,7 +223,7 @@ PrePrepareResponse ( SeqNum: 4 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 4 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 4 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 4 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -223,7 +238,7 @@ PrePrepareResponse ( SeqNum: 5 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 5 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 5 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 5 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -365,7 +380,7 @@ PrePrepareResponse ( SeqNum: 1 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 1 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 1 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 1 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -380,7 +395,7 @@ PrePrepareResponse ( SeqNum: 2 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 2 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 2 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 2 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -395,7 +410,7 @@ PrePrepareResponse ( SeqNum: 3 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 3 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 3 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 3 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -410,7 +425,7 @@ PrePrepareResponse ( SeqNum: 4 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 4 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 4 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 4 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -425,7 +440,7 @@ PrePrepareResponse ( SeqNum: 5 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 5 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 5 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 5 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -440,7 +455,7 @@ PrePrepareResponse ( SeqNum: 6 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 6 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 6 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 6 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -455,7 +470,7 @@ PrePrepareResponse ( SeqNum: 7 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 7 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 7 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 7 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -470,7 +485,7 @@ PrePrepareResponse ( SeqNum: 8 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 8 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 8 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 8 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -485,7 +500,7 @@ PrePrepareResponse ( SeqNum: 9 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 9 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 9 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 9 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -500,7 +515,7 @@ PrePrepareResponse ( SeqNum: 10 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 10 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 10 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 10 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -528,9 +543,9 @@ Prepare Request:
 Prepare Responses: 
 
 Commit Request: 
-CommitRequest ( SeqNum: 1 Sent By: S1 in View 0 ) ; 
+
 Commit Responses: 
-CommitResponse ( SeqNum: 1 Success? false Sent by S3 ) ; 
+
 Execution Reply: 
 ========>>> Seq Num: 2 : Transaction ( J -> D = 3 ) ; 
 
@@ -543,9 +558,9 @@ Prepare Request:
 Prepare Responses: 
 
 Commit Request: 
-CommitRequest ( SeqNum: 2 Sent By: S1 in View 0 ) ; 
+
 Commit Responses: 
-CommitResponse ( SeqNum: 2 Success? false Sent by S3 ) ; 
+
 Execution Reply: 
 ========>>> Seq Num: 3 : Transaction ( F -> G = 4 ) ; 
 
@@ -558,9 +573,9 @@ Prepare Request:
 Prepare Responses: 
 
 Commit Request: 
-CommitRequest ( SeqNum: 3 Sent By: S1 in View 0 ) ; 
+
 Commit Responses: 
-CommitResponse ( SeqNum: 3 Success? false Sent by S3 ) ; 
+
 Execution Reply: 
 ========>>> Seq Num: 4 : Transaction ( E -> B = 5 ) ; 
 
@@ -573,9 +588,9 @@ Prepare Request:
 Prepare Responses: 
 
 Commit Request: 
-CommitRequest ( SeqNum: 4 Sent By: S1 in View 0 ) ; 
+
 Commit Responses: 
-CommitResponse ( SeqNum: 4 Success? false Sent by S3 ) ; 
+
 Execution Reply: 
 ========>>> Seq Num: 5 : Transaction ( C -> H = 7 ) ; 
 
@@ -588,9 +603,9 @@ Prepare Request:
 Prepare Responses: 
 
 Commit Request: 
-CommitRequest ( SeqNum: 5 Sent By: S1 in View 0 ) ; 
+
 Commit Responses: 
-CommitResponse ( SeqNum: 5 Success? false Sent by S3 ) ; 
+
 Execution Reply: 
 ========>>> Seq Num: 6 : Transaction ( G -> J = 1 ) ; 
 
@@ -603,9 +618,9 @@ Prepare Request:
 Prepare Responses: 
 
 Commit Request: 
-CommitRequest ( SeqNum: 6 Sent By: S1 in View 0 ) ; 
+
 Commit Responses: 
-CommitResponse ( SeqNum: 6 Success? false Sent by S3 ) ; 
+
 Execution Reply: 
 
 ---------------------------- End of Log of All Requests -----------------------------
@@ -627,11 +642,11 @@ PrePrepareResponse ( SeqNum: 1 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 1 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 1 Success? true Sent by S3 ) ; 
 Commit Request: 
-CommitRequest ( SeqNum: 1 Sent By: S1 in View 0 ) ; 
+
 Commit Responses: 
-CommitResponse ( SeqNum: 1 Success? true Sent by S3 ) ; 
+
 Execution Reply: 
 ========>>> Seq Num: 2 : Transaction ( C -> H = 3 ) ; 
 
@@ -640,9 +655,9 @@ PrePrepareRequest ( SeqNum: 2 : Transaction ( C -> H = 3 ) ;  Sent By S1 ) ;
 PrePrepare Responses: 
 PrePrepareResponse ( SeqNum: 2 Success? true Sent by S3 ) ; 
 Prepare Request: 
-
+PrepareRequest ( SeqNum: 2 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-
+PrepareResponse ( SeqNum: 2 Success? true Sent by S3 ) ; 
 Commit Request: 
 
 Commit Responses: 
@@ -657,11 +672,11 @@ PrePrepareResponse ( SeqNum: 3 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 3 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 3 Success? true Sent by S3 ) ; 
 Commit Request: 
-CommitRequest ( SeqNum: 3 Sent By: S1 in View 0 ) ; 
+
 Commit Responses: 
-CommitResponse ( SeqNum: 3 Success? true Sent by S3 ) ; 
+
 Execution Reply: 
 ========>>> Seq Num: 4 : Transaction ( F -> G = 5 ) ; 
 
@@ -672,11 +687,11 @@ PrePrepareResponse ( SeqNum: 4 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 4 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 4 Success? true Sent by S3 ) ; 
 Commit Request: 
-CommitRequest ( SeqNum: 4 Sent By: S1 in View 0 ) ; 
+
 Commit Responses: 
-CommitResponse ( SeqNum: 4 Success? true Sent by S3 ) ; 
+
 Execution Reply: 
 ========>>> Seq Num: 5 : Transaction ( J -> D = 7 ) ; 
 
@@ -687,11 +702,11 @@ PrePrepareResponse ( SeqNum: 5 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 5 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 5 Success? true Sent by S3 ) ; 
 Commit Request: 
-CommitRequest ( SeqNum: 5 Sent By: S1 in View 0 ) ; 
+
 Commit Responses: 
-CommitResponse ( SeqNum: 5 Success? true Sent by S3 ) ; 
+
 Execution Reply: 
 ========>>> Seq Num: 6 : Transaction ( A -> J = 1 ) ; 
 
@@ -702,11 +717,11 @@ PrePrepareResponse ( SeqNum: 6 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 6 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 6 Success? true Sent by S3 ) ; 
 Commit Request: 
-CommitRequest ( SeqNum: 6 Sent By: S1 in View 0 ) ; 
+
 Commit Responses: 
-CommitResponse ( SeqNum: 6 Success? true Sent by S3 ) ; 
+
 Execution Reply: 
 
 ---------------------------- End of Log of All Requests -----------------------------
@@ -728,7 +743,7 @@ PrePrepareResponse ( SeqNum: 1 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 1 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 1 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 1 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -743,7 +758,7 @@ PrePrepareResponse ( SeqNum: 2 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 2 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 2 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 2 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -758,7 +773,7 @@ PrePrepareResponse ( SeqNum: 3 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 3 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 3 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 3 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -840,7 +855,7 @@ PrePrepareResponse ( SeqNum: 1 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 1 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 1 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 1 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -855,7 +870,7 @@ PrePrepareResponse ( SeqNum: 2 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 2 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 2 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 2 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -870,7 +885,7 @@ PrePrepareResponse ( SeqNum: 3 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 3 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 3 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 3 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -885,7 +900,7 @@ PrePrepareResponse ( SeqNum: 4 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 4 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 4 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 4 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -900,7 +915,7 @@ PrePrepareResponse ( SeqNum: 5 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 5 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 5 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 5 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -915,7 +930,7 @@ PrePrepareResponse ( SeqNum: 6 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 6 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 6 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 6 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -930,7 +945,7 @@ PrePrepareResponse ( SeqNum: 7 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 7 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 7 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 7 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -945,7 +960,7 @@ PrePrepareResponse ( SeqNum: 8 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 8 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 8 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 8 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -960,7 +975,7 @@ PrePrepareResponse ( SeqNum: 9 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 9 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 9 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 9 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -975,7 +990,7 @@ PrePrepareResponse ( SeqNum: 10 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 10 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 10 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 10 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -990,7 +1005,7 @@ PrePrepareResponse ( SeqNum: 11 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 11 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 11 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 11 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1005,7 +1020,7 @@ PrePrepareResponse ( SeqNum: 12 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 12 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 12 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 12 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1020,7 +1035,7 @@ PrePrepareResponse ( SeqNum: 13 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 13 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 13 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 13 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1035,7 +1050,7 @@ PrePrepareResponse ( SeqNum: 14 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 14 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 14 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 14 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1050,7 +1065,7 @@ PrePrepareResponse ( SeqNum: 15 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 15 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 15 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 15 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1065,7 +1080,7 @@ PrePrepareResponse ( SeqNum: 16 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 16 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 16 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 16 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1080,7 +1095,7 @@ PrePrepareResponse ( SeqNum: 17 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 17 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 17 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 17 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1095,7 +1110,7 @@ PrePrepareResponse ( SeqNum: 18 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 18 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 18 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 18 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1110,7 +1125,7 @@ PrePrepareResponse ( SeqNum: 19 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 19 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 19 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 19 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1125,7 +1140,7 @@ PrePrepareResponse ( SeqNum: 20 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 20 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 20 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 20 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1140,7 +1155,7 @@ PrePrepareResponse ( SeqNum: 21 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 21 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 21 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 21 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1155,7 +1170,7 @@ PrePrepareResponse ( SeqNum: 22 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 22 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 22 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 22 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1170,7 +1185,7 @@ PrePrepareResponse ( SeqNum: 23 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 23 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 23 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 23 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1185,7 +1200,7 @@ PrePrepareResponse ( SeqNum: 24 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 24 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 24 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 24 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1200,7 +1215,7 @@ PrePrepareResponse ( SeqNum: 25 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 25 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 25 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 25 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1215,7 +1230,7 @@ PrePrepareResponse ( SeqNum: 26 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 26 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 26 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 26 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1230,7 +1245,7 @@ PrePrepareResponse ( SeqNum: 27 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 27 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 27 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 27 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1245,7 +1260,7 @@ PrePrepareResponse ( SeqNum: 28 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 28 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 28 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 28 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1260,7 +1275,7 @@ PrePrepareResponse ( SeqNum: 29 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 29 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 29 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 29 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1275,7 +1290,7 @@ PrePrepareResponse ( SeqNum: 30 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 30 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 30 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 30 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1290,7 +1305,7 @@ PrePrepareResponse ( SeqNum: 31 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 31 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 31 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 31 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1305,7 +1320,7 @@ PrePrepareResponse ( SeqNum: 32 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 32 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 32 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 32 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1320,7 +1335,7 @@ PrePrepareResponse ( SeqNum: 33 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 33 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 33 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 33 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1335,7 +1350,7 @@ PrePrepareResponse ( SeqNum: 34 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 34 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 34 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 34 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1350,7 +1365,7 @@ PrePrepareResponse ( SeqNum: 35 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 35 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 35 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 35 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1365,7 +1380,7 @@ PrePrepareResponse ( SeqNum: 36 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 36 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 36 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 36 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1380,7 +1395,7 @@ PrePrepareResponse ( SeqNum: 37 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 37 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 37 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 37 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1395,7 +1410,7 @@ PrePrepareResponse ( SeqNum: 38 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 38 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 38 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 38 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1410,7 +1425,7 @@ PrePrepareResponse ( SeqNum: 39 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 39 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 39 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 39 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1425,7 +1440,7 @@ PrePrepareResponse ( SeqNum: 40 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 40 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 40 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 40 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1440,7 +1455,7 @@ PrePrepareResponse ( SeqNum: 41 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 41 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 41 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 41 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1455,7 +1470,7 @@ PrePrepareResponse ( SeqNum: 42 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 42 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 42 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 42 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1470,7 +1485,7 @@ PrePrepareResponse ( SeqNum: 43 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 43 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 43 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 43 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1485,7 +1500,7 @@ PrePrepareResponse ( SeqNum: 44 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 44 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 44 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 44 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1500,7 +1515,7 @@ PrePrepareResponse ( SeqNum: 45 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 45 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 45 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 45 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1515,7 +1530,7 @@ PrePrepareResponse ( SeqNum: 46 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 46 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 46 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 46 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1530,7 +1545,7 @@ PrePrepareResponse ( SeqNum: 47 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 47 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 47 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 47 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1545,7 +1560,7 @@ PrePrepareResponse ( SeqNum: 48 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 48 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 48 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 48 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1560,7 +1575,7 @@ PrePrepareResponse ( SeqNum: 49 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 49 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 49 Success? true Sent by S3 ) ; 
 Commit Request: 
 CommitRequest ( SeqNum: 49 Sent By: S1 in View 0 ) ; 
 Commit Responses: 
@@ -1575,17 +1590,11 @@ PrePrepareResponse ( SeqNum: 50 Success? true Sent by S3 ) ;
 Prepare Request: 
 PrepareRequest ( SeqNum: 50 Sent by S1 in 0 ) ; 
 Prepare Responses: 
-PrepareResponse ( SeqNum: 0 Success? true Sent by S3 ) ; 
+PrepareResponse ( SeqNum: 50 Success? true Sent by S3 ) ; 
 Commit Request: 
-CommitRequest ( SeqNum: 50 Sent By: S1 in View 0 ) ; 
+
 Commit Responses: 
-CommitResponse ( SeqNum: 50 Success? true Sent by S3 ) ; 
+
 Execution Reply: 
 
 ---------------------------- End of Log of All Requests -----------------------------
-
-===============================================================================================================================
-
-                       Test Set : 11     
-
-===============================================================================================================================

@@ -3,6 +3,7 @@ package org.cse535.node;
 
 import com.google.protobuf.InvalidProtocolBufferException;
 import org.cse535.configs.GlobalConfigs;
+import org.cse535.configs.PBFTSignUtils;
 import org.cse535.configs.Utils;
 import org.cse535.database.DatabaseService;
 import org.cse535.proto.*;
@@ -110,12 +111,14 @@ public class Node extends NodeServer{
                 .setSequenceNumber(currentSeqNum)
                 .setView(this.database.currentViewNum.get())
                 .setProcessId(this.serverName)
-                .setDigest(tnxConfig.getTransaction().getTransactionHash())
+                .setDigest(PBFTSignUtils.signMessage( tnxConfig.getTransaction().getTransactionHash(), GlobalConfigs.serversToSignKeys.get(this.serverName).getPrivate() ) )
                 .build();
 
-       // this.logger.log(prePrepareRequest.toString());
+
+        // this.logger.log(prePrepareRequest.toString());
 
         this.logger.log("Initiating Pre Prepare for SeqNum: " + currentSeqNum + " View: " + this.database.currentViewNum.get() + " Transaction ID: "+ tnxConfig.getTransaction().getTransactionNum());
+        this.logger.log("PrePrepare lo unna Digest: " + PBFTSignUtils.signMessage( tnxConfig.getTransaction().getTransactionHash(), GlobalConfigs.serversToSignKeys.get(this.serverName).getPrivate() ));
 
         // Initiate PrePrepare
         if( initiatePrePrepare(prePrepareRequest) ){
@@ -133,11 +136,14 @@ public class Node extends NodeServer{
                     .setSequenceNumber(currentSeqNum)
                     .setView(this.database.currentViewNum.get())
                     .setProcessId(this.serverName)
-                    .setDigest(tnxConfig.getTransaction().getTransactionHash())
+                    .setDigest(  PBFTSignUtils.signMessage( prePrepareRequest.toString(), GlobalConfigs.serversToSignKeys.get(this.serverName).getPrivate() ) )
                     .build();
 
 
             this.logger.log("Initiating Prepare for SeqNum: " + currentSeqNum + " View: " + this.database.currentViewNum.get() + " Transaction ID: "+ tnxConfig.getTransaction().getTransactionNum());
+            this.logger.log("Prepare lo unna Digest: " + PBFTSignUtils.signMessage( prepareRequest.toString(), GlobalConfigs.serversToSignKeys.get(this.serverName).getPrivate() ));
+
+
 
             //this.logger.log(prepareRequest.toString());
 
@@ -149,11 +155,11 @@ public class Node extends NodeServer{
                         .setSequenceNumber(currentSeqNum)
                         .setView(this.database.currentViewNum.get())
                         .setProcessId(this.serverName)
-                        .setDigest(Utils.Digest(tnxConfig.getTransaction()))
+                        .setDigest( PBFTSignUtils.signMessage( prepareRequest.toString(), GlobalConfigs.serversToSignKeys.get(this.serverName).getPrivate() ) )
                         .build();
 
                 this.logger.log("Initiating Commit for SeqNum: " + currentSeqNum + " View: " + this.database.currentViewNum.get() + " Transaction ID: "+ tnxConfig.getTransaction().getTransactionNum());
-
+                this.logger.log("Commit lo unna Digest: " + PBFTSignUtils.signMessage( prepareRequest.toString(), GlobalConfigs.serversToSignKeys.get(this.serverName).getPrivate() ));
                 //this.logger.log(commitRequest.toString());
 
                 // Initiate Commit
@@ -223,6 +229,8 @@ public class Node extends NodeServer{
     }
 
     public PrePrepareResponse handlePrePrepare(PrePrepareRequest request) {
+
+
 
         PrePrepareResponse.Builder prePrepareResponse = PrePrepareResponse.newBuilder();
 
@@ -303,11 +311,12 @@ public class Node extends NodeServer{
 
             int prepareAcceptedCount = 1 ; // this.database.prePrepareResponseMap.get(preprepareRequest.getSequenceNumber()).size();
 
-            for (PrePrepareResponse resp : this.database.prePrepareResponseMap.get(prepareRequest.getSequenceNumber()) ) {
+            for (PrepareResponse resp : this.database.prepareResponseMap.get(prepareRequest.getSequenceNumber()) ) {
                 if(resp.getSuccess()){
                     prepareAcceptedCount++;
                 }
             }
+            this.logger.log("Count of Success Prepares: " + prepareAcceptedCount);
 
             if(prepareAcceptedCount >= GlobalConfigs.minQuoromSize){
                 this.database.transactionStatusMap.put(prepareRequest.getSequenceNumber(), DatabaseService.TransactionStatus.PREPARED );
@@ -326,13 +335,30 @@ public class Node extends NodeServer{
     public PrepareResponse handlePrepare(PrepareRequest request) {
         PrepareResponse.Builder prepareResponse = PrepareResponse.newBuilder();
         prepareResponse.setSuccess(false);
+        prepareResponse.setSequenceNumber(request.getSequenceNumber());
+        prepareResponse.setView(request.getView());
         prepareResponse.setProcessId(this.serverName);
+
 
         this.logger.log("Received Prepare request :::: + " + request.getSequenceNumber() + " Digest: " + request.getDigest());
 
+        if(  this.database.prePrepareRequestMap.get(request.getSequenceNumber()) != null){
+            this.logger.log("Prepare lo prePrepare hash idhi.. verify");
+            this.logger.log("Prepare Req Verify: "+ PBFTSignUtils.verifySignature(this.database.prePrepareRequestMap.get(request.getSequenceNumber()).toString(), request.getDigest(), GlobalConfigs.serversToSignKeys.get(request.getProcessId()).getPublic() ));
+
+        }
+        else{
+            this.logger.log("asalu prePrepare message ey ledu ra halwa");
+        }
+
+
         if( this.database.transactionMap.containsKey(request.getSequenceNumber()) &&
                 this.database.transactionStatusMap.containsKey(request.getSequenceNumber()) &&
-               // this.database.transactionMap.get(request.getSequenceNumber()).getTransactionHash().equals(request.getDigest()) &&
+
+                this.database.prePrepareRequestMap.get(request.getSequenceNumber()) != null &&
+
+                PBFTSignUtils.verifySignature(this.database.prePrepareRequestMap.get(request.getSequenceNumber()).toString(), request.getDigest(), GlobalConfigs.serversToSignKeys.get(request.getProcessId()).getPublic() ) &&
+
                 (this.database.transactionStatusMap.get(request.getSequenceNumber()) == DatabaseService.TransactionStatus.PrePREPARED ||
                 this.database.transactionStatusMap.get(request.getSequenceNumber()) == DatabaseService.TransactionStatus.PREPARED)){
 
@@ -344,7 +370,14 @@ public class Node extends NodeServer{
 
         this.database.setMaxAddedSeqNum(request.getSequenceNumber());
 
-        return prepareResponse.build();
+        PrepareResponse resp = prepareResponse.build();
+
+        if(resp.getSuccess()){
+            this.database.prepareRequestMap.put(resp.getSequenceNumber(), request);
+        }
+
+        return resp;
+
     }
 
 
@@ -386,7 +419,14 @@ public class Node extends NodeServer{
         this.database.setMaxAddedSeqNum(request.getSequenceNumber());
 
         if(this.database.transactionStatusMap.containsKey(request.getSequenceNumber()) &&
-                this.database.transactionStatusMap.get(request.getSequenceNumber()) == DatabaseService.TransactionStatus.PREPARED){
+
+                this.database.transactionStatusMap.get(request.getSequenceNumber()) == DatabaseService.TransactionStatus.PREPARED &&
+
+                this.database.prepareRequestMap.get(request.getSequenceNumber()) != null &&
+
+                PBFTSignUtils.verifySignature(this.database.prepareRequestMap.get(request.getSequenceNumber()).toString(), request.getDigest(), GlobalConfigs.serversToSignKeys.get(request.getProcessId()).getPublic() )
+
+        ){
 
             this.database.transactionStatusMap.put(request.getSequenceNumber(), DatabaseService.TransactionStatus.COMMITTED);
             return CommitResponse.newBuilder().setProcessId(this.serverName).setSequenceNumber(request.getSequenceNumber()).setSuccess(true).build();
@@ -434,6 +474,10 @@ public class Node extends NodeServer{
         try {
 
             int nextView = this.database.currentViewNum.get()+1;
+
+            //if(this.database.viewChangeMessageMap.containsKey(nextView)) return;
+
+            if(this.database.viewTriggers.contains(nextView)) return;
 
             this.logger.log("Initiating View Change .. old view "+ this.database.currentViewNum.get() + " new view " + nextView );
 

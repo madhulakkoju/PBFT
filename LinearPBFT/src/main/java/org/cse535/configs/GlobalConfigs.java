@@ -2,6 +2,7 @@ package org.cse535.configs;
 
 import org.cse535.database.DatabaseService;
 
+import java.security.KeyPair;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -18,6 +19,20 @@ public class GlobalConfigs {
         put("S6", 8006);
         put("S7", 8007);
     }};
+
+
+    public static HashMap<String, KeyPair> serversToSignKeys = new HashMap<String, KeyPair>(){{
+        put("S1",  PBFTSignUtils.generateKeyPairFromText2("S1") );
+        put("S2",  PBFTSignUtils.generateKeyPairFromText2("S2"));
+        put("S3",  PBFTSignUtils.generateKeyPairFromText2("S3"));
+        put("S4",  PBFTSignUtils.generateKeyPairFromText2("S4"));
+        put("S5",  PBFTSignUtils.generateKeyPairFromText2("S5"));
+        put("S6",  PBFTSignUtils.generateKeyPairFromText2("S6"));
+        put("S7",  PBFTSignUtils.generateKeyPairFromText2("S7"));
+    }};
+
+
+
 
     public static String initLeader = "S1";
     public static int initLeaderIndex = 0;

@@ -68,8 +68,9 @@ public class LinearPBFTService extends LinearPBFTGrpc.LinearPBFTImplBase {
                 return;
             }
 
-            Main.node.database.viewTriggers.add(request.getView()+1);
             Main.node.initiateViewChange();
+
+            Main.node.database.viewTriggers.add(request.getView()+1);
         }
         else{
             Main.node.logger.log("Relay request processed: " +
@@ -125,7 +126,7 @@ public class LinearPBFTService extends LinearPBFTGrpc.LinearPBFTImplBase {
         responseObserver.onCompleted();
 
         Main.node.logger.log("Prepare response sent: " + resp.getSequenceNumber());
-        Main.node.database.prepareRequestMap.put(request.getSequenceNumber(), request);
+        //Main.node.database.prepareRequestMap.put(request.getSequenceNumber(), request);
         Main.node.database.prepareResponseMap.put(request.getSequenceNumber(), new ArrayList<>(Collections.singleton(resp)));
     }
 
@@ -152,7 +153,8 @@ public class LinearPBFTService extends LinearPBFTGrpc.LinearPBFTImplBase {
         Main.node.logger.log("Executions Complete");
 
         Main.node.database.commitRequestMap.put(request.getSequenceNumber(), request);
-        Main.node.database.commitResponseMap.put(request.getSequenceNumber(), new ArrayList<>(Collections.singleton(resp)));
+        Main.node.database.commitResponseMap.putIfAbsent(request.getSequenceNumber(), new ArrayList<>());
+        Main.node.database.commitResponseMap.get(request.getSequenceNumber()).add(resp);
     }
 
     @Override
@@ -164,11 +166,15 @@ public class LinearPBFTService extends LinearPBFTGrpc.LinearPBFTImplBase {
 
         ViewServer.viewServerInstance.logger.log("Execution reply received: " + request.getSequenceNumber() );
 
-        if(!ViewServer.viewServerInstance.transactionExecutionResponseMap.containsKey( request.getSequenceNumber() )){
-            ViewServer.viewServerInstance.transactionExecutionResponseMap.put(request.getSequenceNumber(), new HashSet<>());
+        if(!ViewServer.viewServerInstance.transactionExecutionResponseMap.containsKey( request.getTransactionId() )){
+            ViewServer.viewServerInstance.transactionExecutionResponseMap.put(request.getTransactionId(), new HashSet<>());
+        }
+        if(!ViewServer.viewServerInstance.transactionExecutionReplies.containsKey( request.getTransactionId() )){
+            ViewServer.viewServerInstance.transactionExecutionReplies.put(request.getTransactionId(), new HashSet<>());
         }
 
-        ViewServer.viewServerInstance.transactionExecutionResponseMap.get(request.getSequenceNumber()).add(request.getProcessId());
+        ViewServer.viewServerInstance.transactionExecutionResponseMap.get(request.getTransactionId()).add(request.getProcessId());
+        ViewServer.viewServerInstance.transactionExecutionReplies.get(request.getTransactionId()).add(request);
 //        System.out.println("Execution reply received: " + request.getSequenceNumber() + " : "
 //                + request.getProcessId() + " \nView : " + request.getView () + " TnxId: " + request.getTransactionId() + " \n");
 
