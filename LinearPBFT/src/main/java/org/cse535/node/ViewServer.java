@@ -518,7 +518,7 @@ int i = 1;
             activeServersStatusMap.put(server, true);
         }
 
-        String path = "src/main/resources/test(Lab2 - PBFT) - Copy.csv";
+        String path = "src/main/resources/test(Lab2 - PBFT).csv";
 
         //File file = new File("C:\\Users\\mlakkoju\\apaxos-madhulakkoju\\apaxos\\src\\main\\resources\\input_file.csv");
         File file = new File(path);
